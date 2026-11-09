@@ -667,7 +667,7 @@
     const title = document.getElementById('submitting-title');
     const desc = document.getElementById('submitting-desc');
     if (title) title.textContent = 'ĐANG NỘP BÀI THI LÊN HỆ THỐNG...';
-    if (desc) desc.innerHTML = 'Hệ thống đang đồng bộ bài làm và điểm số của đồng chí vào Google Sheet.<br><strong>Vui lòng đợi giây lát, hệ thống sẽ mở kết quả ngay sau khi nộp thành công!</strong>';
+    if (desc) desc.innerHTML = 'Hệ thống đang tiếp nhận bài làm và xử lý kết quả thi.<br><strong>Vui lòng đợi trong giây lát, kết quả sẽ hiển thị ngay sau khi hoàn tất!</strong>';
 
     const secEl = document.getElementById('submit-seconds-elapsed');
     if (secEl) secEl.textContent = '0';
@@ -820,12 +820,12 @@
       <strong>Thời gian làm bài:</strong> ${formatExamDuration()}
     `;
 
-    // Cập nhật trạng thái xác nhận đã nộp thành công vào Google Sheet
+    // Cập nhật trạng thái xác nhận đã nộp thành công
     const statusElem = document.getElementById('sheets-sync-status');
     if (statusElem) {
       statusElem.innerHTML = `
         <div class="sync-success-badge">
-          <span>✅</span> ĐÃ NỘP BÀI VÀ LƯU THÀNH CÔNG VÀO HỆ THỐNG GOOGLE SHEET (SHEET ĐẦU TIÊN)
+          <span>✅</span> ĐÃ NỘP BÀI VÀ GHI NHẬN THÀNH CÔNG VÀO HỆ THỐNG
         </div>
       `;
     }
@@ -1056,7 +1056,7 @@
       const title = document.getElementById('submitting-title');
       const desc = document.getElementById('submitting-desc');
       if (title) title.innerHTML = '<span style="color: #16a34a;">✅ ĐÃ LƯU BÀI THI THÀNH CÔNG!</span>';
-      if (desc) desc.textContent = 'Dữ liệu đã được ghi nhận vào Google Sheet. Đang hiển thị bảng điểm và đáp án...';
+      if (desc) desc.textContent = 'Hệ thống đã ghi nhận bài thi. Đang hiển thị bảng điểm và đáp án...';
 
       // Chờ 500ms cho mượt mà rồi mới chuyển sang màn hình kết quả
       setTimeout(() => {
@@ -1069,8 +1069,8 @@
       isHandled = true;
       if (submitProgressInterval) clearInterval(submitProgressInterval);
       if (submitTimeoutId) clearTimeout(submitTimeoutId);
-      console.error('Lỗi gửi Google Sheets:', err);
-      showSubmittingRetryUI('Có lỗi kết nối mạng đến máy chủ Google Sheet (' + (err.message || 'Mất kết nối') + '). Bài làm vẫn an toàn, vui lòng kiểm tra mạng và bấm nộp lại.');
+      console.error('Lỗi gửi dữ liệu lên máy chủ:', err);
+      showSubmittingRetryUI('Có lỗi đường truyền mạng khi gửi bài thi lên máy chủ (' + (err.message || 'Mất kết nối') + '). Bài làm vẫn an toàn, vui lòng kiểm tra mạng và bấm nộp lại.');
     });
   }
 
