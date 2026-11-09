@@ -1,0 +1,223 @@
+{
+  "maDe": "DE04",
+  "tenDe": "Bộ đề kiểm tra số 04 - Chiến thuật Chữa cháy và Cứu nạn, cứu hộ",
+  "thoiGianLamBaiPhut": 30,
+  "soCauTracNghiem": 20,
+  "soCauTuLuan": 2,
+  "tracNghiem": [
+    {
+      "ID": "CTCCXD001",
+      "cauHoi": "Khi đám cháy mới phát sinh tại cửa hàng xăng dầu trong lúc đang nhập hàng từ xe ô tô xi téc xuống bể chứa, lực lượng tại chỗ phải thực hiện ngay biện pháp khẩn cấp nào sau đây?",
+      "luaChon": [
+        "A. Tiếp tục bơm thật nhanh toàn bộ lượng xăng dầu còn lại trên xe xi téc xuống bể chứa ngầm để làm trống hoàn toàn bồn xe.",
+        "B. Mở toàn bộ nắp các bể chứa ngầm xung quanh để xả hơi xăng dầu ra ngoài không khí và dùng tia nước đặc phun vào miệng bể.",
+        "C. Dừng ngay việc xuất nhập xăng dầu, đóng các van trên xe và bể chứa, tìm cách đưa xe xi téc ra khỏi khu vực nguy hiểm và báo cháy.",
+        "D. Chỉ tập trung di chuyển các thùng dầu nhờn trong kho hàng hóa ra ngoài đường rồi đóng kín cửa phòng giao dịch chờ xe chữa cháy."
+      ]
+    },
+    {
+      "ID": "CTCCGO002",
+      "cauHoi": "Theo nguyên tắc chiến thuật chữa cháy cơ sở chế biến gỗ, việc sử dụng lực lượng và chất chữa cháy cần phải tuân thủ định hướng cơ bản nào?",
+      "luaChon": [
+        "A. Chỉ sử dụng bình khí chữa cháy cho các bãi gỗ ngoài trời để tránh làm ướt nguyên liệu gỗ quý của doanh nghiệp sản xuất.",
+        "B. Luôn triển khai lực lượng đứng ở phía cuối hướng gió để tận dụng luồng khói che chắn bức xạ nhiệt từ các đống gỗ đang cháy.",
+        "C. Chỉ phun nước làm mát vào phần mái tôn của nhà xưởng mà không phun trực tiếp vào các đống gỗ đang cháy ở bên trong xưởng.",
+        "D. Tập trung lực lượng, phương tiện đủ mạnh để vừa dập tắt đám cháy bằng nước với lưu lượng lớn vừa làm mát, chống cháy lan."
+      ]
+    },
+    {
+      "ID": "CTCCGO003",
+      "cauHoi": "Khi mới phát hiện cháy tại phân xưởng sản xuất của cơ sở chế biến gỗ, người chỉ huy chữa cháy cơ sở phải tổ chức thực hiện ngay nhiệm vụ kỹ thuật nào đối với hệ thống công nghệ?",
+      "luaChon": [
+        "A. Cắt điện khu vực cháy, dừng ngay hệ thống thông gió, hệ thống hút bụi gỗ và đóng các van ngăn lửa trên đường ống dẫn bụi.",
+        "B. Tăng tối đa công suất hoạt động của hệ thống quạt hút bụi công nghiệp để hút toàn bộ ngọn lửa từ máy cưa vào buồng chứa bụi.",
+        "C. Mở tất cả các cửa thông gió mái và bật quạt thổi gió tốc độ cao vào bên trong phân xưởng để đẩy bụi gỗ bay lên không trung.",
+        "D. Giữ nguyên điện lưới sản xuất trong phân xưởng để vận hành các băng chuyền gỗ chạy liên tục qua vùng đang có ngọn lửa cháy."
+      ]
+    },
+    {
+      "ID": "CTCCOT004",
+      "cauHoi": "Khi xe ô tô chở khách hoặc chở hàng hóa bị cháy trong lúc đang lưu thông trên đường bộ, người lái xe cần xử lý ban đầu theo nguyên tắc nào để đảm bảo an toàn?",
+      "luaChon": [
+        "A. Điều khiển xe chạy với tốc độ cao nhất đến trạm xăng dầu gần nhất để mượn các bình chữa cháy xách tay của nhân viên bán hàng.",
+        "B. Dừng xe ở vị trí cách xa các công trình, khu dân cư, nhanh chóng tổ chức thoát nạn cho hành khách, báo cháy và chữa cháy ban đầu.",
+        "C. Đỗ xe ngay giữa lòng đường hầm hoặc trên cầu lớn để cản gió lùa rồi đóng kín tất cả các cửa xe nhằm cô lập ngọn lửa bên trong.",
+        "D. Mở nắp bình nhiên liệu của xe để xả bớt áp suất hơi xăng ra mặt đường rồi dùng nước dưới mương phun thẳng vào bình nhiên liệu."
+      ]
+    },
+    {
+      "ID": "CTCCOT005",
+      "cauHoi": "Theo nguyên tắc tổ chức chữa cháy xe ô tô xi téc chở xăng dầu, nếu đám cháy vừa diễn ra trên miệng xi téc vừa cháy xăng dầu chảy loang trên mặt đất thì trình tự dập tắt như thế nào?",
+      "luaChon": [
+        "A. Phải tập trung toàn bộ lăng phun bọt dập tắt ngọn lửa trên miệng xi téc trước rồi mới quay xuống dập lửa cháy loang trên mặt đất.",
+        "B. Phải dùng tia nước áp lực cao phun thẳng qua miệng xi téc vào bên trong bồn để làm tràn xăng dầu ra ngoài rồi dập tắt một lần.",
+        "C. Phải tập trung lực lượng dập tắt ngọn lửa cháy loang xung quanh trên mặt đất trước, sau đó mới tiến hành dập tắt lửa trên miệng xi téc.",
+        "D. Chỉ cần đắp đê cát xung quanh xe và chờ cho toàn bộ lượng xăng dầu bên trong xi téc tự cháy hết hoàn toàn mà không cần phun bọt."
+      ]
+    },
+    {
+      "ID": "CTCCKB006",
+      "cauHoi": "Khi đám cháy mới xảy ra tại một bể chứa trong kho xăng dầu, chỉ huy chữa cháy cơ sở phải tổ chức thực hiện ngay các công việc ban đầu nào trước khi lực lượng chuyên nghiệp đến?",
+      "luaChon": [
+        "A. Mở van thông giữa các bể chứa để chia đều lượng xăng dầu đang cháy sang tất cả các bể chứa trống còn lại trong cùng một cụm bể.",
+        "B. Tắt hệ thống máy bơm nước làm mát cố định của kho để tiết kiệm nguồn điện ưu tiên cho hệ thống chiếu sáng bảo vệ vòng ngoài.",
+        "C. Phá dỡ một đoạn đê bao ngăn cháy xung quanh bể đang cháy để xả bớt dầu nóng chảy ra hệ thống cống thoát nước chung của khu vực.",
+        "D. Báo động cháy, vận hành ngay hệ thống làm mát và chữa cháy cố định, ngừng xuất nhập, đóng các van chặn và kiểm tra hệ thống đê bao."
+      ]
+    },
+    {
+      "ID": "CTCCNCT007",
+      "cauHoi": "Trong nguyên tắc tổ chức chữa cháy nhà cao tầng và siêu cao tầng, nhiệm vụ nào phải được xác định là nhiệm vụ quan trọng hàng đầu và tiến hành đồng thời với việc khống chế đám cháy?",
+      "luaChon": [
+        "A. Tổ chức tìm kiếm, hướng dẫn thoát nạn và cứu người bị nạn đang mắc kẹt tại tầng bị cháy và các tầng bị nhiễm khói phía trên.",
+        "B. Tập trung di chuyển toàn bộ phương tiện xe cơ giới đang đỗ ở tầng hầm ra ngoài đường phố trước khi triển khai đội hình lên tầng cháy.",
+        "C. Tổ chức tháo dỡ toàn bộ hệ thống kính mặt dựng ở tất cả các tầng của tòa nhà để tạo lối thông gió tự nhiên từ tầng trệt lên mái.",
+        "D. Bơm nước làm ngập toàn bộ các giếng thang máy thông thường từ tầng mái xuống tầng hầm để ngăn chặn hoàn toàn hiệu ứng ống khói."
+      ]
+    },
+    {
+      "ID": "CTCCNCT008",
+      "cauHoi": "Khi mới phát hiện đám cháy tại nhà cao tầng, lực lượng PCCC cơ sở và ban quản lý tòa nhà phải xử lý hệ thống kỹ thuật của công trình như thế nào?",
+      "luaChon": [
+        "A. Cắt toàn bộ nguồn điện của cả máy bơm chữa cháy và hệ thống quạt tăng áp buồng thang bộ để tránh nguy cơ chập điện trên diện rộng.",
+        "B. Cắt điện khu vực cháy, đưa thang máy thông thường về tầng trệt, kích hoạt hệ thống tăng áp cầu thang bộ, hút khói và bơm chữa cháy.",
+        "C. Sử dụng tất cả các thang máy chở khách thông thường để vận chuyển người dân từ các tầng trên cao đi xuyên qua tầng đang cháy.",
+        "D. Khóa chặt toàn bộ các cửa ra vào buồng thang bộ thoát nạn và cửa lên tầng mái để ngăn không cho khói lan vào hành lang các tầng."
+      ]
+    },
+    {
+      "ID": "CNCHBT009",
+      "cauHoi": "Khi nhận được tin báo xảy ra tai nạn đuối nước tại bãi tắm ở khu du lịch, khu vui chơi giải trí, người chỉ huy cứu nạn, cứu hộ khi đến hiện trường cần thực hiện ngay nhiệm vụ chỉ huy nào?",
+      "luaChon": [
+        "A. Yêu cầu rút toàn bộ nước trong hồ hoặc đắp đê ngăn sóng biển hoàn toàn trước khi cho phép các tổ trinh sát tiếp cận mặt nước.",
+        "B. Tự mình nhảy ngay xuống nước bơi ra xa bờ một mình mà không cần nắm tình hình hay phân công nhiệm vụ cho các chiến sĩ đi cùng.",
+        "C. Nhanh chóng nắm tình hình người bị nạn và đặc điểm vùng nước, tổ chức trinh sát, khoanh vùng hiện trường và quyết định phương án cứu người.",
+        "D. Chỉ đứng trên bờ lập biên bản vụ việc với ban quản lý khu du lịch và giao toàn bộ việc lặn tìm kiếm cho khách du lịch tình nguyện."
+      ]
+    },
+    {
+      "ID": "CNCHDN010",
+      "cauHoi": "Theo nguyên tắc tổ chức cứu nạn, cứu hộ tai nạn đuối nước ở sông, suối, thác nước, hồ, ao, giếng, yêu cầu nào về bảo đảm an toàn cho lực lượng trực tiếp làm nhiệm vụ phải được tuân thủ nghiêm ngặt?",
+      "luaChon": [
+        "A. Chiến sĩ khi bơi ra cứu người phải mặc nguyên bộ quần áo chữa cháy tráng nhôm và đi ủng cao su nặng để chống lạnh dưới nước.",
+        "B. Chiến sĩ lặn tìm kiếm dưới sông sâu không được buộc dây tín hiệu vào người để tránh bị vướng vào các cành cây hoặc đá ngầm.",
+        "C. Khi xuống giếng sâu cứu người chỉ cần nín thở tự nhiên để xuống nhanh mà không cần kiểm tra khí độc hay mang theo bình thở cách ly.",
+        "D. Cán bộ, chiến sĩ trực tiếp xuống nước phải mặc áo phao hoặc trang bị lặn, có dây cứu nạn bảo hiểm và luôn hỗ trợ nhau theo tổ, nhóm."
+      ]
+    },
+    {
+      "ID": "CTCCCR011",
+      "cauHoi": "Theo nguyên tắc tổ chức chữa cháy rừng, để nhanh chóng khống chế và dập tắt đám cháy rừng đạt hiệu quả cao nhất, cần phải quán triệt phương châm huy động lực lượng như thế nào?",
+      "luaChon": [
+        "A. Thực hiện nghiêm phương châm bốn tại chỗ, huy động sức mạnh tổng hợp của nhiều lực lượng và ưu tiên ngăn chặn hướng cháy lan chính.",
+        "B. Chỉ sử dụng duy nhất xe chữa cháy chuyên nghiệp phun nước từ đường nhựa vào rừng mà không huy động lực lượng kiểm lâm hay người dân.",
+        "C. Luôn bố trí toàn bộ lực lượng đứng chặn trực diện ở ngay phía trước đầu ngọn lửa lớn đang cháy lan nhanh từ chân dốc lên đỉnh dốc.",
+        "D. Chờ cho đám cháy rừng lan từ trên đồi cao xuống đến sát khu vực ruộng nước ở chân núi rồi mới bắt đầu triển khai lực lượng dập tắt."
+      ]
+    },
+    {
+      "ID": "CTCCNLK012",
+      "cauHoi": "Khi đám cháy mới phát sinh tại một ngôi nhà ở liên kế kết hợp kinh doanh trong khu dân cư, lực lượng tại chỗ (dân phòng, người dân) cần ưu tiên thực hiện ngay các biện pháp nào?",
+      "luaChon": [
+        "A. Đóng sập cửa cuốn mặt tiền từ bên ngoài và khóa chặt lại để ngăn không cho không khí bên ngoài lùa vào cung cấp oxy cho đám cháy.",
+        "B. Hô hoán báo động, gọi báo cháy, cắt điện ngôi nhà cháy, sử dụng phương tiện tại chỗ cứu người mắc kẹt và khống chế ngọn lửa ban đầu.",
+        "C. Dùng vòi nước sinh hoạt phun thẳng vào đường dây điện cao thế đi ngang qua trước mặt tiền nhà để làm mát hệ thống cáp viễn thông.",
+        "D. Tập trung toàn bộ người dân lên mái của ngôi nhà đang cháy để dỡ từng viên ngói ném xuống tầng một nhằm đè tắt ngọn lửa."
+      ]
+    },
+    {
+      "ID": "CTCCNLK013",
+      "cauHoi": "Theo nguyên tắc chiến thuật chữa cháy nhà liên kế, khi tiếp cận ngôi nhà đang cháy có người mắc kẹt bên trong nhưng lối cửa chính ở tầng một đã bị lửa bao trùm, cần xử lý theo nguyên tắc nào?",
+      "luaChon": [
+        "A. Chỉ đứng ở ngoài đường phun nước qua cửa chính vào tầng một cho đến khi đám cháy tắt hẳn rồi mới vào kiểm tra các tầng lầu.",
+        "B. Yêu cầu những người đang mắc kẹt ở các tầng trên cao tự chạy xuyên qua vùng lửa ở cầu thang bộ tầng một để thoát ra ngoài.",
+        "C. Triển khai đồng thời việc phun nước làm mát, khống chế lửa ở tầng một và bắc thang hoặc qua nhà liền kề phá dỡ chuồng cọp để cứu người.",
+        "D. Dùng máy xúc cơ giới phá sập toàn bộ bức tường chịu lực của ngôi nhà liền kề bên cạnh để tạo bãi đất trống cho xe chữa cháy đỗ."
+      ]
+    },
+    {
+      "ID": "CNCHTC014",
+      "cauHoi": "Trong nguyên tắc bố trí phương tiện và tiếp cận cứu người bị nạn trên cao, việc lựa chọn điểm neo cố định dây cứu nạn, cứu hộ phải đảm bảo yêu cầu kỹ thuật bắt buộc nào?",
+      "luaChon": [
+        "A. Điểm neo phải được buộc vào các đường ống nhựa thoát nước mưa hoặc lan can kính trang trí ở gần vị trí người bị nạn nhất.",
+        "B. Chỉ sử dụng một dây đơn duy nhất không cần dây bảo hiểm phụ để giảm trọng lượng mang vác cho chiến sĩ khi tụt dây từ trên cao.",
+        "C. Điểm neo phải đặt ở ngay phía dưới vị trí đang có ngọn lửa và khói nóng bốc lên từ các tầng dưới để dễ quan sát bằng mắt thường.",
+        "D. Điểm neo phải là các cấu kiện thật sự vững chắc, chịu được tải trọng lớn, có lót bảo vệ dây ở các góc cạnh sắc và luôn có điểm neo dự phòng."
+      ]
+    },
+    {
+      "ID": "CNCHTC015",
+      "cauHoi": "Khi tổ chức cứu nạn, cứu hộ tại hiện trường có sự cố rò rỉ hóa chất độc hại, nguyên tắc tiếp cận hiện trường và bố trí lực lượng, phương tiện phải thực hiện như thế nào?",
+      "luaChon": [
+        "A. Tiếp cận từ phía đầu hướng gió và ở vị trí cao hơn khu vực rò rỉ, trang bị đầy đủ phương tiện bảo hộ chống độc và thiết bị thở cách ly.",
+        "B. Tiếp cận từ phía cuối hướng gió và ở vùng trũng thấp nhất để nhanh chóng thu gom toàn bộ lượng hóa chất lỏng đang chảy tràn.",
+        "C. Cho toàn bộ xe chữa cháy chạy thẳng vào vùng tâm đám mây khí độc trước khi cán bộ, chiến sĩ đeo mặt nạ phòng độc cách ly.",
+        "D. Sử dụng quạt thổi khói công suất lớn thổi trực diện đám mây khí độc hướng về phía khu vực tập kết người dân để làm loãng hóa chất."
+      ]
+    },
+    {
+      "ID": "CNCHDS016",
+      "cauHoi": "Theo nguyên tắc tổ chức cứu nạn, cứu hộ người bị mắc kẹt dưới sâu, trước khi cử cán bộ, chiến sĩ xuống không gian sâu hạn chế để tiếp cận nạn nhân thì bắt buộc phải thực hiện biện pháp nào?",
+      "luaChon": [
+        "A. Bơm đầy nước sạch vào lòng giếng hoặc hầm sâu để đẩy người bị nạn nổi tự nhiên lên sát miệng giếng mà không cần dùng dây tời.",
+        "B. Kiểm tra nồng độ oxy và các khí độc, khí cháy nổ, tiến hành thông gió cưỡng bức liên tục và trang bị đầy đủ bình thở, dây bảo hiểm.",
+        "C. Thả các bó đuốc lửa đang cháy xuống dưới đáy hầm sâu để đốt cháy hết toàn bộ lượng khí độc tích tụ ở bên dưới không gian kín.",
+        "D. Cho nhiều chiến sĩ cùng lúc nhảy tự do xuống đáy hố sâu mà không buộc dây cứu nạn để rút ngắn thời gian tiếp cận người bị nạn."
+      ]
+    },
+    {
+      "ID": "CNCHDS017",
+      "cauHoi": "Khi đến hiện trường vụ tai nạn người bị mắc kẹt dưới sâu, người chỉ huy cứu nạn, cứu hộ phải thực hiện ngay nhiệm vụ chỉ huy ban đầu nào đối với khu vực quanh miệng hố, miệng giếng?",
+      "luaChon": [
+        "A. Cho tất cả người dân và phương tiện cơ giới hạng nặng đứng tập trung sát mép miệng hố để cùng quan sát xuống phía dưới đáy sâu.",
+        "B. Dùng máy đầm rung công suất lớn đầm chặt vùng đất sát mép miệng giếng trong lúc người bị nạn vẫn đang nằm ở dưới đáy giếng.",
+        "C. Khoanh vùng hiện trường, đưa người không có nhiệm vụ ra xa miệng hố để tránh làm sạt lở đất đá rơi xuống và tổ chức liên lạc với nạn nhân.",
+        "D. Đậy kín hoàn toàn nắp miệng giếng hoặc miệng hầm lại để giữ ấm cho người bị nạn trong suốt thời gian chờ lắp đặt giá ba chân."
+      ]
+    },
+    {
+      "ID": "CNCHSD018",
+      "cauHoi": "Theo nguyên tắc an toàn trong công tác cứu nạn, cứu hộ sập đổ nhà, công trình xây dựng, việc sử dụng các phương tiện cơ giới hạng nặng (cẩu, máy xúc, máy ủi) phải tuân thủ quy định nào?",
+      "luaChon": [
+        "A. Được phép cho máy xúc múc thẳng vào bất kỳ vị trí nào của đống đổ nát ngay khi vừa đến hiện trường mà không cần dò tìm nạn nhân.",
+        "B. Cho phép các xe tải ben hạng nặng chạy trực tiếp lên trên bề mặt các tấm sàn bê tông bị sập để rút ngắn quãng đường vận chuyển gạch vỡ.",
+        "C. Chỉ sử dụng máy cơ giới hạng nặng vào ban đêm khi đã tắt hết hệ thống đèn chiếu sáng hiện trường để tránh làm chói mắt người lái máy.",
+        "D. Không tự ý dùng máy cơ giới đào bới trực tiếp lên khu vực nghi có người còn sống khi chưa xác định rõ vị trí nạn nhân và chưa chèn chống."
+      ]
+    },
+    {
+      "ID": "CNCHSD019",
+      "cauHoi": "Tại hiện trường sập đổ nhà, công trình, người chỉ huy cứu nạn, cứu hộ phải thiết lập ngay cơ chế giám sát an toàn nào để bảo vệ lực lượng đang làm việc trong vùng nguy hiểm?",
+      "luaChon": [
+        "A. Cử cán bộ an toàn theo dõi liên tục sự dịch chuyển của kết cấu công trình và quy định rõ tín hiệu cảnh báo rút quân khẩn cấp.",
+        "B. Thu hồi toàn bộ bộ đàm liên lạc của các tổ cứu nạn đang chui trong hốc sập để tránh sóng vô tuyến làm nhiễu thiết bị dò tìm âm thanh.",
+        "C. Khóa tất cả các lối ra vào khu vực đống đổ nát từ bên ngoài cho đến khi các tổ cứu nạn đưa được toàn bộ nạn nhân ra khỏi hiện trường.",
+        "D. Yêu cầu các chiến sĩ tháo bỏ mũ bảo hộ và găng tay bảo hộ khi chui vào các khoảng trống hẹp để di chuyển cơ thể được nhẹ nhàng hơn."
+      ]
+    },
+    {
+      "ID": "CTCCTG020",
+      "cauHoi": "Khi đám cháy mới phát sinh tại cơ sở tôn giáo, tín ngưỡng (chùa, đền, đình, nhà thờ), người đứng đầu cơ sở và lực lượng tại chỗ cần thực hiện ngay những nhiệm vụ nào?",
+      "luaChon": [
+        "A. Đóng kín tất cả các cửa gỗ của khu vực chánh điện và giữ nguyên hệ thống điện chiếu sáng bên trong để người dân tiếp tục hành lễ.",
+        "B. Báo động cháy, hướng dẫn khách hành hương thoát nạn, cắt điện khu vực cháy, dùng phương tiện tại chỗ chữa cháy và di chuyển cổ vật quý.",
+        "C. Tập trung toàn bộ đồ thờ cúng bằng gỗ, vải, giấy, vàng mã gom vào giữa gian chính điện để tạo thành đê chắn ngăn ngọn lửa lan rộng.",
+        "D. Chờ lực lượng Cảnh sát PCCC và CNCH đến mới được phép mở cổng chùa và tuyệt đối không được sử dụng bình chữa cháy xách tay tại chỗ."
+      ]
+    }
+  ],
+  "tuLuan": [
+    {
+      "ID": "TL001",
+      "cauHoi": "Đồng chí hãy trình bày nguyên tắc tổ chức chữa cháy và nội dung trinh sát đám cháy đối với kho, bể chứa xăng dầu?",
+      "thangDiem": 2.0,
+      "ghiChu": "Thí sinh trình bày đầy đủ các ý chính theo quy chuẩn chiến thuật PCCC & CNCH."
+    },
+    {
+      "ID": "TL002",
+      "cauHoi": "Đồng chí hãy trình bày các phương pháp và biện pháp kỹ thuật chữa cháy rừng trực tiếp và gián tiếp?",
+      "thangDiem": 2.0,
+      "ghiChu": "Thí sinh trình bày đầy đủ các ý chính theo quy chuẩn chiến thuật PCCC & CNCH."
+    }
+  ]
+}

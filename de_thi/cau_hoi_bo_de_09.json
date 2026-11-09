@@ -1,0 +1,223 @@
+{
+  "maDe": "DE09",
+  "tenDe": "Bộ đề kiểm tra số 09 - Chiến thuật Chữa cháy và Cứu nạn, cứu hộ",
+  "thoiGianLamBaiPhut": 30,
+  "soCauTracNghiem": 20,
+  "soCauTuLuan": 2,
+  "tracNghiem": [
+    {
+      "ID": "CTCCXD001",
+      "cauHoi": "Khi xử lý đám cháy xảy ra tại xe bồn trong quá trình nhập xăng dầu ở cửa hàng kinh doanh xăng dầu, sau khi đã dập tắt đám cháy trên sàn và thành xitéc ở giai đoạn 1 thì sang giai đoạn 2 cần thực hiện như thế nào?",
+      "luaChon": [
+        "A. Ngừng ngay việc phun nước làm mát vỏ xitéc và lập tức cho xe bồn nổ máy di chuyển ra đường giao thông",
+        "B. Dùng lăng phun tia nước đặc bắn thẳng qua miệng nắp xitéc để đẩy toàn bộ xăng dầu còn lại tràn ra sàn",
+        "C. Mở toàn bộ các van xả đáy của xe xitéc cho xăng dầu chảy tự do ra hệ thống thoát nước chung của khu dân cư",
+        "D. Tập trung lực lượng, phương tiện dập tắt đám cháy trên nắp xitéc và tiếp tục làm mát đến khi xitéc nguội hoàn toàn"
+      ]
+    },
+    {
+      "ID": "CTCCGO002",
+      "cauHoi": "Trong quá trình chữa cháy tại cơ sở gia công, chế biến gỗ, khi xử lý đám cháy ở khoang chứa dăm gỗ, mùn cưa và băng tải vận chuyển dăm gỗ thì lực lượng chữa cháy phải thực hiện kỹ thuật nào?",
+      "luaChon": [
+        "A. Chỉ phun bọt độ nở cao vào mặt ngoài vỏ khoang chứa và tuyệt đối không mở nắp khoang hay phun nước vào băng tải",
+        "B. Phun nước làm mát kết hợp dùng cào mở nắp khoang để dập lửa, còn với băng tải phải phun nước cả mặt trên và từ dưới lên",
+        "C. Dùng quạt thổi công suất lớn thổi trực tiếp vào khoang chứa dăm gỗ để đẩy toàn bộ mùn cưa đang cháy bay ra ngoài xưởng",
+        "D. Chỉ dùng bình chữa cháy khí CO2 phun vào mặt dưới của băng tải và giữ nguyên lớp mùn cưa âm ỉ bên trong khoang chứa"
+      ]
+    },
+    {
+      "ID": "CTCCOT003",
+      "cauHoi": "Khi tổ chức chữa cháy xe ô tô xi téc chở xăng dầu, để thoát lượng nước chữa cháy chảy tràn trên mặt sàn mà vẫn giữ lại được lớp xăng dầu và bọt chữa cháy bên trong đê bao thì phải xử lý kỹ thuật thế nào?",
+      "luaChon": [
+        "A. Phá vỡ hoàn toàn một đoạn đê bao bằng cát ở phía cuối chiều gió để toàn bộ hỗn hợp chảy tự do ra ngoài",
+        "B. Dùng máy bơm hút trực tiếp từ lớp bọt trên mặt thoáng của đê bao rồi bơm xả thẳng vào miệng nắp của xi téc",
+        "C. Đặt các ống thoát nước sát mặt sàn trên thân đê bao để lợi dụng sự chênh lệch tỷ trọng giữ lại xăng dầu và bọt",
+        "D. Dùng lăng phun tia nước đặc áp lực cao thổi bạt lớp bọt và xăng dầu tràn qua đỉnh đê bao ra khu vực đất trống"
+      ]
+    },
+    {
+      "ID": "CTCCOT004",
+      "cauHoi": "Trong quá trình dập tắt đám cháy xe ô tô xi téc chở xăng dầu, khi xuất hiện các đốm lửa nhỏ còn sót lại xen giữa các đám bọt trên sàn thì lực lượng chữa cháy phải xử lý như thế nào?",
+      "luaChon": [
+        "A. Dùng các bình bột chữa cháy để dập tắt hoàn toàn các đốm lửa nhỏ, tránh phun tia nước áp lực cao làm phá hủy lớp bọt",
+        "B. Dùng lăng giá phun tia nước đặc áp lực cao quét thẳng vào khu vực có đốm lửa để đẩy dạt toàn bộ lớp bọt ra ngoài",
+        "C. Dùng cành cây tươi hoặc xẻng sắt đập mạnh liên tục lên bề mặt lớp bọt đang phủ trên sàn xăng dầu để dập đốm lửa",
+        "D. Mở van xả xăng dầu từ trong bồn chứa chảy tràn thêm ra mặt sàn nhằm làm ngập các đốm lửa nhỏ xen giữa đám bọt"
+      ]
+    },
+    {
+      "ID": "CTCCKB005",
+      "cauHoi": "Khi tổ chức chữa cháy kho, bể chứa xăng dầu, nếu lực lượng và phương tiện tại hiện trường chưa đủ để dập tắt một bể đang cháy theo tính toán thì chỉ huy chữa cháy phải xử lý như thế nào?",
+      "luaChon": [
+        "A. Cho phun ngay từng đợt bọt nhỏ lẻ vào trong bể đang cháy và ngừng hoàn toàn việc phun nước làm mát các bể lân cận",
+        "B. Tập trung chữa cháy xung quanh và làm lạnh bể cháy, bể kế cận; chỉ khi đủ lực lượng và chất tạo bọt mới phun bọt tấn công",
+        "C. Rút toàn bộ lực lượng và phương tiện ra khỏi khu vực kho xăng dầu và chờ cho đến khi bể chứa tự cháy hết hoàn toàn",
+        "D. Dùng lăng phun tia nước đặc bắn thẳng vào trong lòng bể chứa xăng đang cháy để làm đầy tràn bể chứa ra ngoài đê"
+      ]
+    },
+    {
+      "ID": "CTCCKB006",
+      "cauHoi": "Trong các phương pháp dập tắt đám cháy bể chứa xăng dầu, phương pháp làm lạnh bằng phun mưa trùm toàn bộ bề mặt cháy của chất lỏng được áp dụng cho đối tượng nào?",
+      "luaChon": [
+        "A. Áp dụng cho tất cả các bể chứa xăng máy bay hoặc các chất lỏng nhẹ dễ bay hơi có nhiệt độ chớp cháy rất thấp",
+        "B. Áp dụng riêng cho việc làm nguội các đường ống dẫn khí gas hóa lỏng đặt ngầm bên dưới nền đất của kho chứa",
+        "C. Áp dụng khi bể chứa xăng đang xảy ra hiện tượng sôi trào mãnh liệt để dập tắt ngay cột lửa bốc cao trên đỉnh bể",
+        "D. Chỉ áp dụng chữa các bể chứa dầu nặng bằng cách phun những dòng tia hạt nước trùm toàn bộ bề mặt cháy của chất lỏng"
+      ]
+    },
+    {
+      "ID": "CTCCNCT007",
+      "cauHoi": "Khi vận hành hệ thống chống tụ khói trong quá trình chữa cháy và cứu nạn tại nhà cao tầng, siêu cao tầng, việc mở các cửa hút khói ở các tầng được quy định nghiêm ngặt như thế nào?",
+      "luaChon": [
+        "A. Chỉ phát huy hiệu quả khi mở cửa hút khói ở nhiều nhất là hai tầng, nghiêm cấm mở đồng thời trên ba tầng trở lên",
+        "B. Phải mở đồng loạt tất cả các cửa hút khói ở mọi tầng trong tòa nhà từ tầng hầm lên đến tầng mái cùng một lúc",
+        "C. Chỉ được mở cửa hút khói ở các tầng hầm bên dưới mặt đất và đóng kín hoàn toàn cửa hút khói ở tầng đang cháy",
+        "D. Phải dùng dụng cụ phá dỡ đập vỡ toàn bộ vách ngăn của giếng hút khói ở tất cả các tầng không có cháy để thông gió"
+      ]
+    },
+    {
+      "ID": "CTCCNCT008",
+      "cauHoi": "Khi tổ chức dập tắt đám cháy xảy ra tại khu vực để xe ô tô, xe máy trong tầng hầm của nhà cao tầng, trình tự sử dụng chất chữa cháy được thực hiện như thế nào?",
+      "luaChon": [
+        "A. Phun tia nước đặc trực tiếp vào bình xăng của các xe đang cháy trước rồi mới đóng kín toàn bộ các cửa thoát khói",
+        "B. Chỉ phun nước làm mát trần bê tông của tầng một phía trên mà không triển khai lực lượng xuống khu vực tầng hầm",
+        "C. Phun chất chữa cháy bột, bọt để dập tắt đám cháy xăng, dầu chảy loang trên sàn trước, sau đó mới loại trừ lửa trên xe",
+        "D. Dùng xe kéo chuyên dụng kéo từng chiếc xe đang bốc cháy lên các tầng lầu phía trên rồi mới bắt đầu phun nước dập lửa"
+      ]
+    },
+    {
+      "ID": "CNCHDN009",
+      "cauHoi": "Trong quá trình lặn cứu nạn, cứu hộ dưới nước sâu tại sông, hồ, nguyên nhân nào dẫn đến nguy cơ chiến sĩ lặn bị ngộ độc khí mônôxít cácbon (CO) từ bình khí lặn?",
+      "luaChon": [
+        "A. Do chiến sĩ lặn sử dụng hỗn hợp khí heli pha loãng với oxy khi lặn ở các vùng nước nông gần sát bờ sông",
+        "B. Do chiến sĩ lặn ngoi lên mặt nước quá chậm và hít thở không khí tự nhiên trên mặt thuyền cứu hộ quá lâu",
+        "C. Do nhiệt độ nước ở dưới đáy sông quá lạnh làm đóng băng hoàn toàn van thở ra của mặt nạ lặn chuyên dụng",
+        "D. Do đặt van nạp khí nén quá gần ống thoát khí thải động cơ hoặc do dầu bôi trơn trong máy nén khí quá nóng bùng cháy"
+      ]
+    },
+    {
+      "ID": "CTCCCR010",
+      "cauHoi": "Trong chiến thuật chữa cháy rừng bằng phương pháp gián tiếp, biện pháp đào rãnh ngăn cháy ngầm dưới đất được thực hiện với yêu cầu kỹ thuật như thế nào?",
+      "luaChon": [
+        "A. Chỉ cào nhẹ lớp lá khô trên mặt đất mà không đào qua lớp than bùn và chất thêm cành cây khô xuống lòng rãnh",
+        "B. Độ sâu của rãnh phải vượt quá lớp than bùn sát tới tầng đất mặt, không làm sụt lở rãnh và có thể bơm nước ngập rãnh",
+        "C. Đào các rãnh nông nằm dọc theo đúng hướng gió thổi để dẫn ngọn lửa cháy ngầm lan nhanh hơn về phía rừng già",
+        "D. Chỉ đào rãnh ở trên đỉnh các ngọn cây cao và dùng bạt nhựa dễ cháy trải phủ kín toàn bộ bề mặt của rãnh đào"
+      ]
+    },
+    {
+      "ID": "CTCCCR011",
+      "cauHoi": "Khi áp dụng biện pháp đốt chặn (dùng lửa diệt lửa) trong phương pháp chữa cháy rừng gián tiếp, kỹ thuật đốt được tiến hành như thế nào để thu hẹp diện tích cháy có kiểm soát?",
+      "luaChon": [
+        "A. Dựa vào địa hình tự nhiên hoặc băng trắng, phát dọn cây cỏ đẩy về hướng đám cháy rồi đốt thành vệt dài cháy ngược về đám cháy",
+        "B. Đốt đồng loạt ở phía sau lưng lực lượng chữa cháy theo chiều gió thổi mạnh để ngọn lửa tự lan rộng ra các khu rừng lân cận",
+        "C. Gom toàn bộ cành cây tươi chất thành đống cao ngay tại chính giữa tâm đám cháy lớn rồi đổ xăng đốt bùng lên cao",
+        "D. Chỉ thực hiện đốt chặn ở trên tán lá của những cây gỗ cao nhất vào thời điểm gió đổi hướng liên tục và không phát dọn băng"
+      ]
+    },
+    {
+      "ID": "CTCCNLK012",
+      "cauHoi": "Khi tổ chức chữa cháy nhà liên kế trong điều kiện thiếu nước, nếu huy động nhân dân dùng thùng, xô, chậu múc nước đổ vào két nước xe chữa cháy thì phải lưu ý kỹ thuật gì?",
+      "luaChon": [
+        "A. Phải tháo bỏ hoàn toàn lưới lọc trên miệng két nước để đổ cả bùn đất, sỏi đá và củi khô vào nhằm tăng áp lực bơm",
+        "B. Phải đổ nước trực tiếp vào ống xả khí thải và bình nhiên liệu của xe chữa cháy để làm mát động cơ trong khi bơm",
+        "C. Phải đổ nước vào két nước xe chữa cháy qua lưới bảo vệ trên miệng két đề phòng đất, đá, rác làm hư hỏng máy bơm",
+        "D. Phải tắt máy bơm và dừng hoàn toàn việc phun nước ở tất cả các lăng mỗi khi người dân xách xô nước lại gần xe"
+      ]
+    },
+    {
+      "ID": "CTCCNLK013",
+      "cauHoi": "Khi chữa cháy nhà liên kế trong điều kiện thiếu nước mà áp suất trong đường ống dẫn nước của các trụ nước chữa cháy thành phố quá nhỏ thì lực lượng chữa cháy xử lý thế nào?",
+      "luaChon": [
+        "A. Dùng búa tạ đập vỡ thân trụ nước chữa cháy để nước tự chảy tràn ra mặt đường rồi dùng xẻng hất nước vào đám cháy",
+        "B. Lắp đường vòi vào các họng nước của trụ nước chữa cháy và dùng máy bơm hút trực tiếp từ họng nước của trụ nước lên",
+        "C. Bơm ngược chất tạo bọt từ xe chữa cháy vào bên trong đường ống cấp nước sinh hoạt của thành phố để tăng áp suất",
+        "D. Bỏ qua hoàn toàn hệ thống trụ nước chữa cháy và rút toàn bộ xe chữa cháy về đơn vị chờ khi nào áp suất nước tự tăng"
+      ]
+    },
+    {
+      "ID": "CTCCNLK014",
+      "cauHoi": "Khi tổ chức chữa cháy nhà liên kế tỏa ra nhiều khói, khí độc, sau khi đã áp dụng các biện pháp mở cửa, phá tường hoặc dùng máy hút khói để thoát khói thì cần kết hợp biện pháp nào giúp chiến sĩ dễ quan sát đám cháy?",
+      "luaChon": [
+        "A. Kết hợp dùng lăng giá công suất lớn phun bọt độ nở cao che phủ kín toàn bộ lối đi và cầu thang bộ trong nhà",
+        "B. Kết hợp đóng kín lại toàn bộ cửa sổ, cửa tầng tum và tắt hết các đèn chiếu sáng chuyên dụng của lực lượng chữa cháy",
+        "C. Kết hợp phun bột chữa cháy khô vào mặt các chiến sĩ đang làm nhiệm vụ để hạn chế tác động của bức xạ nhiệt",
+        "D. Kết hợp dùng lăng hương sen phun nước để làm lắng khói, tạo điều kiện cho chiến sĩ chữa cháy dễ dàng quan sát đám cháy"
+      ]
+    },
+    {
+      "ID": "CNCHTC015",
+      "cauHoi": "Khi tổ chức cứu người bị nạn mắc kẹt trên các tầng cao vượt quá tầm vươn cao nhất của xe thang trong đám cháy nhà cao tầng, lực lượng chữa cháy và CNCH có thể phối hợp triển khai kỹ thuật nào?",
+      "luaChon": [
+        "A. Đưa xe thang lên độ cao cao nhất có thể, sau đó chiến sĩ mang thang móc di chuyển tiếp từ đỉnh xe thang lên các tầng cao hơn",
+        "B. Kê các thùng gỗ rỗng dưới bánh xe thang để nâng gầm xe thang lên cao thêm rồi vươn cần thang vượt quá giới hạn an toàn",
+        "C. Yêu cầu người bị nạn từ các tầng trên cùng tự nhảy tự do xuống đầu cần của xe thang đang dừng ở các tầng phía dưới",
+        "D. Dùng dây thừng nối buộc thêm các đoạn ống nước bằng nhựa vào đầu xe thang để người bị nạn bám vào tụt xuống đất"
+      ]
+    },
+    {
+      "ID": "CNCHDS016",
+      "cauHoi": "Khi tổ chức cứu nạn, cứu hộ người mắc kẹt dưới hố sâu, giếng sâu có phát sinh khí độc hại, lực lượng CNCH cần áp dụng các biện pháp an toàn chống ngạt khí nào sau đây?",
+      "luaChon": [
+        "A. Đốt lửa dưới đáy giếng để tiêu thụ hết lượng khí độc hoặc đậy kín miệng giếng lại trước khi cử chiến sĩ xuống cứu",
+        "B. Bơm đầy nước ngập kín toàn bộ chiều sâu của giếng để đẩy khí độc trào lên miệng giếng rồi mới thả dây cứu nạn",
+        "C. Kiểm tra nồng độ oxy, khí độc và tiến hành thông gió cấp khí sạch, dùng máy hút khí độc hoặc thả bình khí xuống làm giảm khí độc",
+        "D. Cho cán bộ chiến sĩ nín thở tự leo xuống đáy giếng sâu mà không cần kiểm tra nồng độ khí hay mang thiết bị bảo hộ hô hấp"
+      ]
+    },
+    {
+      "ID": "CNCHSD017",
+      "cauHoi": "Khi sử dụng chó nghiệp vụ để tìm kiếm người bị nạn đang bị chôn vùi tại hiện trường sập đổ nhà, công trình, đội hình tìm kiếm và chế độ làm việc của chó nghiệp vụ phải tuân thủ quy định nào?",
+      "luaChon": [
+        "A. Bố trí chó đi xuôi theo chiều gió thổi và ưu tiên đưa chó vào sâu trong vùng có nhiều khói đặc, khí độc hại để tìm kiếm",
+        "B. Bố trí đi ngược chiều gió theo tuyến hành lang con thoi hoặc xoáy trôn ốc, cho nghỉ định kỳ và tuyệt đối không làm việc nơi có khói, khí độc",
+        "C. Bắt buộc chó nghiệp vụ phải làm việc liên tục nhiều giờ liền không nghỉ trên các cấu kiện sắc nhọn đang sập đổ thứ cấp",
+        "D. Chỉ sử dụng chó nghiệp vụ sau khi toàn bộ đống đổ nát đã được máy xúc san phẳng hoàn toàn và phun đầy hóa chất khử trùng"
+      ]
+    },
+    {
+      "ID": "CNCHSD018",
+      "cauHoi": "Khi giải cứu nạn nhân bị cấu kiện xây dựng nặng sập đổ đè lên phần thân thể (tay, chân), trước khi tiến hành nâng cấu kiện để đưa nạn nhân ra ngoài thì lực lượng CNCH phải thực hiện thao tác y tế bắt buộc nào?",
+      "luaChon": [
+        "A. Phải tháo bỏ toàn bộ quần áo của nạn nhân và dội nước đá lạnh trực tiếp lên phần chi thể đang bị cấu kiện bê tông đè ép",
+        "B. Phải yêu cầu nạn nhân tự cử động mạnh phần chân tay đang bị đè ép để kiểm tra độ cứng của khối bê tông trước khi nâng",
+        "C. Phải dùng chăn dày ủ ấm thật kín phần chân tay sau khi đặt garo và giữ nguyên garo không được nới ra trong suốt quá trình chuyển viện",
+        "D. Phải tiến hành đặt garo trên phần thân thể sát trên chỗ bị chèn ép trước khi nâng cấu kiện để đề phòng hội chứng vùi lấp"
+      ]
+    },
+    {
+      "ID": "CNCHSD019",
+      "cauHoi": "Khi di chuyển nạn nhân có dấu hiệu hoặc bị chấn thương cổ, cột sống, gãy xương đùi ra khỏi khoảng không gian hẹp tại hiện trường sập đổ công trình, lực lượng CNCH phải thực hiện như thế nào?",
+      "luaChon": [
+        "A. Dùng một chiến sĩ xốc vác nạn nhân lên vai rồi chạy nhanh qua các đống gạch vỡ để sớm đưa nạn nhân ra xe cứu thương",
+        "B. Đặt nạn nhân nằm co gập người trên võng vải mềm và khiêng lắc ngang qua các khe hẹp mà không cần cố định cổ",
+        "C. Cố định cổ, cột sống cho nạn nhân, di chuyển thận trọng theo phương dọc trên cáng cứng hoặc cáng chuyên dụng để hạn chế tác động",
+        "D. Nắm hai tay của nạn nhân kéo trượt trực tiếp trên nền bê tông gồ ghề từ trong khoảng không gian hẹp ra đến ngoài sân"
+      ]
+    },
+    {
+      "ID": "CTCCTG020",
+      "cauHoi": "Trong quá trình tổ chức chữa cháy tại cơ sở tôn giáo, khi đám cháy đã bị khống chế cơ bản thì chỉ huy chữa cháy điều chỉnh việc sử dụng lăng phun nước như thế nào?",
+      "luaChon": [
+        "A. Cho chuyển từ lăng công suất lớn sang sử dụng các loại lăng có công suất nhỏ để tiếp tục dập tàn và loại trừ hoàn toàn sự cháy",
+        "B. Tăng gấp đôi số lượng lăng giá công suất lớn phun tia nước đặc áp lực cao vào các tượng thờ và cấu kiện gỗ cổ truyền",
+        "C. Lập tức thu hồi toàn bộ các đường vòi chữa cháy ngay khi ngọn lửa lớn vừa giảm dù bên trong cấu kiện gỗ vẫn còn cháy âm ỉ",
+        "D. Chuyển sang dùng bọt hòa không khí độ nở cao bơm ngập toàn bộ khuôn viên sân vườn và các công trình phụ trợ xung quanh"
+      ]
+    }
+  ],
+  "tuLuan": [
+    {
+      "ID": "TL001",
+      "cauHoi": "Đồng chí hãy trình bày các phương pháp làm lạnh và phương pháp cách ly bằng bọt hòa không khí để dập tắt đám cháy bể chứa xăng dầu?",
+      "thangDiem": 2.0,
+      "ghiChu": "Thí sinh trình bày đầy đủ các ý chính theo quy chuẩn chiến thuật PCCC & CNCH."
+    },
+    {
+      "ID": "TL002",
+      "cauHoi": "Đồng chí hãy trình bày biện pháp cứu nạn nhân bị chôn vùi dưới lớp cấu kiện nhẹ và nạn nhân bị cấu kiện nặng đè lên phần thân thể tại hiện trường sập đổ công trình?",
+      "thangDiem": 2.0,
+      "ghiChu": "Thí sinh trình bày đầy đủ các ý chính theo quy chuẩn chiến thuật PCCC & CNCH."
+    }
+  ]
+}

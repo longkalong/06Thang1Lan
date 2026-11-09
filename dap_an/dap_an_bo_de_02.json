@@ -1,0 +1,171 @@
+{
+  "maDe": "DE02",
+  "tenDe": "Đáp án Bộ đề kiểm tra số 02 - Chiến thuật Chữa cháy và Cứu nạn, cứu hộ",
+  "dapAnTracNghiem": [
+    {
+      "ID": "CTCCXD001",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Nằm trên các tuyến phố chính có mật độ giao thông đông khó tiếp cận vào giờ cao điểm, gần khu dân cư và người dân hiếu kỳ tập trung đông."
+    },
+    {
+      "ID": "CTCCGO002",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Nhà sản xuất thường có diện tích lớn nhưng ít có tường ngăn cháy và khoảng cách an toàn phòng cháy giữa các hạng mục không đảm bảo."
+    },
+    {
+      "ID": "CTCCOT003",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Nội thất dùng nhiều vật liệu dễ cháy như mút xốp, da, nhựa tổng hợp cùng hàng hóa đa dạng có thể gồm hóa chất, chất nổ trên xe."
+    },
+    {
+      "ID": "CTCCOT004",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Cụm van khóa được chế tạo từ kim loại có độ nóng chảy thấp hơn các bộ phận khác nên có thể bị phá hủy trước sau một thời gian chịu nhiệt."
+    },
+    {
+      "ID": "CTCCKB005",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Nhiệt độ chớp cháy càng thấp thì khả năng bay hơi càng cao, làm tăng nguy cơ tạo thành hỗn hợp nguy hiểm cháy nổ với không khí."
+    },
+    {
+      "ID": "CTCCKB006",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Ngăn ngừa chất lỏng chảy tràn lan rộng khi có sự cố vỡ hoặc tràn bể chứa, đồng thời mặt đê có thể tận dụng làm đường giao thông."
+    },
+    {
+      "ID": "CTCCNCT007",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Giếng thông tầng, buồng thang bộ không nhiễm khói khi cửa mở, giếng thang máy cùng các trục hộp kỹ thuật thông suốt qua các tầng."
+    },
+    {
+      "ID": "CTCCNCT008",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Lượng nước dự trữ tại cơ sở thường hạn chế và hệ thống bơm chữa cháy cố định có thể gặp sự cố hoặc không đủ áp lực đưa nước lên tầng cao."
+    },
+    {
+      "ID": "CNCHBT009",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Tâm lý rất hoảng loạn, la hét kêu cứu, vùng vẫy mạnh và có xu hướng vớ lấy bất cứ thứ gì xung quanh kể cả người đến cứu."
+    },
+    {
+      "ID": "CNCHDN010",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Dòng nước từ trên cao đổ xuống tạo thành các dòng xoáy cuộn mạnh, bọt nước trắng xóa làm hạn chế tầm nhìn và có nhiều đá ngầm sắc nhọn."
+    },
+    {
+      "ID": "CNCHDN011",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Không gian chật hẹp, thiếu ánh sáng, thiếu dưỡng khí, có thể tích tụ khí độc ở dưới sâu và thành giếng trơn trượt hoặc có nguy cơ sạt lở."
+    },
+    {
+      "ID": "CTCCCR012",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Là nguồn nhiên liệu chủ yếu làm cho đám cháy dễ phát sinh, lan truyền nhanh trên mặt đất và có thể cháy âm ỉ kéo dài trong lớp than bùn."
+    },
+    {
+      "ID": "CTCCNLK014",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Việc lắp đặt các khung sắt bảo vệ kiên cố (chuồng cọp) kín ban công và gắn các biển quảng cáo lớn che kín toàn bộ mặt trước ngôi nhà."
+    },
+    {
+      "ID": "CTCCNLK015",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Hàng hóa dễ cháy thường xếp đặt tại tầng trệt, gầm cầu thang và lấn chiếm lối đi, trong khi công trình chỉ có một cầu thang bộ thoát nạn duy nhất."
+    },
+    {
+      "ID": "CNCHTC016",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Thường hoảng loạn, sợ hãi, mất bình tĩnh, sức khỏe suy giảm nhanh do chấn thương hoặc kiệt sức nên dễ có hành động bột phát gây nguy hiểm."
+    },
+    {
+      "ID": "CNCHTC017",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Hóa chất có thể tồn tại ở dạng khí, hơi, lỏng hoặc rắn có tính độc, ăn mòn, dễ cháy nổ và phát tán nhanh theo hướng gió gây nguy hiểm trực tiếp."
+    },
+    {
+      "ID": "CNCHDS018",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Lối ra vào hẹp, thông gió tự nhiên kém dẫn đến thiếu hụt oxy, dễ tích tụ các loại khí độc hoặc khí dễ cháy nổ và hạn chế tầm nhìn."
+    },
+    {
+      "ID": "CNCHSD019",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Là những không gian được tạo bởi các cấu kiện sập đổ tựa vào nhau, nơi người bị nạn có khả năng còn sống sót và đang bị mắc kẹt bên trong."
+    },
+    {
+      "ID": "CNCHSD013",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Các tấm sàn bê tông sập đè sát chồng lên nhau làm không gian sống sót rất hẹp, đòi hỏi phải đục cắt xuyên sàn và chống đỡ phức tạp."
+    },
+    {
+      "ID": "CTCCTG020",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Kết cấu chủ yếu bằng gỗ lâu năm khô kiệt dễ bắt lửa, bố trí nhiều đồ thờ cúng dễ cháy như hương, nến, vàng mã, vải, giấy và tập trung đông người."
+    }
+  ],
+  "dapAnTuLuan": [
+    {
+      "ID": "TL001",
+      "cauHoi": "Đồng chí hãy trình bày nội dung công tác tổ chức trinh sát đám cháy tại kho, bãi chứa gỗ và phân xưởng sản xuất của cơ sở chế biến gỗ?",
+      "tuKhoa": [
+        "Tổ trinh sát ít nhất 03 người",
+        "cán bộ chuyên môn cơ sở tham gia",
+        "bố trí nhiều tổ nhiều hướng",
+        "số người bị nạn",
+        "vị trí số lượng người bị kẹt",
+        "lối đường thoát nạn",
+        "cầu thang ban công cửa sổ",
+        "hướng tấn công tiếp cận",
+        "tình hình diễn biến đám cháy",
+        "vị trí diện tích đám cháy",
+        "khả năng tốc độ hướng cháy lan",
+        "nguy cơ sụp đổ công trình",
+        "khả năng nổ thiết bị",
+        "hệ thống thông gió hút bụi",
+        "hệ thống điện sản xuất",
+        "giao thông nguồn nước phương tiện tại chỗ"
+      ]
+    },
+    {
+      "ID": "TL002",
+      "cauHoi": "Đồng chí hãy trình bày các bước và biện pháp triển khai hoạt động cứu người bị nạn trong tai nạn đuối nước tại bãi tắm ở khu du lịch, khu vui chơi giải trí?",
+      "tuKhoa": [
+        "xác định vị trí người bị nạn",
+        "khoanh vùng khu vực có người bị nạn",
+        "huy động phương tiện chuyên dùng",
+        "tàu xuồng ca nô mô tô nước",
+        "thiết bị lặn áo phao dây CNCH",
+        "đánh giá mức độ tình trạng nạn nhân",
+        "phương pháp tiếp cận trực tiếp",
+        "cử chiến sĩ bơi trực tiếp dìu nạn nhân",
+        "phương pháp tiếp cận gián tiếp",
+        "dùng sào ném phao tròn áo phao buộc dây",
+        "đội hình lặn CNCH phá dỡ khi mắc kẹt",
+        "loại bỏ yếu tố gây nguy hiểm",
+        "ổn định tâm lý động viên tinh thần",
+        "đưa người bị nạn ra nơi an toàn",
+        "bảo đảm an toàn cho người và phương tiện"
+      ]
+    }
+  ]
+}

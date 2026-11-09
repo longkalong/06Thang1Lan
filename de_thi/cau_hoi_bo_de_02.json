@@ -1,0 +1,223 @@
+{
+  "maDe": "DE02",
+  "tenDe": "Bộ đề kiểm tra số 02 - Chiến thuật Chữa cháy và Cứu nạn, cứu hộ",
+  "thoiGianLamBaiPhut": 30,
+  "soCauTracNghiem": 20,
+  "soCauTuLuan": 2,
+  "tracNghiem": [
+    {
+      "ID": "CTCCXD001",
+      "cauHoi": "Theo tài liệu Chiến thuật PCCC và CNCH, đặc điểm giao thông và hiện trường xung quanh cửa hàng kinh doanh xăng dầu thường gây khó khăn gì cho việc tiếp cận và triển khai chữa cháy?",
+      "luaChon": [
+        "A. Nằm trên các tuyến phố chính có mật độ giao thông đông khó tiếp cận vào giờ cao điểm, gần khu dân cư và người dân hiếu kỳ tập trung đông.",
+        "B. Luôn nằm sâu trong các ngõ cụt dưới 2 mét khiến xe chữa cháy không thể đi vào, xung quanh cách biệt hoàn toàn khu dân cư.",
+        "C. Được bao bọc hoàn toàn bởi hệ thống tường rào kiên cố cao trên 5 mét, không có cổng ra vào cho các phương tiện cơ giới.",
+        "D. Mặt bằng xung quanh thường xuyên bị lún nứt nghiêm trọng làm tê liệt hoàn toàn hệ thống bánh lốp của các phương tiện chữa cháy."
+      ]
+    },
+    {
+      "ID": "CTCCGO002",
+      "cauHoi": "Tại cơ sở chế biến gỗ, đặc điểm kiến trúc xây dựng của các phân xưởng sản xuất thường có tính chất nào làm cho đám cháy dễ lan truyền nhanh chóng trên diện tích lớn?",
+      "luaChon": [
+        "A. Phân xưởng được chia thành nhiều phòng nhỏ khép kín bằng vách thạch cao và không bố trí hệ thống cửa sổ thoát khói tự nhiên.",
+        "B. Nhà sản xuất thường có diện tích lớn nhưng ít có tường ngăn cháy và khoảng cách an toàn phòng cháy giữa các hạng mục không đảm bảo.",
+        "C. Toàn bộ kết cấu chịu lực của nhà xưởng được xây dựng bằng gỗ tự nhiên nguyên khối và phủ sơn chống thấm có gốc dung môi hữu cơ.",
+        "D. Hệ thống mái nhà xưởng luôn sử dụng tấm lợp nhựa tổng hợp kết hợp trần xốp cách nhiệt dễ bắt lửa và nhỏ giọt nhựa nóng chảy."
+      ]
+    },
+    {
+      "ID": "CTCCOT003",
+      "cauHoi": "Khi đánh giá đặc điểm nguy hiểm cháy của xe ô tô chở khách và chở hàng hóa, ngoài nhiên liệu xăng dầu và hệ thống điện trên xe, yếu tố chất cháy nào sau đây làm tăng mức độ phức tạp của đám cháy?",
+      "luaChon": [
+        "A. Vỏ xe được chế tạo hoàn toàn bằng hợp kim nhôm magie dễ bắt lửa và tự bốc cháy dữ dội khi tiếp xúc với tia nước chữa cháy.",
+        "B. Hệ thống làm mát động cơ sử dụng các loại dung dịch hóa học có khả năng tự phân hủy sinh ra khí dễ nổ khi xe phanh gấp trên đường.",
+        "C. Nội thất dùng nhiều vật liệu dễ cháy như mút xốp, da, nhựa tổng hợp cùng hàng hóa đa dạng có thể gồm hóa chất, chất nổ trên xe.",
+        "D. Toàn bộ sàn xe và vách ngăn khoang hành khách được lót bằng tấm sợi thủy tinh ngậm dầu nhờn để giảm tiếng ồn khi phương tiện di chuyển."
+      ]
+    },
+    {
+      "ID": "CTCCOT004",
+      "cauHoi": "Trên xe ô tô xi téc chở xăng dầu, cụm van khóa tại họng xả có đặc điểm cấu tạo vật liệu như thế nào dẫn đến nguy cơ xăng dầu chảy tràn khỏi xi téc khi chịu tác động nhiệt của đám cháy?",
+      "luaChon": [
+        "A. Cụm van khóa sử dụng gioăng cao su tổng hợp tự tiêu hủy ngay lập tức khi có khói nóng bao trùm khu vực gầm của phương tiện.",
+        "B. Cụm van khóa được thiết kế cơ cấu tự động mở xả áp hoàn toàn khi nhiệt độ môi trường bên ngoài cabin xe tăng cao đột ngột.",
+        "C. Cụm van khóa được lắp đặt bằng ống nhựa cứng chịu lực nhưng dễ bị nứt vỡ khi có dòng nước làm mát phun trực tiếp vào thân bồn.",
+        "D. Cụm van khóa được chế tạo từ kim loại có độ nóng chảy thấp hơn các bộ phận khác nên có thể bị phá hủy trước sau một thời gian chịu nhiệt."
+      ]
+    },
+    {
+      "ID": "CTCCKB005",
+      "cauHoi": "Tại các kho, bể chứa xăng dầu, việc phân nhóm xăng dầu dựa vào nhiệt độ chớp cháy được sử dụng để xác định tính chất nguy hiểm nào trong quá trình vận hành và bảo quản?",
+      "luaChon": [
+        "A. Nhiệt độ chớp cháy càng thấp thì khả năng bay hơi càng cao, làm tăng nguy cơ tạo thành hỗn hợp nguy hiểm cháy nổ với không khí.",
+        "B. Nhiệt độ chớp cháy càng thấp thì tỷ trọng chất lỏng càng lớn, làm tăng nguy cơ lắng đọng nước tự do ở dưới đáy bể chứa xăng dầu.",
+        "C. Nhiệt độ chớp cháy càng cao thì vận tốc cháy lan trên bề mặt càng nhanh, làm giảm hiệu quả của hệ thống chữa cháy bằng bọt hòa không khí.",
+        "D. Nhiệt độ chớp cháy càng cao thì áp suất hơi bão hòa càng lớn, làm cho mái bể chứa dễ bị biến dạng cơ học ngay ở nhiệt độ bình thường."
+      ]
+    },
+    {
+      "ID": "CTCCKB006",
+      "cauHoi": "Trong các kho xăng dầu, hệ thống đê bao xung quanh các bể chứa nổi (hoặc cụm bể chứa) được xây dựng nhằm mục đích chiến thuật cơ bản nào sau đây?",
+      "luaChon": [
+        "A. Tạo hành lang che chắn gió lùa trực tiếp vào thân bể chứa và làm vị trí cố định để lắp đặt hệ thống kim thu sét bảo vệ công trình.",
+        "B. Ngăn ngừa chất lỏng chảy tràn lan rộng khi có sự cố vỡ hoặc tràn bể chứa, đồng thời mặt đê có thể tận dụng làm đường giao thông.",
+        "C. Ngăn cách hoàn toàn bức xạ nhiệt giữa các bể chứa liền kề và thay thế cho hệ thống đường ống cung cấp nước làm mát cố định trên thành bể.",
+        "D. Thu gom toàn bộ lượng nước mưa trên mặt bằng kho để bổ sung trực tiếp vào nguồn nước dự trữ phục vụ công tác chữa cháy của đơn vị."
+      ]
+    },
+    {
+      "ID": "CTCCNCT007",
+      "cauHoi": "Đặc điểm kiến trúc bên trong các nhà cao tầng, siêu cao tầng có những bộ phận thông tầng nào tạo điều kiện thuận lợi cho khói và lửa phát triển nhanh theo phương thẳng đứng lên các tầng trên?",
+      "luaChon": [
+        "A. Hệ thống dầm sàn bê tông cốt thép dự ứng lực, các hành lang cụt ở mỗi tầng và các ban công nhô ra phía ngoài mặt tiền của tòa nhà.",
+        "B. Khu vực sảnh chính tại tầng trệt, hệ thống đường dốc dẫn xuống tầng hầm để xe và các phòng kỹ thuật trạm biến áp đặt độc lập.",
+        "C. Giếng thông tầng, buồng thang bộ không nhiễm khói khi cửa mở, giếng thang máy cùng các trục hộp kỹ thuật thông suốt qua các tầng.",
+        "D. Các vách kính bao che mặt ngoài tòa nhà, hệ thống cửa sổ lật thông gió tự nhiên và các phòng làm việc được ngăn chia bằng vách nhẹ."
+      ]
+    },
+    {
+      "ID": "CTCCNCT008",
+      "cauHoi": "Về đặc điểm nguồn nước chữa cháy tại các nhà cao tầng và siêu cao tầng, yếu tố thực tế nào thường gây bất lợi cho công tác tổ chức dập tắt đám cháy ở các tầng trên cao?",
+      "luaChon": [
+        "A. Nguồn nước dự trữ của tòa nhà chỉ được phép cấp cho hệ thống chữa cháy tự động tại tầng hầm mà không kết nối với họng nước vách tường.",
+        "B. Các bể nước mái của tòa nhà luôn chứa dung dịch hóa chất chống ăn mòn đường ống nên không thể kết hợp với chất tạo bọt chữa cháy.",
+        "C. Hệ thống họng chờ tiếp nước ngoài nhà được thiết kế van một chiều ngược khiến xe chữa cháy không thể bơm bổ sung nước vào đường ống đứng.",
+        "D. Lượng nước dự trữ tại cơ sở thường hạn chế và hệ thống bơm chữa cháy cố định có thể gặp sự cố hoặc không đủ áp lực đưa nước lên tầng cao."
+      ]
+    },
+    {
+      "ID": "CNCHBT009",
+      "cauHoi": "Trong sự cố tai nạn đuối nước tại bãi tắm ở khu du lịch, khu vui chơi giải trí, người bị nạn khi còn tỉnh nhưng sắp chìm thường có biểu hiện tâm lý và hành động đặc trưng nào?",
+      "luaChon": [
+        "A. Tâm lý rất hoảng loạn, la hét kêu cứu, vùng vẫy mạnh và có xu hướng vớ lấy bất cứ thứ gì xung quanh kể cả người đến cứu.",
+        "B. Tâm lý hoàn toàn bình tĩnh, chủ động thả nổi cơ thể nằm ngửa trên mặt nước và bơi xuôi theo dòng chảy xa bờ để chờ xuồng cứu hộ.",
+        "C. Cơ thể lập tức rơi vào trạng thái co cứng bất động, chìm thẳng xuống đáy nước và không có bất kỳ phản ứng vùng vẫy nào trên mặt nước.",
+        "D. Chủ động lặn sâu xuống tầng nước đáy để tránh sóng đánh vào mặt và tìm cách bám chặt vào các rạn đá ngầm hoặc cọc tiêu giới hạn."
+      ]
+    },
+    {
+      "ID": "CNCHDN010",
+      "cauHoi": "Khi đánh giá đặc điểm nguy hiểm của hiện trường tai nạn đuối nước tại khu vực thác nước, yếu tố địa hình và thủy văn nào dưới chân thác gây nguy hiểm trực tiếp cho người bị nạn và lực lượng cứu nạn, cứu hộ?",
+      "luaChon": [
+        "A. Nước ở chân thác thường có độ mặn rất cao và nhiệt độ nóng bất thường làm giảm khả năng nổi tự nhiên của các trang thiết bị cứu sinh.",
+        "B. Dòng nước từ trên cao đổ xuống tạo thành các dòng xoáy cuộn mạnh, bọt nước trắng xóa làm hạn chế tầm nhìn và có nhiều đá ngầm sắc nhọn.",
+        "C. Khu vực chân thác luôn hình thành các bãi bùn lầy phẳng lặng không có dòng chảy nhưng chứa nhiều khí độc tích tụ sát trên bề mặt nước.",
+        "D. Mặt nước dưới chân thác luôn đóng băng cục bộ và xuất hiện các luồng điện tự nhiên phóng qua lại giữa các vách đá dựng đứng hai bên bờ."
+      ]
+    },
+    {
+      "ID": "CNCHDN011",
+      "cauHoi": "Tại hiện trường tai nạn đuối nước ở các giếng khơi hoặc giếng đào sâu trong khu dân cư, những yếu tố nguy hiểm đặc trưng nào gây cản trở lớn nhất cho chiến sĩ trực tiếp xuống cứu người bị nạn?",
+      "luaChon": [
+        "A. Dòng nước ngầm chảy xiết cuốn trôi người bị nạn sang các hang động ngầm lân cận và làm đứt dây cứu nạn triển khai từ trên miệng giếng.",
+        "B. Sóng nước dâng cao liên tục trong lòng giếng kết hợp với ánh sáng mặt trời chiếu thẳng xuống đáy làm chói mắt lực lượng trinh sát.",
+        "C. Không gian chật hẹp, thiếu ánh sáng, thiếu dưỡng khí, có thể tích tụ khí độc ở dưới sâu và thành giếng trơn trượt hoặc có nguy cơ sạt lở.",
+        "D. Nhiệt độ nước trong giếng luôn ở mức sôi cao do địa nhiệt và có nhiều phương tiện thủy qua lại gây va chạm với thiết bị cứu nạn."
+      ]
+    },
+    {
+      "ID": "CTCCCR012",
+      "cauHoi": "Trong chiến thuật chữa cháy rừng, đặc điểm của lớp vật liệu cháy dưới tán rừng (cành khô, lá rụng, cỏ khô, lớp thảm mục) có ảnh hưởng như thế nào đến sự hình thành và phát triển của đám cháy?",
+      "luaChon": [
+        "A. Chỉ có khả năng bắt cháy khi bị sét đánh trực tiếp và luôn tự tắt ngay sau khi ngọn lửa đi qua mà không để lại than hồng âm ỉ.",
+        "B. Luôn giữ độ ẩm bão hòa quanh năm nên đóng vai trò là lớp cách nhiệt tự nhiên ngăn cản ngọn lửa lan từ mặt đất lên tán cây rừng.",
+        "C. Khi cháy chỉ tạo ra khói trắng nhẹ bay lên cao mà không làm tăng nhiệt độ môi trường xung quanh hay ảnh hưởng đến bộ rễ của cây rừng.",
+        "D. Là nguồn nhiên liệu chủ yếu làm cho đám cháy dễ phát sinh, lan truyền nhanh trên mặt đất và có thể cháy âm ỉ kéo dài trong lớp than bùn."
+      ]
+    },
+    {
+      "ID": "CTCCNLK014",
+      "cauHoi": "Tại các khu vực nhà liên kế (nhà ở kết hợp sản xuất, kinh doanh), đặc điểm cải tạo và lắp đặt thêm kết cấu nào ở mặt tiền công trình gây cản trở nghiêm trọng cho việc thoát nạn và tiếp cận cứu người từ bên ngoài?",
+      "luaChon": [
+        "A. Việc lắp đặt các khung sắt bảo vệ kiên cố (chuồng cọp) kín ban công và gắn các biển quảng cáo lớn che kín toàn bộ mặt trước ngôi nhà.",
+        "B. Việc sử dụng cửa cuốn tự động có tích hợp bộ lưu điện dự phòng và mở rộng thêm nhiều cửa sổ lật bằng kính cường lực ở các tầng lầu.",
+        "C. Việc xây dựng thêm các bậc tam cấp thấp trước cửa chính và lắp đặt hệ thống mái hiên di động bằng vải bạt ở khu vực tầng một.",
+        "D. Việc bố trí các giếng trời thông gió ở khu vực giữa nhà và lắp đặt cầu thang sắt lộ thiên dẫn trực tiếp từ sân thượng xuống mặt ngõ."
+      ]
+    },
+    {
+      "ID": "CTCCNLK015",
+      "cauHoi": "Đặc điểm bố trí mặt bằng và sắp xếp hàng hóa bên trong nhà ở kết hợp kinh doanh (nhà ống liên kế) thường có hạn chế nào làm tăng nguy cơ thiệt hại về người khi xảy ra cháy vào ban đêm?",
+      "luaChon": [
+        "A. Hàng hóa chỉ được tập kết ở trên sân thượng có mái che trống trải nên khi cháy ngọn lửa nhanh chóng bốc cao lên không trung.",
+        "B. Hàng hóa dễ cháy thường xếp đặt tại tầng trệt, gầm cầu thang và lấn chiếm lối đi, trong khi công trình chỉ có một cầu thang bộ thoát nạn duy nhất.",
+        "C. Khu vực kinh doanh được ngăn cách với khu vực để ở bằng tường chống cháy đặc khít làm người trong nhà không nghe thấy tiếng chuông báo cháy.",
+        "D. Hệ thống cầu thang bộ thoát nạn được thiết kế tách biệt hoàn toàn ở bên ngoài nhà nhưng thường xuyên bị khóa cửa ở tầng trên cùng."
+      ]
+    },
+    {
+      "ID": "CNCHTC016",
+      "cauHoi": "Trong công tác cứu nạn, cứu hộ trên cao, người bị nạn đang mắc kẹt ở vị trí chênh vênh trên các kết cấu cao thường rơi vào trạng thái tâm lý và thể chất như thế nào?",
+      "luaChon": [
+        "A. Tinh thần hoàn toàn hưng phấn, thể lực dồi dào và có thể tự mình di chuyển linh hoạt qua các dầm thép để nhảy xuống đệm hơi ở bất kỳ độ cao nào.",
+        "B. Không chịu bất kỳ tác động nào của thời tiết gió lạnh trên cao và luôn giữ được tư thế đứng vững chắc trong suốt nhiều giờ liền.",
+        "C. Thường hoảng loạn, sợ hãi, mất bình tĩnh, sức khỏe suy giảm nhanh do chấn thương hoặc kiệt sức nên dễ có hành động bột phát gây nguy hiểm.",
+        "D. Luôn nắm vững kỹ thuật sử dụng dây cứu nạn chuyên dụng và tự thiết lập được các điểm neo cố định an toàn trước khi lực lượng cứu hộ đến."
+      ]
+    },
+    {
+      "ID": "CNCHTC017",
+      "cauHoi": "Khi thực hiện nhiệm vụ cứu nạn, cứu hộ tại các cơ sở hoặc phương tiện có sự cố rò rỉ hóa chất độc hại, đặc điểm nguy hiểm nào của hiện trường đòi hỏi lực lượng tham gia phải đặc biệt lưu ý về trang bị bảo hộ?",
+      "luaChon": [
+        "A. Hóa chất độc hại khi rò rỉ luôn tạo thành các đám mây phát sáng rực rỡ giúp dễ dàng nhận biết ranh giới vùng nguy hiểm bằng mắt thường.",
+        "B. Tất cả các loại hóa chất độc đều nhẹ hơn không khí nên lập tức bay thẳng lên tầng khí quyển mà không tích tụ ở các khu vực trũng thấp.",
+        "C. Môi trường hóa chất chỉ gây ăn mòn các thiết bị cơ giới bằng kim loại mà không gây ảnh hưởng qua đường hô hấp hay tiếp xúc qua da.",
+        "D. Hóa chất có thể tồn tại ở dạng khí, hơi, lỏng hoặc rắn có tính độc, ăn mòn, dễ cháy nổ và phát tán nhanh theo hướng gió gây nguy hiểm trực tiếp."
+      ]
+    },
+    {
+      "ID": "CNCHDS018",
+      "cauHoi": "Đặc điểm nổi bật của các không gian hạn chế dưới sâu (như hầm ngầm, bể chứa kín, đường ống, hố sâu) gây nguy hiểm trực tiếp đến tính mạng của nạn nhân và chiến sĩ cứu nạn, cứu hộ là gì?",
+      "luaChon": [
+        "A. Lối ra vào hẹp, thông gió tự nhiên kém dẫn đến thiếu hụt oxy, dễ tích tụ các loại khí độc hoặc khí dễ cháy nổ và hạn chế tầm nhìn.",
+        "B. Luôn có luồng gió đối lưu thổi mạnh từ đáy hầm lên miệng hố làm cuốn bay các trang thiết bị chiếu sáng và thông tin liên lạc.",
+        "C. Diện tích mặt bằng dưới đáy luôn rộng lớn hơn nhiều lần so với trên mặt đất nhưng bị chia cắt bởi các dòng sông ngầm chảy xiết.",
+        "D. Nhiệt độ bên trong luôn duy trì ở mức đóng băng âm độ C làm cho các thiết bị tời nâng và giá ba chân bị giòn gãy ngay khi lắp đặt."
+      ]
+    },
+    {
+      "ID": "CNCHSD019",
+      "cauHoi": "Tại hiện trường sự cố sập đổ nhà, công trình xây dựng, việc xác định các 'khoảng trống sống sót' dưới đống đổ nát có ý nghĩa chiến thuật như thế nào đối với công tác tìm kiếm cứu nạn?",
+      "luaChon": [
+        "A. Là những khu vực dùng để tập kết toàn bộ đất đá, bê tông vụn sau khi lực lượng cứu nạn đã thực hiện cắt phá các cấu kiện bên trên.",
+        "B. Là những không gian được tạo bởi các cấu kiện sập đổ tựa vào nhau, nơi người bị nạn có khả năng còn sống sót và đang bị mắc kẹt bên trong.",
+        "C. Là những khoảng sân trống nằm hoàn toàn bên ngoài phạm vi công trình bị sập, nơi dùng để bố trí ban chỉ huy và trạm y tế cấp cứu.",
+        "D. Là những đường hầm kỹ thuật đã được gia cố kiên cố từ trước, nơi xe cơ giới hạng nặng có thể đi xuyên qua lòng đống đổ nát."
+      ]
+    },
+    {
+      "ID": "CNCHSD013",
+      "cauHoi": "Khi đánh giá đặc điểm kết cấu của công trình bị sập đổ, hiện tượng 'sập đổ dạng xếp bánh' (sập chồng các sàn lên nhau) tạo ra khó khăn đặc thù nào cho hoạt động cứu nạn, cứu hộ?",
+      "luaChon": [
+        "A. Toàn bộ công trình bị nghiêng lệch về một phía nhưng các tầng lầu vẫn giữ nguyên chiều cao thông thủy giúp chiến sĩ đi lại dễ dàng.",
+        "B. Các bức tường bao ngoài đổ văng ra xa làm lộ thiên hoàn toàn các phòng bên trong nên không cần sử dụng thiết bị dò tìm nạn nhân.",
+        "C. Các tấm sàn bê tông sập đè sát chồng lên nhau làm không gian sống sót rất hẹp, đòi hỏi phải đục cắt xuyên sàn và chống đỡ phức tạp.",
+        "D. Khung cột và dầm sàn vẫn đứng vững hoàn toàn, chỉ có phần mái ngói phía trên cùng bị trượt xuống khu vực sân trống trước tòa nhà."
+      ]
+    },
+    {
+      "ID": "CTCCTG020",
+      "cauHoi": "Tại các cơ sở tôn giáo, tín ngưỡng (chùa, đình, đền, nhà thờ), đặc điểm kiến trúc và chất cháy bên trong công trình có những yếu tố nào làm cho đám cháy phát triển nhanh và gây khó khăn cho công tác cứu chữa?",
+      "luaChon": [
+        "A. Công trình được xây dựng hoàn toàn bằng bê tông cốt thép không có cửa sổ và bên trong chỉ bố trí các vật dụng bằng đá nguyên khối.",
+        "B. Các hạng mục đều nằm độc lập giữa hồ nước rộng lớn và được trang bị hệ thống chữa cháy tự động bằng khí sạch ở tất cả các gian thờ.",
+        "C. Khu vực thờ tự luôn hạn chế người ra vào kể cả ngày lễ hội và tuyệt đối không sử dụng nguồn lửa trần hay hệ thống điện chiếu sáng.",
+        "D. Kết cấu chủ yếu bằng gỗ lâu năm khô kiệt dễ bắt lửa, bố trí nhiều đồ thờ cúng dễ cháy như hương, nến, vàng mã, vải, giấy và tập trung đông người."
+      ]
+    }
+  ],
+  "tuLuan": [
+    {
+      "ID": "TL001",
+      "cauHoi": "Đồng chí hãy trình bày nội dung công tác tổ chức trinh sát đám cháy tại kho, bãi chứa gỗ và phân xưởng sản xuất của cơ sở chế biến gỗ?",
+      "thangDiem": 2.0,
+      "ghiChu": "Thí sinh trình bày đầy đủ các ý chính theo quy chuẩn chiến thuật PCCC & CNCH."
+    },
+    {
+      "ID": "TL002",
+      "cauHoi": "Đồng chí hãy trình bày các bước và biện pháp triển khai hoạt động cứu người bị nạn trong tai nạn đuối nước tại bãi tắm ở khu du lịch, khu vui chơi giải trí?",
+      "thangDiem": 2.0,
+      "ghiChu": "Thí sinh trình bày đầy đủ các ý chính theo quy chuẩn chiến thuật PCCC & CNCH."
+    }
+  ]
+}

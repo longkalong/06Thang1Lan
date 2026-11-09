@@ -1,0 +1,172 @@
+{
+  "maDe": "DE07",
+  "tenDe": "Đáp án Bộ đề kiểm tra số 07 - Chiến thuật Chữa cháy và Cứu nạn, cứu hộ",
+  "dapAnTracNghiem": [
+    {
+      "ID": "CTCCXD001",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Huy động lực lượng sử dụng cát, đất để be bờ khoanh vùng nhằm ngăn chặn không cho xăng dầu chảy loang rộng"
+    },
+    {
+      "ID": "CTCCGO002",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Triển khai phun chất chữa cháy nhằm bảo vệ các đống gỗ đang bị đám cháy đe dọa ở lân cận và ở cuối hướng gió"
+    },
+    {
+      "ID": "CTCCGO003",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Hạn chế nguy cơ cháy lan và tạo điều kiện thuận lợi để lực lượng chữa cháy triển khai các hoạt động chiến đấu"
+    },
+    {
+      "ID": "CTCCOT004",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Tổ chức thoát khói trên thành, nóc xe, các ô cửa sổ và dùng lăng B đa tác dụng phun mưa làm mát cửa chính, cửa sổ"
+    },
+    {
+      "ID": "CTCCOT005",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Sử dụng lăng B, lăng hương sen phun nước làm mát bảo vệ khoang hàng, phương tiện lân cận và di chuyển xe ra xa bến"
+    },
+    {
+      "ID": "CTCCKB006",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Phải làm mát liên tục từ khi mới đến đám cháy, trong khi phun bọt và sau khi tắt lửa cho tới khi các bể nguội hẳn"
+    },
+    {
+      "ID": "CTCCNCT007",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Thường xuyên theo dõi, giám sát, triển khai lăng phun nước khống chế cháy, hạ thấp nhiệt độ, thoát khói, chống sụp đổ"
+    },
+    {
+      "ID": "CTCCNCT008",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Tập trung hướng tấn công chính vào tầng bị cháy trên cùng rồi lần lượt loại trừ đám cháy xuống các tầng dưới đó"
+    },
+    {
+      "ID": "CNCHBT009",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Huy động tối đa nguồn lực tiếp cận đưa người đang trong tình trạng nguy hiểm trước, hướng dẫn người tỉnh táo, biết bơi"
+    },
+    {
+      "ID": "CNCHDN010",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Động viên tinh thần, ổn định vị trí nạn nhân, bảo đảm an toàn và khi đưa ra nơi an toàn phải sơ cấp cứu ban đầu ngay"
+    },
+    {
+      "ID": "CTCCCR011",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Đào rãnh ngăn cách lớp than bùn sâu hơn lớp than bùn sát tầng đất mặt, không làm sụt lở rãnh và có thể bơm ngập nước"
+    },
+    {
+      "ID": "CTCCNLK012",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Sử dụng cửa sổ, ban công hoặc qua mái, ban công nhà lân cận kết hợp phương tiện chuyên dùng phá dỡ lồng sắt để cứu"
+    },
+    {
+      "ID": "CTCCNLK013",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Ưu tiên việc loại trừ hoặc ngăn cháy lan, bảo vệ những phần lân cận đang bị đe dọa rồi mới dập tắt đám cháy"
+    },
+    {
+      "ID": "CNCHTC014",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Triển khai đệm hơi kín đáo dưới vị trí nạn nhân có thể nhảy và khéo léo thiết lập lưới, dây ở tầng cao hơn một tầng"
+    },
+    {
+      "ID": "CNCHDS015",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Hướng dẫn tự leo có bảo hiểm nếu tỉnh và đủ sức khỏe, dìu lên thang nếu leo được, hoặc cõng qua thang nếu bất tỉnh"
+    },
+    {
+      "ID": "CNCHDS016",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Áp dụng khi hiện trường có điểm neo cố định thuận lợi và phải chọn vị trí cấu kiện chắc chắn, chịu lực tốt làm điểm neo"
+    },
+    {
+      "ID": "CNCHSD017",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Đặt garo trên phần thân thể sát trên chỗ bị chèn ép trước khi nâng cấu kiện để đề phòng hội chứng vùi lấp"
+    },
+    {
+      "ID": "CNCHSD018",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Cố định cổ, cột sống, di chuyển thận trọng theo phương dọc bằng cáng cứng hoặc cáng chuyên dụng để hạn chế tác động"
+    },
+    {
+      "ID": "CTCCTG019",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Di chuyển những tài sản lân cận đám cháy, tài sản có giá trị cao đến vị trí an toàn và không cản trở chữa cháy, CNCH"
+    },
+    {
+      "ID": "CTCCTG020",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Quyết định cho phá dỡ tường ngăn, công trình lân cận tạo khoảng cách ngăn cháy kết hợp bố trí lăng phun làm mát cấu kiện"
+    }
+  ],
+  "dapAnTuLuan": [
+    {
+      "ID": "TL001",
+      "cauHoi": "Đồng chí hãy trình bày công tác tổ chức cứu người, cứu tài sản và các biện pháp ngăn chặn cháy lan, làm mát cấu kiện khi chữa cháy tại cơ sở tôn giáo?",
+      "tuKhoa": [
+        "ưu tiên hàng đầu",
+        "song song với chữa cháy",
+        "cứu người trực tiếp",
+        "cứu người gián tiếp",
+        "dìu vác cõng khiêng",
+        "trấn an tinh thần",
+        "mặt nạ lọc độc",
+        "khối nhà bị cháy",
+        "rà soát tất cả các tầng",
+        "di dời tài sản",
+        "tài sản có giá trị cao",
+        "vị trí tập kết an toàn",
+        "tạo khoảng cách ngăn cháy",
+        "phá dỡ tường ngăn",
+        "làm mát cấu kiện",
+        "chống biến dạng sụp đổ"
+      ]
+    },
+    {
+      "ID": "TL002",
+      "cauHoi": "Đồng chí hãy nêu nội dung trinh sát đám cháy và các phương pháp, biện pháp dập tắt đám cháy tại cửa hàng kinh doanh xăng, dầu?",
+      "tuKhoa": [
+        "số lượng và loại xăng dầu",
+        "tình trạng bể chứa",
+        "vị trí và dạng vật liệu cháy",
+        "hệ thống chữa cháy cố định",
+        "hướng chảy loang",
+        "khả năng sôi trào",
+        "nguy cơ gây nổ",
+        "lượng chất tạo bọt",
+        "cát đất be bờ",
+        "phương pháp làm lạnh",
+        "phương pháp cách ly",
+        "lăng phun bọt LPB-600",
+        "sơ tán bình khí hóa lỏng",
+        "phun nước tia phân tán",
+        "đóng van khóa",
+        "di chuyển xe xitec"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "maDe": "DE09",
+  "tenDe": "Đáp án Bộ đề kiểm tra số 09 - Chiến thuật Chữa cháy và Cứu nạn, cứu hộ",
+  "dapAnTracNghiem": [
+    {
+      "ID": "CTCCXD001",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Tập trung lực lượng, phương tiện dập tắt đám cháy trên nắp xitéc và tiếp tục làm mát đến khi xitéc nguội hoàn toàn"
+    },
+    {
+      "ID": "CTCCGO002",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Phun nước làm mát kết hợp dùng cào mở nắp khoang để dập lửa, còn với băng tải phải phun nước cả mặt trên và từ dưới lên"
+    },
+    {
+      "ID": "CTCCOT003",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Đặt các ống thoát nước sát mặt sàn trên thân đê bao để lợi dụng sự chênh lệch tỷ trọng giữ lại xăng dầu và bọt"
+    },
+    {
+      "ID": "CTCCOT004",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Dùng các bình bột chữa cháy để dập tắt hoàn toàn các đốm lửa nhỏ, tránh phun tia nước áp lực cao làm phá hủy lớp bọt"
+    },
+    {
+      "ID": "CTCCKB005",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Tập trung chữa cháy xung quanh và làm lạnh bể cháy, bể kế cận; chỉ khi đủ lực lượng và chất tạo bọt mới phun bọt tấn công"
+    },
+    {
+      "ID": "CTCCKB006",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Chỉ áp dụng chữa các bể chứa dầu nặng bằng cách phun những dòng tia hạt nước trùm toàn bộ bề mặt cháy của chất lỏng"
+    },
+    {
+      "ID": "CTCCNCT007",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Chỉ phát huy hiệu quả khi mở cửa hút khói ở nhiều nhất là hai tầng, nghiêm cấm mở đồng thời trên ba tầng trở lên"
+    },
+    {
+      "ID": "CTCCNCT008",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Phun chất chữa cháy bột, bọt để dập tắt đám cháy xăng, dầu chảy loang trên sàn trước, sau đó mới loại trừ lửa trên xe"
+    },
+    {
+      "ID": "CNCHDN009",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Do đặt van nạp khí nén quá gần ống thoát khí thải động cơ hoặc do dầu bôi trơn trong máy nén khí quá nóng bùng cháy"
+    },
+    {
+      "ID": "CTCCCR010",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Độ sâu của rãnh phải vượt quá lớp than bùn sát tới tầng đất mặt, không làm sụt lở rãnh và có thể bơm nước ngập rãnh"
+    },
+    {
+      "ID": "CTCCCR011",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Dựa vào địa hình tự nhiên hoặc băng trắng, phát dọn cây cỏ đẩy về hướng đám cháy rồi đốt thành vệt dài cháy ngược về đám cháy"
+    },
+    {
+      "ID": "CTCCNLK012",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Phải đổ nước vào két nước xe chữa cháy qua lưới bảo vệ trên miệng két đề phòng đất, đá, rác làm hư hỏng máy bơm"
+    },
+    {
+      "ID": "CTCCNLK013",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Lắp đường vòi vào các họng nước của trụ nước chữa cháy và dùng máy bơm hút trực tiếp từ họng nước của trụ nước lên"
+    },
+    {
+      "ID": "CTCCNLK014",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Kết hợp dùng lăng hương sen phun nước để làm lắng khói, tạo điều kiện cho chiến sĩ chữa cháy dễ dàng quan sát đám cháy"
+    },
+    {
+      "ID": "CNCHTC015",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Đưa xe thang lên độ cao cao nhất có thể, sau đó chiến sĩ mang thang móc di chuyển tiếp từ đỉnh xe thang lên các tầng cao hơn"
+    },
+    {
+      "ID": "CNCHDS016",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Kiểm tra nồng độ oxy, khí độc và tiến hành thông gió cấp khí sạch, dùng máy hút khí độc hoặc thả bình khí xuống làm giảm khí độc"
+    },
+    {
+      "ID": "CNCHSD017",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Bố trí đi ngược chiều gió theo tuyến hành lang con thoi hoặc xoáy trôn ốc, cho nghỉ định kỳ và tuyệt đối không làm việc nơi có khói, khí độc"
+    },
+    {
+      "ID": "CNCHSD018",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Phải tiến hành đặt garo trên phần thân thể sát trên chỗ bị chèn ép trước khi nâng cấu kiện để đề phòng hội chứng vùi lấp"
+    },
+    {
+      "ID": "CNCHSD019",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Cố định cổ, cột sống cho nạn nhân, di chuyển thận trọng theo phương dọc trên cáng cứng hoặc cáng chuyên dụng để hạn chế tác động"
+    },
+    {
+      "ID": "CTCCTG020",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Cho chuyển từ lăng công suất lớn sang sử dụng các loại lăng có công suất nhỏ để tiếp tục dập tàn và loại trừ hoàn toàn sự cháy"
+    }
+  ],
+  "dapAnTuLuan": [
+    {
+      "ID": "TL001",
+      "cauHoi": "Đồng chí hãy trình bày các phương pháp làm lạnh và phương pháp cách ly bằng bọt hòa không khí để dập tắt đám cháy bể chứa xăng dầu?",
+      "tuKhoa": [
+        "làm mát liên tục",
+        "nguội hẳn",
+        "xáo trộn lớp xăng dầu",
+        "nhiệt độ bốc cháy cao",
+        "dầu hỏa, ma dút",
+        "bơm khí nén hoặc nước",
+        "dòng đối lưu",
+        "làm lạnh bằng phun mưa",
+        "dầu nặng",
+        "trùm toàn bộ bề mặt",
+        "bọt độ nở trung bình",
+        "phun vào thành bên trong",
+        "không phun thẳng sục vào",
+        "bọt độ nở thấp",
+        "từ dưới đáy bể",
+        "nổi lên bao phủ"
+      ]
+    },
+    {
+      "ID": "TL002",
+      "cauHoi": "Đồng chí hãy trình bày biện pháp cứu nạn nhân bị chôn vùi dưới lớp cấu kiện nhẹ và nạn nhân bị cấu kiện nặng đè lên phần thân thể tại hiện trường sập đổ công trình?",
+      "tuKhoa": [
+        "chó nghiệp vụ",
+        "ngược chiều gió",
+        "chống sập đổ thứ cấp",
+        "đào bới bằng tay",
+        "làm lộ phần đầu",
+        "đổi chiều đào bới",
+        "lấy hết đất cát",
+        "hô hấp nhân tạo",
+        "không được lôi kéo",
+        "gia cố kê chèn",
+        "đặt garo",
+        "sát chỗ bị chèn ép",
+        "hội chứng vùi lấp",
+        "gối hơi, kìm banh thủy lực",
+        "nâng từ từ",
+        "cố định cổ, cột sống",
+        "cáng cứng",
+        "di chuyển theo phương dọc"
+      ]
+    }
+  ]
+}

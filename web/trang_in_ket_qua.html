@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>In Kết Quả - Kiểm Tra Nghiệp Vụ Chữa Cháy, Cứu Nạn, Cứu Hộ</title>
+  <style>
+    :root {
+      --primary: #b91c1c;
+      --navy: #0f172a;
+      --text-main: #1e293b;
+      --bg-page: #f8fafc;
+      --border: #cbd5e1;
+      --radius: 8px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text-main);
+      background-color: var(--bg-page);
+      line-height: 1.5;
+      padding: 20px;
+    }
+
+    /* HEADER BẢNG ĐIỀU KHIỂN */
+    .admin-header {
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      color: #fff;
+      padding: 20px 24px;
+      border-radius: var(--radius);
+      margin-bottom: 24px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .admin-title h1 {
+      font-size: 1.35rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .admin-title p {
+      font-size: 0.88rem;
+      color: #94a3b8;
+      margin-top: 4px;
+    }
+
+    /* THANH CÔNG CỤ NẠP DỮ LIỆU TỪ GOOGLE SHEET */
+    .data-source-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    }
+
+    .source-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .action-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      font-size: 0.92rem;
+      font-weight: 600;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn-primary { background: #b91c1c; color: #fff; }
+    .btn-primary:hover { background: #991b1b; }
+
+    .btn-success { background: #15803d; color: #fff; }
+    .btn-success:hover { background: #166534; }
+
+    .btn-secondary { background: #f1f5f9; color: var(--navy); border: 1px solid var(--border); }
+    .btn-secondary:hover { background: #e2e8f0; }
+
+    .btn-print { background: #0284c7; color: #fff; }
+    .btn-print:hover { background: #0369a1; }
+
+    /* HỘP DÁN DỮ LIỆU TỪ GOOGLE SHEET */
+    .paste-box-container {
+      display: none;
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px dashed var(--border);
+    }
+
+    .paste-box-container.active { display: block; }
+
+    .textarea-paste {
+      width: 100%;
+      height: 120px;
+      padding: 12px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 0.85rem;
+      margin-bottom: 10px;
+      resize: vertical;
+    }
+
+    /* BẢNG THỐNG KÊ & DANH SÁCH THÍ SINH */
+    .candidate-list-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+      margin-bottom: 24px;
+    }
+
+    .table-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .search-input {
+      padding: 8px 14px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 0.9rem;
+      width: 280px;
+    }
+
+    .data-table-wrapper {
+      overflow-x: auto;
+      max-height: 480px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+
+    .data-table th {
+      background: #f8fafc;
+      padding: 12px 14px;
+      font-weight: 700;
+      color: var(--navy);
+      border-bottom: 2px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      white-space: nowrap;
+    }
+
+    .data-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: middle;
+    }
+
+    .data-table tr:hover { background: #f1f5f9; }
+
+    .score-chip {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+    .score-pass { background: #dcfce7; color: #166534; }
+    .score-fail { background: #fee2e2; color: #991b1b; }
+
+    /* ==========================================================================
+       VÙNG XUẤT IN CHUẨN A4 CAND (ẨN TRÊN MÀN HÌNH QUẢN TRỊ, HIỆN KHI IN)
+       ========================================================================== */
+    #print-output-zone {
+      display: none;
+    }
+
+    @media print {
+      body {
+        background: #fff !important;
+        padding: 0 !important;
+        color: #000 !important;
+        font-family: "Times New Roman", Times, serif !important;
+      }
+
+      .admin-header,
+      .data-source-card,
+      .candidate-list-card,
+      .no-print {
+        display: none !important;
+      }
+
+      #print-output-zone {
+        display: block !important;
+      }
+
+      .page-break {
+        page-break-after: always;
+        break-after: page;
+      }
+
+      /* ĐỊNH DẠNG TRANG IN A4 DỌC */
+      @page {
+        size: A4 portrait;
+        margin: 15mm 15mm 15mm 15mm;
+      }
+
+      .a4-ticket {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 5px 0;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 12.5pt;
+        line-height: 1.35;
+      }
+
+      .header-grid {
+        display: table;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
+      .header-cell-left {
+        display: table-cell;
+        width: 45%;
+        text-align: center;
+        vertical-align: top;
+        font-size: 11pt;
+      }
+
+      .header-cell-right {
+        display: table-cell;
+        width: 55%;
+        text-align: center;
+        vertical-align: top;
+      }
+
+      .header-title-bold {
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .header-line {
+        width: 110px;
+        height: 1px;
+        background: #000;
+        margin: 4px auto 0;
+      }
+
+      .doc-main-title {
+        text-align: center;
+        font-size: 14.5pt;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 14px 0 4px;
+      }
+
+      .doc-sub-title {
+        text-align: center;
+        font-size: 11pt;
+        font-style: italic;
+        margin-bottom: 14px;
+      }
+
+      .meta-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 12px;
+      }
+
+      .meta-table td {
+        padding: 3px 5px;
+        font-size: 12pt;
+      }
+
+      .dotted-line {
+        border-bottom: 1px dotted #444;
+      }
+
+      /* BẢNG ĐIỂM */
+      .print-score-box {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 12px 0 16px;
+        text-align: center;
+      }
+
+      .print-score-box th, .print-score-box td {
+        border: 1px solid #000;
+        padding: 6px;
+        font-size: 11.5pt;
+      }
+
+      .print-score-box th {
+        background: #f0f0f0 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        font-weight: bold;
+      }
+
+      .essay-block {
+        margin: 10px 0;
+        padding: 8px 10px;
+        border: 1px solid #444;
+        border-radius: 4px;
+        font-size: 11pt;
+        line-height: 1.4;
+      }
+
+      .signatures-table {
+        width: 100%;
+        margin-top: 25px;
+        border-collapse: collapse;
+        page-break-inside: avoid;
+      }
+
+      .signatures-table td {
+        width: 50%;
+        text-align: center;
+        vertical-align: top;
+        font-size: 12pt;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== HEADER BẢNG ĐIỀU KHIỂN GIÁM KHẢO ==================== -->
+  <header class="admin-header">
+    <div class="admin-title">
+      <h1>🚒 IN KẾT QUẢ - KIỂM TRA NGHIỆP VỤ CHỮA CHÁY, CỨU NẠN, CỨU HỘ</h1>
+      <p>Công cụ dành riêng cho Ban Giám khảo - Đồng bộ dữ liệu từ Google Sheet để in ấn chuẩn A4 CAND</p>
+    </div>
+    <div>
+      <a href="index.html" class="btn btn-secondary">
+        <span>⬅️</span> Về Trang Thi Trực Tuyến
+      </a>
+    </div>
+  </header>
+
+
+  <!-- ==================== KHỐI NẠP DỮ LIỆU TỪ GOOGLE SHEET ==================== -->
+  <section class="data-source-card no-print">
+    <div class="source-title">
+      <span>📊</span> NGUỒN DỮ LIỆU BÀI THI TỪ GOOGLE SHEET
+    </div>
+
+    <div class="action-row">
+      <button type="button" id="btn-fetch-sheets" class="btn btn-success">
+        <span>🔄</span> Tải Dữ Liệu Tự Động Từ Google Sheet
+      </button>
+
+      <button type="button" id="btn-toggle-paste" class="btn btn-secondary">
+        <span>📋</span> Dán Nhanh Từ Bảng Google Sheet (Ctrl+V)
+      </button>
+
+      <button type="button" id="btn-load-local" class="btn btn-secondary">
+        <span>💻</span> Nạp Bài Thi Gần Nhất Trên Máy Này
+      </button>
+
+      <span id="sync-indicator" style="font-size: 0.88rem; font-weight: 600; color: #15803d; margin-left: auto;"></span>
+    </div>
+
+    <!-- Hộp dán nhanh nếu muốn copy bảng tính Google Sheet trực tiếp -->
+    <div id="paste-box-container" class="paste-box-container">
+      <p style="font-size: 0.85rem; color: #64748b; margin-bottom: 8px;">
+        💡 <strong>Cách làm:</strong> Mở trang tính Google Sheet của đồng chí -> Quét chọn các dòng thí sinh (hoặc bôi đen toàn bộ dữ liệu) -> Bấm <strong>Ctrl + C</strong> -> Bấm vào ô dưới và bấm <strong>Ctrl + V</strong> -> Bấm nút "Phân Tích & Nạp Dữ Liệu":
+      </p>
+      <textarea id="inp-paste-data" class="textarea-paste" placeholder="Dán các cột dữ liệu từ Google Sheet vào đây..."></textarea>
+      <button type="button" id="btn-parse-paste" class="btn btn-primary">
+        <span>⚡</span> Phân Tích & Nạp Dữ Liệu Vào Danh Sách
+      </button>
+    </div>
+  </section>
+
+
+  <!-- ==================== DANH SÁCH THÍ SINH ĐÃ THI ==================== -->
+  <section class="candidate-list-card no-print">
+    <div class="table-controls">
+      <div>
+        <strong id="candidate-count-text">Danh sách bài thi: 0 thí sinh</strong>
+      </div>
+
+      <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+        <input type="text" id="inp-search" class="search-input" placeholder="🔍 Tìm kiếm thí sinh / đơn vị...">
+        
+        <button type="button" id="btn-print-selected" class="btn btn-print">
+          <span>🖨️</span> IN PHIẾU CÁ NHÂN (A4 DỌC)
+        </button>
+
+        <button type="button" id="btn-print-summary" class="btn btn-primary">
+          <span>📊</span> IN BẢNG TỔNG HỢP ĐIỂM (A4)
+        </button>
+      </div>
+    </div>
+
+    <div class="data-table-wrapper">
+      <table class="data-table" id="table-candidates">
+        <thead>
+          <tr>
+            <th style="width: 40px; text-align: center;"><input type="checkbox" id="check-all" checked></th>
+            <th>STT</th>
+            <th>Thời gian nộp</th>
+            <th>Họ và tên</th>
+            <th>Đơn vị</th>
+            <th>Chức vụ</th>
+            <th>Mã đề</th>
+            <th>Điểm Trắc nghiệm</th>
+            <th>Quy đổi (Thang 10)</th>
+            <th>Tự luận</th>
+            <th>Thao tác</th>
+          </tr>
+        </thead>
+        <tbody id="tbody-candidates">
+          <tr>
+            <td colspan="11" style="text-align: center; color: #94a3b8; padding: 30px;">
+              Chưa có dữ liệu bài thi. Bấm <strong>"Tải Dữ Liệu Tự Động Từ Google Sheet"</strong> hoặc <strong>"Dán Nhanh Từ Bảng Google Sheet"</strong> ở trên để nạp kết quả.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+
+  <!-- ==================== VÙNG SINH NỘI DUNG IN CHUẨN A4 ==================== -->
+  <div id="print-output-zone">
+    <!-- Được sinh động bằng JavaScript khi bấm In -->
+  </div>
+
+
+  <!-- ==================== JAVASCRIPT ĐIỀU KHIỂN ==================== -->
+  <script>
+    (function() {
+      'use strict';
+
+      // Webhook URL Google Sheets đã triển khai
+      const WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbwaYF-PvBmYyfGowykIIsiP_sDavROEZC7yvmUHZ7Unj__H6L1sgu25Vm67NKlqG_zkMw/exec';
+
+      let candidateList = [];
+
+      // Khởi tạo sự kiện
+      window.addEventListener('DOMContentLoaded', () => {
+        // Tự động tải từ Google Sheet hoặc localStorage khi mở trang
+        initData();
+        bindEvents();
+      });
+
+      function bindEvents() {
+        // Nút tải tự động từ Sheet
+        document.getElementById('btn-fetch-sheets').addEventListener('click', fetchDataFromGoogleSheets);
+
+        // Nút bật hộp dán
+        document.getElementById('btn-toggle-paste').addEventListener('click', () => {
+          document.getElementById('paste-box-container').classList.toggle('active');
+        });
+
+        // Nút phân tích dữ liệu dán
+        document.getElementById('btn-parse-paste').addEventListener('click', handleParsePastedData);
+
+        // Nút nạp từ localStorage máy
+        document.getElementById('btn-load-local').addEventListener('click', loadFromLocalStorage);
+
+        // Chọn tất cả checkbox
+        document.getElementById('check-all').addEventListener('change', (e) => {
+          const checked = e.target.checked;
+          document.querySelectorAll('.row-checkbox').forEach(cb => cb.checked = checked);
+        });
+
+        // Tìm kiếm
+        document.getElementById('inp-search').addEventListener('input', (e) => {
+          const query = e.target.value.toLowerCase().trim();
+          filterTable(query);
+        });
+
+        // In phiếu cá nhân
+        document.getElementById('btn-print-selected').addEventListener('click', handlePrintSelectedTickets);
+
+        // In bảng tổng hợp
+        document.getElementById('btn-print-summary').addEventListener('click', handlePrintSummaryTable);
+      }
+
+      function initData() {
+        // Ưu tiên nạp dữ liệu từ localStorage trước nếu có
+        loadFromLocalStorage(false);
+        // Tự động kéo dữ liệu từ Google Sheets
+        fetchDataFromGoogleSheets();
+      }
+
+      // 1. TẢI DỮ LIỆU TỰ ĐỘNG TỪ GOOGLE SHEET QUA WEBHOOK GET
+      function fetchDataFromGoogleSheets() {
+        const indicator = document.getElementById('sync-indicator');
+        indicator.innerHTML = '🔄 Đang kết nối Google Sheet...';
+
+        fetch(WEBHOOK_URL)
+          .then(res => res.json())
+          .then(resData => {
+            if (resData && resData.status === 'success' && Array.isArray(resData.data)) {
+              candidateList = resData.data.map((item, idx) => ({
+                id: idx + 1,
+                timestamp: item.timestamp || '',
+                fullName: item.fullName || 'Thí sinh',
+                unit: item.unit || 'Phòng PC07',
+                rank: item.rank || 'Cán bộ',
+                examCode: item.examCode || 'DE01',
+                examName: item.examName || 'Đề kiểm tra',
+                mcqScoreText: item.mcqScoreText || '0/20',
+                mcqScoreTenScale: item.mcqScoreTenScale || '0',
+                duration: item.duration || '30 phút',
+                essay1: item.essay1 || '',
+                essay2: item.essay2 || ''
+              }));
+
+              renderTable();
+              indicator.innerHTML = `✅ Đã tải ${candidateList.length} bài thi từ sheet [${resData.sheetName || 'Đầu tiên'}]!`;
+            } else {
+              indicator.innerHTML = '⚠️ Chưa có dữ liệu trên Google Sheet.';
+            }
+          })
+          .catch(err => {
+            console.warn('Lỗi kết nối Webhook:', err);
+            indicator.innerHTML = '⚠️ Không thể gọi API trực tiếp. Đồng chí có thể dùng nút "Dán nhanh từ Google Sheet" ở trên!';
+          });
+      }
+
+      // 2. DÁN NHANH DỮ LIỆU TỪ BẢNG GOOGLE SHEET (COPY & PASTE TAB-SEPARATED)
+      function handleParsePastedData() {
+        const raw = document.getElementById('inp-paste-data').value.trim();
+        if (!raw) {
+          alert('Vui lòng dán dữ liệu từ bảng Google Sheet vào ô trước!');
+          return;
+        }
+
+        const lines = raw.split(/\r?\n/);
+        const parsed = [];
+
+        lines.forEach((line, idx) => {
+          // Tách theo phím Tab (chuẩn khi copy từ Google Sheets / Excel)
+          const cols = line.split('\t');
+          if (cols.length >= 2) {
+            // Kiểm tra xem dòng này có phải là tiêu đề không
+            if (cols[0].includes('thời gian') || cols[1].includes('Họ và tên')) return;
+
+            parsed.push({
+              id: parsed.length + 1,
+              timestamp: cols[0] ? cols[0].trim() : '',
+              fullName: cols[1] ? cols[1].trim() : '',
+              unit: cols[2] ? cols[2].trim() : '',
+              rank: cols[3] ? cols[3].trim() : '',
+              examCode: cols[4] ? cols[4].trim() : '',
+              examName: cols[5] ? cols[5].trim() : '',
+              mcqScoreText: cols[6] ? cols[6].trim() : '',
+              mcqScoreTenScale: cols[7] ? cols[7].trim() : '',
+              duration: cols[8] ? cols[8].trim() : '',
+              essay1: cols[9] ? cols[9].trim() : '',
+              essay2: cols[11] ? cols[11].trim() : ''
+            });
+          }
+        });
+
+        if (parsed.length > 0) {
+          candidateList = parsed;
+          renderTable();
+          document.getElementById('paste-box-container').classList.remove('active');
+          document.getElementById('sync-indicator').innerHTML = `✅ Đã nạp thành công ${parsed.length} thí sinh từ bảng dán!`;
+        } else {
+          alert('Không tìm thấy dữ liệu hợp lệ. Hãy bôi đen các ô trên Google Sheet, copy (Ctrl+C) và dán lại!');
+        }
+      }
+
+      // 3. NẠP TỪ LOCALSTORAGE
+      function loadFromLocalStorage(showAlert = true) {
+        const raw = localStorage.getItem('PCCC_LAST_EXAM_RESULT');
+        if (raw) {
+          try {
+            const data = JSON.parse(raw);
+            const cand = {
+              id: candidateList.length + 1,
+              timestamp: data.submitTime ? new Date(data.submitTime).toLocaleString('vi-VN') : new Date().toLocaleString('vi-VN'),
+              fullName: data.candidate.fullName || 'Thí sinh',
+              unit: data.candidate.unit || 'Phòng PC07',
+              rank: data.candidate.rank || 'Cán bộ',
+              examCode: data.examCode || 'DE01',
+              examName: data.examName || 'Đề kiểm tra',
+              mcqScoreText: `${data.correctCount || 0}/20`,
+              mcqScoreTenScale: data.scoreConverted || '0',
+              duration: data.duration || '30 phút',
+              essay1: (data.userAnswers && data.userAnswers.essay && data.tuLuanQuestions && data.tuLuanQuestions[0]) 
+                ? (data.userAnswers.essay[data.tuLuanQuestions[0].ID] || '') : '',
+              essay2: (data.userAnswers && data.userAnswers.essay && data.tuLuanQuestions && data.tuLuanQuestions[1]) 
+                ? (data.userAnswers.essay[data.tuLuanQuestions[1].ID] || '') : ''
+            };
+
+            // Nếu danh sách chưa có ai thì thêm vào
+            if (candidateList.length === 0) {
+              candidateList.push(cand);
+              renderTable();
+            }
+            if (showAlert) alert('Đã nạp 1 bài thi gần nhất được lưu trong trình duyệt này!');
+          } catch(e) {}
+        }
+      }
+
+      // RENDER BẢNG QUẢN TRỊ
+      function renderTable() {
+        const tbody = document.getElementById('tbody-candidates');
+        const countText = document.getElementById('candidate-count-text');
+        countText.textContent = `Danh sách bài thi: ${candidateList.length} thí sinh`;
+
+        if (candidateList.length === 0) {
+          tbody.innerHTML = `
+            <tr>
+              <td colspan="11" style="text-align: center; color: #94a3b8; padding: 30px;">
+                Chưa có dữ liệu bài thi. Vui lòng bấm <strong>"Tải Dữ Liệu Tự Động Từ Google Sheet"</strong> hoặc <strong>"Dán Nhanh Từ Bảng Google Sheet"</strong> ở trên!
+              </td>
+            </tr>
+          `;
+          return;
+        }
+
+        tbody.innerHTML = candidateList.map((c, idx) => {
+          const scoreNum = parseFloat(c.mcqScoreTenScale) || 0;
+          const chipClass = scoreNum >= 5.0 ? 'score-pass' : 'score-fail';
+
+          return `
+            <tr data-id="${c.id}">
+              <td style="text-align: center;">
+                <input type="checkbox" class="row-checkbox" value="${c.id}" checked>
+              </td>
+              <td>${idx + 1}</td>
+              <td style="font-size: 0.8rem; color: #64748b;">${escapeHtml(c.timestamp)}</td>
+              <td><strong>${escapeHtml(c.fullName)}</strong></td>
+              <td>${escapeHtml(c.unit)}</td>
+              <td>${escapeHtml(c.rank)}</td>
+              <td><code>${escapeHtml(c.examCode)}</code></td>
+              <td><strong>${escapeHtml(c.mcqScoreText)}</strong></td>
+              <td><span class="score-chip ${chipClass}">${escapeHtml(c.mcqScoreTenScale)} / 10</span></td>
+              <td style="font-size: 0.82rem; color: #475569;">
+                ${c.essay1 || c.essay2 ? '✍️ Đã có bài làm' : '<em style="color:#94a3b8;">Không làm</em>'}
+              </td>
+              <td>
+                <button type="button" class="btn btn-secondary" style="padding: 4px 10px; font-size: 0.8rem;" onclick="window.printSingleCandidate(${c.id})">
+                  🖨️ In Phiếu
+                </button>
+              </td>
+            </tr>
+          `;
+        }).join('');
+      }
+
+      function filterTable(query) {
+        document.querySelectorAll('#tbody-candidates tr').forEach(row => {
+          const text = row.textContent.toLowerCase();
+          row.style.display = text.includes(query) ? '' : 'none';
+        });
+      }
+
+      // ============================================================================
+      // 4. CHỨC NĂNG IN PHIẾU CÁ NHÂN A4 CHUẨN CAND
+      // ============================================================================
+      window.printSingleCandidate = function(candId) {
+        const cand = candidateList.find(c => c.id === candId);
+        if (!cand) return;
+        renderPrintTickets([cand]);
+        window.print();
+      };
+
+      function handlePrintSelectedTickets() {
+        const selectedIds = Array.from(document.querySelectorAll('.row-checkbox:checked')).map(cb => parseInt(cb.value, 10));
+        if (selectedIds.length === 0) {
+          alert('Đồng chí vui lòng tích chọn ít nhất 1 thí sinh để in phiếu!');
+          return;
+        }
+
+        const selectedCandidates = candidateList.filter(c => selectedIds.includes(c.id));
+        renderPrintTickets(selectedCandidates);
+        window.print();
+      }
+
+      function renderPrintTickets(candidates) {
+        const zone = document.getElementById('print-output-zone');
+        zone.innerHTML = '';
+
+        candidates.forEach((c, index) => {
+          const ticket = document.createElement('div');
+          ticket.className = 'a4-ticket' + (index < candidates.length - 1 ? ' page-break' : '');
+
+          ticket.innerHTML = `
+            <div class="header-grid">
+              <div class="header-cell-left">
+                <div>CÔNG AN TỈNH, THÀNH PHỐ</div>
+                <div class="header-title-bold">${escapeHtml(c.unit.toUpperCase())}</div>
+                <div class="header-line"></div>
+              </div>
+              <div class="header-cell-right">
+                <div class="header-title-bold">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</div>
+                <div style="font-size: 11pt; font-weight: bold;">Độc lập - Tự do - Hạnh phúc</div>
+                <div class="header-line"></div>
+              </div>
+            </div>
+
+            <div class="doc-main-title">PHIẾU KẾT QUẢ KIỂM TRA ĐÁNH GIÁ</div>
+            <div class="doc-sub-title">Chuyên đề: Nghiệp vụ Chiến thuật Chữa cháy và Cứu nạn, cứu hộ</div>
+
+            <table class="meta-table">
+              <tr>
+                <td style="width: 15%; font-weight: bold;">Họ và tên:</td>
+                <td style="width: 45%; font-weight: bold; font-size: 13pt;" class="dotted-line">${escapeHtml(c.fullName.toUpperCase())}</td>
+                <td style="width: 15%; font-weight: bold;">Cấp bậc/CV:</td>
+                <td style="width: 25%; font-weight: bold;" class="dotted-line">${escapeHtml(c.rank)}</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">Đơn vị:</td>
+                <td class="dotted-line">${escapeHtml(c.unit)}</td>
+                <td style="font-weight: bold;">Mã đề thi:</td>
+                <td class="dotted-line"><strong>${escapeHtml(c.examCode)}</strong></td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">Ngày thi:</td>
+                <td class="dotted-line">${escapeHtml(c.timestamp)}</td>
+                <td style="font-weight: bold;">Thời gian làm:</td>
+                <td class="dotted-line">${escapeHtml(c.duration)}</td>
+              </tr>
+            </table>
+
+            <div style="font-weight: bold; margin: 12px 0 6px; text-transform: uppercase;">
+              I. KẾT QUẢ KIỂM TRA TRẮC NGHIỆM (20 CÂU)
+            </div>
+            
+            <table class="print-score-box">
+              <thead>
+                <tr>
+                  <th>Tổng số câu</th>
+                  <th>Số câu trả lời đúng</th>
+                  <th>Điểm trắc nghiệm quy đổi</th>
+                  <th>Tỷ lệ đạt</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>20 câu</td>
+                  <td><strong style="font-size: 13pt;">${escapeHtml(c.mcqScoreText)}</strong></td>
+                  <td><strong style="font-size: 14pt; color: #b91c1c;">${escapeHtml(c.mcqScoreTenScale)} / 10</strong></td>
+                  <td>${Math.round((parseFloat(c.mcqScoreTenScale) || 0) * 10)}%</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div style="font-weight: bold; margin: 14px 0 6px; text-transform: uppercase;">
+              II. NỘI DUNG BÀI LÀM TỰ LUẬN & ĐÁNH GIÁ CỦA GIÁM KHẢO
+            </div>
+
+            <div class="essay-block">
+              <strong>1. Bài làm Tự luận Câu 1:</strong>
+              <div style="margin-top: 4px; font-style: italic; white-space: pre-wrap;">
+                ${c.essay1 ? escapeHtml(c.essay1) : '(Thí sinh không làm câu tự luận này)'}
+              </div>
+              <div style="margin-top: 8px; border-top: 1px dashed #999; padding-top: 4px; display: flex; justify-content: space-between;">
+                <span>Điểm Giám khảo chấm Câu 1: ............ / 2.0 điểm</span>
+                <span>Chữ ký Giám khảo: ..............................</span>
+              </div>
+            </div>
+
+            <div class="essay-block">
+              <strong>2. Bài làm Tự luận Câu 2:</strong>
+              <div style="margin-top: 4px; font-style: italic; white-space: pre-wrap;">
+                ${c.essay2 ? escapeHtml(c.essay2) : '(Thí sinh không làm câu tự luận này)'}
+              </div>
+              <div style="margin-top: 8px; border-top: 1px dashed #999; padding-top: 4px; display: flex; justify-content: space-between;">
+                <span>Điểm Giám khảo chấm Câu 2: ............ / 2.0 điểm</span>
+                <span>Chữ ký Giám khảo: ..............................</span>
+              </div>
+            </div>
+
+            <table class="meta-table" style="margin-top: 10px;">
+              <tr>
+                <td style="font-weight: bold; width: 25%;">TỔNG ĐIỂM CHUNG:</td>
+                <td style="width: 25%; font-weight: bold; font-size: 13pt;" class="dotted-line">................ / 10 điểm</td>
+                <td style="font-weight: bold; width: 20%;">XẾP LOẠI:</td>
+                <td style="width: 30%; font-weight: bold;" class="dotted-line">................................</td>
+              </tr>
+            </table>
+
+            <table class="signatures-table">
+              <tr>
+                <td>
+                  <strong>THÍ SINH DỰ THI</strong><br>
+                  <em>(Ký, ghi rõ họ tên)</em>
+                  <div style="height: 65px;"></div>
+                  <strong>${escapeHtml(c.fullName)}</strong>
+                </td>
+                <td>
+                  <em>Ngày ..... tháng ..... năm 2026</em><br>
+                  <strong>TRƯỞNG BAN CHẤM THI</strong><br>
+                  <em>(Ký, ghi rõ họ tên)</em>
+                  <div style="height: 65px;"></div>
+                </td>
+              </tr>
+            </table>
+          `;
+
+          zone.appendChild(ticket);
+        });
+      }
+
+      // ============================================================================
+      // 5. CHỨC NĂNG IN BẢNG TỔNG HỢP TOÀN ĐƠN VỊ (A4)
+      // ============================================================================
+      function handlePrintSummaryTable() {
+        if (candidateList.length === 0) {
+          alert('Chưa có dữ liệu thí sinh để in bảng tổng hợp!');
+          return;
+        }
+
+        const zone = document.getElementById('print-output-zone');
+        zone.innerHTML = `
+          <div class="a4-ticket" style="font-size: 11pt;">
+            <div class="header-grid">
+              <div class="header-cell-left">
+                <div>CÔNG AN TỈNH, THÀNH PHỐ</div>
+                <div class="header-title-bold">PHÒNG CẢNH SÁT PCCC & CNCH</div>
+                <div class="header-line"></div>
+              </div>
+              <div class="header-cell-right">
+                <div class="header-title-bold">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</div>
+                <div style="font-size: 11pt; font-weight: bold;">Độc lập - Tự do - Hạnh phúc</div>
+                <div class="header-line"></div>
+              </div>
+            </div>
+
+            <div class="doc-main-title" style="font-size: 14pt; margin: 15px 0 6px;">
+              BẢNG TỔNG HỢP KẾT QUẢ KIỂM TRA CHIẾN THUẬT PCCC & CNCH
+            </div>
+            <div class="doc-sub-title" style="margin-bottom: 16px;">
+              (Đợt kiểm tra nghiệp vụ định kỳ năm 2026)
+            </div>
+
+            <table class="print-score-box" style="font-size: 10pt;">
+              <thead>
+                <tr>
+                  <th style="width: 35px;">STT</th>
+                  <th>Họ và tên</th>
+                  <th>Cấp bậc / Chức vụ</th>
+                  <th>Đơn vị công tác</th>
+                  <th style="width: 60px;">Mã đề</th>
+                  <th style="width: 75px;">Điểm TN (/20)</th>
+                  <th style="width: 75px;">Điểm quy đổi (/10)</th>
+                  <th>Xếp loại</th>
+                  <th>Ký nhận</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${candidateList.map((c, i) => `
+                  <tr>
+                    <td>${i + 1}</td>
+                    <td style="text-align: left; font-weight: bold;">${escapeHtml(c.fullName)}</td>
+                    <td>${escapeHtml(c.rank)}</td>
+                    <td style="text-align: left;">${escapeHtml(c.unit)}</td>
+                    <td>${escapeHtml(c.examCode)}</td>
+                    <td><strong>${escapeHtml(c.mcqScoreText)}</strong></td>
+                    <td><strong>${escapeHtml(c.mcqScoreTenScale)}</strong></td>
+                    <td>${parseFloat(c.mcqScoreTenScale) >= 5.0 ? 'Đạt' : 'Không đạt'}</td>
+                    <td></td>
+                  </tr>
+                `).join('')}
+              </tbody>
+            </table>
+
+            <table class="signatures-table" style="margin-top: 35px;">
+              <tr>
+                <td>
+                  <strong>NGƯỜI LẬP BẢNG</strong><br>
+                  <em>(Ký, ghi rõ họ tên)</em>
+                  <div style="height: 70px;"></div>
+                </td>
+                <td>
+                  <em>Ngày ..... tháng ..... năm 2026</em><br>
+                  <strong>LÃNH ĐẠO PHÒNG PHÊ DUYỆT</strong><br>
+                  <em>(Ký, đóng dấu)</em>
+                  <div style="height: 70px;"></div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        `;
+
+        window.print();
+      }
+
+      function escapeHtml(text) {
+        if (!text) return '';
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+      }
+
+    })();
+  </script>
+
+</body>
+</html>

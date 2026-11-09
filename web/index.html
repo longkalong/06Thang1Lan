@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Kiểm tra nghiệp vụ chữa cháy, cứu nạn, cứu hộ</title>
+  <meta name="description" content="Ứng dụng kiểm tra nghiệp vụ chữa cháy, cứu nạn, cứu hộ chuẩn Cục Cảnh sát PCCC và CNCH (CV 1974)">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== TOP APP HEADER ==================== -->
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="brand-badge">
+        <div class="emblem-icon">🚒</div>
+        <div class="brand-text">
+          <h1>KIỂM TRA NGHIỆP VỤ CHỮA CHÁY, CỨU NẠN, CỨU HỘ</h1>
+          <p>Tài liệu huấn luyện nghiệp vụ chuẩn Cục Cảnh sát PCCC & CNCH</p>
+        </div>
+      </div>
+      
+      <!-- Live Countdown Timer (Hiện khi vào phòng thi) -->
+      <div id="header-timer" class="exam-timer-badge">
+        <span>⏱️</span>
+        <span id="header-timer-text">30:00</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== BỘ ĐẾM GIÂY NỔI CHẠY THEO THÍ SINH KHI LÀM BÀI ==================== -->
+  <div id="floating-live-timer" class="floating-live-timer" style="display: none;">
+    <div class="floating-timer-icon">⏱️</div>
+    <div class="floating-timer-info">
+      <span class="floating-timer-label">THỜI GIAN CÒN LẠI</span>
+      <span class="floating-timer-digits" id="floating-timer-text">30:00</span>
+    </div>
+  </div>
+
+  <main class="container">
+
+    <!-- ==========================================================================
+         MÀN HÌNH 1: THÔNG TIN QUY CHẾ & NHẬP THÔNG TIN THÍ SINH
+         ========================================================================== -->
+    <section id="screen-intro" class="screen active">
+      
+      <!-- Thẻ Thông tin kỳ thi & Quy chế (Rõ ràng theo yêu cầu) -->
+      <div class="card">
+        <h2 class="card-title">
+          <span>📋</span> QUY CHẾ VÀ THÔNG TIN BÀI THI
+        </h2>
+        
+        <div class="briefing-box">
+          <div class="briefing-item">
+            <span class="briefing-icon">📚</span>
+            <div>
+              <strong>Số lượng đề thi:</strong> 
+              <span>Hệ thống gồm <span class="highlight-tag">10 bộ đề độc lập</span> được chuẩn hóa 100% từ tài liệu chiến thuật PCCC & CNCH của Cục Cảnh sát PCCC & CNCH. Đề thi sẽ được bốc <strong>ngẫu nhiên</strong> khi bấm bắt đầu làm bài.</span>
+            </div>
+          </div>
+
+          <div class="briefing-item">
+            <span class="briefing-icon">📝</span>
+            <div>
+              <strong>Cấu trúc bài thi (22 câu):</strong>
+              <span>Gồm <span class="highlight-tag">20 câu trắc nghiệm</span> (chấm điểm ngay) và <span class="highlight-tag">02 câu tự luận</span> (chấm theo từ khóa nghiệp vụ). Hiển thị tập trung <strong>từng câu 1</strong>, phân chia rõ thẻ Trắc nghiệm và Tự luận.</span>
+            </div>
+          </div>
+
+          <div class="briefing-item">
+            <span class="briefing-icon">⏱️</span>
+            <div>
+              <strong>Thời gian làm bài:</strong> 
+              <span><span class="highlight-tag">30 phút</span> (đồng hồ đếm ngược tự động bắt đầu khi bấm nút làm bài và tự động nộp bài khi hết giờ).</span>
+            </div>
+          </div>
+
+          <div class="briefing-item">
+            <span class="briefing-icon">⚖️</span>
+            <div>
+              <strong>Quy định chấm điểm & Bảo mật:</strong> 
+              <span>Điểm trắc nghiệm (thang 20/20) và đáp án chi tiết chỉ hiển thị sau khi thí sinh đã hoàn thành nộp bài. Bài làm tự luận sẽ do Ban giám khảo chấm và thông báo kết quả sau.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Thẻ Nhập thông tin thí sinh -->
+      <div class="card">
+        <h2 class="card-title">
+          <span>👤</span> THÔNG TIN THÍ SINH DỰ THI
+        </h2>
+
+        <form id="form-registration" onsubmit="return false;">
+          <div class="form-group">
+            <label class="form-label" for="inp-fullname">Họ và tên thí sinh <span class="required">*</span></label>
+            <input type="text" id="inp-fullname" class="form-input" placeholder="Ví dụ: Nguyễn Văn An" required autocomplete="name">
+          </div>
+
+          <!-- Danh sách Đơn vị công tác khi click vào -->
+          <div class="form-group">
+            <label class="form-label" for="inp-unit">Đơn vị công tác <span class="required">*</span></label>
+            <select id="inp-unit" class="form-select" required>
+              <option value="" disabled selected>-- Chọn Đơn vị công tác --</option>
+              <option value="Phòng PC07">Phòng PC07</option>
+              <option value="Đội Công tác Chữa cháy và CNCH">Đội Công tác Chữa cháy và CNCH</option>
+              <option value="Đội Cảnh sát PCCC và CNCH trên sông, biển">Đội Cảnh sát PCCC và CNCH trên sông, biển</option>
+              <option value="Đội Chữa cháy và CNCH Khu vực 1">Đội Chữa cháy và CNCH Khu vực 1</option>
+              <option value="Đội Chữa cháy và CNCH Khu vực 2">Đội Chữa cháy và CNCH Khu vực 2</option>
+              <option value="Đội Chữa cháy và CNCH Khu vực 3">Đội Chữa cháy và CNCH Khu vực 3</option>
+              <option value="Đội Chữa cháy và CNCH Khu vực 4">Đội Chữa cháy và CNCH Khu vực 4</option>
+              <option value="Đội Chữa cháy và CNCH Khu vực 5">Đội Chữa cháy và CNCH Khu vực 5</option>
+              <option value="Đội Chữa cháy và CNCH Khu vực 6">Đội Chữa cháy và CNCH Khu vực 6</option>
+              <option value="Đội Chữa cháy và CNCH Khu vực 7">Đội Chữa cháy và CNCH Khu vực 7</option>
+              <option value="Đội Chữa cháy và CNCH Khu vực 8">Đội Chữa cháy và CNCH Khu vực 8</option>
+              <option value="Đội Chữa cháy và CNCH Khu vực 9">Đội Chữa cháy và CNCH Khu vực 9</option>
+              <option value="Đội Chữa cháy và CNCH Khu vực 10">Đội Chữa cháy và CNCH Khu vực 10</option>
+            </select>
+          </div>
+
+          <!-- Danh sách Chức vụ khi click vào -->
+          <div class="form-group">
+            <label class="form-label" for="inp-rank">Chức vụ <span class="required">*</span></label>
+            <select id="inp-rank" class="form-select" required>
+              <option value="" disabled selected>-- Chọn Chức vụ --</option>
+              <option value="Lãnh đạo phòng">Lãnh đạo phòng</option>
+              <option value="Chỉ huy">Chỉ huy</option>
+              <option value="Cán bộ">Cán bộ</option>
+              <option value="Lái xe">Lái xe</option>
+              <option value="CSNV">CSNV</option>
+            </select>
+          </div>
+
+          <div style="background: #f1f5f9; border-radius: var(--radius-sm); padding: 10px 12px; margin-bottom: 14px; font-size: 0.85rem; color: var(--navy); display: flex; align-items: center; gap: 8px;">
+            <span>🎲</span>
+            <span><strong>Bộ đề thi:</strong> Hệ thống sẽ tự động bốc ngẫu nhiên 1 trong 10 bộ đề thi chuẩn khi bấm nút bên dưới.</span>
+          </div>
+
+          <button type="button" id="btn-start-exam" class="btn btn-primary" style="margin-top: 6px; width: 100%;">
+            <span>🚀</span> BẮT ĐẦU LÀM BÀI THI (TÍNH GIỜ 30 PHÚT)
+          </button>
+        </form>
+      </div>
+
+    </section>
+
+
+    <!-- ==========================================================================
+         MÀN HÌNH 2: GIAO DIỆN LÀM BÀI THI (TỪNG CÂU 1 + PHÂN RÕ THẺ TRẮC NGHIỆM/TỰ LUẬN)
+         ========================================================================== -->
+    <section id="screen-exam" class="screen">
+      
+      <div class="exam-desktop-grid">
+        
+        <!-- CỘT CHÍNH: HIỂN THỊ TẬP TRUNG TỪNG CÂU 1 -->
+        <div class="exam-main-stream">
+          
+          <!-- Banner tóm tắt đề thi trên Mobile -->
+          <div class="card" style="padding: 10px 14px; margin-bottom: 12px; background: #fff8f8; border-color: #fecaca;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <strong id="exam-display-name" style="color: var(--primary); font-size: 0.95rem;">Bộ đề thi số 01</strong>
+                <div id="exam-candidate-summary" style="font-size: 0.8rem; color: var(--text-muted);">Thí sinh: Nguyễn Văn An</div>
+              </div>
+              <span class="highlight-tag" id="exam-mode-tag">Đang tính giờ</span>
+            </div>
+          </div>
+
+          <!-- HAI THẺ CHUYỂN ĐỔI RÕ RÀNG: TRẮC NGHIỆM VÀ TỰ LUẬN -->
+          <div class="exam-section-tabs">
+            <button type="button" class="section-tab active" id="tab-btn-mcq" data-tab="mcq">
+              <span>📋 TRẮC NGHIỆM</span>
+              <span class="tab-badge" id="tab-badge-mcq">0/20</span>
+            </button>
+            <button type="button" class="section-tab" id="tab-btn-essay" data-tab="essay">
+              <span>✍️ TỰ LUẬN</span>
+              <span class="tab-badge" id="tab-badge-essay">0/2</span>
+            </button>
+          </div>
+
+          <!-- ================= PHẦN I: TRẮC NGHIỆM (TỪNG CÂU 1) ================= -->
+          <div class="tab-panel active" id="panel-mcq">
+            
+            <!-- Thanh chọn nhanh số câu trắc nghiệm (1..20) -->
+            <div class="question-stepper-bar">
+              <div class="stepper-header">
+                <span id="stepper-title-mcq">CHỌN CÂU TRẮC NGHIỆM:</span>
+                <span id="stepper-counter-mcq" style="color: var(--primary);">Câu 1 / 20</span>
+              </div>
+              <div class="stepper-grid" id="mcq-stepper-grid">
+                <!-- Render 20 nút số 1..20 -->
+              </div>
+            </div>
+
+            <!-- Khung hiển thị DUY NHẤT 1 câu hỏi trắc nghiệm hiện tại -->
+            <div id="single-mcq-container">
+              <!-- Render động 1 câu trắc nghiệm -->
+            </div>
+
+            <!-- Nút điều hướng Trước / Sau của Trắc nghiệm -->
+            <div class="question-nav-controls">
+              <button type="button" class="btn btn-secondary" id="btn-mcq-prev">
+                <span>◀</span> Câu trước
+              </button>
+              <button type="button" class="btn btn-primary" id="btn-mcq-next">
+                Câu tiếp theo <span>▶</span>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- ================= PHẦN II: TỰ LUẬN (TỪNG CÂU 1) ================= -->
+          <div class="tab-panel" id="panel-essay">
+            
+            <!-- Hai nút chọn Câu tự luận 1 và Câu tự luận 2 -->
+            <div class="essay-stepper-pills">
+              <button type="button" class="essay-pill-btn active" id="pill-essay-0" data-essay-index="0">
+                <span>Câu Tự Luận 1</span>
+                <span class="tab-badge" id="badge-essay-0">Chưa làm</span>
+              </button>
+              <button type="button" class="essay-pill-btn" id="pill-essay-1" data-essay-index="1">
+                <span>Câu Tự Luận 2</span>
+                <span class="tab-badge" id="badge-essay-1">Chưa làm</span>
+              </button>
+            </div>
+
+            <!-- Khung hiển thị DUY NHẤT 1 câu hỏi tự luận hiện tại -->
+            <div id="single-essay-container">
+              <!-- Render động 1 câu tự luận -->
+            </div>
+
+            <!-- Nút điều hướng Trước / Sau của Tự luận -->
+            <div class="question-nav-controls">
+              <button type="button" class="btn btn-secondary" id="btn-essay-prev">
+                <span>◀</span> Câu trước
+              </button>
+              <button type="button" class="btn btn-primary" id="btn-essay-next">
+                Câu tiếp theo <span>▶</span>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Nút Nộp bài lớn ở cuối -->
+          <div style="margin: 20px 0 10px;">
+            <button type="button" class="btn btn-success btn-trigger-submit" style="font-size: 1.05rem; padding: 15px; width: 100%;">
+              <span>📝</span> HOÀN THÀNH & NỘP BÀI THI
+            </button>
+          </div>
+
+        </div>
+
+        <!-- CỘT PHỤ (DESKTOP SIDEBAR - HIỆN KHI MÀN HÌNH >= 1024PX) -->
+        <aside class="exam-sidebar-desktop" style="display: none;">
+          
+          <div class="desktop-clock-box">
+            <div class="clock-label">Thời gian làm bài còn lại</div>
+            <div class="clock-time" id="desktop-timer-text">30:00</div>
+          </div>
+
+          <div style="margin-bottom: 14px; font-size: 0.85rem; line-height: 1.5;">
+            <div><strong>Thí sinh:</strong> <span id="desktop-user-name">-</span></div>
+            <div><strong>Đơn vị:</strong> <span id="desktop-user-unit">-</span></div>
+            <div><strong>Chức vụ:</strong> <span id="desktop-user-rank">-</span></div>
+            <div><strong>Đề số:</strong> <span id="desktop-user-code">-</span></div>
+          </div>
+
+          <div style="font-size: 0.85rem; font-weight: 700; color: var(--navy); margin-bottom: 8px;">
+            BẢNG ĐIỀU HƯỚNG TỔNG THỂ
+          </div>
+
+          <!-- Grid 22 câu hỏi trên desktop -->
+          <div class="desktop-palette-grid" id="desktop-palette-grid">
+            <!-- Render động bằng JS -->
+          </div>
+
+          <div style="display: flex; gap: 10px; font-size: 0.75rem; color: var(--text-muted); margin-bottom: 16px;">
+            <span style="display: flex; align-items: center; gap: 4px;"><span style="width: 10px; height: 10px; background: #fff; border: 1px solid #cbd5e1; border-radius: 2px;"></span> Chưa làm</span>
+            <span style="display: flex; align-items: center; gap: 4px;"><span style="width: 10px; height: 10px; background: #3b82f6; border-radius: 2px;"></span> Đã làm</span>
+          </div>
+
+          <button type="button" class="btn btn-primary btn-trigger-submit" style="min-height: 46px; width: 100%;">
+            <span>📝</span> NỘP BÀI THI
+          </button>
+        </aside>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==========================================================================
+         MÀN HÌNH 3: KẾT QUẢ ĐÁP ÁN & CÔNG BỐ ĐIỂM (THEO MÀU SẮC YÊU CẦU)
+         - ĐÚNG: Nền xanh lá
+         - SAI: Nền đỏ
+         - CHƯA CHỌN: Nền vàng
+         ========================================================================== -->
+    <section id="screen-result" class="screen">
+      
+      <!-- Thẻ Công bố Điểm số -->
+      <div class="result-header-card">
+        
+        <div class="score-badge-circle">
+          <div class="score-num" id="res-score-number">--</div>
+          <div class="score-max">/ 20 CÂU</div>
+        </div>
+
+        <h2 style="font-size: 1.35rem; color: var(--navy); font-weight: 800; margin-bottom: 6px;">
+          KẾT QUẢ KIỂM TRA TRẮC NGHIỆM
+        </h2>
+        
+        <div class="result-candidate-info" id="res-candidate-info">
+          <!-- Thông tin thí sinh & Đề thi -->
+        </div>
+
+        <!-- Trạng thái gửi Google Sheet -->
+        <div id="sheets-sync-status" style="margin: 10px 0; font-size: 0.9rem; font-weight: 700; color: #16a34a;">
+          <!-- Tự động cập nhật qua JS -->
+        </div>
+
+        <!-- Hộp thông báo quan trọng: TỰ LUẬN SẼ CHẤM SAU (Theo yêu cầu) -->
+        <div class="essay-notice-box">
+          <span class="notice-icon">📢</span>
+          <div>
+            <strong>THÔNG BÁO VỀ PHẦN TỰ LUẬN:</strong><br>
+            Bài làm tự luận (02 câu) của đồng chí đã được hệ thống lưu trữ an toàn và gửi về cho Ban giám khảo để chấm theo barem từ khóa nghiệp vụ chuẩn. Kết quả tự luận và xếp loại chính thức sẽ được thông báo sau!
+          </div>
+        </div>
+
+        <!-- Thống kê Đúng - Sai - Chưa chọn -->
+        <div class="result-stats-row">
+          <div class="stat-box correct">
+            <div class="stat-count" id="stat-correct-count">0</div>
+            <div class="stat-label">ĐÚNG (XANH)</div>
+          </div>
+          <div class="stat-box incorrect">
+            <div class="stat-count" id="stat-incorrect-count">0</div>
+            <div class="stat-label">SAI (ĐỎ)</div>
+          </div>
+          <div class="stat-box unanswered">
+            <div class="stat-count" id="stat-unanswered-count">0</div>
+            <div class="stat-label">CHƯA CHỌN (VÀNG)</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tiêu đề chi tiết đáp án -->
+      <div style="margin: 20px 0 12px; display: flex; align-items: center; justify-content: space-between;">
+        <h3 style="font-size: 1.05rem; color: var(--navy); font-weight: 800;">
+          CHI TIẾT ĐÁP ÁN & ĐỐI CHIẾU NGUỒN TÀI LIỆU
+        </h3>
+        <span style="font-size: 0.8rem; color: var(--text-muted);">20 câu trắc nghiệm</span>
+      </div>
+
+      <!-- Container render 20 câu trắc nghiệm với background màu xanh/đỏ/vàng -->
+      <div id="review-questions-container">
+        <!-- Render động bằng JS -->
+      </div>
+
+      <!-- Container xem lại bài làm tự luận của thí sinh -->
+      <div style="margin: 28px 0 12px;">
+        <h3 style="font-size: 1.05rem; color: var(--navy); font-weight: 800;">
+          BÀI LÀM TỰ LUẬN ĐÃ NỘP (CHỜ GIÁM KHẢO CHẤM)
+        </h3>
+      </div>
+      <div id="review-essay-container">
+        <!-- Render động bằng JS -->
+      </div>
+
+      <!-- Action buttons (Thí sinh không cần in) -->
+      <div class="result-actions">
+        <button type="button" id="btn-send-sheets" class="btn btn-success" style="flex: 1;">
+          <span>📊</span> Đồng Bộ Lại Lên Google Sheet
+        </button>
+        <button type="button" id="btn-restart" class="btn btn-primary" style="flex: 1;">
+          <span>🔄</span> Làm Lại Bài Thi / Bốc Đề Khác
+        </button>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ==================== FLOATING BOTTOM BAR (MOBILE FIRST) ==================== -->
+  <div id="bottom-bar" class="bottom-bar" style="display: none;">
+    <div class="bottom-bar-inner">
+      <div class="progress-info">
+        <div class="progress-text" id="mobile-progress-text">Đã làm: 0 / 22 câu</div>
+        <div class="progress-bar-bg">
+          <div class="progress-bar-fill" id="mobile-progress-fill"></div>
+        </div>
+      </div>
+      <div class="bottom-timer-pill" id="mobile-bottom-timer">
+        <span>⏱️</span> <span id="mobile-bottom-timer-text">30:00</span>
+      </div>
+      <div class="bottom-actions">
+        <button type="button" id="btn-toggle-palette" class="btn-palette-toggle">
+          <span>📑</span> Bảng câu
+        </button>
+        <button type="button" class="btn-submit-exam btn-trigger-submit">
+          <span>Nộp bài</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ==================== QUESTION PALETTE DRAWER (MOBILE) ==================== -->
+  <div id="palette-backdrop" class="palette-backdrop"></div>
+  <div id="palette-drawer" class="palette-drawer">
+    <div class="palette-header">
+      <h3>DANH SÁCH TOÀN BỘ CÂU HỎI</h3>
+      <button type="button" id="btn-close-palette" class="btn-close-palette">&times;</button>
+    </div>
+    <div class="palette-grid" id="mobile-palette-grid">
+      <!-- Render 22 nút 1..20, TL1, TL2 -->
+    </div>
+    <div class="palette-legend">
+      <div class="legend-item">
+        <span class="legend-dot" style="background: #fff; border: 1px solid #cbd5e1;"></span>
+        <span>Chưa làm</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-dot" style="background: #3b82f6;"></span>
+        <span>Đã làm</span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ==================== MODAL XÁC NHẬN NỘP BÀI ==================== -->
+  <div id="modal-submit-confirm" class="modal-overlay">
+    <div class="modal-dialog">
+      <div class="modal-header">⚠️ XÁC NHẬN NỘP BÀI THI</div>
+      <div class="modal-body" id="modal-submit-msg">
+        Đồng chí có chắc chắn muốn nộp bài?
+      </div>
+      <div class="modal-actions">
+        <button type="button" id="btn-cancel-submit" class="btn btn-secondary">Tiếp tục làm bài</button>
+        <button type="button" id="btn-confirm-submit" class="btn btn-primary">Xác nhận nộp bài</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- ==================== NẠP SCRIPT ==================== -->
+  <!-- 1. Bộ câu hỏi an toàn (HOÀN TOÀN KHÔNG CHỨA ĐÁP ÁN TRƯỚC KHI NỘP) -->
+  <script src="data/cau_hoi_bundle.js"></script>
+  
+  <!-- 2. Logic điều khiển chính của Web App -->
+  <script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+{
+  "maDe": "DE10",
+  "tenDe": "Đáp án Bộ đề kiểm tra số 10 - Chiến thuật Chữa cháy và Cứu nạn, cứu hộ",
+  "dapAnTracNghiem": [
+    {
+      "ID": "CTCCXD001",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Chú ý đề phòng sụp đổ cấu kiện xây dựng do nổ xitéc, bình chứa khí hóa lỏng và trang bị quần áo cách nhiệt, chống cháy"
+    },
+    {
+      "ID": "CTCCGO002",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Phân công một tổ chiến đấu thuộc đơn vị quản lý địa bàn ở lại đề phòng cháy bùng phát lại, các đơn vị ở xa chi viện thu hồi trước"
+    },
+    {
+      "ID": "CTCCGO003",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Bố trí người quan sát, bảo vệ ở phía dưới và hô to để mọi người biết tránh xa khu vực nguy hiểm trước khi thả xuống"
+    },
+    {
+      "ID": "CTCCOT004",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Đặt đường vòi chính dọc theo đường, nếu buộc phải cắt ngang qua đường thì phải có giải pháp chèn để tránh xe đè lên làm vỡ vòi"
+    },
+    {
+      "ID": "CTCCOT005",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Luôn triển khai sẵn một lăng phun bọt độ nở trung bình để kịp thời dập tắt và ngăn chặn hiện tượng xăng dầu cháy trở lại"
+    },
+    {
+      "ID": "CTCCKB006",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Xe thang phải đỗ ở nơi có nền bê tông ngoài lòng đê bao và lăng phun bọt phải được ga rô chắc chắn trên đầu thang"
+    },
+    {
+      "ID": "CTCCKB007",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Nhanh chóng thu hồi phương tiện và rút toàn bộ lực lượng ra vị trí an toàn vì đó là dấu hiệu dầu sắp sôi trào và bắn tung ra ngoài"
+    },
+    {
+      "ID": "CTCCNCT008",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Đặt hai ba chạc gồm một chiếc ở dưới mặt đất cạnh nhà và một chiếc trên chiếu nghỉ tầng thấp hơn tầng bị cháy có đầu nối tự do xả nước"
+    },
+    {
+      "ID": "CTCCNCT009",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Bố trí một tổ chữa cháy ở lại tiếp tục phun nước làm mát và ngăn chặn khả năng đám cháy bùng phát trở lại"
+    },
+    {
+      "ID": "CNCHBT010",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Phải quy định tín hiệu dây giữa lực lượng ở trên bờ, trên phương tiện với lực lượng đang làm việc ở dưới mặt nước"
+    },
+    {
+      "ID": "CNCHDN011",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Ưu tiên cứu người bị nguy hiểm trước, đồng thời hướng dẫn những người còn tỉnh táo và biết bơi tự bơi vào bờ an toàn"
+    },
+    {
+      "ID": "CTCCCR012",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Phải tiến hành lập biên bản xác nhận sự việc để làm cơ sở giải quyết các chế độ, chính sách theo quy định"
+    },
+    {
+      "ID": "CTCCNLK013",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Nhất thiết phải triển khai tối thiểu hai mũi lăng, trong đó có một mũi lăng chính và một mũi lăng làm nhiệm vụ bảo vệ"
+    },
+    {
+      "ID": "CTCCNLK014",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Không được đi lại vội vàng mà phải hết sức thận trọng, luôn cúi thấp người hoặc bò để hạn chế khói và tránh sụp đổ trần, mái"
+    },
+    {
+      "ID": "CNCHTC015",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Tuyệt đối không được hoạt động độc lập khi tìm kiếm cứu nạn; khi lên tầng mái phải chú ý nguy cơ nổ hệ thống khí gas và sụp đổ cấu kiện"
+    },
+    {
+      "ID": "CNCHDS016",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Động viên, trấn an tinh thần của người bị nạn để họ bình tĩnh nghe theo và làm theo những chỉ dẫn của lực lượng CNCH"
+    },
+    {
+      "ID": "CNCHSD017",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Tiến hành gia cố chống sập đổ, đồng thời bố trí lực lượng CNCH ở mức thấp nhất có thể nhưng vẫn bảo đảm hiệu quả công tác"
+    },
+    {
+      "ID": "CNCHSD018",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Phần chân, tay có garo phải được để lộ, không ủ ấm ngay cả khi trời lạnh và phải nới garo định kỳ để tránh hoại tử chi"
+    },
+    {
+      "ID": "CTCCTG019",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Phải báo cho bộ phận tham mưu và thường xuyên cập nhật thông tin để ghi chép lại thời điểm vào đám cháy và lượng dưỡng khí trong bình"
+    },
+    {
+      "ID": "CTCCTG020",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Chú ý tác phong, cử chỉ, hành động phù hợp, chuẩn mực trước tín đồ và nhân dân, tránh bị đối tượng xấu lợi dụng, kích động"
+    }
+  ],
+  "dapAnTuLuan": [
+    {
+      "ID": "TL001",
+      "cauHoi": "Đồng chí hãy trình bày công tác kiểm soát an toàn và những điểm cần lưu ý khi tổ chức chữa cháy nhà cao tầng, siêu cao tầng?",
+      "tuKhoa": [
+        "đường cầu thang bộ",
+        "chống khói, khí độc",
+        "không bị nghiêng, đổ",
+        "lăng công suất nhỏ",
+        "phun mưa bảo vệ",
+        "nổ hệ thống khí gas",
+        "sụp đổ cấu kiện",
+        "lợi dụng cánh cửa",
+        "dây có độ bền cao",
+        "thay ca kíp",
+        "mảnh kính vỡ",
+        "đặt 2 ba chạc",
+        "cuộn vòi dự phòng",
+        "kéo vòi bằng dây",
+        "vuông góc tường nhà",
+        "thang máy chữa cháy",
+        "bơm truyền tiếp nước"
+      ]
+    },
+    {
+      "ID": "TL002",
+      "cauHoi": "Đồng chí hãy trình bày cách tổ chức chữa cháy nhà liên kế trong ngõ hẹp, trong điều kiện thiếu nước và các biện pháp kiểm soát an toàn cho cán bộ chiến sĩ?",
+      "tuKhoa": [
+        "xe trạm bơm",
+        "đỗ ở mặt đường chính",
+        "về một phía ngõ",
+        "nhân dân tiếp nước",
+        "lưới bảo vệ miệng két",
+        "xe xi téc chở nước",
+        "phun nước liên tục",
+        "lăng đa tác dụng",
+        "hút trực tiếp từ trụ nước",
+        "cúi thấp người",
+        "tối thiểu 02 mũi lăng",
+        "mũi lăng bảo vệ",
+        "đứng nép về một bên",
+        "lợi dụng cánh cửa",
+        "mặt nạ phòng độc cách ly",
+        "canh gác khu vực phá dỡ"
+      ]
+    }
+  ]
+}

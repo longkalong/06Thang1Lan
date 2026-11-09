@@ -1,0 +1,274 @@
+{
+  "maDe": "DE10",
+  "tenDe": "Bộ đề kiểm tra số 10 - Chiến thuật Chữa cháy và Cứu nạn, cứu hộ",
+  "thoiGianLamBaiPhut": 30,
+  "tracNghiem": [
+    {
+      "ID": "CTCCXD001",
+      "cauHoi": "Khi thực hiện các biện pháp bảo đảm an toàn trong quá trình chữa cháy cửa hàng kinh doanh xăng, dầu, cán bộ chiến sĩ ở khu vực có nguy cơ nổ xitéc và các bình chứa khí đốt hóa lỏng phải đặc biệt chú ý điều gì?",
+      "luaChon": [
+        "A. Chú ý mở toàn bộ các nắp hố ga thoát nước ngầm để hơi xăng dầu tích tụ sâu xuống bên dưới nền nhà",
+        "B. Chú ý đứng tập trung sát ngay phía dưới mái che cột bơm để tránh bị ướt quần áo khi phun nước làm mát",
+        "C. Chú ý đề phòng sụp đổ cấu kiện xây dựng do nổ xitéc, bình chứa khí hóa lỏng và trang bị quần áo cách nhiệt, chống cháy",
+        "D. Chú ý tháo bỏ găng tay, ủng chống cháy để dễ dàng di chuyển nhanh qua các vũng xăng dầu đang chảy loang"
+      ],
+      "dapan": 3
+    },
+    {
+      "ID": "CTCCGO002",
+      "cauHoi": "Trong công tác tổ chức hoạt động sau khi đám cháy tại cơ sở gia công, chế biến gỗ được dập tắt hoàn toàn, chỉ huy chữa cháy phải phân công lực lượng ở lại và thứ tự thu hồi phương tiện như thế nào?",
+      "luaChon": [
+        "A. Phân công một tổ chiến đấu thuộc đơn vị quản lý địa bàn ở lại đề phòng cháy bùng phát lại, các đơn vị ở xa chi viện thu hồi trước",
+        "B. Cho toàn bộ các đơn vị quản lý địa bàn rút về trước ngay lập tức và giữ các đơn vị ở xa ở lại dọn dẹp kho bãi",
+        "C. Thu hồi đồng loạt tất cả các xe chữa cháy cùng lúc mà không cần kiểm tra quân số hay cử người bảo vệ hiện trường",
+        "D. Để nguyên toàn bộ các đường vòi chữa cháy đang có áp lực cao tại hiện trường và giao cho công nhân tự thu hồi"
+      ],
+      "dapan": 1
+    },
+    {
+      "ID": "CTCCGO003",
+      "cauHoi": "Khi thực hiện công tác bảo đảm an toàn trong quá trình phá dỡ cấu kiện xây dựng tại đám cháy cơ sở chế biến gỗ hoặc nhà liên kế, trường hợp cần thả cấu kiện từ trên cao xuống thì phải xử lý thế nào?",
+      "luaChon": [
+        "A. Cứ đẩy tự do cấu kiện rơi xuống bất kỳ vị trí nào dưới chân tường mà không cần thông báo cho lực lượng bên dưới",
+        "B. Chất đống các vật liệu vừa phá dỡ ngay trên lối đi chính của lực lượng chữa cháy để làm rào chắn ngăn người qua lại",
+        "C. Phá dỡ trực tiếp vào các cột trụ chịu lực chính của ngôi nhà để toàn bộ phần mái sập xuống cùng một lúc cho nhanh",
+        "D. Bố trí người quan sát, bảo vệ ở phía dưới và hô to để mọi người biết tránh xa khu vực nguy hiểm trước khi thả xuống"
+      ],
+      "dapan": 4
+    },
+    {
+      "ID": "CTCCOT004",
+      "cauHoi": "Khi triển khai đường vòi chữa cháy đối với đám cháy xe ô tô trên đường giao thông, việc đặt đường vòi chính và bảo vệ đường vòi cắt ngang qua đường được thực hiện như thế nào để bảo đảm an toàn?",
+      "luaChon": [
+        "A. Đặt tất cả các đường vòi nằm ngoằn ngoèo giữa lòng đường và cho phép các phương tiện giao thông chạy đè trực tiếp qua vòi",
+        "B. Đặt đường vòi chính dọc theo đường, nếu buộc phải cắt ngang qua đường thì phải có giải pháp chèn để tránh xe đè lên làm vỡ vòi",
+        "C. Treo toàn bộ đường vòi chữa cháy lên dây điện cao thế dọc theo tuyến đường để tránh va chạm với phương tiện giao thông",
+        "D. Tuyệt đối không triển khai đường vòi chữa cháy trên mặt đường mà chỉ dùng xô xách nước từ xe chữa cháy đi dập lửa"
+      ],
+      "dapan": 2
+    },
+    {
+      "ID": "CTCCOT005",
+      "cauHoi": "Sau khi đám cháy xe ô tô xi téc chở xăng dầu đã được khống chế và đang trong giai đoạn phun nước làm mát để làm nguội hoàn toàn xitéc, lực lượng chữa cháy phải duy trì biện pháp an toàn nào đề phòng cháy lại?",
+      "luaChon": [
+        "A. Luôn triển khai sẵn một lăng phun bọt độ nở trung bình để kịp thời dập tắt và ngăn chặn hiện tượng xăng dầu cháy trở lại",
+        "B. Thu hồi toàn bộ các lăng phun bọt cất lên xe và mở toang nắp đỉnh xitéc để hơi xăng dầu thoát tự do ra ngoài không khí",
+        "C. Dùng tia nước đặc áp lực cao phun vuông góc trực tiếp vào thành thiết bị chứa và phun thẳng qua miệng nắp vào trong xitéc",
+        "D. Cho cán bộ chiến sĩ leo lên đứng trên đỉnh xitéc đang nóng để dùng que sắt kiểm tra mức xăng dầu còn lại bên trong"
+      ],
+      "dapan": 1
+    },
+    {
+      "ID": "CTCCKB006",
+      "cauHoi": "Trong quá trình kiểm soát an toàn khi chữa cháy kho, bể chứa xăng dầu, việc bố trí vị trí đỗ xe thang và cố định lăng phun bọt trên đầu thang phải tuân thủ yêu cầu kỹ thuật nào?",
+      "luaChon": [
+        "A. Xe thang phải đỗ ngay sát chân bể chứa bên trong lòng đê bao và để lăng phun bọt tự do không cần buộc cố định",
+        "B. Xe thang phải đỗ ở phía cuối chiều gió nơi có nhiều khói nhiệt và cử chiến sĩ đứng cầm tay giữ lăng trên đỉnh thang",
+        "C. Xe thang phải đỗ ở nơi có nền bê tông ngoài lòng đê bao và lăng phun bọt phải được ga rô chắc chắn trên đầu thang",
+        "D. Xe thang phải đỗ nghiêng trên thân đê bao bằng đất cát và nối trực tiếp ống dẫn bọt vào hệ thống van thở của bể"
+      ],
+      "dapan": 3
+    },
+    {
+      "ID": "CTCCKB007",
+      "cauHoi": "Khi đang tổ chức chữa cháy bể chứa dầu mỏ hoặc ma dút, nếu phát hiện các dấu hiệu như tiếng ồn sôi réo tăng lên, thành bể rung mạnh, khói trắng tăng và ngọn lửa sáng rực màu cam thì chỉ huy phải xử lý thế nào?",
+      "luaChon": [
+        "A. Điều động thêm toàn bộ cán bộ chiến sĩ tiến sát vào chân bể chứa để phun tia nước đặc trực tiếp vào thành bể đang rung",
+        "B. Nhanh chóng thu hồi phương tiện và rút toàn bộ lực lượng ra vị trí an toàn vì đó là dấu hiệu dầu sắp sôi trào và bắn tung ra ngoài",
+        "C. Giữ nguyên đội hình chiến đấu bên trong lòng đê bao và cho mở các van xả đáy bể để xả dầu đang sôi ra xung quanh",
+        "D. Cử tổ trinh sát trèo theo cầu thang sắt lên đỉnh mái bể chứa để quan sát trực tiếp mức độ sôi của lớp dầu bên trong"
+      ],
+      "dapan": 2
+    },
+    {
+      "ID": "CTCCNCT008",
+      "cauHoi": "Khi kiến thiết đường vòi chính từ trên xuống dưới để chữa cháy nhà cao tầng, siêu cao tầng, việc bố trí các ba chạc trên đường vòi được thực hiện như thế nào để bảo đảm an toàn và chủ động?",
+      "luaChon": [
+        "A. Chỉ đặt một ba chạc duy nhất ở trên tầng mái của tòa nhà và khóa chặt toàn bộ các đầu nối không cho xả nước",
+        "B. Đặt các ba chạc nằm rải rác bên trong tất cả các buồng thang máy thông thường để tiện kéo vòi vào phòng cháy",
+        "C. Không sử dụng ba chạc mà nối liền một đường vòi duy nhất từ máy bơm xe chữa cháy thẳng tới đầu lăng phun trên tầng cao",
+        "D. Đặt hai ba chạc gồm một chiếc ở dưới mặt đất cạnh nhà và một chiếc trên chiếu nghỉ tầng thấp hơn tầng bị cháy có đầu nối tự do xả nước"
+      ],
+      "dapan": 4
+    },
+    {
+      "ID": "CTCCNCT009",
+      "cauHoi": "Sau khi đám cháy tại khu vực tầng hầm của nhà cao tầng, siêu cao tầng đã được dập tắt, chỉ huy chữa cháy phải thực hiện biện pháp bắt buộc nào tại khu vực tầng hầm?",
+      "luaChon": [
+        "A. Đóng kín ngay tất cả các cửa tầng hầm và bơm xả khí gas vào bên trong để kiểm tra độ kín của kết cấu hầm",
+        "B. Cho phép người dân lập tức xuống tầng hầm nổ máy di chuyển toàn bộ các xe ô tô, xe máy ra ngoài ngay lập tức",
+        "C. Bố trí một tổ chữa cháy ở lại tiếp tục phun nước làm mát và ngăn chặn khả năng đám cháy bùng phát trở lại",
+        "D. Bật lại toàn bộ hệ thống điện chiếu sáng và điện động lực bị chập cháy dưới tầng hầm trước khi thu hồi phương tiện"
+      ],
+      "dapan": 3
+    },
+    {
+      "ID": "CNCHBT010",
+      "cauHoi": "Trong công tác bảo đảm an toàn khi cứu nạn, cứu hộ đuối nước tại bãi tắm khu du lịch cũng như tại sông, suối, hồ, ao, khi triển khai lực lượng làm việc dưới mặt nước thì phải thực hiện quy định liên lạc nào?",
+      "luaChon": [
+        "A. Phải quy định tín hiệu dây giữa lực lượng ở trên bờ, trên phương tiện với lực lượng đang làm việc ở dưới mặt nước",
+        "B. Cho cán bộ chiến sĩ lặn hoàn toàn tự do dưới đáy nước sâu mà không cần buộc dây bảo hiểm hay dây tín hiệu liên lạc",
+        "C. Chỉ sử dụng loa phóng thanh cầm tay đứng trên bờ hô to xuống mặt nước để chỉ huy chiến sĩ đang lặn ở dưới đáy sâu",
+        "D. Yêu cầu chiến sĩ lặn tháo bỏ thiết bị hỗ trợ thở mỗi khi cần bơi lên mặt nước để báo cáo tình hình cho chỉ huy"
+      ],
+      "dapan": 1
+    },
+    {
+      "ID": "CNCHDN011",
+      "cauHoi": "Khi tổ chức cứu nạn, cứu hộ đuối nước tại bãi tắm hoặc sông, suối, hồ, ao trong trường hợp có nhiều người bị nạn cùng lúc dưới nước, lực lượng CNCH phải thực hiện thứ tự ưu tiên như thế nào?",
+      "luaChon": [
+        "A. Ưu tiên bơi ra cứu những người đang tỉnh táo và biết bơi ở gần bờ trước, sau đó mới tìm cách tiếp cận người đang chìm",
+        "B. Chờ cho tất cả những người bị nạn tự bám vào nhau thành một cụm lớn rồi mới triển khai một lượt phương tiện ra cứu",
+        "C. Chỉ tập trung trục vớt tài sản và phương tiện thủy bị trôi dạt trước rồi mới quay lại tổ chức cứu người bị nạn sau",
+        "D. Ưu tiên cứu người bị nguy hiểm trước, đồng thời hướng dẫn những người còn tỉnh táo và biết bơi tự bơi vào bờ an toàn"
+      ],
+      "dapan": 4
+    },
+    {
+      "ID": "CTCCCR012",
+      "cauHoi": "Trong công tác kiểm soát an toàn và bảo đảm hậu cần, y tế khi tổ chức chữa cháy rừng, nếu có người tham gia chữa cháy bị thương nặng hoặc tử vong thì ngoài việc sơ cấp cứu cần phải thực hiện thủ tục gì?",
+      "luaChon": [
+        "A. Giấu kín thông tin không báo cáo cho Ban chỉ huy và tự ý di chuyển người bị nạn về gia đình mà không ghi nhận hiện trường",
+        "B. Phải tiến hành lập biên bản xác nhận sự việc để làm cơ sở giải quyết các chế độ, chính sách theo quy định",
+        "C. Tạm dừng ngay toàn bộ hoạt động chữa cháy rừng của tất cả các đơn vị để tổ chức họp kiểm điểm ngay tại đám cháy",
+        "D. Giao toàn bộ việc xử lý cho người dân địa phương tự giải quyết mà không cần sự can thiệp của lực lượng y tế"
+      ],
+      "dapan": 2
+    },
+    {
+      "ID": "CTCCNLK013",
+      "cauHoi": "Khi kiểm soát an toàn trong quá trình chữa cháy nhà liên kế cũng như cơ sở tôn giáo, để tiếp cận căn phòng hoặc vị trí xảy cháy bảo đảm an toàn thì nhất thiết phải triển khai tối thiểu mấy mũi lăng?",
+      "luaChon": [
+        "A. Chỉ cần triển khai duy nhất một mũi lăng công suất nhỏ đi sâu vào trong phòng cháy mà không cần mũi lăng hỗ trợ",
+        "B. Triển khai một chiến sĩ cầm bình chữa cháy xách tay đi một mình vào phòng kín mà không cần triển khai đường vòi nước",
+        "C. Nhất thiết phải triển khai tối thiểu hai mũi lăng, trong đó có một mũi lăng chính và một mũi lăng làm nhiệm vụ bảo vệ",
+        "D. Phải đặt cố định tất cả các lăng chữa cháy ở ngoài đường cái cách xa ngôi nhà bị cháy chứ không tiếp cận cửa phòng"
+      ],
+      "dapan": 3
+    },
+    {
+      "ID": "CTCCNLK014",
+      "cauHoi": "Trong quá trình chiến đấu trên các tầng gác có nhiều khói của đám cháy nhà liên kế, cán bộ chiến sĩ phải di chuyển như thế nào để bảo đảm an toàn trước nguy cơ sụp đổ cấu kiện?",
+      "luaChon": [
+        "A. Không được đi lại vội vàng mà phải hết sức thận trọng, luôn cúi thấp người hoặc bò để hạn chế khói và tránh sụp đổ trần, mái",
+        "B. Phải đứng thẳng người và chạy thật nhanh qua chính giữa các nhịp dầm gỗ đang bốc cháy mạnh để vượt qua vùng khói",
+        "C. Tháo bỏ mặt nạ phòng độc cách ly và nhảy mạnh trên sàn gác gỗ để kiểm tra độ bền chịu lực của kết cấu công trình",
+        "D. Đứng tập trung nhiều chiến sĩ tại một điểm ngay dưới các ô cửa kính lớn và phần mái ngói đang bị biến dạng nhiệt"
+      ],
+      "dapan": 1
+    },
+    {
+      "ID": "CNCHTC015",
+      "cauHoi": "Trong các biện pháp bảo đảm an toàn khi tổ chức cứu nạn, cứu hộ sự cố cháy hoặc tai nạn trên nhà cao tầng, nguyên tắc làm việc khi tìm kiếm cứu người và khi tiếp cận lên tầng mái được quy định thế nào?",
+      "luaChon": [
+        "A. Cho phép từng chiến sĩ hoạt động độc lập một mình ở các tầng khác nhau để mở rộng phạm vi tìm kiếm người bị nạn",
+        "B. Khi lên tầng mái có thể tháo bỏ dây bảo hiểm và không cần quan tâm đến hệ thống đường ống dẫn khí gas trên mái",
+        "C. Được phép đặt thang cứu nạn trên nền đất lún yếu và không cần cố định chân thang khi có áp suất đầu lăng hoặc gió đẩy",
+        "D. Tuyệt đối không được hoạt động độc lập khi tìm kiếm cứu nạn; khi lên tầng mái phải chú ý nguy cơ nổ hệ thống khí gas và sụp đổ cấu kiện"
+      ],
+      "dapan": 4
+    },
+    {
+      "ID": "CNCHDS016",
+      "cauHoi": "Khi tiến hành cứu nạn, cứu hộ trong trường hợp có nhiều người bị nạn cùng mắc kẹt dưới sâu dễ dẫn đến hoảng hốt, chen lấn xô đẩy tranh nhau lên thang hoặc dây cứu nạn, lực lượng CNCH phải xử lý thế nào?",
+      "luaChon": [
+        "A. Kéo ngay thang ba và dây cứu nạn lên khỏi miệng hố và ngừng việc giải cứu cho đến khi nạn nhân tự hết hoảng loạn",
+        "B. Động viên, trấn an tinh thần của người bị nạn để họ bình tĩnh nghe theo và làm theo những chỉ dẫn của lực lượng CNCH",
+        "C. Dùng vòi nước phun mạnh từ trên miệng hố xuống vị trí người bị nạn để giải tán đám đông đang chen lấn dưới đáy hố",
+        "D. Cho phép tất cả những người bị nạn cùng bám lên một sợi dây cứu nạn đơn lẻ để kéo toàn bộ lên mặt đất trong một lần"
+      ],
+      "dapan": 2
+    },
+    {
+      "ID": "CNCHSD017",
+      "cauHoi": "Trong công tác bảo đảm an toàn và phòng ngừa tai nạn thứ cấp khi cứu nạn tại hiện trường sập đổ công trình, đối với khu vực có nguy cơ sập đổ thứ cấp thì phải bố trí lực lượng như thế nào?",
+      "luaChon": [
+        "A. Tiến hành gia cố chống sập đổ, đồng thời bố trí lực lượng CNCH ở mức thấp nhất có thể nhưng vẫn bảo đảm hiệu quả công tác",
+        "B. Tập trung tối đa toàn bộ quân số của tất cả các đơn vị đứng dày đặc ngay trên cấu kiện đang có nguy cơ sập đổ thứ cấp",
+        "C. Bỏ qua việc gia cố hay kê chèn cấu kiện để tiết kiệm thời gian và đưa ngay máy xúc hạng nặng đè lên mái nhà bị sập",
+        "D. Cho phép người nhà nạn nhân và phóng viên báo chí tự do đi lại trong vùng 1 để hỗ trợ tìm kiếm cùng chiến sĩ CNCH"
+      ],
+      "dapan": 1
+    },
+    {
+      "ID": "CNCHSD018",
+      "cauHoi": "Khi chuyển nạn nhân đã được đặt garo cầm máu hoặc phòng hội chứng vùi lấp từ hiện trường sập đổ công trình đến bệnh viện, việc quản lý và chăm sóc phần chi thể có đặt garo phải tuân thủ quy định nào?",
+      "luaChon": [
+        "A. Phải dùng nhiều lớp chăn bông quấn kín và chườm nóng liên tục lên phần chân tay có đặt garo để giữ ấm tuyệt đối",
+        "B. Phải tháo bỏ hoàn toàn dây garo ngay trên xe cứu thương mà không cần theo dõi tình trạng chảy máu của vết thương",
+        "C. Phần chân, tay có garo phải được để lộ, không ủ ấm ngay cả khi trời lạnh và phải nới garo định kỳ để tránh hoại tử chi",
+        "D. Phải buộc chặt thêm một dây garo thứ hai đè lên vết thương và giữ nguyên không nới trong suốt nhiều ngày điều trị"
+      ],
+      "dapan": 3
+    },
+    {
+      "ID": "CTCCTG019",
+      "cauHoi": "Trong công tác kiểm soát an toàn khi tổ chức chữa cháy tại cơ sở tôn giáo có nhiều khói và nhiệt độ cao, các cán bộ chiến sĩ sử dụng mặt nạ phòng độc cách ly phải thực hiện chế độ báo cáo nào?",
+      "luaChon": [
+        "A. Không cần báo cáo cho bộ phận tham mưu mà tự ước lượng thời gian làm việc cho đến khi cạn sạch dưỡng khí trong bình",
+        "B. Chỉ cần báo cáo một lần duy nhất sau khi đám cháy đã được dập tắt hoàn toàn và các đơn vị đã thu hồi phương tiện về đơn vị",
+        "C. Tự ý tháo mặt nạ phòng độc cách ly ra bên trong gian thờ đang đầy khói khí độc để nói chuyện trực tiếp với chỉ huy",
+        "D. Phải báo cho bộ phận tham mưu và thường xuyên cập nhật thông tin để ghi chép lại thời điểm vào đám cháy và lượng dưỡng khí trong bình"
+      ],
+      "dapan": 4
+    },
+    {
+      "ID": "CTCCTG020",
+      "cauHoi": "Do đặc điểm cơ sở tôn giáo gắn liền với tín ngưỡng của nhân dân, khi tham gia chữa cháy và cứu nạn tại cơ sở tôn giáo, cán bộ chiến sĩ Cảnh sát PCCC và CNCH cần đặc biệt lưu ý điều gì về tác phong?",
+      "luaChon": [
+        "A. Tự ý đập phá toàn bộ các đồ thờ cúng và tượng thờ không bị cháy đe dọa để mở rộng tối đa lối đi cho xe chữa cháy",
+        "B. Chú ý tác phong, cử chỉ, hành động phù hợp, chuẩn mực trước tín đồ và nhân dân, tránh bị đối tượng xấu lợi dụng, kích động",
+        "C. Cấm tuyệt đối người đứng đầu cơ sở tôn giáo và các chức sắc tôn giáo không được cung cấp thông tin về đặc điểm kiến trúc",
+        "D. Chỉ triển khai chữa cháy ở khu vực cổng tam quan bên ngoài mà không tiến vào cứu tài sản trong khu vực chính điện"
+      ],
+      "dapan": 2
+    }
+  ],
+  "tuLuan": [
+    {
+      "ID": "TL001",
+      "cauHoi": "Đồng chí hãy trình bày công tác kiểm soát an toàn và những điểm cần lưu ý khi tổ chức chữa cháy nhà cao tầng, siêu cao tầng?",
+      "tuKhoaDapAn": [
+        "đường cầu thang bộ",
+        "chống khói, khí độc",
+        "không bị nghiêng, đổ",
+        "lăng công suất nhỏ",
+        "phun mưa bảo vệ",
+        "nổ hệ thống khí gas",
+        "sụp đổ cấu kiện",
+        "lợi dụng cánh cửa",
+        "dây có độ bền cao",
+        "thay ca kíp",
+        "mảnh kính vỡ",
+        "đặt 2 ba chạc",
+        "cuộn vòi dự phòng",
+        "kéo vòi bằng dây",
+        "vuông góc tường nhà",
+        "thang máy chữa cháy",
+        "bơm truyền tiếp nước"
+      ]
+    },
+    {
+      "ID": "TL002",
+      "cauHoi": "Đồng chí hãy trình bày cách tổ chức chữa cháy nhà liên kế trong ngõ hẹp, trong điều kiện thiếu nước và các biện pháp kiểm soát an toàn cho cán bộ chiến sĩ?",
+      "tuKhoaDapAn": [
+        "xe trạm bơm",
+        "đỗ ở mặt đường chính",
+        "về một phía ngõ",
+        "nhân dân tiếp nước",
+        "lưới bảo vệ miệng két",
+        "xe xi téc chở nước",
+        "phun nước liên tục",
+        "lăng đa tác dụng",
+        "hút trực tiếp từ trụ nước",
+        "cúi thấp người",
+        "tối thiểu 02 mũi lăng",
+        "mũi lăng bảo vệ",
+        "đứng nép về một bên",
+        "lợi dụng cánh cửa",
+        "mặt nạ phòng độc cách ly",
+        "canh gác khu vực phá dỡ"
+      ]
+    }
+  ]
+}

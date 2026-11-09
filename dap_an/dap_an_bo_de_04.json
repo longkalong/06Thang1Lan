@@ -1,0 +1,170 @@
+{
+  "maDe": "DE04",
+  "tenDe": "Đáp án Bộ đề kiểm tra số 04 - Chiến thuật Chữa cháy và Cứu nạn, cứu hộ",
+  "dapAnTracNghiem": [
+    {
+      "ID": "CTCCXD001",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Dừng ngay việc xuất nhập xăng dầu, đóng các van trên xe và bể chứa, tìm cách đưa xe xi téc ra khỏi khu vực nguy hiểm và báo cháy."
+    },
+    {
+      "ID": "CTCCGO002",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Tập trung lực lượng, phương tiện đủ mạnh để vừa dập tắt đám cháy bằng nước với lưu lượng lớn vừa làm mát, chống cháy lan."
+    },
+    {
+      "ID": "CTCCGO003",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Cắt điện khu vực cháy, dừng ngay hệ thống thông gió, hệ thống hút bụi gỗ và đóng các van ngăn lửa trên đường ống dẫn bụi."
+    },
+    {
+      "ID": "CTCCOT004",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Dừng xe ở vị trí cách xa các công trình, khu dân cư, nhanh chóng tổ chức thoát nạn cho hành khách, báo cháy và chữa cháy ban đầu."
+    },
+    {
+      "ID": "CTCCOT005",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Phải tập trung lực lượng dập tắt ngọn lửa cháy loang xung quanh trên mặt đất trước, sau đó mới tiến hành dập tắt lửa trên miệng xi téc."
+    },
+    {
+      "ID": "CTCCKB006",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Báo động cháy, vận hành ngay hệ thống làm mát và chữa cháy cố định, ngừng xuất nhập, đóng các van chặn và kiểm tra hệ thống đê bao."
+    },
+    {
+      "ID": "CTCCNCT007",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Tổ chức tìm kiếm, hướng dẫn thoát nạn và cứu người bị nạn đang mắc kẹt tại tầng bị cháy và các tầng bị nhiễm khói phía trên."
+    },
+    {
+      "ID": "CTCCNCT008",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Cắt điện khu vực cháy, đưa thang máy thông thường về tầng trệt, kích hoạt hệ thống tăng áp cầu thang bộ, hút khói và bơm chữa cháy."
+    },
+    {
+      "ID": "CNCHBT009",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Nhanh chóng nắm tình hình người bị nạn và đặc điểm vùng nước, tổ chức trinh sát, khoanh vùng hiện trường và quyết định phương án cứu người."
+    },
+    {
+      "ID": "CNCHDN010",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Cán bộ, chiến sĩ trực tiếp xuống nước phải mặc áo phao hoặc trang bị lặn, có dây cứu nạn bảo hiểm và luôn hỗ trợ nhau theo tổ, nhóm."
+    },
+    {
+      "ID": "CTCCCR011",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Thực hiện nghiêm phương châm bốn tại chỗ, huy động sức mạnh tổng hợp của nhiều lực lượng và ưu tiên ngăn chặn hướng cháy lan chính."
+    },
+    {
+      "ID": "CTCCNLK012",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Hô hoán báo động, gọi báo cháy, cắt điện ngôi nhà cháy, sử dụng phương tiện tại chỗ cứu người mắc kẹt và khống chế ngọn lửa ban đầu."
+    },
+    {
+      "ID": "CTCCNLK013",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Triển khai đồng thời việc phun nước làm mát, khống chế lửa ở tầng một và bắc thang hoặc qua nhà liền kề phá dỡ chuồng cọp để cứu người."
+    },
+    {
+      "ID": "CNCHTC014",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Điểm neo phải là các cấu kiện thật sự vững chắc, chịu được tải trọng lớn, có lót bảo vệ dây ở các góc cạnh sắc và luôn có điểm neo dự phòng."
+    },
+    {
+      "ID": "CNCHTC015",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Tiếp cận từ phía đầu hướng gió và ở vị trí cao hơn khu vực rò rỉ, trang bị đầy đủ phương tiện bảo hộ chống độc và thiết bị thở cách ly."
+    },
+    {
+      "ID": "CNCHDS016",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Kiểm tra nồng độ oxy và các khí độc, khí cháy nổ, tiến hành thông gió cưỡng bức liên tục và trang bị đầy đủ bình thở, dây bảo hiểm."
+    },
+    {
+      "ID": "CNCHDS017",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Khoanh vùng hiện trường, đưa người không có nhiệm vụ ra xa miệng hố để tránh làm sạt lở đất đá rơi xuống và tổ chức liên lạc với nạn nhân."
+    },
+    {
+      "ID": "CNCHSD018",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Không tự ý dùng máy cơ giới đào bới trực tiếp lên khu vực nghi có người còn sống khi chưa xác định rõ vị trí nạn nhân và chưa chèn chống."
+    },
+    {
+      "ID": "CNCHSD019",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Cử cán bộ an toàn theo dõi liên tục sự dịch chuyển của kết cấu công trình và quy định rõ tín hiệu cảnh báo rút quân khẩn cấp."
+    },
+    {
+      "ID": "CTCCTG020",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Báo động cháy, hướng dẫn khách hành hương thoát nạn, cắt điện khu vực cháy, dùng phương tiện tại chỗ chữa cháy và di chuyển cổ vật quý."
+    }
+  ],
+  "dapAnTuLuan": [
+    {
+      "ID": "TL001",
+      "cauHoi": "Đồng chí hãy trình bày nguyên tắc tổ chức chữa cháy và nội dung trinh sát đám cháy đối với kho, bể chứa xăng dầu?",
+      "tuKhoa": [
+        "huy động tập trung lực lượng phương tiện đủ mạnh",
+        "tận dụng hệ thống làm mát chữa cháy cố định",
+        "làm mát liên tục bể cháy và bể lân cận",
+        "chuẩn bị đầy đủ cơ số chất tạo bọt",
+        "tấn công đồng loạt dứt điểm",
+        "chủ động phòng ngừa sôi trào bắn tóe nổ bể",
+        "trinh sát có cán bộ kỹ thuật kho tham gia",
+        "xác định người bị nạn khả năng thoát nạn",
+        "loại bể chứa dung tích mức độ hư hỏng",
+        "loại xăng dầu chiều cao mức chất lỏng",
+        "sự tồn tại lớp nước đệm dưới đáy bể",
+        "tình trạng mái bể các van thở van chặn",
+        "tình trạng đê bao rãnh thoát nước ngăn lửa",
+        "tình trạng hệ thống làm mát chữa cháy cố định",
+        "nguồn nước dự trữ lượng bọt tại kho"
+      ]
+    },
+    {
+      "ID": "TL002",
+      "cauHoi": "Đồng chí hãy trình bày các phương pháp và biện pháp kỹ thuật chữa cháy rừng trực tiếp và gián tiếp?",
+      "tuKhoa": [
+        "phương pháp chữa cháy rừng trực tiếp",
+        "áp dụng khi đám cháy nhỏ mới phát sinh",
+        "cháy dưới tán tốc độ lan truyền chậm",
+        "tác động trực tiếp vào mép lửa",
+        "dùng cành cây tươi bàn dập dập lửa",
+        "dùng máy thổi gió thổi tạt ngọn lửa",
+        "phun nước hóa chất đất cát phủ gốc lửa",
+        "phương pháp chữa cháy rừng gián tiếp",
+        "áp dụng khi đám cháy lớn cháy tán rừng",
+        "nhiệt lượng cao không tiếp cận trực tiếp được",
+        "tạo đường băng trắng cản lửa",
+        "phát dọn cày ủi vật liệu cháy trước mặt lửa",
+        "kết hợp tận dụng địa hình sông suối đường mòn",
+        "đốt chặn có kiểm soát từ băng cản lửa",
+        "tổ chức làm nguội dập tàn lửa chống cháy lại"
+      ]
+    }
+  ]
+}

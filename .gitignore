@@ -1,0 +1,16 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Test screenshots & captures
+web/*.png
+*.png
+
+# Vercel deployment folder
+.vercel
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini

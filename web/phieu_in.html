@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phiếu Kết Quả - Kiểm Tra Nghiệp Vụ Chữa Cháy, Cứu Nạn, Cứu Hộ</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 15mm 15mm 15mm 15mm;
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 13pt;
+      line-height: 1.35;
+      color: #000;
+      background: #fff;
+      padding: 10px;
+    }
+    .print-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    /* National Header CAND format */
+    .header-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 15px;
+    }
+    .header-table td {
+      vertical-align: top;
+      text-align: center;
+      padding: 0;
+    }
+    .left-header {
+      width: 45%;
+      font-size: 11pt;
+    }
+    .right-header {
+      width: 55%;
+    }
+    .right-header .line-1 {
+      font-size: 11.5pt;
+      font-weight: bold;
+    }
+    .right-header .line-2 {
+      font-size: 12pt;
+      font-weight: bold;
+    }
+    .separator-line {
+      width: 120px;
+      height: 1px;
+      background: #000;
+      margin: 4px auto 0;
+    }
+    .doc-title {
+      text-align: center;
+      font-size: 15pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 15px 0 6px;
+    }
+    .doc-subtitle {
+      text-align: center;
+      font-size: 11.5pt;
+      font-style: italic;
+      margin-bottom: 16px;
+    }
+    /* Candidate Info Block */
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 14px;
+    }
+    .info-table td {
+      padding: 4px 6px;
+      font-size: 12pt;
+      vertical-align: top;
+    }
+    .info-label {
+      font-weight: bold;
+      white-space: nowrap;
+      width: 1%;
+    }
+    .info-val {
+      border-bottom: 1px dotted #666;
+    }
+    /* Score Box */
+    .score-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .score-table th, .score-table td {
+      border: 1px solid #000;
+      padding: 8px 6px;
+      font-size: 11.5pt;
+    }
+    .score-table th {
+      background: #f2f2f2;
+      font-weight: bold;
+    }
+    .score-highlight {
+      font-size: 13pt;
+      font-weight: bold;
+    }
+    /* Essay Content Box */
+    .essay-section {
+      margin-bottom: 14px;
+      page-break-inside: avoid;
+    }
+    .essay-box {
+      border: 1px solid #000;
+      padding: 8px 10px;
+      margin-top: 4px;
+      min-height: 80px;
+      font-size: 11.5pt;
+      line-height: 1.4;
+      white-space: pre-wrap;
+      background: #fafafa;
+    }
+    /* Signature Block */
+    .signature-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      text-align: center;
+      page-break-inside: avoid;
+    }
+    .signature-table td {
+      width: 50%;
+      vertical-align: top;
+      font-size: 12pt;
+    }
+    .sig-title {
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+    /* Print Action Bar */
+    .print-bar {
+      text-align: center;
+      margin-bottom: 20px;
+      padding: 12px;
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+    }
+    .btn-print {
+      background: #b91c1c;
+      color: #fff;
+      border: none;
+      padding: 10px 24px;
+      font-size: 14pt;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    @media print {
+      .print-bar {
+        display: none !important;
+      }
+      body {
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="print-container">
+
+    <div class="print-bar">
+      <button class="btn-print" onclick="window.print()">🖨️ BẤM VÀO ĐÂY ĐỂ IN PHIẾU ĐIỂM (HOẶC LƯU PDF)</button>
+    </div>
+
+    <!-- Quốc hiệu & Tiêu ngữ -->
+    <table class="header-table">
+      <tr>
+        <td class="left-header">
+          <div>BỘ CÔNG AN</div>
+          <div style="font-weight: bold;" id="p-unit-header">CỤC CẢNH SÁT PCCC & CNCH</div>
+          <div class="separator-line" style="width: 80px;"></div>
+        </td>
+        <td class="right-header">
+          <div class="line-1">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</div>
+          <div class="line-2">Độc lập - Tự do - Hạnh phúc</div>
+          <div class="separator-line"></div>
+        </td>
+      </tr>
+    </table>
+
+    <div class="doc-title">PHIẾU KẾT QUẢ KIỂM TRA NGHIỆP VỤ CHỮA CHÁY, CỨU NẠN, CỨU HỘ</div>
+    <div class="doc-subtitle">Tài liệu huấn luyện nghiệp vụ chuẩn Cục Cảnh sát PCCC & CNCH (CV 1974)</div>
+
+    <!-- Thông tin thí sinh -->
+    <table class="info-table">
+      <tr>
+        <td class="info-label">Họ và tên thí sinh:</td>
+        <td class="info-val" id="p-name">....................................................................</td>
+        <td class="info-label">Cấp bậc, Chức vụ:</td>
+        <td class="info-val" id="p-rank">................................................</td>
+      </tr>
+      <tr>
+        <td class="info-label">Đơn vị công tác:</td>
+        <td class="info-val" colspan="3" id="p-unit">........................................................................................................................................</td>
+      </tr>
+      <tr>
+        <td class="info-label">Bộ đề thi:</td>
+        <td class="info-val" id="p-exam">....................................................................</td>
+        <td class="info-label">Thời gian làm bài:</td>
+        <td class="info-val" id="p-duration">................................................</td>
+      </tr>
+      <tr>
+        <td class="info-label">Thời gian nộp bài:</td>
+        <td class="info-val" colspan="3" id="p-time">........................................................................................................................................</td>
+      </tr>
+    </table>
+
+    <!-- Bảng điểm tổng hợp -->
+    <table class="score-table">
+      <thead>
+        <tr>
+          <th style="width: 30%;">Phần thi</th>
+          <th style="width: 25%;">Số câu / Thang điểm</th>
+          <th style="width: 25%;">Kết quả đạt được</th>
+          <th style="width: 20%;">Ghi chú</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="font-weight: bold; text-align: left;">1. Trắc nghiệm chiến thuật</td>
+          <td>20 câu (10.0 điểm)</td>
+          <td class="score-highlight" id="p-mcq-score">... / 20 câu</td>
+          <td>Chấm tự động</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold; text-align: left;">2. Tự luận xử lý tình huống</td>
+          <td>02 câu (10.0 điểm)</td>
+          <td class="score-highlight" style="color: #666;" id="p-essay-score">Chờ chấm</td>
+          <td>Giám khảo chấm</td>
+        </tr>
+        <tr style="background: #fafafa; font-weight: bold;">
+          <td style="text-align: left;">TỔNG ĐIỂM CHUNG</td>
+          <td>Thang 20.0 điểm</td>
+          <td class="score-highlight" id="p-total-score">... / 20.0</td>
+          <td id="p-rating">...</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Chi tiết bài làm tự luận của thí sinh -->
+    <div style="font-weight: bold; font-size: 12pt; margin: 12px 0 6px; text-transform: uppercase;">
+      BÀI LÀM PHẦN TỰ LUẬN CỦA THÍ SINH:
+    </div>
+
+    <div class="essay-section" id="p-essay-1-block">
+      <div style="font-weight: bold; font-size: 11pt;">Câu 1: <span id="p-essay-1-q">...</span></div>
+      <div class="essay-box" id="p-essay-1-ans">...</div>
+      <div style="margin-top: 4px; font-size: 10.5pt; font-style: italic;">
+        Điểm Giám khảo chấm Câu 1: ............ / 5.0 điểm. &nbsp;&nbsp;&nbsp; Ý kiến nhận xét: ...................................................................................
+      </div>
+    </div>
+
+    <div class="essay-section" id="p-essay-2-block">
+      <div style="font-weight: bold; font-size: 11pt; margin-top: 10px;">Câu 2: <span id="p-essay-2-q">...</span></div>
+      <div class="essay-box" id="p-essay-2-ans">...</div>
+      <div style="margin-top: 4px; font-size: 10.5pt; font-style: italic;">
+        Điểm Giám khảo chấm Câu 2: ............ / 5.0 điểm. &nbsp;&nbsp;&nbsp; Ý kiến nhận xét: ...................................................................................
+      </div>
+    </div>
+
+    <!-- Ký tên -->
+    <table class="signature-table">
+      <tr>
+        <td></td>
+        <td style="font-style: italic;">Ngày ...... tháng ...... năm 202...</td>
+      </tr>
+      <tr>
+        <td class="sig-title">THÍ SINH DỰ THI<br><span style="font-weight: normal; font-size: 10pt;">(Ký và ghi rõ họ tên)</span></td>
+        <td class="sig-title">CÁN BỘ CHẤM THI<br><span style="font-weight: normal; font-size: 10pt;">(Ký và ghi rõ họ tên)</span></td>
+      </tr>
+      <tr>
+        <td style="font-weight: bold;" id="p-sig-name">................................................</td>
+        <td>................................................</td>
+      </tr>
+    </table>
+
+  </div>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const rawData = localStorage.getItem('PCCC_LAST_EXAM_RESULT');
+      if (!rawData) {
+        alert('Chưa có dữ liệu bài thi để in! Vui lòng làm bài thi trước.');
+        return;
+      }
+
+      try {
+        const d = JSON.parse(rawData);
+        const c = d.candidate || {};
+
+        document.getElementById('p-unit-header').textContent = (c.unit || 'CỤC CẢNH SÁT PCCC & CNCH').toUpperCase();
+        document.getElementById('p-name').textContent = c.fullName || '';
+        document.getElementById('p-rank').textContent = c.rank || '';
+        document.getElementById('p-unit').textContent = c.unit || '';
+        document.getElementById('p-exam').textContent = `${d.examCode || ''} - ${d.examName || ''}`;
+        document.getElementById('p-duration').textContent = d.duration || '30 phút';
+        
+        if (d.submitTime) {
+          const t = new Date(d.submitTime);
+          document.getElementById('p-time').textContent = t.toLocaleString('vi-VN');
+        }
+
+        document.getElementById('p-mcq-score').textContent = `${d.correctCount} / 20 câu (${d.scoreConverted}đ)`;
+        document.getElementById('p-sig-name').textContent = c.fullName || '';
+
+        // Tự luận
+        const tuLuan = d.tuLuanQuestions || [];
+        const essays = (d.userAnswers && d.userAnswers.essay) ? d.userAnswers.essay : {};
+
+        if (tuLuan[0]) {
+          document.getElementById('p-essay-1-q').textContent = tuLuan[0].cauHoi || '';
+          document.getElementById('p-essay-1-ans').textContent = essays[tuLuan[0].ID] || '(Thí sinh không làm câu này)';
+        }
+        if (tuLuan[1]) {
+          document.getElementById('p-essay-2-q').textContent = tuLuan[1].cauHoi || '';
+          document.getElementById('p-essay-2-ans').textContent = essays[tuLuan[1].ID] || '(Thí sinh không làm câu này)';
+        }
+
+      } catch (err) {
+        console.error('Lỗi nạp dữ liệu phiếu in:', err);
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+{
+  "maDe": "DE03",
+  "tenDe": "Bộ đề kiểm tra số 03 - Chiến thuật Chữa cháy và Cứu nạn, cứu hộ",
+  "thoiGianLamBaiPhut": 30,
+  "soCauTracNghiem": 20,
+  "soCauTuLuan": 2,
+  "tracNghiem": [
+    {
+      "ID": "CTCCXD001",
+      "cauHoi": "Khi xảy ra cháy tại cửa hàng xăng dầu, nếu đám cháy phát triển đến khu vực các bể chứa ngầm thì diễn biến nguy hiểm nào sau đây thường xuất hiện?",
+      "luaChon": [
+        "A. Toàn bộ lượng xăng dầu trong bể ngầm lập tức đông đặc lại do chênh lệch áp suất giữa lòng đất và môi trường bên ngoài.",
+        "B. Ngọn lửa thường xuất hiện ở các họng nhập, van thở của bể chứa và có nguy cơ gây nổ bể chứa nếu bị tác động nhiệt kéo dài.",
+        "C. Bể chứa ngầm sẽ tự động trồi hẳn lên trên mặt sân bê tông và làm sập toàn bộ hệ thống mái che khu vực cột bơm nhiên liệu.",
+        "D. Khói và hơi xăng dầu chỉ lan truyền ngầm theo hệ thống cống thoát nước mà không bốc cháy thành ngọn lửa ở trên mặt đất."
+      ]
+    },
+    {
+      "ID": "CTCCGO002",
+      "cauHoi": "Trong đám cháy tại phân xưởng sản xuất của cơ sở chế biến gỗ, sự tồn tại của lớp bụi gỗ tích tụ trên các kết cấu xây dựng và trong hệ thống hút bụi dẫn đến nguy cơ đặc biệt nào?",
+      "luaChon": [
+        "A. Bụi gỗ khi bị đốt nóng sẽ chảy lỏng thành lớp màng keo chống cháy bao phủ bề mặt các kiện gỗ nguyên liệu ở bên dưới.",
+        "B. Bụi gỗ hút ẩm mạnh từ bọt chữa cháy làm giảm nồng độ oxy trong không khí và khiến ngọn lửa tự tắt ở khu vực mái xưởng.",
+        "C. Bụi gỗ bị xáo trộn bay lơ lửng trong không khí khi gặp nguồn nhiệt đám cháy có thể gây nổ bụi làm tốc mái, sập đổ công trình.",
+        "D. Bụi gỗ chỉ cháy âm ỉ bên trong đường ống kim loại mà không làm đám cháy lan truyền sang các bộ phận sản xuất lân cận."
+      ]
+    },
+    {
+      "ID": "CTCCGO003",
+      "cauHoi": "Khi cháy tại kho hoặc bãi chứa gỗ nguyên liệu của cơ sở chế biến gỗ, tác động của dòng khí nhiệt đối lưu mạnh từ đám cháy kết hợp với gió lớn sẽ dẫn đến hiện tượng gì?",
+      "luaChon": [
+        "A. Làm các đống gỗ nguyên liệu tự động liên kết chặt vào nhau thành khối vững chắc không thể bị sạt lở trong suốt quá trình cháy.",
+        "B. Làm giảm hoàn toàn bức xạ nhiệt ra xung quanh nên lực lượng chữa cháy có thể tiếp cận sát chân đống gỗ mà không cần làm mát.",
+        "C. Khiến toàn bộ khói và khí độc bị nén chặt xuống sát mặt đất mà không thể bay lên cao hay phát tán ra ngoài phạm vi kho bãi.",
+        "D. Cuốn theo các tàn lửa bay xa theo hướng gió làm phát sinh các đám cháy mới ở các đống gỗ khác hoặc công trình dân cư lân cận."
+      ]
+    },
+    {
+      "ID": "CTCCOT004",
+      "cauHoi": "Trong diễn biến đám cháy xe ô tô chở khách, các vật liệu nội thất như mút xốp, cao su, da, nhựa tổng hợp khi cháy sẽ tạo ra yếu tố nguy hiểm nào đe dọa trực tiếp tính mạng hành khách?",
+      "luaChon": [
+        "A. Tốc độ cháy lan nhanh, tỏa ra nhiều khói đặc và các chất khí độc hại bao trùm khoang xe gây ngạt thở và làm mất khả năng thoát nạn.",
+        "B. Tạo ra lớp bọt xốp trương nở bịt kín toàn bộ hệ thống ống xả động cơ làm xe tự động di chuyển lùi về phía sau với tốc độ cao.",
+        "C. Chỉ phát sinh ngọn lửa màu xanh nhạt không có khói và làm giảm nhiệt độ bên trong khoang hành khách xuống mức đóng băng.",
+        "D. Làm toàn bộ cửa kính cường lực của xe tự động mở tung ra ngoài giúp hành khách thoát nạn dễ dàng mà không cần phá dỡ."
+      ]
+    },
+    {
+      "ID": "CTCCOT005",
+      "cauHoi": "Khi đám cháy đã phát triển lớn bao trùm toàn bộ xe ô tô xi téc chở xăng dầu trong một thời gian, nguy cơ đặc biệt nguy hiểm nào có thể xảy ra đe dọa lực lượng chữa cháy?",
+      "luaChon": [
+        "A. Hệ thống bơm nhiên liệu dưới gầm xe tự động hút ngược toàn bộ xăng dầu đang cháy trên mặt đất trở lại vào bên trong xi téc.",
+        "B. Vỏ bình nhiên liệu hoặc thành xi téc mất độ bền cơ học dẫn đến nổ hoặc cụm van khóa bị phá hủy làm xăng dầu tràn ra gây cháy lớn.",
+        "C. Khung gầm bằng thép của xe cơ sở bị từ hóa mạnh làm hút chặt các lăng phun bọt kim loại của chiến sĩ đứng ở khu vực lân cận.",
+        "D. Lượng xăng dầu bên trong xi téc tự động chuyển hóa thành nhựa đường rắn chắc nên không còn khả năng bay hơi hay bốc cháy."
+      ]
+    },
+    {
+      "ID": "CTCCKB006",
+      "cauHoi": "Trong đám cháy bể chứa dầu mỏ (dầu thô, маzut) có lẫn nước ở đáy bể, hiện tượng 'sôi trào' (boil-over) xảy ra do cơ chế vật lý nào sau đây?",
+      "luaChon": [
+        "A. Do bọt chữa cháy phun vào bể phản ứng hóa học với thành thép tạo ra khí hydro đẩy lớp dầu lạnh ở dưới đáy trào qua miệng bể.",
+        "B. Do gió bão bên ngoài thổi mạnh vào miệng bể chứa làm tạo thành các cơn sóng dầu lớn đánh bật phần mái bể và văng ra đê bao.",
+        "C. Do lớp dầu nóng tiến dần xuống đáy bể làm lớp nước (hoặc nhũ tương nước - dầu) hóa hơi đột ngột, giãn nở thể tích đẩy dầu trào ra ngoài.",
+        "D. Do hệ thống van thở trên mái bể bị đóng kín hoàn toàn khiến hơi dầu ngưng tụ thành nước mưa rơi ngược xuống bề mặt chất lỏng."
+      ]
+    },
+    {
+      "ID": "CTCCKB007",
+      "cauHoi": "Khi chữa cháy các bể chứa dầu có nhiệt độ vùng cháy cao, hiện tượng 'bắn tóe' (slop-over) dầu đang cháy ra ngoài thành bể thường xảy ra trong tình huống nào?",
+      "luaChon": [
+        "A. Khi lực lượng chữa cháy ngừng toàn bộ việc phun nước làm mát vào thành bể chứa liền kề nằm ở phía cuối hướng gió thổi.",
+        "B. Khi bắt đầu mở hệ thống van xả nước đáy bể để rút bớt lượng nước tích tụ lâu ngày ở dưới đáy của bể chứa xăng dầu.",
+        "C. Khi sử dụng bình bột chữa cháy xách tay phun vào các đốm lửa nhỏ đang cháy rải rác ở khu vực chân đê bao ngăn cháy.",
+        "D. Khi phun nước hoặc phun bọt chữa cháy trực tiếp vào bề mặt lớp dầu đang có nhiệt độ cao làm nước hóa hơi cục bộ gây sủi bọt trào ra."
+      ]
+    },
+    {
+      "ID": "CTCCNCT008",
+      "cauHoi": "Trong đám cháy nhà cao tầng và siêu cao tầng, 'hiệu ứng ống khói' có tác động như thế nào đến sự lan truyền của khói và sản phẩm cháy?",
+      "luaChon": [
+        "A. Làm khói và khí nóng chuyển động rất nhanh theo phương thẳng đứng qua các giếng thang, trục kỹ thuật lên làm nhiễm khói các tầng trên.",
+        "B. Làm toàn bộ khói độc bị hút ngược từ các tầng trên cao xuống tập trung hoàn toàn ở khu vực tầng hầm mà không thoát ra ngoài được.",
+        "C. Tạo ra màn chắn không khí lạnh ở các hành lang giúp ngăn chặn hoàn toàn ngọn lửa lan từ căn hộ đang cháy sang các căn hộ kế bên.",
+        "D. Khiến sản phẩm cháy tự động thoát hết ra ngoài qua các khe hở cửa sổ mặt tiền mà không xâm nhập vào buồng thang bộ thoát nạn."
+      ]
+    },
+    {
+      "ID": "CTCCNCT009",
+      "cauHoi": "Khi xảy ra cháy lớn tại nhà cao tầng, bên cạnh sự lan truyền theo chiều dọc qua các trục thông tầng, ngọn lửa thường lan truyền lên các tầng phía trên từ mặt ngoài tòa nhà theo con đường nào?",
+      "luaChon": [
+        "A. Lan truyền ngầm bên trong lõi bê tông cốt thép của các cột chịu lực chính nằm ở khu vực tâm của mặt bằng tòa nhà.",
+        "B. Phá vỡ kính cửa sổ rồi bốc lên qua ban công, cửa sổ tầng trên hoặc cháy lan dọc theo lớp vật liệu ốp mặt ngoài và rèm cửa dễ cháy.",
+        "C. Truyền nhiệt qua hệ thống đường ống cấp nước sinh hoạt bằng kim loại làm bốc cháy các thiết bị vệ sinh ở tất cả các tầng lầu.",
+        "D. Chỉ có thể lan truyền từ tầng mái xuống các tầng dưới thông qua hệ thống dây dẫn chống sét được lắp đặt ở bốn góc công trình."
+      ]
+    },
+    {
+      "ID": "CNCHBT010",
+      "cauHoi": "Tại các bãi tắm biển trong khu du lịch, sự xuất hiện của 'dòng chảy xa bờ' (rip current) có diễn biến gây nguy hiểm như thế nào đối với người tắm biển?",
+      "luaChon": [
+        "A. Tạo thành những cột nước xoáy tròn dựng đứng giữa mặt biển làm lật úp tất cả các tàu cứu hộ cỡ lớn ngay khi vừa tiếp cận.",
+        "B. Đẩy toàn bộ người tắm biển dạt mạnh vào sát bờ cát và làm mắc cạn các phương tiện mô tô nước của lực lượng cứu nạn, cứu hộ.",
+        "C. Là dòng nước mạnh chảy từ bờ hướng ra biển, cuốn người đang bơi ở vùng nước nông trôi nhanh ra vùng nước sâu dẫn đến đuối sức.",
+        "D. Làm nhiệt độ nước biển ở khu vực ven bờ tăng cao đột ngột và giải phóng nhiều khí độc gây ngạt thở cho người đang bơi trên mặt nước."
+      ]
+    },
+    {
+      "ID": "CNCHDN011",
+      "cauHoi": "Trong tai nạn đuối nước ở sông, suối có dòng chảy xiết hoặc lũ quét, diễn biến tình trạng và vị trí của người bị nạn thường có đặc điểm phức tạp nào?",
+      "luaChon": [
+        "A. Người bị nạn luôn giữ nguyên tại vị trí rơi xuống nước ban đầu vì dòng nước xiết tạo lực ép giữ chặt cơ thể xuống mặt cát phẳng.",
+        "B. Dòng nước lũ luôn tự động đẩy người bị nạn lên các gò đất cao khô ráo ở hai bên bờ ngay sau khi tai nạn vừa mới xảy ra.",
+        "C. Người bị nạn hoàn toàn không bị va đập vào các vật cản dưới nước vì dòng chảy mạnh đã cuốn trôi hết đá ngầm và cây cối từ trước.",
+        "D. Người bị nạn bị dòng nước cuốn trôi nhanh đi xa vị trí ban đầu, dễ va đập vào đá ngầm, vật cản hoặc bị cuốn vào các hốc đá, bụi cây."
+      ]
+    },
+    {
+      "ID": "CTCCCR012",
+      "cauHoi": "Khi diễn biến đám cháy rừng phát triển từ 'cháy dưới tán' thành 'cháy tán rừng' (cháy ngọn), đặc điểm lan truyền của đám cháy có tính chất nguy hiểm nào?",
+      "luaChon": [
+        "A. Ngọn lửa bao trùm toàn bộ tầng tán cây trên cao, lan truyền với tốc độ rất nhanh theo chiều gió và phát tán tàn lửa gây cháy vượt qua băng cản.",
+        "B. Ngọn lửa lập tức thu hẹp phạm vi lại thành một điểm nhỏ và chỉ cháy âm ỉ ở phần rễ cây sâu dưới lòng đất mà không tạo ra ngọn lửa.",
+        "C. Đám cháy tự động chuyển hướng đi ngược lại hoàn toàn với chiều gió thổi và làm giảm nhiệt độ bức xạ ở khu vực phía trước mặt lửa.",
+        "D. Tốc độ cháy lan giảm xuống mức thấp nhất do phần lá cây tươi trên ngọn tiết ra nhiều hơi nước làm dập tắt ngọn lửa ở tầng dưới."
+      ]
+    },
+    {
+      "ID": "CTCCCR013",
+      "cauHoi": "Tại hiện trường đám cháy rừng ở khu vực đồi núi có địa hình dốc đứng, yếu tố độ dốc địa hình tác động như thế nào đến tốc độ và diễn biến cháy lan?",
+      "luaChon": [
+        "A. Đám cháy chỉ có thể lan truyền từ đỉnh dốc xuống chân dốc với tốc độ rất nhanh, còn hướng từ chân dốc lên đỉnh dốc thì tự tắt.",
+        "B. Khi cháy từ chân dốc lên đỉnh dốc, ngọn lửa và dòng khí nóng nung nóng trước lớp vật liệu cháy phía trên làm tốc độ cháy lan tăng vọt.",
+        "C. Độ dốc địa hình không có bất kỳ ảnh hưởng nào đến tốc độ cháy lan vì ngọn lửa trong rừng chỉ phụ thuộc vào độ ẩm của đất.",
+        "D. Địa hình càng dốc thì lượng oxy càng loãng làm cho đám cháy rừng không thể phát triển thành ngọn lửa mà chỉ sinh ra khói nhẹ."
+      ]
+    },
+    {
+      "ID": "CTCCNLK014",
+      "cauHoi": "Trong đám cháy nhà ở liên kế dạng ống (nhà ở kết hợp kinh doanh), tại sao cầu thang bộ bên trong nhà lại nhanh chóng trở thành con đường đe dọa trực tiếp người ở các tầng trên?",
+      "luaChon": [
+        "A. Vì cầu thang bộ thường được xây bằng gạch đặc nên lập tức sập đổ hoàn toàn ngay trong những phút đầu tiên khi đám cháy mới phát sinh.",
+        "B. Vì hệ thống vòi phun nước chữa cháy tự động lắp ở cầu thang bộ phun ra áp lực quá mạnh làm người dân không thể đi xuống tầng trệt.",
+        "C. Vì cầu thang bộ hở thông suốt giữa các tầng đóng vai trò như ống khói dẫn khói độc, khí nóng và lửa từ tầng dưới bốc nhanh lên các tầng trên.",
+        "D. Vì toàn bộ khói độc từ đám cháy luôn bị hút ra ngoài đường phố qua cửa chính làm bên trong cầu thang bộ bị chân không hoàn toàn."
+      ]
+    },
+    {
+      "ID": "CTCCNLK015",
+      "cauHoi": "Khi đám cháy tại một ngôi nhà liên kế trong khu dân cư phát triển lớn, ngọn lửa thường cháy lan sang các ngôi nhà liền kề xung quanh qua những vị trí nào?",
+      "luaChon": [
+        "A. Chỉ cháy lan qua hệ thống đường ống cấp nước sạch bằng nhựa chôn sâu dưới mặt đường nhựa ở phía trước dãy nhà phố.",
+        "B. Chỉ cháy lan qua móng nhà bằng bê tông cốt thép do nhiệt lượng từ đám cháy truyền thẳng xuống tầng đất nền bên dưới.",
+        "C. Hoàn toàn không có khả năng cháy lan sang nhà bên cạnh vì các nhà liên kế luôn có khoảng cách chống cháy rất rộng.",
+        "D. Cháy lan qua cửa sổ, ban công, mái nhà (nhất là mái tôn, trần nhựa, gỗ thông nhau), biển quảng cáo mặt tiền và bức xạ nhiệt."
+      ]
+    },
+    {
+      "ID": "CNCHTC016",
+      "cauHoi": "Trong quá trình diễn biến sự cố, tai nạn trên cao (như trên tháp cao, cần trục, giàn giáo, mái công trình đang cháy), yếu tố môi trường nào dễ làm phát sinh tai nạn thứ cấp?",
+      "luaChon": [
+        "A. Kết cấu công trình bị suy yếu do nhiệt hoặc chấn động có nguy cơ sập đổ tiếp, kèm theo gió lớn, khói khí độc và vật rơi từ trên cao.",
+        "B. Áp suất khí quyển ở độ cao công trình dân dụng tăng gấp nhiều lần làm nổ tung các bình khí thở cách ly của lực lượng cứu nạn.",
+        "C. Các thiết bị dây cứu nạn chuyên dụng tự động co rút chiều dài khi tiếp xúc với ánh nắng mặt trời làm kẹt ròng rọc chuyển hướng.",
+        "D. Sóng vô tuyến từ các trạm phát sóng lân cận làm đông cứng hoàn toàn hệ thống thủy lực của xe thang và xe nâng chữa cháy."
+      ]
+    },
+    {
+      "ID": "CNCHDS017",
+      "cauHoi": "Trong sự cố người bị mắc kẹt dưới sâu (giếng sâu, hầm lò, hố móng công trình), nguy cơ diễn biến xấu nào của hiện trường có thể vùi lấp thêm nạn nhân và chiến sĩ cứu nạn?",
+      "luaChon": [
+        "A. Nước ngầm dưới đáy hố đột ngột bốc hơi khô cạn hoàn toàn làm tăng nhiệt độ không khí trong lòng giếng lên mức cháy nổ.",
+        "B. Thành giếng, vách đất đá hoặc kết cấu hầm bị chấn động, ngấm nước dẫn đến sạt lở, sập đổ thứ cấp hoặc nước ngầm dâng ngập nhanh.",
+        "C. Lượng oxy tự nhiên ở dưới đáy giếng sâu tăng cao vượt mức bình thường gây hiện tượng say oxy cho người đang mắc kẹt bên dưới.",
+        "D. Các luồng gió xoáy từ trên mặt đất thổi thốc mạnh xuống đáy giếng làm đẩy bật các thiết bị giá ba chân bay lên không trung."
+      ]
+    },
+    {
+      "ID": "CNCHSD018",
+      "cauHoi": "Tại hiện trường sập đổ nhà, công trình xây dựng, vì sao trong quá trình tìm kiếm cứu nạn luôn tiềm ẩn nguy cơ rất cao xảy ra 'sập đổ thứ cấp'?",
+      "luaChon": [
+        "A. Vì các thiết bị dò tìm âm thanh và camera nội soi phát ra sóng siêu âm có cường độ lớn làm nứt vỡ các dầm bê tông cốt thép.",
+        "B. Vì lực lượng y tế sơ cấp cứu sử dụng bình thở oxy tại khu vực trạm tập kết làm thay đổi áp suất không khí bên trong đống đổ nát.",
+        "C. Vì các cấu kiện còn lại đang ở trạng thái mất cân bằng không ổn định, khi chịu rung chấn từ máy móc cắt phá hoặc dư chấn sẽ tiếp tục sập.",
+        "D. Vì toàn bộ phần móng ngầm của các tòa nhà lân cận tự động dịch chuyển về phía công trình bị sập ngay sau khi cắt điện khu vực."
+      ]
+    },
+    {
+      "ID": "CNCHSD019",
+      "cauHoi": "Khi một công trình nhà cao tầng hoặc nhà xưởng công nghiệp bị sập đổ đột ngột, những sự cố nguy hiểm kèm theo nào thường phát sinh đe dọa trực tiếp người bị mắc kẹt dưới đống đổ nát?",
+      "luaChon": [
+        "A. Chỉ phát sinh tiếng ồn lớn tại thời điểm sập đổ ban đầu, sau đó môi trường bên dưới đống đổ nát hoàn toàn trong lành và an toàn.",
+        "B. Hệ thống cấp nước bị vỡ làm đóng băng toàn bộ đống đổ nát ngay lập tức giúp cố định vững chắc các tấm sàn bê tông bị gãy.",
+        "C. Các chất khí độc và bụi mịn tự động kết tủa thành đá rắn dưới đáy hố móng nên không ảnh hưởng đến đường hô hấp của nạn nhân.",
+        "D. Phát sinh đám cháy, nổ do chập điện hoặc rò rỉ khí đốt, hóa chất; vỡ đường ống nước gây ngập lụt ở các tầng hầm, hố sâu và bụi mù đặc."
+      ]
+    },
+    {
+      "ID": "CTCCTG020",
+      "cauHoi": "Trong diễn biến đám cháy tại các cơ sở tôn giáo, tín ngưỡng có kết cấu khung gỗ cổ (như chùa, đình, đền), nguy cơ sập đổ công trình thường diễn ra như thế nào?",
+      "luaChon": [
+        "A. Ngọn lửa lan nhanh lên hệ thống vì kèo, xà, rui, mè bằng gỗ làm giảm khả năng chịu lực, dẫn đến sập đổ toàn bộ mái ngói nặng xuống dưới.",
+        "B. Phần mái ngói luôn tự động tách rời và trượt nhẹ nhàng ra ngoài sân chùa mà không bao giờ sập xuống khu vực chánh điện bên trong.",
+        "C. Các cột gỗ lim có khả năng tự chống cháy vĩnh viễn dưới tác động nhiệt cao nên kết cấu mái công trình không bao giờ bị biến dạng.",
+        "D. Đám cháy chỉ diễn ra ở phần chân tường gạch bên ngoài mà không thể lan lên phần khung gỗ đỡ mái ở phía trên cao của công trình."
+      ]
+    }
+  ],
+  "tuLuan": [
+    {
+      "ID": "TL001",
+      "cauHoi": "Đồng chí hãy trình bày các biện pháp kỹ thuật an toàn và kiểm soát an toàn khi tổ chức chữa cháy đối với xe ô tô và xe ô tô xi téc chở xăng dầu?",
+      "thangDiem": 2.0,
+      "ghiChu": "Thí sinh trình bày đầy đủ các ý chính theo quy chuẩn chiến thuật PCCC & CNCH."
+    },
+    {
+      "ID": "TL002",
+      "cauHoi": "Đồng chí hãy trình bày quy định về khoanh vùng hiện trường và các phương pháp tiếp cận, cứu người bị nạn đuối nước ở sông, suối, thác nước, hồ, ao, giếng?",
+      "thangDiem": 2.0,
+      "ghiChu": "Thí sinh trình bày đầy đủ các ý chính theo quy chuẩn chiến thuật PCCC & CNCH."
+    }
+  ]
+}

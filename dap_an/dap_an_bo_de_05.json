@@ -1,0 +1,170 @@
+{
+  "maDe": "DE05",
+  "tenDe": "Đáp án Bộ đề kiểm tra số 05 - Chiến thuật Chữa cháy và Cứu nạn, cứu hộ",
+  "dapAnTracNghiem": [
+    {
+      "ID": "CTCCXD001",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Tham gia hoạt động trinh sát, điều khiển hệ thống chữa cháy tại cơ sở và cung cấp các thông tin cần thiết"
+    },
+    {
+      "ID": "CTCCXD002",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Phun bọt dập tắt đám cháy kết hợp đóng các van khóa đường ống cấp và di chuyển xe xi téc ra khỏi vùng cháy"
+    },
+    {
+      "ID": "CTCCGO003",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Để hình dung trước về khu vực chiến đấu và xác định hướng tấn công chính trước khi đến hiện trường đám cháy"
+    },
+    {
+      "ID": "CTCCGO004",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Đặt ở đầu hướng gió, nơi thuận tiện cho việc quan sát đám cháy và toàn bộ hoạt động của lực lượng chữa cháy"
+    },
+    {
+      "ID": "CTCCOT005",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Để vận chuyển lực lượng, phương tiện cần thiết đến nơi xảy ra cháy hoặc hỗ trợ di chuyển phương tiện gặp sự cố"
+    },
+    {
+      "ID": "CTCCOT006",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Đánh giá mức độ phức tạp của đám cháy, thành lập Ban tham mưu chữa cháy và phân chia các giai đoạn dập tắt cháy"
+    },
+    {
+      "ID": "CTCCKB007",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Đại diện cơ sở hoặc người phụ trách công tác an toàn, kỹ thuật của khu vực, cơ sở kho bể nơi xảy ra cháy"
+    },
+    {
+      "ID": "CTCCKB008",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Truyền đạt chính xác, kịp thời mệnh lệnh từ người chỉ huy và tổng hợp, báo cáo kết quả thực hiện của các đơn vị"
+    },
+    {
+      "ID": "CTCCNCT009",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Chỉ huy chữa cháy trực tiếp hoặc ủy quyền cho người phát ngôn cung cấp thông tin chính xác, đầy đủ và kịp thời"
+    },
+    {
+      "ID": "CTCCNCT010",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Trực tiếp kiểm tra kỹ lưỡng hiện trường đám cháy để bảo đảm an toàn sau đó mới ra quyết định thu hồi lực lượng"
+    },
+    {
+      "ID": "CNCHBT011",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Vùng nước lạ, dòng chảy xiết, sóng, nước xoáy, đáy biển và chỗ trũng không phẳng, nền trơn, dốc, thời tiết, tàu bè"
+    },
+    {
+      "ID": "CNCHDN012",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Tổ chức phân luồng giao thông và sẵn sàng lực lượng, phương tiện mô tô nước, ca nô phối hợp tìm kiếm, CNCH"
+    },
+    {
+      "ID": "CTCCCR013",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Nhanh chóng báo bằng mọi cách cho cơ quan, đơn vị quản lý địa bàn nơi xảy ra cháy biết để xử lý và báo cáo cấp trên"
+    },
+    {
+      "ID": "CTCCCR014",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Lưỡi lửa, tốc độ cháy lan, loại vật liệu cháy, điều kiện địa hình, thời tiết, số người cần thiết, nguồn nước và băng cản lửa"
+    },
+    {
+      "ID": "CTCCNLK015",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Khẩn trương báo động, hướng dẫn thoát nạn, ưu tiên khoanh vùng đám cháy, ngăn cháy lan và vận động người dân phối hợp"
+    },
+    {
+      "ID": "CTCCNLK016",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Huy động xe thang để triển khai hiệu quả các hoạt động chữa cháy và cứu nạn, cứu hộ đối với khu vực ở trên cao"
+    },
+    {
+      "ID": "CNCHTC017",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Mời các đơn vị liên quan đến ma túy hoặc người có thể giao tiếp với nạn nhân để hỗ trợ khi thương thuyết, vận động"
+    },
+    {
+      "ID": "CNCHDS018",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Quyết định phương pháp, biện pháp CNCH, phân chia khu vực, giao nhiệm vụ, tổ chức phá dỡ và bảo đảm an toàn"
+    },
+    {
+      "ID": "CNCHSD019",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Chỉ huy đơn vị Cảnh sát PCCC và CNCH trực tiếp quản lý địa bàn và đại diện chính quyền địa phương, cơ sở gặp sự cố"
+    },
+    {
+      "ID": "CTCCTG020",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Huy động thêm xe chiếu sáng, xe chở phương tiện và báo cáo người có thẩm quyền huy động giàn đèn chiếu sáng di động"
+    }
+  ],
+  "dapAnTuLuan": [
+    {
+      "ID": "TL001",
+      "cauHoi": "Đồng chí hãy trình bày công tác tổ chức cứu người bị nạn (phương pháp gián tiếp, phương pháp trực tiếp và thứ tự ưu tiên) khi xảy ra cháy tại nhà cao tầng, siêu cao tầng?",
+      "tuKhoa": [
+        "cứu người gián tiếp",
+        "cứu người trực tiếp",
+        "hướng dẫn thoát nạn",
+        "lối thoát hiểm an toàn",
+        "phân bố đều dòng người",
+        "buồng thang",
+        "phương tiện cứu người di động",
+        "xe thang",
+        "đệm khí",
+        "phá dỡ tạo lối phụ",
+        "mang vác cõng khiêng dìu",
+        "không thể tự thoát",
+        "tầng đang bị cháy",
+        "tầng trên tầng bị cháy",
+        "tầng dưới tầng bị cháy"
+      ]
+    },
+    {
+      "ID": "TL002",
+      "cauHoi": "Đồng chí hãy nêu các biện pháp chữa cháy, triển khai mũi chiến đấu và tổ chức thoát khói đối với đám cháy nhà liên kế dạng nhà ống?",
+      "tuKhoa": [
+        "phương pháp làm lạnh",
+        "lăng B đa tác dụng",
+        "cửa chính",
+        "cầu thang bộ",
+        "thang ba",
+        "xe thang",
+        "xe cần vươn",
+        "mặt thoáng",
+        "mái ban công nhà lân cận",
+        "thiết bị phá dỡ",
+        "tháo dỡ lồng sắt",
+        "biển quảng cáo",
+        "mở cửa sổ",
+        "cửa tầng tum",
+        "máy hút đẩy khói"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "maDe": "DE05",
+  "tenDe": "Bộ đề kiểm tra số 05 - Chiến thuật Chữa cháy và Cứu nạn, cứu hộ",
+  "thoiGianLamBaiPhut": 30,
+  "tracNghiem": [
+    {
+      "ID": "CTCCXD001",
+      "cauHoi": "Khi xảy ra cháy tại cửa hàng kinh doanh xăng dầu, để phát huy tối đa hiệu quả xử lý ban đầu thì chỉ huy chữa cháy cần huy động lực lượng PCCC cơ sở tham gia thực hiện những nhiệm vụ nào?",
+      "luaChon": [
+        "A. Trực tiếp thay thế lực lượng chuyên nghiệp điều hành toàn bộ các mũi tấn công dập lửa trên mái bể chứa",
+        "B. Độc lập tháo dỡ toàn bộ hệ thống đường ống công nghệ và van khóa của bồn chứa khi chưa có lệnh chỉ huy",
+        "C. Tham gia hoạt động trinh sát, điều khiển hệ thống chữa cháy tại cơ sở và cung cấp các thông tin cần thiết",
+        "D. Chỉ tập trung di chuyển toàn bộ phương tiện cơ giới trên tuyến đường giao thông phía ngoài khu vực cháy"
+      ],
+      "dapan": 3
+    },
+    {
+      "ID": "CTCCXD002",
+      "cauHoi": "Khi xảy ra cháy ở khu vực bồn chứa của cửa hàng kinh doanh xăng dầu trong lúc ô tô xi téc đang nhập xăng vào bể, chỉ huy chữa cháy cần chỉ đạo xử lý kết hợp những biện pháp nào?",
+      "luaChon": [
+        "A. Phun bọt dập tắt đám cháy kết hợp đóng các van khóa đường ống cấp và di chuyển xe xi téc ra khỏi vùng cháy",
+        "B. Phun tia nước đặc trực tiếp vào miệng bồn chứa kết hợp mở toàn bộ van xả đáy để xăng dầu thoát ra ngoài",
+        "C. Chỉ sử dụng cát khô phủ lên nắp xe xi téc và giữ nguyên phương tiện tại vị trí nhập hàng cho đến khi tắt lửa",
+        "D. Tạm dừng phun chất chữa cháy vào bồn chứa để tập trung tháo rời toàn bộ hệ thống bơm nhiên liệu dưới gầm xe"
+      ],
+      "dapan": 1
+    },
+    {
+      "ID": "CTCCGO003",
+      "cauHoi": "Khi tiếp nhận thông tin về vụ cháy tại cơ sở gia công, chế biến gỗ, chỉ huy chữa cháy của lực lượng Cảnh sát PCCC và CNCH cần nắm bắt thông tin về hướng gió và bố trí hàng hóa nhằm mục đích gì?",
+      "luaChon": [
+        "A. Để xác định chính xác nguyên nhân phát sinh đám cháy và thống kê đầy đủ giá trị thiệt hại tài sản ban đầu",
+        "B. Để làm căn cứ bàn giao toàn bộ quyền điều hành đám cháy lại cho người đứng đầu cơ sở sản xuất chế biến gỗ",
+        "C. Để quyết định thời điểm rút toàn bộ lực lượng phương tiện chữa cháy chuyên nghiệp ra khỏi địa bàn quản lý",
+        "D. Để hình dung trước về khu vực chiến đấu và xác định hướng tấn công chính trước khi đến hiện trường đám cháy"
+      ],
+      "dapan": 4
+    },
+    {
+      "ID": "CTCCGO004",
+      "cauHoi": "Khi tổ chức công tác chỉ huy chữa cháy đối với đám cháy lớn tại cơ sở gia công, chế biến gỗ, vị trí đặt Ban chỉ huy chữa cháy và CNCH tại hiện trường phải bảo đảm yêu cầu nào?",
+      "luaChon": [
+        "A. Đặt ở cuối hướng gió và nằm sâu bên trong phân xưởng sản xuất để trực tiếp giám sát nhiệt độ của đám cháy",
+        "B. Đặt ở đầu hướng gió, nơi thuận tiện cho việc quan sát đám cháy và toàn bộ hoạt động của lực lượng chữa cháy",
+        "C. Đặt cố định tại cổng trạm biến áp của cơ sở để thuận tiện cho việc đóng cắt nguồn điện chiếu sáng khi cần",
+        "D. Đặt ở bên trong kho chứa hóa chất dung môi để kết hợp bảo vệ tài sản có giá trị cao của cơ sở chế biến gỗ"
+      ],
+      "dapan": 2
+    },
+    {
+      "ID": "CTCCOT005",
+      "cauHoi": "Khi tổ chức chỉ huy chữa cháy các đám cháy xe ô tô chở khách, chở hàng đang bốc cháy, ngoài lực lượng chuyên nghiệp thì người chỉ huy cần huy động thêm phương tiện xe cứu hộ giao thông nhằm mục đích gì?",
+      "luaChon": [
+        "A. Để trực tiếp phun bọt hòa không khí áp lực cao thay thế hoàn toàn cho các xe chữa cháy của lực lượng chuyên nghiệp",
+        "B. Để thiết lập trạm chỉ huy cố định lâu dài ngay bên trong khoang hành khách của phương tiện giao thông đang cháy",
+        "C. Để vận chuyển lực lượng, phương tiện cần thiết đến nơi xảy ra cháy hoặc hỗ trợ di chuyển phương tiện gặp sự cố",
+        "D. Để thay thế lực lượng y tế thực hiện công tác khám nghiệm hiện trường và điều tra nguyên nhân vụ cháy xe ô tô"
+      ],
+      "dapan": 3
+    },
+    {
+      "ID": "CTCCOT006",
+      "cauHoi": "Trong công tác chỉ huy chữa cháy xe ô tô xi téc chở xăng dầu, để đảm bảo hiệu quả dập tắt đám cháy phức tạp, người chỉ huy chữa cháy cần xem xét quyết định vấn đề tổ chức nào?",
+      "luaChon": [
+        "A. Giao toàn bộ quyền chỉ huy điều hành dập lửa trên nắp xi téc cho lái xe và nhân viên áp tải hàng hóa tự xử lý",
+        "B. Đánh giá mức độ phức tạp của đám cháy, thành lập Ban tham mưu chữa cháy và phân chia các giai đoạn dập tắt cháy",
+        "C. Giải tán các tổ trinh sát đám cháy để tập trung toàn bộ quân số vào việc tháo dỡ khung gầm của xe ô tô xi téc",
+        "D. Chỉ bố trí một mũi tấn công duy nhất từ phía cuối hướng gió mà không cần phân chia giai đoạn khoanh vùng cháy"
+      ],
+      "dapan": 2
+    },
+    {
+      "ID": "CTCCKB007",
+      "cauHoi": "Khi thành lập Ban tham mưu chữa cháy, CNCH tại hiện trường vụ cháy kho, bể chứa xăng dầu, thành phần tham gia Ban tham mưu ngoài cán bộ có chuyên môn sâu về nghiệp vụ còn phải có đối tượng nào?",
+      "luaChon": [
+        "A. Đại diện cơ sở hoặc người phụ trách công tác an toàn, kỹ thuật của khu vực, cơ sở kho bể nơi xảy ra cháy",
+        "B. Toàn bộ những người dân sinh sống ở khu vực lân cận ngoài phạm vi bán kính an toàn của kho bể chứa xăng dầu",
+        "C. Các phóng viên báo chí và đơn vị truyền thông đang có mặt đưa tin phía bên ngoài hàng rào bảo vệ công trình",
+        "D. Nhân viên thu ngân và bộ phận hành chính văn phòng không trực tiếp quản lý hệ thống công nghệ của kho xăng dầu"
+      ],
+      "dapan": 1
+    },
+    {
+      "ID": "CTCCKB008",
+      "cauHoi": "Khi tổ chức mạng lưới thông tin liên lạc phục vụ chỉ huy chữa cháy kho, bể chứa xăng dầu, cán bộ chiến sĩ được phân công làm nhiệm vụ thông tin liên lạc có trách nhiệm gì?",
+      "luaChon": [
+        "A. Tự mình thay đổi quyết định chiến thuật và điều chuyển các mũi lăng phun bọt khi chưa có ý kiến của chỉ huy",
+        "B. Trực tiếp vận hành hệ thống van công nghệ dưới đáy bể chứa thay cho đội ngũ nhân viên kỹ thuật của cơ sở",
+        "C. Chỉ giữ liên lạc nội bộ trong phạm vi một tiểu đội chữa cháy và ngắt kết nối với Trung tâm thông tin chỉ huy",
+        "D. Truyền đạt chính xác, kịp thời mệnh lệnh từ người chỉ huy và tổng hợp, báo cáo kết quả thực hiện của các đơn vị"
+      ],
+      "dapan": 4
+    },
+    {
+      "ID": "CTCCNCT009",
+      "cauHoi": "Trong công tác chỉ huy chữa cháy nhà cao tầng, siêu cao tầng có diễn biến phức tạp và nhiều người bị nạn, công tác phát ngôn và cung cấp thông tin cho các đơn vị truyền thông được quy định như thế nào?",
+      "luaChon": [
+        "A. Bất kỳ cán bộ chiến sĩ nào đang trực tiếp cầm lăng chữa cháy ở các tầng đều được tự do phát ngôn với báo chí",
+        "B. Giao toàn bộ trách nhiệm phát ngôn về hoạt động triển khai chữa cháy chuyên nghiệp cho nhân viên bảo vệ tòa nhà",
+        "C. Chỉ huy chữa cháy trực tiếp hoặc ủy quyền cho người phát ngôn cung cấp thông tin chính xác, đầy đủ và kịp thời",
+        "D. Tuyệt đối giữ bí mật mọi thông tin về vị trí phát sinh cháy và công tác triển khai cứu nạn cho đến khi kết thúc"
+      ],
+      "dapan": 3
+    },
+    {
+      "ID": "CTCCNCT010",
+      "cauHoi": "Khi đám cháy nhà cao tầng, siêu cao tầng đã tự tắt hoặc đã được dập tắt, chỉ huy chữa cháy của lực lượng Cảnh sát PCCC và CNCH phải thực hiện quy trình nào trước khi thu hồi lực lượng, phương tiện?",
+      "luaChon": [
+        "A. Trực tiếp kiểm tra kỹ lưỡng hiện trường đám cháy để bảo đảm an toàn sau đó mới ra quyết định thu hồi lực lượng",
+        "B. Lập tức phát lệnh thu hồi toàn bộ xe chữa cháy và xe thang ngay khi nhìn thấy khói bên ngoài tòa nhà giảm bớt",
+        "C. Ủy quyền hoàn toàn việc kiểm tra hiện trường lại cho cư dân sinh sống tại các tầng trên cùng của tòa nhà cao tầng",
+        "D. Cho phép mở lại toàn bộ hệ thống điện chiếu sáng và thang máy thông thường trước khi kiểm tra các căn hộ bị cháy"
+      ],
+      "dapan": 1
+    },
+    {
+      "ID": "CNCHBT011",
+      "cauHoi": "Khi chỉ huy hoạt động cứu nạn, cứu hộ tai nạn đuối nước tại bãi tắm biển trong khu du lịch, người chỉ huy cần xác định những yếu tố diễn biến đặc trưng nào của môi trường biển?",
+      "luaChon": [
+        "A. Độ dốc của các vách đá ven suối, nguy cơ lũ ống đột ngột và hiện tượng sạt lở đất đá từ trên đỉnh thác nước",
+        "B. Vùng nước lạ, dòng chảy xiết, sóng, nước xoáy, đáy biển và chỗ trũng không phẳng, nền trơn, dốc, thời tiết, tàu bè",
+        "C. Nồng độ khí mê tan tích tụ trong lòng giếng hẹp và kết cấu thành giếng bằng gạch vữa có nguy cơ sụp đổ cao",
+        "D. Khả năng chịu tải của các dầm bê tông cốt thép bị gãy đổ và hệ thống đường ống cấp khí đốt trong tầng hầm"
+      ],
+      "dapan": 2
+    },
+    {
+      "ID": "CNCHDN012",
+      "cauHoi": "Trong công tác chỉ huy cứu nạn, cứu hộ người bị đuối nước tại sông, suối, hồ, ao, lực lượng Cảnh sát giao thông khi được huy động phối hợp tại hiện trường sẽ thực hiện nhiệm vụ gì?",
+      "luaChon": [
+        "A. Trực tiếp thay thế người chỉ huy CNCH ra mệnh lệnh phân chia khu vực chiến đấu dưới nước cho các tổ thợ lặn",
+        "B. Đảm nhận toàn bộ công tác khám nghiệm tử thi và điều trị y tế chuyên sâu cho các nạn nhân bị ngạt nước nặng",
+        "C. Chỉ thực hiện việc lập biên bản xử phạt hành chính đối với chủ cơ sở mà không tham gia hỗ trợ phương tiện thủy",
+        "D. Tổ chức phân luồng giao thông và sẵn sàng lực lượng, phương tiện mô tô nước, ca nô phối hợp tìm kiếm, CNCH"
+      ],
+      "dapan": 4
+    },
+    {
+      "ID": "CTCCCR013",
+      "cauHoi": "Khi nhận được tin báo về vụ cháy rừng xảy ra ngoài địa bàn được phân công quản lý, cơ quan hoặc đơn vị nhận tin phải xử lý theo nguyên tắc chỉ huy nào?",
+      "luaChon": [
+        "A. Tự ý điều động toàn bộ lực lượng vượt tuyến sang địa bàn khác chữa cháy mà không cần thông báo cho đơn vị sở tại",
+        "B. Bỏ qua thông tin báo cháy vì vụ việc nằm ngoài phạm vi trách nhiệm quản lý hành chính của đơn vị mình phụ trách",
+        "C. Nhanh chóng báo bằng mọi cách cho cơ quan, đơn vị quản lý địa bàn nơi xảy ra cháy biết để xử lý và báo cáo cấp trên",
+        "D. Chờ đến khi đám cháy rừng lan trực tiếp sang ranh giới địa bàn quản lý của đơn vị mình thì mới bắt đầu báo tin"
+      ],
+      "dapan": 3
+    },
+    {
+      "ID": "CTCCCR014",
+      "cauHoi": "Trong công tác chỉ huy chữa cháy rừng, để quyết định áp dụng phương pháp chữa cháy trực tiếp hay gián tiếp, người chỉ huy phải nhanh chóng đánh giá những yếu tố cơ bản nào của đám cháy?",
+      "luaChon": [
+        "A. Bậc chịu lửa của các vách ngăn chống cháy, hệ thống họng nước vách tường và áp suất buồng thang bộ tăng áp",
+        "B. Lưỡi lửa, tốc độ cháy lan, loại vật liệu cháy, điều kiện địa hình, thời tiết, số người cần thiết, nguồn nước và băng cản lửa",
+        "C. Dung tích của các bồn chứa nhiên liệu ngầm, tình trạng van thở và hệ thống thu hồi hơi xăng dầu tại khu vực cháy",
+        "D. Số lượng thang máy chữa cháy, diện tích tầng lánh nạn và khả năng hoạt động của hệ thống quạt hút khói hành lang"
+      ],
+      "dapan": 2
+    },
+    {
+      "ID": "CTCCNLK015",
+      "cauHoi": "Khi xảy ra cháy tại nhà liên kế ở kết hợp kinh doanh có không gian hạn chế và nhiều chất dễ cháy, chỉ huy chữa cháy của cơ sở cần ưu tiên thực hiện nhiệm vụ chỉ huy ban đầu nào?",
+      "luaChon": [
+        "A. Khẩn trương báo động, hướng dẫn thoát nạn, ưu tiên khoanh vùng đám cháy, ngăn cháy lan và vận động người dân phối hợp",
+        "B. Đóng kín toàn bộ các cửa ra vào, giữ nguyên tài sản bên trong nhà và chờ lực lượng chữa cháy chuyên nghiệp đến mở cửa",
+        "C. Tập trung toàn bộ người trong nhà lên mái tôn để tháo dỡ biển quảng cáo trước khi gọi điện báo cháy cho lực lượng PCCC",
+        "D. Sử dụng tia nước áp lực cao phun trực tiếp vào các thiết bị điện đang mang điện khi chưa thực hiện cắt nguồn điện"
+      ],
+      "dapan": 1
+    },
+    {
+      "ID": "CTCCNLK016",
+      "cauHoi": "Trong công tác chỉ huy điều động lực lượng phương tiện đối với đám cháy nhà liên kế từ 05 tầng trở lên tiếp giáp đường giao thông lớn, người chỉ huy cần chú ý huy động phương tiện chuyên dụng nào?",
+      "luaChon": [
+        "A. Huy động tàu chữa cháy và xuồng máy công suất lớn để thiết lập trạm bơm cấp nước trực tiếp trên mặt đường phố",
+        "B. Huy động máy cày bánh xích và máy đào rãnh cản lửa chuyên dùng trong lâm nghiệp để phá dỡ tường ngăn cháy",
+        "C. Chỉ huy động các loại bình chữa cháy xách tay và dụng cụ thô sơ của lực lượng dân phòng mà không cần xe chữa cháy",
+        "D. Huy động xe thang để triển khai hiệu quả các hoạt động chữa cháy và cứu nạn, cứu hộ đối với khu vực ở trên cao"
+      ],
+      "dapan": 4
+    },
+    {
+      "ID": "CNCHTC017",
+      "cauHoi": "Khi chỉ huy hoạt động cứu nạn, cứu hộ người có ý định tự tử trên cao có liên quan đến người nước ngoài hoặc đối tượng sử dụng ma túy, người chỉ huy CNCH cần phối hợp xử lý như thế nào?",
+      "luaChon": [
+        "A. Lập tức ra lệnh dùng công cụ phá dỡ xông thẳng vào khống chế nạn nhân ngay khi chưa triển khai đệm hơi cứu hộ",
+        "B. Sử dụng loa công suất lớn liên tục phát tín hiệu báo động khẩn cấp để gây áp lực buộc nạn nhân phải tự đi xuống",
+        "C. Mời các đơn vị liên quan đến ma túy hoặc người có thể giao tiếp với nạn nhân để hỗ trợ khi thương thuyết, vận động",
+        "D. Rút toàn bộ lực lượng cứu nạn cứu hộ về đơn vị và bàn giao toàn bộ hiện trường cho ban quản lý tòa nhà tự giải quyết"
+      ],
+      "dapan": 3
+    },
+    {
+      "ID": "CNCHDS018",
+      "cauHoi": "Khi đến hiện trường sự cố, tai nạn có người mắc kẹt dưới sâu, người chỉ huy hoạt động CNCH có thẩm quyền quyết định những nội dung chỉ huy, điều hành nào sau đây?",
+      "luaChon": [
+        "A. Quyết định phương pháp, biện pháp CNCH, phân chia khu vực, giao nhiệm vụ, tổ chức phá dỡ và bảo đảm an toàn",
+        "B. Chỉ đứng quan sát trên mặt đất và giao toàn quyền quyết định biện pháp cứu nạn cho những người dân có mặt tại chỗ",
+        "C. Cho phép tất cả người thân của nạn nhân tự do leo xuống hố sâu để tìm kiếm khi chưa kiểm tra nồng độ khí độc hại",
+        "D. Quyết định kết thúc hoạt động CNCH và thu hồi phương tiện ngay cả khi vẫn còn người bị nạn mắc kẹt dưới giếng sâu"
+      ],
+      "dapan": 1
+    },
+    {
+      "ID": "CNCHSD019",
+      "cauHoi": "Khi thành lập Ban chỉ huy CNCH tại hiện trường sự cố, tai nạn sập đổ nhà, công trình có diễn biến phức tạp, thành phần Phó Trưởng ban chỉ huy CNCH bao gồm những ai?",
+      "luaChon": [
+        "A. Các phóng viên truyền hình và đại diện các đơn vị cung cấp vật liệu xây dựng cho công trình trước khi bị sập đổ",
+        "B. Chỉ huy đơn vị Cảnh sát PCCC và CNCH trực tiếp quản lý địa bàn và đại diện chính quyền địa phương, cơ sở gặp sự cố",
+        "C. Toàn bộ các chiến sĩ lái xe chữa cháy và nhân viên y tế làm nhiệm vụ sơ cấp cứu ban đầu tại khu vực Vùng 3",
+        "D. Những người dân sinh sống ở các tòa nhà lân cận và nhân viên bảo vệ làm việc theo ca tại công trình bị sập đổ"
+      ],
+      "dapan": 2
+    },
+    {
+      "ID": "CTCCTG020",
+      "cauHoi": "Khi tiếp nhận tin báo cháy và điều động lực lượng đi chữa cháy cơ sở tôn giáo vào thời điểm diễn ra ngày lễ, hội hoặc sinh hoạt tôn giáo vào ban đêm, chỉ huy cần huy động thêm phương tiện nào so với ngày thường?",
+      "luaChon": [
+        "A. Huy động thêm các máy ủi bánh xích cỡ lớn để san phẳng toàn bộ khu vực sân vườn và tường bao quanh cơ sở tôn giáo",
+        "B. Chỉ huy động một xe chữa cháy nhỏ và giảm bớt các thiết bị phá dỡ cầm tay để tránh làm ảnh hưởng đến buổi lễ hội",
+        "C. Huy động thêm các tàu tuần tra đường thủy và thiết bị lặn sâu chuyên dụng vào bên trong khu vực chính điện",
+        "D. Huy động thêm xe chiếu sáng, xe chở phương tiện và báo cáo người có thẩm quyền huy động giàn đèn chiếu sáng di động"
+      ],
+      "dapan": 4
+    }
+  ],
+  "tuLuan": [
+    {
+      "ID": "TL001",
+      "cauHoi": "Đồng chí hãy trình bày công tác tổ chức cứu người bị nạn (phương pháp gián tiếp, phương pháp trực tiếp và thứ tự ưu tiên) khi xảy ra cháy tại nhà cao tầng, siêu cao tầng?",
+      "tuKhoaDapAn": [
+        "cứu người gián tiếp",
+        "cứu người trực tiếp",
+        "hướng dẫn thoát nạn",
+        "lối thoát hiểm an toàn",
+        "phân bố đều dòng người",
+        "buồng thang",
+        "phương tiện cứu người di động",
+        "xe thang",
+        "đệm khí",
+        "phá dỡ tạo lối phụ",
+        "mang vác cõng khiêng dìu",
+        "không thể tự thoát",
+        "tầng đang bị cháy",
+        "tầng trên tầng bị cháy",
+        "tầng dưới tầng bị cháy"
+      ]
+    },
+    {
+      "ID": "TL002",
+      "cauHoi": "Đồng chí hãy nêu các biện pháp chữa cháy, triển khai mũi chiến đấu và tổ chức thoát khói đối với đám cháy nhà liên kế dạng nhà ống?",
+      "tuKhoaDapAn": [
+        "phương pháp làm lạnh",
+        "lăng B đa tác dụng",
+        "cửa chính",
+        "cầu thang bộ",
+        "thang ba",
+        "xe thang",
+        "xe cần vươn",
+        "mặt thoáng",
+        "mái ban công nhà lân cận",
+        "thiết bị phá dỡ",
+        "tháo dỡ lồng sắt",
+        "biển quảng cáo",
+        "mở cửa sổ",
+        "cửa tầng tum",
+        "máy hút đẩy khói"
+      ]
+    }
+  ]
+}

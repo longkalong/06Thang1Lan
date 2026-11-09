@@ -1,0 +1,223 @@
+{
+  "maDe": "DE01",
+  "tenDe": "Bộ đề kiểm tra số 01 - Chiến thuật Chữa cháy và Cứu nạn, cứu hộ",
+  "thoiGianLamBaiPhut": 30,
+  "soCauTracNghiem": 20,
+  "soCauTuLuan": 2,
+  "tracNghiem": [
+    {
+      "ID": "CTCCXD001",
+      "cauHoi": "Khi xảy ra cháy tại xe bồn trong quá trình nhập xăng, dầu vào bể chứa của cửa hàng kinh doanh xăng dầu, ở giai đoạn khoanh vùng đám cháy ban đầu thì sử dụng các loại lăng phun bọt như thế nào?",
+      "luaChon": [
+        "A. Dùng lăng phun bọt bội số nở thấp chữa cháy sàn cửa hàng và bọt bội số nở cao phun vào thành xitéc",
+        "B. Dùng lăng phun tia nước đặc dập lửa trên sàn cửa hàng và bọt bội số nở trung bình phun vào gầm xitéc",
+        "C. Dùng lăng phun bọt bội số nở trung bình chữa cháy trên sàn và bọt bội số nở thấp phun vào thành, gầm xitéc",
+        "D. Dùng lăng phun bọt bội số nở cao phủ kín toàn bộ sàn cửa hàng và phun trực tiếp vào miệng nắp xitéc"
+      ]
+    },
+    {
+      "ID": "CTCCXD002",
+      "cauHoi": "Khi tổ chức chữa cháy tại cửa hàng kinh doanh xăng, dầu có khu vực bán khí hóa lỏng đang bị cháy, chỉ huy chữa cháy cần triển khai đội hình phun nước như thế nào đối với các bình chứa khí hóa lỏng?",
+      "luaChon": [
+        "A. Triển khai đội hình phun nước bằng tia nước đặc trực tiếp vào cụm van của các bình chứa khí hóa lỏng",
+        "B. Triển khai đội hình phun nước dưới dạng tia phân tán nhằm làm mát các bình chứa tránh nguy cơ gây nổ",
+        "C. Triển khai đội hình phun bọt hòa không khí bội số nở cao phủ kín toàn bộ các bình chứa khí hóa lỏng",
+        "D. Triển khai đội hình phun nước ngắt quãng theo từng đợt vào đáy bình chứa sau khi ngọn lửa đã tự tắt"
+      ]
+    },
+    {
+      "ID": "CTCCGO003",
+      "cauHoi": "Khi tổ chức chữa cháy tại các gian phòng sản xuất có nhiều bụi gỗ trong cơ sở gia công, chế biến gỗ, việc sử dụng lăng phun tia nước đặc được thực hiện như thế nào để bảo đảm an toàn?",
+      "luaChon": [
+        "A. Chỉ sau khi sử dụng lăng phun mưa và làm ẩm toàn bộ phòng có bụi gỗ mới sử dụng lăng phun tia nước đặc",
+        "B. Phải sử dụng ngay lăng phun tia nước đặc công suất lớn phun trực tiếp vào các khu vực tích tụ bụi gỗ",
+        "C. Tuyệt đối không được sử dụng nước mà chỉ được dùng bình bột chữa cháy xách tay phun vào đám bụi gỗ",
+        "D. Sử dụng lăng phun tia nước đặc kết hợp quạt thổi công suất lớn để thổi bay lớp bụi gỗ ra ngoài phòng"
+      ]
+    },
+    {
+      "ID": "CTCCGO004",
+      "cauHoi": "Khi xảy ra cháy tại phân xưởng sản xuất gỗ có nhiều bụi bám trên thiết bị công nghệ và cấu kiện xây dựng dễ biến dạng do nóng lạnh đột ngột, lực lượng chữa cháy cần triển khai loại lăng và kiểu phun nào?",
+      "luaChon": [
+        "A. Triển khai đội hình bằng những lăng giá di động công suất lớn và phun tia nước đặc vào cấu kiện nhà xưởng",
+        "B. Triển khai đội hình bằng những lăng phun bọt hòa không khí độ nở cao phun trực tiếp lên thiết bị máy móc",
+        "C. Triển khai đội hình bằng những lăng có công suất nhỏ và phun mưa hoặc phun sương mù để lắng bụi và bảo vệ",
+        "D. Triển khai đội hình bằng những lăng phun tia nước đặc áp lực cao để rửa trôi nhanh toàn bộ bụi gỗ bám trên mái"
+      ]
+    },
+    {
+      "ID": "CTCCOT005",
+      "cauHoi": "Đối với các vụ cháy xe ô tô điện hoặc xe hybrid, nếu nguồn nước chữa cháy tại hiện trường bị hạn chế thì chỉ huy chữa cháy cần áp dụng phương án xử lý nào đối với đám cháy cụm pin?",
+      "luaChon": [
+        "A. Dùng bình bột chữa cháy phun liên tục vào gầm xe để dập tắt hoàn toàn phản ứng cháy của cụm pin",
+        "B. Tập trung phun nước làm mát chống cháy lan sang khu vực lân cận và để pin tự cháy hết có kiểm soát",
+        "C. Phá dỡ ngay lớp vỏ bảo vệ kim loại của cụm pin đang cháy để phun bọt hòa không khí vào bên trong",
+        "D. Sử dụng chăn chiên thấm nước trùm kín toàn bộ cụm pin dưới gầm xe để cắt đứt ngay phản ứng nhiệt"
+      ]
+    },
+    {
+      "ID": "CTCCOT006",
+      "cauHoi": "Khi tổ chức chữa cháy xe xi téc chở xăng dầu đang bốc cháy mạnh kèm theo tiếng rít lớn và ngọn lửa bốc cao từ đỉnh téc, chỉ huy chữa cháy phải xử lý như thế nào để bảo đảm an toàn?",
+      "luaChon": [
+        "A. Cho cán bộ chiến sĩ tiến sát đỉnh téc để dùng chăn ướt và cát bịt kín ngay miệng lỗ thở của xi téc",
+        "B. Sử dụng lăng giá di động từ xa để làm mát téc và rút toàn bộ lực lượng về vị trí an toàn tránh téc nổ",
+        "C. Triển khai đội hình lăng B cầm tay leo lên nắp xi téc để phun bọt hòa không khí trực tiếp vào trong téc",
+        "D. Dùng thiết bị phá dỡ chuyên dụng đục thủng thành bên của xi téc nhằm giải phóng nhanh áp suất dư"
+      ]
+    },
+    {
+      "ID": "CTCCKB007",
+      "cauHoi": "Trong chiến thuật chữa cháy kho, bể chứa xăng dầu, khi có hai bể chứa cạnh nhau cùng bị cháy và nằm ngang hướng gió nhưng lực lượng, phương tiện không đủ chữa cùng lúc thì ưu tiên chữa bể nào trước?",
+      "luaChon": [
+        "A. Ưu tiên tập trung lực lượng chữa cháy trước đối với bể chứa chất lỏng có nhiệt độ bốc cháy thấp hơn",
+        "B. Ưu tiên tập trung lực lượng chữa cháy trước đối với bể chứa có dung tích thiết kế nhỏ hơn để dễ dập tắt",
+        "C. Chia đều lực lượng và lượng bọt hiện có để phun đồng thời vào cả hai bể chứa dù không đủ theo tính toán",
+        "D. Ưu tiên tập trung lực lượng chữa cháy trước đối với bể chứa chất lỏng có nhiệt độ bốc cháy cao hơn"
+      ]
+    },
+    {
+      "ID": "CTCCKB008",
+      "cauHoi": "Khi áp dụng phương pháp cách ly bằng phun bọt hòa không khí có độ nở trung bình lên bề mặt bể chứa xăng dầu đang cháy, kỹ thuật phun bọt phải thực hiện như thế nào để đạt hiệu quả?",
+      "luaChon": [
+        "A. Phải phun bọt vào thành bên trong của bể để bọt lan dần ra phủ kín bề mặt, không phun thẳng sục vào chất lỏng",
+        "B. Phải phun bọt cắm thẳng trực tiếp vào tâm bề mặt chất lỏng đang cháy để khuấy trộn đều lớp bọt với xăng dầu",
+        "C. Phải phun bọt từ bên ngoài thành bể tràn qua mép bể kết hợp phun tia nước đặc thẳng vào bề mặt chất lỏng",
+        "D. Phải phun bọt ngắt quãng từng đợt vào chính giữa ngọn lửa và ngừng phun nước làm mát bên ngoài thành bể"
+      ]
+    },
+    {
+      "ID": "CTCCNCT009",
+      "cauHoi": "Khi tổ chức cứu người bị nạn trực tiếp trong đám cháy nhà cao tầng, siêu cao tầng, thứ tự ưu tiên giải cứu những người bị mắc kẹt tại các tầng được xác định như thế nào?",
+      "luaChon": [
+        "A. Ưu tiên cứu người ở các tầng dưới tầng bị cháy trước, sau đó đến tầng đang cháy rồi mới lên các tầng trên",
+        "B. Ưu tiên cứu người ở tầng mái và các tầng trên cùng trước, sau đó mới cứu người ở tầng đang xảy ra cháy",
+        "C. Ưu tiên cứu người bị kẹt trong các tầng đang bị cháy, các tầng trên tầng bị cháy rồi mới đến các tầng dưới",
+        "D. Ưu tiên cứu người ở tầng một và tầng hầm trước, sau đó lần lượt di chuyển từ tầng thấp lên các tầng cao"
+      ]
+    },
+    {
+      "ID": "CTCCNCT010",
+      "cauHoi": "Trong quá trình tổ chức chữa cháy và cứu nạn tại nhà cao tầng, siêu cao tầng đang xảy ra cháy, việc sử dụng hệ thống thang máy trong tòa nhà được quy định như thế nào?",
+      "luaChon": [
+        "A. Được phép sử dụng thang máy thông thường để vận chuyển nhanh cán bộ chiến sĩ và phương tiện lên tầng cháy",
+        "B. Chỉ được sử dụng thang máy thông thường ở các tầng phía dưới tầng đang xảy ra đám cháy để sơ tán người dân",
+        "C. Được phép sử dụng mọi loại thang máy trong tòa nhà nếu hệ thống điện lưới của tòa nhà vẫn còn hoạt động",
+        "D. Tuyệt đối không sử dụng thang máy thông thường vào mục đích chữa cháy, thoát nạn mà chỉ dùng thang máy chữa cháy"
+      ]
+    },
+    {
+      "ID": "CNCHBT011",
+      "cauHoi": "Khi tổ chức cứu nạn, cứu hộ tai nạn đuối nước tại bãi tắm trong khu du lịch, khu vui chơi giải trí, biểu hiện đặc trưng nào giúp nhận biết dòng chảy xa bờ (dòng Rip) trên mặt biển?",
+      "luaChon": [
+        "A. Vùng nước có màu sáng nhạt hơn xung quanh, mặt nước luôn có các ngọn sóng bạc đầu vỗ rất mạnh vào bờ",
+        "B. Vùng nước có màu sậm hơn vì nước sâu hơn, mặt nước phẳng lặng, sóng nhỏ hơn và có bọt nước trôi ra biển",
+        "C. Vùng nước có dòng chảy xoáy tròn tại chỗ và cuốn toàn bộ rong biển, mảnh vỡ dạt mạnh vào sát bờ cát",
+        "D. Vùng nước nông sát bờ có sóng vỗ liên tục theo phương song song với đường bờ biển của khu vực bãi tắm"
+      ]
+    },
+    {
+      "ID": "CNCHDN012",
+      "cauHoi": "Khi tổ chức khoanh vùng hiện trường cứu nạn, cứu hộ tai nạn đuối nước tại sông, suối, hồ, ao, khu vực Vùng 1 của hiện trường được quy định dành cho lực lượng nào hoạt động?",
+      "luaChon": [
+        "A. Là khu vực có người bị nạn dưới nước, chỉ dành cho các chiến sĩ CNCH trực tiếp làm nhiệm vụ làm việc",
+        "B. Là khu vực trên bờ dùng để tập kết toàn bộ phương tiện dự phòng, xe cứu thương và lực lượng y tế địa phương",
+        "C. Là khu vực hoạt động của Ban chỉ huy, Ban chỉ đạo và các lực lượng bảo vệ giữ gìn an ninh trật tự vòng ngoài",
+        "D. Là khu vực dành cho người dân địa phương và thân nhân người bị nạn đứng quan sát, cung cấp thông tin"
+      ]
+    },
+    {
+      "ID": "CNCHDN013",
+      "cauHoi": "Trong chiến thuật cứu nạn, cứu hộ người bị đuối nước tại sông, suối, hồ, ao, biện pháp nào sau đây thuộc phương pháp tiếp cận người bị nạn gián tiếp?",
+      "luaChon": [
+        "A. Cử cán bộ chiến sĩ bơi trực tiếp ra vị trí người bị nạn để dìu nạn nhân còn tỉnh vào khu vực bờ an toàn",
+        "B. Sử dụng ca nô, xuồng máy chở cán bộ chiến sĩ áp sát vị trí nạn nhân và trực tiếp kéo nạn nhân lên xuồng",
+        "C. Quăng phao tròn, áo phao, dây cho nạn nhân nắm để kéo vào hoặc dùng lưới, hệ móc câu tìm nạn nhân chìm",
+        "D. Triển khai đội hình cán bộ chiến sĩ mang bộ thiết bị lặn chuyên dụng xuống đáy sông tìm kiếm người bị nạn"
+      ]
+    },
+    {
+      "ID": "CTCCCR014",
+      "cauHoi": "Trong chiến thuật chữa cháy rừng, phương pháp chữa cháy trực tiếp (bố trí đội hình đối đầu, tác động trực tiếp vào ngọn lửa) được áp dụng trong điều kiện đám cháy như thế nào?",
+      "luaChon": [
+        "A. Áp dụng khi đám cháy rừng có quy mô rất lớn, cháy lan nhanh trên tán cây cao vào thời điểm giữa trưa nắng",
+        "B. Áp dụng khi đám cháy rừng có cường độ cháy mãnh liệt, sức nóng tỏa rộng và gió thổi mạnh trên địa hình dốc",
+        "C. Áp dụng khi đám cháy ngầm âm ỉ sâu hàng mét dưới tầng thảm mục mà không xuất hiện ngọn lửa trên mặt đất",
+        "D. Áp dụng đối với đám cháy có cường độ thấp, dễ tiếp cận hoặc vào lúc chiều tối khi nhiệt độ hạ thấp và gió giảm"
+      ]
+    },
+    {
+      "ID": "CTCCNLK015",
+      "cauHoi": "Khi tổ chức chữa cháy ngôi nhà liên kế nằm sâu trong ngõ hẹp mà xe chữa cháy không thể tiếp cận trực tiếp, việc triển khai phương tiện và đường vòi trong ngõ phải thực hiện như thế nào?",
+      "luaChon": [
+        "A. Cho xe chữa cháy cỡ lớn lùi sâu vào trong ngõ hẹp và rải đường vòi chéo qua lại dọc theo toàn bộ lòng ngõ",
+        "B. Xe chữa cháy đỗ ở đường chính cấp nước cho máy bơm trong ngõ và đường vòi phải triển khai gọn về một phía ngõ",
+        "C. Chỉ sử dụng các bình chữa cháy xách tay vận chuyển vào ngõ chứ không triển khai đường vòi truyền tiếp nước",
+        "D. Đặt các máy bơm chữa cháy chắn ngang chính giữa lối đi của ngõ và rải đường vòi song song hai bên tường ngõ"
+      ]
+    },
+    {
+      "ID": "CTCCNLK016",
+      "cauHoi": "Trong quá trình chữa cháy nhà liên kế, khi thực hiện thao tác mở cửa vào nhà đang cháy hoặc mở cửa thoát khói, cán bộ chiến sĩ phải thực hiện biện pháp an toàn như thế nào?",
+      "luaChon": [
+        "A. Bố trí lăng B phun nước cạnh cửa để bảo vệ và đứng nép về một bên lợi dụng cánh cửa làm vật che chắn lửa tạt",
+        "B. Đứng chính diện ngay trước khung cửa để dùng búa phá tung cánh cửa rồi lập tức chạy thẳng vào trong phòng",
+        "C. Mở toàn bộ các cửa sổ và cửa chính cùng lúc mà không cần bố trí lăng phun nước bảo vệ ở khu vực cửa ra vào",
+        "D. Đi lại nhanh chóng trên các tầng gác có nhiều khói và đứng sát dưới các ô cửa kính lớn để dễ quan sát đám cháy"
+      ]
+    },
+    {
+      "ID": "CNCHTC017",
+      "cauHoi": "Khi tổ chức cứu nạn người có ý định tự tử trên nhà cao tầng, nếu nạn nhân có trang bị vật sắc nhọn và có hành vi bạo lực thì chỉ huy CNCH xử lý phương tiện như thế nào?",
+      "luaChon": [
+        "A. Nhanh chóng thả dây cứu nạn và quăng lưới cứu hộ từ tầng trên xuống để trói chặt ngay vật sắc nhọn của nạn nhân",
+        "B. Cho chiến sĩ cứu nạn đu dây trực tiếp qua cửa sổ áp sát khống chế nạn nhân mà không cần triển khai đệm hơi",
+        "C. Không sử dụng lưới cứu hộ và dây thả xuống để tránh bị cắt đứt gây nguy hiểm, chỉ triển khai đệm hơi và đàm phán",
+        "D. Thu hồi toàn bộ đệm hơi cứu hộ dưới mặt đất và dùng lăng phun tia nước đặc áp lực cao đẩy nạn nhân vào trong"
+      ]
+    },
+    {
+      "ID": "CNCHDS018",
+      "cauHoi": "Khi tổ chức cứu người bị nạn mắc kẹt dưới giếng sâu hoặc hố sâu mà tại hiện trường không có các điểm neo cố định để thiết lập cầu dây, lực lượng CNCH cần áp dụng biện pháp nào?",
+      "luaChon": [
+        "A. Cho cán bộ chiến sĩ tự nhảy trực tiếp xuống đáy giếng sâu để cõng nạn nhân leo bám theo thành giếng lên trên",
+        "B. Chỉ đứng trên miệng giếng thả dây thừng tự do xuống mà không cần sử dụng ròng rọc hay thiết bị cố định điểm neo",
+        "C. Dùng máy xúc đào lấp đất đá xuống miệng giếng để nâng dần độ cao giúp nạn nhân tự bước lên mặt đất an toàn",
+        "D. Sử dụng giá ba chân CNCH đa năng hoặc phương pháp thang - cẩu kết hợp với dây và ròng rọc để đưa nạn nhân lên"
+      ]
+    },
+    {
+      "ID": "CNCHSD019",
+      "cauHoi": "Khi đào bới giải cứu nạn nhân bị vùi lấp dưới lớp gạch, vữa tại hiện trường sập đổ công trình, nếu phát hiện thấy phần chân của nạn nhân trước thì chiến sĩ CNCH phải xử lý như thế nào?",
+      "luaChon": [
+        "A. Nắm chặt hai chân của nạn nhân để kéo mạnh toàn bộ cơ thể nạn nhân ra khỏi đống gạch vữa càng nhanh càng tốt",
+        "B. Phải đổi chiều đào bới để tìm và làm lộ phần đầu nạn nhân trước, tuyệt đối không lôi kéo khi cơ thể còn bị vùi lấp",
+        "C. Dùng máy xúc hạng nặng múc trực tiếp lớp gạch vữa ngay phía trên vị trí vừa phát hiện phần chân của nạn nhân",
+        "D. Giữ nguyên lớp đất cát trên mặt nạn nhân và chờ giải phóng xong hoàn toàn phần chân mới kiểm tra đường hô hấp"
+      ]
+    },
+    {
+      "ID": "CTCCTG020",
+      "cauHoi": "Khi tổ chức tìm kiếm, cứu người bị nạn mắc kẹt trong đám cháy cơ sở tôn giáo, sự khác biệt về phạm vi ưu tiên tìm kiếm giữa cơ sở Phật giáo (chùa) và cơ sở Công giáo (nhà thờ) là gì?",
+      "luaChon": [
+        "A. Tại chùa phải rà soát tất cả các khối nhà cùng lúc, còn tại nhà thờ chỉ cần tìm kiếm ở khu vực tháp chuông",
+        "B. Tại cả chùa và nhà thờ đều chỉ tìm kiếm ở khu vực sân vườn bên ngoài vì khói không lan vào các gian thờ tự",
+        "C. Tại chùa ưu tiên tìm trong các gian của khối nhà bị cháy, còn tại nhà thờ phải rà soát tất cả các tầng, các phòng",
+        "D. Tại chùa chỉ tìm kiếm ở khu vực nhà hậu đường, còn tại nhà thờ chỉ ưu tiên tìm kiếm ở khu vực hành lang phụ"
+      ]
+    }
+  ],
+  "tuLuan": [
+    {
+      "ID": "TL001",
+      "cauHoi": "Đồng chí hãy nêu các yêu cầu và biện pháp bảo đảm an toàn cho cán bộ, chiến sĩ khi tổ chức chữa cháy đối với đám cháy cửa hàng kinh doanh xăng, dầu?",
+      "thangDiem": 2.0,
+      "ghiChu": "Thí sinh trình bày đầy đủ các ý chính theo quy chuẩn chiến thuật PCCC & CNCH."
+    },
+    {
+      "ID": "TL002",
+      "cauHoi": "Đồng chí hãy trình bày các biện pháp xử lý tình huống khi tổ chức cứu nạn, cứu hộ sự cố, tai nạn có người mắc kẹt dưới sâu (giếng sâu, hố sâu, đường hầm, công trình ngầm)?",
+      "thangDiem": 2.0,
+      "ghiChu": "Thí sinh trình bày đầy đủ các ý chính theo quy chuẩn chiến thuật PCCC & CNCH."
+    }
+  ]
+}

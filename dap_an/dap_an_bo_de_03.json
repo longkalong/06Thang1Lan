@@ -1,0 +1,169 @@
+{
+  "maDe": "DE03",
+  "tenDe": "Đáp án Bộ đề kiểm tra số 03 - Chiến thuật Chữa cháy và Cứu nạn, cứu hộ",
+  "dapAnTracNghiem": [
+    {
+      "ID": "CTCCXD001",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Ngọn lửa thường xuất hiện ở các họng nhập, van thở của bể chứa và có nguy cơ gây nổ bể chứa nếu bị tác động nhiệt kéo dài."
+    },
+    {
+      "ID": "CTCCGO002",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Bụi gỗ bị xáo trộn bay lơ lửng trong không khí khi gặp nguồn nhiệt đám cháy có thể gây nổ bụi làm tốc mái, sập đổ công trình."
+    },
+    {
+      "ID": "CTCCGO003",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Cuốn theo các tàn lửa bay xa theo hướng gió làm phát sinh các đám cháy mới ở các đống gỗ khác hoặc công trình dân cư lân cận."
+    },
+    {
+      "ID": "CTCCOT004",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Tốc độ cháy lan nhanh, tỏa ra nhiều khói đặc và các chất khí độc hại bao trùm khoang xe gây ngạt thở và làm mất khả năng thoát nạn."
+    },
+    {
+      "ID": "CTCCOT005",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Vỏ bình nhiên liệu hoặc thành xi téc mất độ bền cơ học dẫn đến nổ hoặc cụm van khóa bị phá hủy làm xăng dầu tràn ra gây cháy lớn."
+    },
+    {
+      "ID": "CTCCKB006",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Do lớp dầu nóng tiến dần xuống đáy bể làm lớp nước (hoặc nhũ tương nước - dầu) hóa hơi đột ngột, giãn nở thể tích đẩy dầu trào ra ngoài."
+    },
+    {
+      "ID": "CTCCKB007",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Khi phun nước hoặc phun bọt chữa cháy trực tiếp vào bề mặt lớp dầu đang có nhiệt độ cao làm nước hóa hơi cục bộ gây sủi bọt trào ra."
+    },
+    {
+      "ID": "CTCCNCT008",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Làm khói và khí nóng chuyển động rất nhanh theo phương thẳng đứng qua các giếng thang, trục kỹ thuật lên làm nhiễm khói các tầng trên."
+    },
+    {
+      "ID": "CTCCNCT009",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Phá vỡ kính cửa sổ rồi bốc lên qua ban công, cửa sổ tầng trên hoặc cháy lan dọc theo lớp vật liệu ốp mặt ngoài và rèm cửa dễ cháy."
+    },
+    {
+      "ID": "CNCHBT010",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Là dòng nước mạnh chảy từ bờ hướng ra biển, cuốn người đang bơi ở vùng nước nông trôi nhanh ra vùng nước sâu dẫn đến đuối sức."
+    },
+    {
+      "ID": "CNCHDN011",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Người bị nạn bị dòng nước cuốn trôi nhanh đi xa vị trí ban đầu, dễ va đập vào đá ngầm, vật cản hoặc bị cuốn vào các hốc đá, bụi cây."
+    },
+    {
+      "ID": "CTCCCR012",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Ngọn lửa bao trùm toàn bộ tầng tán cây trên cao, lan truyền với tốc độ rất nhanh theo chiều gió và phát tán tàn lửa gây cháy vượt qua băng cản."
+    },
+    {
+      "ID": "CTCCCR013",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Khi cháy từ chân dốc lên đỉnh dốc, ngọn lửa và dòng khí nóng nung nóng trước lớp vật liệu cháy phía trên làm tốc độ cháy lan tăng vọt."
+    },
+    {
+      "ID": "CTCCNLK014",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Vì cầu thang bộ hở thông suốt giữa các tầng đóng vai trò như ống khói dẫn khói độc, khí nóng và lửa từ tầng dưới bốc nhanh lên các tầng trên."
+    },
+    {
+      "ID": "CTCCNLK015",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Cháy lan qua cửa sổ, ban công, mái nhà (nhất là mái tôn, trần nhựa, gỗ thông nhau), biển quảng cáo mặt tiền và bức xạ nhiệt."
+    },
+    {
+      "ID": "CNCHTC016",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Kết cấu công trình bị suy yếu do nhiệt hoặc chấn động có nguy cơ sập đổ tiếp, kèm theo gió lớn, khói khí độc và vật rơi từ trên cao."
+    },
+    {
+      "ID": "CNCHDS017",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Thành giếng, vách đất đá hoặc kết cấu hầm bị chấn động, ngấm nước dẫn đến sạt lở, sập đổ thứ cấp hoặc nước ngầm dâng ngập nhanh."
+    },
+    {
+      "ID": "CNCHSD018",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Vì các cấu kiện còn lại đang ở trạng thái mất cân bằng không ổn định, khi chịu rung chấn từ máy móc cắt phá hoặc dư chấn sẽ tiếp tục sập."
+    },
+    {
+      "ID": "CNCHSD019",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Phát sinh đám cháy, nổ do chập điện hoặc rò rỉ khí đốt, hóa chất; vỡ đường ống nước gây ngập lụt ở các tầng hầm, hố sâu và bụi mù đặc."
+    },
+    {
+      "ID": "CTCCTG020",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Ngọn lửa lan nhanh lên hệ thống vì kèo, xà, rui, mè bằng gỗ làm giảm khả năng chịu lực, dẫn đến sập đổ toàn bộ mái ngói nặng xuống dưới."
+    }
+  ],
+  "dapAnTuLuan": [
+    {
+      "ID": "TL001",
+      "cauHoi": "Đồng chí hãy trình bày các biện pháp kỹ thuật an toàn và kiểm soát an toàn khi tổ chức chữa cháy đối với xe ô tô và xe ô tô xi téc chở xăng dầu?",
+      "tuKhoa": [
+        "chỉ huy bình tĩnh sáng suốt quyết định đúng đắn",
+        "trang bị quần áo bảo hộ cách nhiệt chống cháy",
+        "mặt nạ phòng độc thiết bị thở",
+        "khoảng cách an toàn khi chở vũ khí chất nổ",
+        "tuyến vòi chính triển khai dọc theo đường",
+        "cắt ngang đường phải có giải pháp chèn vòi",
+        "khoanh vùng bảo vệ khu vực chiến đấu",
+        "không cho người không có nhiệm vụ vào",
+        "bố trí vị trí đầu hoặc ngang hướng gió",
+        "hạn chế tác động bức xạ nhiệt",
+        "liên tục phun nước làm mát lực lượng phương tiện",
+        "theo dõi tình trạng phương tiện đề phòng nổ bể",
+        "đảm bảo hậu cần nhiên liệu nước hóa chất y tế",
+        "bố trí lực lượng thay ca khi chữa cháy kéo dài"
+      ]
+    },
+    {
+      "ID": "TL002",
+      "cauHoi": "Đồng chí hãy trình bày quy định về khoanh vùng hiện trường và các phương pháp tiếp cận, cứu người bị nạn đuối nước ở sông, suối, thác nước, hồ, ao, giếng?",
+      "tuKhoa": [
+        "chia hiện trường thành ba vùng",
+        "Vùng 1 khu vực có người bị nạn dưới nước",
+        "chỉ dành cho chiến sĩ CNCH trực tiếp",
+        "Vùng 2 vùng hỗ trợ tập kết lực lượng phương tiện",
+        "Vùng 3 ban chỉ huy ban tham mưu lực lượng phối hợp",
+        "phương pháp tiếp cận trực tiếp",
+        "sử dụng phương tiện thủy ca nô xuồng",
+        "cử chiến sĩ bơi lặn trực tiếp tiếp cận",
+        "tiếp cận từ phía sau lưng nạn nhân",
+        "phương pháp tiếp cận gián tiếp",
+        "dùng sào dây CNCH ném phao tròn áo phao",
+        "đối với nạn nhân ở giếng sâu",
+        "thông gió chiếu sáng kiểm tra khí độc",
+        "sử dụng giá ba chân tời dây CNCH thiết bị thở",
+        "đưa nạn nhân lên vị trí an toàn sơ cấp cứu"
+      ]
+    }
+  ]
+}

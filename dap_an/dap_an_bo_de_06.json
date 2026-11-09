@@ -1,0 +1,172 @@
+{
+  "maDe": "DE06",
+  "tenDe": "Đáp án Bộ đề kiểm tra số 06 - Chiến thuật Chữa cháy và Cứu nạn, cứu hộ",
+  "dapAnTracNghiem": [
+    {
+      "ID": "CTCCXD001",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Khả năng sôi trào, dự kiến thời gian sôi trào và địa hình nơi dầu có thể tràn ra để có biện pháp xử lý"
+    },
+    {
+      "ID": "CTCCXD002",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Tổ chức triển khai công tác cứu người bị nạn và di chuyển các tài sản trong khu vực cháy ra vị trí an toàn"
+    },
+    {
+      "ID": "CTCCGO003",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Làm căn cứ để xác định hướng tấn công chính và phân chia các khu vực chiến đấu phù hợp với tình huống cháy"
+    },
+    {
+      "ID": "CTCCGO004",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Trong hầm chứa bụi gỗ, hệ thống đường ống hút bụi, đường ống thông gió hoặc các vị trí kín khuất khác"
+    },
+    {
+      "ID": "CTCCOT005",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Lái xe hoặc chủ phương tiện vì họ nắm rõ hàng hóa vật tư hiện có trên xe và diễn biến phát triển đám cháy"
+    },
+    {
+      "ID": "CTCCOT006",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Lượng xăng dầu còn lại trong xi téc, đã ngừng xuất nhập hay chưa và trạng thái đóng hay mở của các họng, van"
+    },
+    {
+      "ID": "CTCCKB007",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Khả năng bơm chuyển xăng dầu từ bể cháy sang cụm bể khác hoặc bơm nước vào bể đang cháy để xáo trộn, hạn chế cháy"
+    },
+    {
+      "ID": "CTCCNCT008",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Triển khai nhiều hơn số nhóm trinh sát xác định mức độ nguy hiểm đối với người bị nạn so với xác định đám cháy"
+    },
+    {
+      "ID": "CTCCNCT009",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Buộc một đầu dây theo người, đầu dây còn lại giao cho chiến sĩ đứng ngoài để duy trì liên lạc suốt thời gian trinh sát"
+    },
+    {
+      "ID": "CNCHBT010",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Từ 03 người trở lên và có thêm 01 thành viên là nhân viên hoặc người am hiểu địa hình nơi xảy ra tai nạn"
+    },
+    {
+      "ID": "CNCHBT011",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Là vùng hỗ trợ cho Vùng 1, nơi tập kết lực lượng, phương tiện và những người không có nhiệm vụ ở ngoài vùng này"
+    },
+    {
+      "ID": "CNCHDN012",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Quan sát hướng của dòng chảy và vận tốc của dòng chảy để xác định khả năng bị cuốn trôi của người bị nạn"
+    },
+    {
+      "ID": "CTCCCR013",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Đề xuất lãnh đạo các cấp sử dụng máy bay trực thăng để trinh sát và giám sát việc chiến đấu dập tắt đám cháy"
+    },
+    {
+      "ID": "CTCCNLK014",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Nguy cơ đám cháy nhảy cóc, cháy do bức xạ nhiệt và cháy lan đến các ngôi nhà làm bằng vật liệu dễ cháy lân cận"
+    },
+    {
+      "ID": "CNCHTC015",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Vùng thứ nhất cơ bản và nhất định phải có, hai vùng còn lại phụ thuộc theo tình huống và địa hình thực tế"
+    },
+    {
+      "ID": "CNCHTC016",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Quyết định vị trí của đệm hơi cứu hộ, lưới cứu hộ, thiết lập dây và cung cấp phạm vi cứu hộ cho nhiều vị trí"
+    },
+    {
+      "ID": "CNCHDS017",
+      "dapan": 4,
+      "kyHieu": "D",
+      "noiDungDapAn": "D. Chiều rộng của miệng giếng, chiều sâu của giếng, chiều sâu mực nước, khí độc phát sinh và phương tiện tiếp cận"
+    },
+    {
+      "ID": "CNCHDS018",
+      "dapan": 3,
+      "kyHieu": "C",
+      "noiDungDapAn": "C. Bố trí lực lượng, phương tiện CNCH chuyên dụng, y tế, hậu cần, chiếu sáng và diễn ra hoạt động sơ cấp cứu ban đầu"
+    },
+    {
+      "ID": "CNCHSD019",
+      "dapan": 1,
+      "kyHieu": "A",
+      "noiDungDapAn": "A. Có nhìn thấy toàn thân hay một phần cơ thể không, cấu kiện đè lên bộ phận nào và tình trạng hô hấp, mạch, chấn thương"
+    },
+    {
+      "ID": "CTCCTG020",
+      "dapan": 2,
+      "kyHieu": "B",
+      "noiDungDapAn": "B. Phải có cán bộ kỹ thuật của cơ sở đi cùng để hướng dẫn và trang bị đầy đủ thiết bị bảo hộ cá nhân, mặt nạ cách ly"
+    }
+  ],
+  "dapAnTuLuan": [
+    {
+      "ID": "TL001",
+      "cauHoi": "Đồng chí hãy trình bày công tác tổ chức cứu người bị nạn (các phương pháp, vị trí có thể có nạn nhân và các phương tiện thiết bị triển khai) trong sự cố cháy nhà cao tầng?",
+      "tuKhoa": [
+        "phương pháp gián tiếp",
+        "phương pháp trực tiếp",
+        "hướng dẫn tự thoát",
+        "buồng thang an toàn",
+        "mang vác cõng khiêng dìu",
+        "tầng đang bị cháy",
+        "tầng trên tầng bị cháy",
+        "ban công cửa sổ",
+        "sân thượng",
+        "lô gia",
+        "thang máy",
+        "xe thang",
+        "bạt và đệm hơi",
+        "máy bay trực thăng",
+        "dây CNCH",
+        "cầu dây nghiêng"
+      ]
+    },
+    {
+      "ID": "TL002",
+      "cauHoi": "Đồng chí hãy nêu các nội dung cần xác định khi trinh sát hiện trường và nguyên tắc phân chia 03 vùng khi khoanh vùng hiện trường sự cố, tai nạn sập đổ nhà, công trình?",
+      "tuKhoa": [
+        "tình trạng nạn nhân",
+        "chôn vùi",
+        "cấu kiện đè lên cơ thể",
+        "không gian hẹp",
+        "tình trạng chấn thương",
+        "nguy cơ sập đổ thứ cấp",
+        "nồng độ oxy khí độc",
+        "đặc điểm công trình sập đổ",
+        "vùng 1",
+        "lực lượng CNCH chuyên nghiệp",
+        "vùng 2",
+        "sơ cấp cứu ban đầu",
+        "hậu cần chiếu sáng",
+        "vùng 3",
+        "khu vực hỗ trợ",
+        "bảo vệ hiện trường"
+      ]
+    }
+  ]
+}

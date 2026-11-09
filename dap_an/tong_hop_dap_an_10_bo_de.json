@@ -1,0 +1,1722 @@
+{
+  "tongSoBoDe": 10,
+  "danhSachDapAn": [
+    {
+      "maDe": "DE01",
+      "tenDe": "Đáp án Bộ đề kiểm tra số 01 - Chiến thuật Chữa cháy và Cứu nạn, cứu hộ",
+      "dapAnTracNghiem": [
+        {
+          "ID": "CTCCXD001",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Dùng lăng phun bọt bội số nở trung bình chữa cháy trên sàn và bọt bội số nở thấp phun vào thành, gầm xitéc"
+        },
+        {
+          "ID": "CTCCXD002",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Triển khai đội hình phun nước dưới dạng tia phân tán nhằm làm mát các bình chứa tránh nguy cơ gây nổ"
+        },
+        {
+          "ID": "CTCCGO003",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Chỉ sau khi sử dụng lăng phun mưa và làm ẩm toàn bộ phòng có bụi gỗ mới sử dụng lăng phun tia nước đặc"
+        },
+        {
+          "ID": "CTCCGO004",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Triển khai đội hình bằng những lăng có công suất nhỏ và phun mưa hoặc phun sương mù để lắng bụi và bảo vệ"
+        },
+        {
+          "ID": "CTCCOT005",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Tập trung phun nước làm mát chống cháy lan sang khu vực lân cận và để pin tự cháy hết có kiểm soát"
+        },
+        {
+          "ID": "CTCCOT006",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Sử dụng lăng giá di động từ xa để làm mát téc và rút toàn bộ lực lượng về vị trí an toàn tránh téc nổ"
+        },
+        {
+          "ID": "CTCCKB007",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Ưu tiên tập trung lực lượng chữa cháy trước đối với bể chứa chất lỏng có nhiệt độ bốc cháy cao hơn"
+        },
+        {
+          "ID": "CTCCKB008",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Phải phun bọt vào thành bên trong của bể để bọt lan dần ra phủ kín bề mặt, không phun thẳng sục vào chất lỏng"
+        },
+        {
+          "ID": "CTCCNCT009",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Ưu tiên cứu người bị kẹt trong các tầng đang bị cháy, các tầng trên tầng bị cháy rồi mới đến các tầng dưới"
+        },
+        {
+          "ID": "CTCCNCT010",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Tuyệt đối không sử dụng thang máy thông thường vào mục đích chữa cháy, thoát nạn mà chỉ dùng thang máy chữa cháy"
+        },
+        {
+          "ID": "CNCHBT011",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Vùng nước có màu sậm hơn vì nước sâu hơn, mặt nước phẳng lặng, sóng nhỏ hơn và có bọt nước trôi ra biển"
+        },
+        {
+          "ID": "CNCHDN012",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Là khu vực có người bị nạn dưới nước, chỉ dành cho các chiến sĩ CNCH trực tiếp làm nhiệm vụ làm việc"
+        },
+        {
+          "ID": "CNCHDN013",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Quăng phao tròn, áo phao, dây cho nạn nhân nắm để kéo vào hoặc dùng lưới, hệ móc câu tìm nạn nhân chìm"
+        },
+        {
+          "ID": "CTCCCR014",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Áp dụng đối với đám cháy có cường độ thấp, dễ tiếp cận hoặc vào lúc chiều tối khi nhiệt độ hạ thấp và gió giảm"
+        },
+        {
+          "ID": "CTCCNLK015",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Xe chữa cháy đỗ ở đường chính cấp nước cho máy bơm trong ngõ và đường vòi phải triển khai gọn về một phía ngõ"
+        },
+        {
+          "ID": "CTCCNLK016",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Bố trí lăng B phun nước cạnh cửa để bảo vệ và đứng nép về một bên lợi dụng cánh cửa làm vật che chắn lửa tạt"
+        },
+        {
+          "ID": "CNCHTC017",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Không sử dụng lưới cứu hộ và dây thả xuống để tránh bị cắt đứt gây nguy hiểm, chỉ triển khai đệm hơi và đàm phán"
+        },
+        {
+          "ID": "CNCHDS018",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Sử dụng giá ba chân CNCH đa năng hoặc phương pháp thang - cẩu kết hợp với dây và ròng rọc để đưa nạn nhân lên"
+        },
+        {
+          "ID": "CNCHSD019",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Phải đổi chiều đào bới để tìm và làm lộ phần đầu nạn nhân trước, tuyệt đối không lôi kéo khi cơ thể còn bị vùi lấp"
+        },
+        {
+          "ID": "CTCCTG020",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Tại chùa ưu tiên tìm trong các gian của khối nhà bị cháy, còn tại nhà thờ phải rà soát tất cả các tầng, các phòng"
+        }
+      ],
+      "dapAnTuLuan": [
+        {
+          "ID": "TL001",
+          "cauHoi": "Đồng chí hãy nêu các yêu cầu và biện pháp bảo đảm an toàn cho cán bộ, chiến sĩ khi tổ chức chữa cháy đối với đám cháy cửa hàng kinh doanh xăng, dầu?",
+          "tuKhoa": [
+            "quần áo chữa cháy",
+            "quần áo cách nhiệt",
+            "bình thở",
+            "mặt nạ phòng độc cách ly",
+            "đầu hướng gió",
+            "lăng phun sương",
+            "phun mưa",
+            "làm mát cho CBCS",
+            "đèn chiếu sáng phòng nổ",
+            "thay đổi vòi",
+            "di chuyển vị trí",
+            "đóng khóa lăng",
+            "giảm áp lực",
+            "tiếng rít",
+            "rút khỏi khu vực nguy hiểm"
+          ]
+        },
+        {
+          "ID": "TL002",
+          "cauHoi": "Đồng chí hãy trình bày các biện pháp xử lý tình huống khi tổ chức cứu nạn, cứu hộ sự cố, tai nạn có người mắc kẹt dưới sâu (giếng sâu, hố sâu, đường hầm, công trình ngầm)?",
+          "tuKhoa": [
+            "khoanh vùng",
+            "biển cảnh báo",
+            "thiết bị dò tìm",
+            "camera",
+            "thông gió",
+            "cung cấp không khí sạch",
+            "dưỡng khí",
+            "mặt nạ cách ly",
+            "khí độc",
+            "giá ba chân",
+            "dây cứu nạn",
+            "đai cứu nạn",
+            "cáng cứu thương",
+            "đào đất đá",
+            "tạo lối cứu nạn",
+            "ổn định cấu kiện",
+            "tránh sạt lở",
+            "ngắt nguồn điện",
+            "sơ cấp cứu"
+          ]
+        }
+      ]
+    },
+    {
+      "maDe": "DE02",
+      "tenDe": "Đáp án Bộ đề kiểm tra số 02 - Chiến thuật Chữa cháy và Cứu nạn, cứu hộ",
+      "dapAnTracNghiem": [
+        {
+          "ID": "CTCCXD001",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Nằm trên các tuyến phố chính có mật độ giao thông đông khó tiếp cận vào giờ cao điểm, gần khu dân cư và người dân hiếu kỳ tập trung đông."
+        },
+        {
+          "ID": "CTCCGO002",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Nhà sản xuất thường có diện tích lớn nhưng ít có tường ngăn cháy và khoảng cách an toàn phòng cháy giữa các hạng mục không đảm bảo."
+        },
+        {
+          "ID": "CTCCOT003",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Nội thất dùng nhiều vật liệu dễ cháy như mút xốp, da, nhựa tổng hợp cùng hàng hóa đa dạng có thể gồm hóa chất, chất nổ trên xe."
+        },
+        {
+          "ID": "CTCCOT004",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Cụm van khóa được chế tạo từ kim loại có độ nóng chảy thấp hơn các bộ phận khác nên có thể bị phá hủy trước sau một thời gian chịu nhiệt."
+        },
+        {
+          "ID": "CTCCKB005",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Nhiệt độ chớp cháy càng thấp thì khả năng bay hơi càng cao, làm tăng nguy cơ tạo thành hỗn hợp nguy hiểm cháy nổ với không khí."
+        },
+        {
+          "ID": "CTCCKB006",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Ngăn ngừa chất lỏng chảy tràn lan rộng khi có sự cố vỡ hoặc tràn bể chứa, đồng thời mặt đê có thể tận dụng làm đường giao thông."
+        },
+        {
+          "ID": "CTCCNCT007",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Giếng thông tầng, buồng thang bộ không nhiễm khói khi cửa mở, giếng thang máy cùng các trục hộp kỹ thuật thông suốt qua các tầng."
+        },
+        {
+          "ID": "CTCCNCT008",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Lượng nước dự trữ tại cơ sở thường hạn chế và hệ thống bơm chữa cháy cố định có thể gặp sự cố hoặc không đủ áp lực đưa nước lên tầng cao."
+        },
+        {
+          "ID": "CNCHBT009",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Tâm lý rất hoảng loạn, la hét kêu cứu, vùng vẫy mạnh và có xu hướng vớ lấy bất cứ thứ gì xung quanh kể cả người đến cứu."
+        },
+        {
+          "ID": "CNCHDN010",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Dòng nước từ trên cao đổ xuống tạo thành các dòng xoáy cuộn mạnh, bọt nước trắng xóa làm hạn chế tầm nhìn và có nhiều đá ngầm sắc nhọn."
+        },
+        {
+          "ID": "CNCHDN011",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Không gian chật hẹp, thiếu ánh sáng, thiếu dưỡng khí, có thể tích tụ khí độc ở dưới sâu và thành giếng trơn trượt hoặc có nguy cơ sạt lở."
+        },
+        {
+          "ID": "CTCCCR012",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Là nguồn nhiên liệu chủ yếu làm cho đám cháy dễ phát sinh, lan truyền nhanh trên mặt đất và có thể cháy âm ỉ kéo dài trong lớp than bùn."
+        },
+        {
+          "ID": "CTCCNLK014",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Việc lắp đặt các khung sắt bảo vệ kiên cố (chuồng cọp) kín ban công và gắn các biển quảng cáo lớn che kín toàn bộ mặt trước ngôi nhà."
+        },
+        {
+          "ID": "CTCCNLK015",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Hàng hóa dễ cháy thường xếp đặt tại tầng trệt, gầm cầu thang và lấn chiếm lối đi, trong khi công trình chỉ có một cầu thang bộ thoát nạn duy nhất."
+        },
+        {
+          "ID": "CNCHTC016",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Thường hoảng loạn, sợ hãi, mất bình tĩnh, sức khỏe suy giảm nhanh do chấn thương hoặc kiệt sức nên dễ có hành động bột phát gây nguy hiểm."
+        },
+        {
+          "ID": "CNCHTC017",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Hóa chất có thể tồn tại ở dạng khí, hơi, lỏng hoặc rắn có tính độc, ăn mòn, dễ cháy nổ và phát tán nhanh theo hướng gió gây nguy hiểm trực tiếp."
+        },
+        {
+          "ID": "CNCHDS018",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Lối ra vào hẹp, thông gió tự nhiên kém dẫn đến thiếu hụt oxy, dễ tích tụ các loại khí độc hoặc khí dễ cháy nổ và hạn chế tầm nhìn."
+        },
+        {
+          "ID": "CNCHSD019",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Là những không gian được tạo bởi các cấu kiện sập đổ tựa vào nhau, nơi người bị nạn có khả năng còn sống sót và đang bị mắc kẹt bên trong."
+        },
+        {
+          "ID": "CNCHSD013",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Các tấm sàn bê tông sập đè sát chồng lên nhau làm không gian sống sót rất hẹp, đòi hỏi phải đục cắt xuyên sàn và chống đỡ phức tạp."
+        },
+        {
+          "ID": "CTCCTG020",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Kết cấu chủ yếu bằng gỗ lâu năm khô kiệt dễ bắt lửa, bố trí nhiều đồ thờ cúng dễ cháy như hương, nến, vàng mã, vải, giấy và tập trung đông người."
+        }
+      ],
+      "dapAnTuLuan": [
+        {
+          "ID": "TL001",
+          "cauHoi": "Đồng chí hãy trình bày nội dung công tác tổ chức trinh sát đám cháy tại kho, bãi chứa gỗ và phân xưởng sản xuất của cơ sở chế biến gỗ?",
+          "tuKhoa": [
+            "Tổ trinh sát ít nhất 03 người",
+            "cán bộ chuyên môn cơ sở tham gia",
+            "bố trí nhiều tổ nhiều hướng",
+            "số người bị nạn",
+            "vị trí số lượng người bị kẹt",
+            "lối đường thoát nạn",
+            "cầu thang ban công cửa sổ",
+            "hướng tấn công tiếp cận",
+            "tình hình diễn biến đám cháy",
+            "vị trí diện tích đám cháy",
+            "khả năng tốc độ hướng cháy lan",
+            "nguy cơ sụp đổ công trình",
+            "khả năng nổ thiết bị",
+            "hệ thống thông gió hút bụi",
+            "hệ thống điện sản xuất",
+            "giao thông nguồn nước phương tiện tại chỗ"
+          ]
+        },
+        {
+          "ID": "TL002",
+          "cauHoi": "Đồng chí hãy trình bày các bước và biện pháp triển khai hoạt động cứu người bị nạn trong tai nạn đuối nước tại bãi tắm ở khu du lịch, khu vui chơi giải trí?",
+          "tuKhoa": [
+            "xác định vị trí người bị nạn",
+            "khoanh vùng khu vực có người bị nạn",
+            "huy động phương tiện chuyên dùng",
+            "tàu xuồng ca nô mô tô nước",
+            "thiết bị lặn áo phao dây CNCH",
+            "đánh giá mức độ tình trạng nạn nhân",
+            "phương pháp tiếp cận trực tiếp",
+            "cử chiến sĩ bơi trực tiếp dìu nạn nhân",
+            "phương pháp tiếp cận gián tiếp",
+            "dùng sào ném phao tròn áo phao buộc dây",
+            "đội hình lặn CNCH phá dỡ khi mắc kẹt",
+            "loại bỏ yếu tố gây nguy hiểm",
+            "ổn định tâm lý động viên tinh thần",
+            "đưa người bị nạn ra nơi an toàn",
+            "bảo đảm an toàn cho người và phương tiện"
+          ]
+        }
+      ]
+    },
+    {
+      "maDe": "DE03",
+      "tenDe": "Đáp án Bộ đề kiểm tra số 03 - Chiến thuật Chữa cháy và Cứu nạn, cứu hộ",
+      "dapAnTracNghiem": [
+        {
+          "ID": "CTCCXD001",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Ngọn lửa thường xuất hiện ở các họng nhập, van thở của bể chứa và có nguy cơ gây nổ bể chứa nếu bị tác động nhiệt kéo dài."
+        },
+        {
+          "ID": "CTCCGO002",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Bụi gỗ bị xáo trộn bay lơ lửng trong không khí khi gặp nguồn nhiệt đám cháy có thể gây nổ bụi làm tốc mái, sập đổ công trình."
+        },
+        {
+          "ID": "CTCCGO003",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Cuốn theo các tàn lửa bay xa theo hướng gió làm phát sinh các đám cháy mới ở các đống gỗ khác hoặc công trình dân cư lân cận."
+        },
+        {
+          "ID": "CTCCOT004",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Tốc độ cháy lan nhanh, tỏa ra nhiều khói đặc và các chất khí độc hại bao trùm khoang xe gây ngạt thở và làm mất khả năng thoát nạn."
+        },
+        {
+          "ID": "CTCCOT005",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Vỏ bình nhiên liệu hoặc thành xi téc mất độ bền cơ học dẫn đến nổ hoặc cụm van khóa bị phá hủy làm xăng dầu tràn ra gây cháy lớn."
+        },
+        {
+          "ID": "CTCCKB006",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Do lớp dầu nóng tiến dần xuống đáy bể làm lớp nước (hoặc nhũ tương nước - dầu) hóa hơi đột ngột, giãn nở thể tích đẩy dầu trào ra ngoài."
+        },
+        {
+          "ID": "CTCCKB007",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Khi phun nước hoặc phun bọt chữa cháy trực tiếp vào bề mặt lớp dầu đang có nhiệt độ cao làm nước hóa hơi cục bộ gây sủi bọt trào ra."
+        },
+        {
+          "ID": "CTCCNCT008",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Làm khói và khí nóng chuyển động rất nhanh theo phương thẳng đứng qua các giếng thang, trục kỹ thuật lên làm nhiễm khói các tầng trên."
+        },
+        {
+          "ID": "CTCCNCT009",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Phá vỡ kính cửa sổ rồi bốc lên qua ban công, cửa sổ tầng trên hoặc cháy lan dọc theo lớp vật liệu ốp mặt ngoài và rèm cửa dễ cháy."
+        },
+        {
+          "ID": "CNCHBT010",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Là dòng nước mạnh chảy từ bờ hướng ra biển, cuốn người đang bơi ở vùng nước nông trôi nhanh ra vùng nước sâu dẫn đến đuối sức."
+        },
+        {
+          "ID": "CNCHDN011",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Người bị nạn bị dòng nước cuốn trôi nhanh đi xa vị trí ban đầu, dễ va đập vào đá ngầm, vật cản hoặc bị cuốn vào các hốc đá, bụi cây."
+        },
+        {
+          "ID": "CTCCCR012",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Ngọn lửa bao trùm toàn bộ tầng tán cây trên cao, lan truyền với tốc độ rất nhanh theo chiều gió và phát tán tàn lửa gây cháy vượt qua băng cản."
+        },
+        {
+          "ID": "CTCCCR013",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Khi cháy từ chân dốc lên đỉnh dốc, ngọn lửa và dòng khí nóng nung nóng trước lớp vật liệu cháy phía trên làm tốc độ cháy lan tăng vọt."
+        },
+        {
+          "ID": "CTCCNLK014",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Vì cầu thang bộ hở thông suốt giữa các tầng đóng vai trò như ống khói dẫn khói độc, khí nóng và lửa từ tầng dưới bốc nhanh lên các tầng trên."
+        },
+        {
+          "ID": "CTCCNLK015",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Cháy lan qua cửa sổ, ban công, mái nhà (nhất là mái tôn, trần nhựa, gỗ thông nhau), biển quảng cáo mặt tiền và bức xạ nhiệt."
+        },
+        {
+          "ID": "CNCHTC016",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Kết cấu công trình bị suy yếu do nhiệt hoặc chấn động có nguy cơ sập đổ tiếp, kèm theo gió lớn, khói khí độc và vật rơi từ trên cao."
+        },
+        {
+          "ID": "CNCHDS017",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Thành giếng, vách đất đá hoặc kết cấu hầm bị chấn động, ngấm nước dẫn đến sạt lở, sập đổ thứ cấp hoặc nước ngầm dâng ngập nhanh."
+        },
+        {
+          "ID": "CNCHSD018",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Vì các cấu kiện còn lại đang ở trạng thái mất cân bằng không ổn định, khi chịu rung chấn từ máy móc cắt phá hoặc dư chấn sẽ tiếp tục sập."
+        },
+        {
+          "ID": "CNCHSD019",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Phát sinh đám cháy, nổ do chập điện hoặc rò rỉ khí đốt, hóa chất; vỡ đường ống nước gây ngập lụt ở các tầng hầm, hố sâu và bụi mù đặc."
+        },
+        {
+          "ID": "CTCCTG020",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Ngọn lửa lan nhanh lên hệ thống vì kèo, xà, rui, mè bằng gỗ làm giảm khả năng chịu lực, dẫn đến sập đổ toàn bộ mái ngói nặng xuống dưới."
+        }
+      ],
+      "dapAnTuLuan": [
+        {
+          "ID": "TL001",
+          "cauHoi": "Đồng chí hãy trình bày các biện pháp kỹ thuật an toàn và kiểm soát an toàn khi tổ chức chữa cháy đối với xe ô tô và xe ô tô xi téc chở xăng dầu?",
+          "tuKhoa": [
+            "chỉ huy bình tĩnh sáng suốt quyết định đúng đắn",
+            "trang bị quần áo bảo hộ cách nhiệt chống cháy",
+            "mặt nạ phòng độc thiết bị thở",
+            "khoảng cách an toàn khi chở vũ khí chất nổ",
+            "tuyến vòi chính triển khai dọc theo đường",
+            "cắt ngang đường phải có giải pháp chèn vòi",
+            "khoanh vùng bảo vệ khu vực chiến đấu",
+            "không cho người không có nhiệm vụ vào",
+            "bố trí vị trí đầu hoặc ngang hướng gió",
+            "hạn chế tác động bức xạ nhiệt",
+            "liên tục phun nước làm mát lực lượng phương tiện",
+            "theo dõi tình trạng phương tiện đề phòng nổ bể",
+            "đảm bảo hậu cần nhiên liệu nước hóa chất y tế",
+            "bố trí lực lượng thay ca khi chữa cháy kéo dài"
+          ]
+        },
+        {
+          "ID": "TL002",
+          "cauHoi": "Đồng chí hãy trình bày quy định về khoanh vùng hiện trường và các phương pháp tiếp cận, cứu người bị nạn đuối nước ở sông, suối, thác nước, hồ, ao, giếng?",
+          "tuKhoa": [
+            "chia hiện trường thành ba vùng",
+            "Vùng 1 khu vực có người bị nạn dưới nước",
+            "chỉ dành cho chiến sĩ CNCH trực tiếp",
+            "Vùng 2 vùng hỗ trợ tập kết lực lượng phương tiện",
+            "Vùng 3 ban chỉ huy ban tham mưu lực lượng phối hợp",
+            "phương pháp tiếp cận trực tiếp",
+            "sử dụng phương tiện thủy ca nô xuồng",
+            "cử chiến sĩ bơi lặn trực tiếp tiếp cận",
+            "tiếp cận từ phía sau lưng nạn nhân",
+            "phương pháp tiếp cận gián tiếp",
+            "dùng sào dây CNCH ném phao tròn áo phao",
+            "đối với nạn nhân ở giếng sâu",
+            "thông gió chiếu sáng kiểm tra khí độc",
+            "sử dụng giá ba chân tời dây CNCH thiết bị thở",
+            "đưa nạn nhân lên vị trí an toàn sơ cấp cứu"
+          ]
+        }
+      ]
+    },
+    {
+      "maDe": "DE04",
+      "tenDe": "Đáp án Bộ đề kiểm tra số 04 - Chiến thuật Chữa cháy và Cứu nạn, cứu hộ",
+      "dapAnTracNghiem": [
+        {
+          "ID": "CTCCXD001",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Dừng ngay việc xuất nhập xăng dầu, đóng các van trên xe và bể chứa, tìm cách đưa xe xi téc ra khỏi khu vực nguy hiểm và báo cháy."
+        },
+        {
+          "ID": "CTCCGO002",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Tập trung lực lượng, phương tiện đủ mạnh để vừa dập tắt đám cháy bằng nước với lưu lượng lớn vừa làm mát, chống cháy lan."
+        },
+        {
+          "ID": "CTCCGO003",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Cắt điện khu vực cháy, dừng ngay hệ thống thông gió, hệ thống hút bụi gỗ và đóng các van ngăn lửa trên đường ống dẫn bụi."
+        },
+        {
+          "ID": "CTCCOT004",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Dừng xe ở vị trí cách xa các công trình, khu dân cư, nhanh chóng tổ chức thoát nạn cho hành khách, báo cháy và chữa cháy ban đầu."
+        },
+        {
+          "ID": "CTCCOT005",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Phải tập trung lực lượng dập tắt ngọn lửa cháy loang xung quanh trên mặt đất trước, sau đó mới tiến hành dập tắt lửa trên miệng xi téc."
+        },
+        {
+          "ID": "CTCCKB006",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Báo động cháy, vận hành ngay hệ thống làm mát và chữa cháy cố định, ngừng xuất nhập, đóng các van chặn và kiểm tra hệ thống đê bao."
+        },
+        {
+          "ID": "CTCCNCT007",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Tổ chức tìm kiếm, hướng dẫn thoát nạn và cứu người bị nạn đang mắc kẹt tại tầng bị cháy và các tầng bị nhiễm khói phía trên."
+        },
+        {
+          "ID": "CTCCNCT008",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Cắt điện khu vực cháy, đưa thang máy thông thường về tầng trệt, kích hoạt hệ thống tăng áp cầu thang bộ, hút khói và bơm chữa cháy."
+        },
+        {
+          "ID": "CNCHBT009",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Nhanh chóng nắm tình hình người bị nạn và đặc điểm vùng nước, tổ chức trinh sát, khoanh vùng hiện trường và quyết định phương án cứu người."
+        },
+        {
+          "ID": "CNCHDN010",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Cán bộ, chiến sĩ trực tiếp xuống nước phải mặc áo phao hoặc trang bị lặn, có dây cứu nạn bảo hiểm và luôn hỗ trợ nhau theo tổ, nhóm."
+        },
+        {
+          "ID": "CTCCCR011",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Thực hiện nghiêm phương châm bốn tại chỗ, huy động sức mạnh tổng hợp của nhiều lực lượng và ưu tiên ngăn chặn hướng cháy lan chính."
+        },
+        {
+          "ID": "CTCCNLK012",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Hô hoán báo động, gọi báo cháy, cắt điện ngôi nhà cháy, sử dụng phương tiện tại chỗ cứu người mắc kẹt và khống chế ngọn lửa ban đầu."
+        },
+        {
+          "ID": "CTCCNLK013",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Triển khai đồng thời việc phun nước làm mát, khống chế lửa ở tầng một và bắc thang hoặc qua nhà liền kề phá dỡ chuồng cọp để cứu người."
+        },
+        {
+          "ID": "CNCHTC014",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Điểm neo phải là các cấu kiện thật sự vững chắc, chịu được tải trọng lớn, có lót bảo vệ dây ở các góc cạnh sắc và luôn có điểm neo dự phòng."
+        },
+        {
+          "ID": "CNCHTC015",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Tiếp cận từ phía đầu hướng gió và ở vị trí cao hơn khu vực rò rỉ, trang bị đầy đủ phương tiện bảo hộ chống độc và thiết bị thở cách ly."
+        },
+        {
+          "ID": "CNCHDS016",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Kiểm tra nồng độ oxy và các khí độc, khí cháy nổ, tiến hành thông gió cưỡng bức liên tục và trang bị đầy đủ bình thở, dây bảo hiểm."
+        },
+        {
+          "ID": "CNCHDS017",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Khoanh vùng hiện trường, đưa người không có nhiệm vụ ra xa miệng hố để tránh làm sạt lở đất đá rơi xuống và tổ chức liên lạc với nạn nhân."
+        },
+        {
+          "ID": "CNCHSD018",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Không tự ý dùng máy cơ giới đào bới trực tiếp lên khu vực nghi có người còn sống khi chưa xác định rõ vị trí nạn nhân và chưa chèn chống."
+        },
+        {
+          "ID": "CNCHSD019",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Cử cán bộ an toàn theo dõi liên tục sự dịch chuyển của kết cấu công trình và quy định rõ tín hiệu cảnh báo rút quân khẩn cấp."
+        },
+        {
+          "ID": "CTCCTG020",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Báo động cháy, hướng dẫn khách hành hương thoát nạn, cắt điện khu vực cháy, dùng phương tiện tại chỗ chữa cháy và di chuyển cổ vật quý."
+        }
+      ],
+      "dapAnTuLuan": [
+        {
+          "ID": "TL001",
+          "cauHoi": "Đồng chí hãy trình bày nguyên tắc tổ chức chữa cháy và nội dung trinh sát đám cháy đối với kho, bể chứa xăng dầu?",
+          "tuKhoa": [
+            "huy động tập trung lực lượng phương tiện đủ mạnh",
+            "tận dụng hệ thống làm mát chữa cháy cố định",
+            "làm mát liên tục bể cháy và bể lân cận",
+            "chuẩn bị đầy đủ cơ số chất tạo bọt",
+            "tấn công đồng loạt dứt điểm",
+            "chủ động phòng ngừa sôi trào bắn tóe nổ bể",
+            "trinh sát có cán bộ kỹ thuật kho tham gia",
+            "xác định người bị nạn khả năng thoát nạn",
+            "loại bể chứa dung tích mức độ hư hỏng",
+            "loại xăng dầu chiều cao mức chất lỏng",
+            "sự tồn tại lớp nước đệm dưới đáy bể",
+            "tình trạng mái bể các van thở van chặn",
+            "tình trạng đê bao rãnh thoát nước ngăn lửa",
+            "tình trạng hệ thống làm mát chữa cháy cố định",
+            "nguồn nước dự trữ lượng bọt tại kho"
+          ]
+        },
+        {
+          "ID": "TL002",
+          "cauHoi": "Đồng chí hãy trình bày các phương pháp và biện pháp kỹ thuật chữa cháy rừng trực tiếp và gián tiếp?",
+          "tuKhoa": [
+            "phương pháp chữa cháy rừng trực tiếp",
+            "áp dụng khi đám cháy nhỏ mới phát sinh",
+            "cháy dưới tán tốc độ lan truyền chậm",
+            "tác động trực tiếp vào mép lửa",
+            "dùng cành cây tươi bàn dập dập lửa",
+            "dùng máy thổi gió thổi tạt ngọn lửa",
+            "phun nước hóa chất đất cát phủ gốc lửa",
+            "phương pháp chữa cháy rừng gián tiếp",
+            "áp dụng khi đám cháy lớn cháy tán rừng",
+            "nhiệt lượng cao không tiếp cận trực tiếp được",
+            "tạo đường băng trắng cản lửa",
+            "phát dọn cày ủi vật liệu cháy trước mặt lửa",
+            "kết hợp tận dụng địa hình sông suối đường mòn",
+            "đốt chặn có kiểm soát từ băng cản lửa",
+            "tổ chức làm nguội dập tàn lửa chống cháy lại"
+          ]
+        }
+      ]
+    },
+    {
+      "maDe": "DE05",
+      "tenDe": "Đáp án Bộ đề kiểm tra số 05 - Chiến thuật Chữa cháy và Cứu nạn, cứu hộ",
+      "dapAnTracNghiem": [
+        {
+          "ID": "CTCCXD001",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Tham gia hoạt động trinh sát, điều khiển hệ thống chữa cháy tại cơ sở và cung cấp các thông tin cần thiết"
+        },
+        {
+          "ID": "CTCCXD002",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Phun bọt dập tắt đám cháy kết hợp đóng các van khóa đường ống cấp và di chuyển xe xi téc ra khỏi vùng cháy"
+        },
+        {
+          "ID": "CTCCGO003",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Để hình dung trước về khu vực chiến đấu và xác định hướng tấn công chính trước khi đến hiện trường đám cháy"
+        },
+        {
+          "ID": "CTCCGO004",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Đặt ở đầu hướng gió, nơi thuận tiện cho việc quan sát đám cháy và toàn bộ hoạt động của lực lượng chữa cháy"
+        },
+        {
+          "ID": "CTCCOT005",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Để vận chuyển lực lượng, phương tiện cần thiết đến nơi xảy ra cháy hoặc hỗ trợ di chuyển phương tiện gặp sự cố"
+        },
+        {
+          "ID": "CTCCOT006",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Đánh giá mức độ phức tạp của đám cháy, thành lập Ban tham mưu chữa cháy và phân chia các giai đoạn dập tắt cháy"
+        },
+        {
+          "ID": "CTCCKB007",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Đại diện cơ sở hoặc người phụ trách công tác an toàn, kỹ thuật của khu vực, cơ sở kho bể nơi xảy ra cháy"
+        },
+        {
+          "ID": "CTCCKB008",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Truyền đạt chính xác, kịp thời mệnh lệnh từ người chỉ huy và tổng hợp, báo cáo kết quả thực hiện của các đơn vị"
+        },
+        {
+          "ID": "CTCCNCT009",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Chỉ huy chữa cháy trực tiếp hoặc ủy quyền cho người phát ngôn cung cấp thông tin chính xác, đầy đủ và kịp thời"
+        },
+        {
+          "ID": "CTCCNCT010",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Trực tiếp kiểm tra kỹ lưỡng hiện trường đám cháy để bảo đảm an toàn sau đó mới ra quyết định thu hồi lực lượng"
+        },
+        {
+          "ID": "CNCHBT011",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Vùng nước lạ, dòng chảy xiết, sóng, nước xoáy, đáy biển và chỗ trũng không phẳng, nền trơn, dốc, thời tiết, tàu bè"
+        },
+        {
+          "ID": "CNCHDN012",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Tổ chức phân luồng giao thông và sẵn sàng lực lượng, phương tiện mô tô nước, ca nô phối hợp tìm kiếm, CNCH"
+        },
+        {
+          "ID": "CTCCCR013",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Nhanh chóng báo bằng mọi cách cho cơ quan, đơn vị quản lý địa bàn nơi xảy ra cháy biết để xử lý và báo cáo cấp trên"
+        },
+        {
+          "ID": "CTCCCR014",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Lưỡi lửa, tốc độ cháy lan, loại vật liệu cháy, điều kiện địa hình, thời tiết, số người cần thiết, nguồn nước và băng cản lửa"
+        },
+        {
+          "ID": "CTCCNLK015",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Khẩn trương báo động, hướng dẫn thoát nạn, ưu tiên khoanh vùng đám cháy, ngăn cháy lan và vận động người dân phối hợp"
+        },
+        {
+          "ID": "CTCCNLK016",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Huy động xe thang để triển khai hiệu quả các hoạt động chữa cháy và cứu nạn, cứu hộ đối với khu vực ở trên cao"
+        },
+        {
+          "ID": "CNCHTC017",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Mời các đơn vị liên quan đến ma túy hoặc người có thể giao tiếp với nạn nhân để hỗ trợ khi thương thuyết, vận động"
+        },
+        {
+          "ID": "CNCHDS018",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Quyết định phương pháp, biện pháp CNCH, phân chia khu vực, giao nhiệm vụ, tổ chức phá dỡ và bảo đảm an toàn"
+        },
+        {
+          "ID": "CNCHSD019",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Chỉ huy đơn vị Cảnh sát PCCC và CNCH trực tiếp quản lý địa bàn và đại diện chính quyền địa phương, cơ sở gặp sự cố"
+        },
+        {
+          "ID": "CTCCTG020",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Huy động thêm xe chiếu sáng, xe chở phương tiện và báo cáo người có thẩm quyền huy động giàn đèn chiếu sáng di động"
+        }
+      ],
+      "dapAnTuLuan": [
+        {
+          "ID": "TL001",
+          "cauHoi": "Đồng chí hãy trình bày công tác tổ chức cứu người bị nạn (phương pháp gián tiếp, phương pháp trực tiếp và thứ tự ưu tiên) khi xảy ra cháy tại nhà cao tầng, siêu cao tầng?",
+          "tuKhoa": [
+            "cứu người gián tiếp",
+            "cứu người trực tiếp",
+            "hướng dẫn thoát nạn",
+            "lối thoát hiểm an toàn",
+            "phân bố đều dòng người",
+            "buồng thang",
+            "phương tiện cứu người di động",
+            "xe thang",
+            "đệm khí",
+            "phá dỡ tạo lối phụ",
+            "mang vác cõng khiêng dìu",
+            "không thể tự thoát",
+            "tầng đang bị cháy",
+            "tầng trên tầng bị cháy",
+            "tầng dưới tầng bị cháy"
+          ]
+        },
+        {
+          "ID": "TL002",
+          "cauHoi": "Đồng chí hãy nêu các biện pháp chữa cháy, triển khai mũi chiến đấu và tổ chức thoát khói đối với đám cháy nhà liên kế dạng nhà ống?",
+          "tuKhoa": [
+            "phương pháp làm lạnh",
+            "lăng B đa tác dụng",
+            "cửa chính",
+            "cầu thang bộ",
+            "thang ba",
+            "xe thang",
+            "xe cần vươn",
+            "mặt thoáng",
+            "mái ban công nhà lân cận",
+            "thiết bị phá dỡ",
+            "tháo dỡ lồng sắt",
+            "biển quảng cáo",
+            "mở cửa sổ",
+            "cửa tầng tum",
+            "máy hút đẩy khói"
+          ]
+        }
+      ]
+    },
+    {
+      "maDe": "DE06",
+      "tenDe": "Đáp án Bộ đề kiểm tra số 06 - Chiến thuật Chữa cháy và Cứu nạn, cứu hộ",
+      "dapAnTracNghiem": [
+        {
+          "ID": "CTCCXD001",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Khả năng sôi trào, dự kiến thời gian sôi trào và địa hình nơi dầu có thể tràn ra để có biện pháp xử lý"
+        },
+        {
+          "ID": "CTCCXD002",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Tổ chức triển khai công tác cứu người bị nạn và di chuyển các tài sản trong khu vực cháy ra vị trí an toàn"
+        },
+        {
+          "ID": "CTCCGO003",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Làm căn cứ để xác định hướng tấn công chính và phân chia các khu vực chiến đấu phù hợp với tình huống cháy"
+        },
+        {
+          "ID": "CTCCGO004",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Trong hầm chứa bụi gỗ, hệ thống đường ống hút bụi, đường ống thông gió hoặc các vị trí kín khuất khác"
+        },
+        {
+          "ID": "CTCCOT005",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Lái xe hoặc chủ phương tiện vì họ nắm rõ hàng hóa vật tư hiện có trên xe và diễn biến phát triển đám cháy"
+        },
+        {
+          "ID": "CTCCOT006",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Lượng xăng dầu còn lại trong xi téc, đã ngừng xuất nhập hay chưa và trạng thái đóng hay mở của các họng, van"
+        },
+        {
+          "ID": "CTCCKB007",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Khả năng bơm chuyển xăng dầu từ bể cháy sang cụm bể khác hoặc bơm nước vào bể đang cháy để xáo trộn, hạn chế cháy"
+        },
+        {
+          "ID": "CTCCNCT008",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Triển khai nhiều hơn số nhóm trinh sát xác định mức độ nguy hiểm đối với người bị nạn so với xác định đám cháy"
+        },
+        {
+          "ID": "CTCCNCT009",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Buộc một đầu dây theo người, đầu dây còn lại giao cho chiến sĩ đứng ngoài để duy trì liên lạc suốt thời gian trinh sát"
+        },
+        {
+          "ID": "CNCHBT010",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Từ 03 người trở lên và có thêm 01 thành viên là nhân viên hoặc người am hiểu địa hình nơi xảy ra tai nạn"
+        },
+        {
+          "ID": "CNCHBT011",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Là vùng hỗ trợ cho Vùng 1, nơi tập kết lực lượng, phương tiện và những người không có nhiệm vụ ở ngoài vùng này"
+        },
+        {
+          "ID": "CNCHDN012",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Quan sát hướng của dòng chảy và vận tốc của dòng chảy để xác định khả năng bị cuốn trôi của người bị nạn"
+        },
+        {
+          "ID": "CTCCCR013",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Đề xuất lãnh đạo các cấp sử dụng máy bay trực thăng để trinh sát và giám sát việc chiến đấu dập tắt đám cháy"
+        },
+        {
+          "ID": "CTCCNLK014",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Nguy cơ đám cháy nhảy cóc, cháy do bức xạ nhiệt và cháy lan đến các ngôi nhà làm bằng vật liệu dễ cháy lân cận"
+        },
+        {
+          "ID": "CNCHTC015",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Vùng thứ nhất cơ bản và nhất định phải có, hai vùng còn lại phụ thuộc theo tình huống và địa hình thực tế"
+        },
+        {
+          "ID": "CNCHTC016",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Quyết định vị trí của đệm hơi cứu hộ, lưới cứu hộ, thiết lập dây và cung cấp phạm vi cứu hộ cho nhiều vị trí"
+        },
+        {
+          "ID": "CNCHDS017",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Chiều rộng của miệng giếng, chiều sâu của giếng, chiều sâu mực nước, khí độc phát sinh và phương tiện tiếp cận"
+        },
+        {
+          "ID": "CNCHDS018",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Bố trí lực lượng, phương tiện CNCH chuyên dụng, y tế, hậu cần, chiếu sáng và diễn ra hoạt động sơ cấp cứu ban đầu"
+        },
+        {
+          "ID": "CNCHSD019",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Có nhìn thấy toàn thân hay một phần cơ thể không, cấu kiện đè lên bộ phận nào và tình trạng hô hấp, mạch, chấn thương"
+        },
+        {
+          "ID": "CTCCTG020",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Phải có cán bộ kỹ thuật của cơ sở đi cùng để hướng dẫn và trang bị đầy đủ thiết bị bảo hộ cá nhân, mặt nạ cách ly"
+        }
+      ],
+      "dapAnTuLuan": [
+        {
+          "ID": "TL001",
+          "cauHoi": "Đồng chí hãy trình bày công tác tổ chức cứu người bị nạn (các phương pháp, vị trí có thể có nạn nhân và các phương tiện thiết bị triển khai) trong sự cố cháy nhà cao tầng?",
+          "tuKhoa": [
+            "phương pháp gián tiếp",
+            "phương pháp trực tiếp",
+            "hướng dẫn tự thoát",
+            "buồng thang an toàn",
+            "mang vác cõng khiêng dìu",
+            "tầng đang bị cháy",
+            "tầng trên tầng bị cháy",
+            "ban công cửa sổ",
+            "sân thượng",
+            "lô gia",
+            "thang máy",
+            "xe thang",
+            "bạt và đệm hơi",
+            "máy bay trực thăng",
+            "dây CNCH",
+            "cầu dây nghiêng"
+          ]
+        },
+        {
+          "ID": "TL002",
+          "cauHoi": "Đồng chí hãy nêu các nội dung cần xác định khi trinh sát hiện trường và nguyên tắc phân chia 03 vùng khi khoanh vùng hiện trường sự cố, tai nạn sập đổ nhà, công trình?",
+          "tuKhoa": [
+            "tình trạng nạn nhân",
+            "chôn vùi",
+            "cấu kiện đè lên cơ thể",
+            "không gian hẹp",
+            "tình trạng chấn thương",
+            "nguy cơ sập đổ thứ cấp",
+            "nồng độ oxy khí độc",
+            "đặc điểm công trình sập đổ",
+            "vùng 1",
+            "lực lượng CNCH chuyên nghiệp",
+            "vùng 2",
+            "sơ cấp cứu ban đầu",
+            "hậu cần chiếu sáng",
+            "vùng 3",
+            "khu vực hỗ trợ",
+            "bảo vệ hiện trường"
+          ]
+        }
+      ]
+    },
+    {
+      "maDe": "DE07",
+      "tenDe": "Đáp án Bộ đề kiểm tra số 07 - Chiến thuật Chữa cháy và Cứu nạn, cứu hộ",
+      "dapAnTracNghiem": [
+        {
+          "ID": "CTCCXD001",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Huy động lực lượng sử dụng cát, đất để be bờ khoanh vùng nhằm ngăn chặn không cho xăng dầu chảy loang rộng"
+        },
+        {
+          "ID": "CTCCGO002",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Triển khai phun chất chữa cháy nhằm bảo vệ các đống gỗ đang bị đám cháy đe dọa ở lân cận và ở cuối hướng gió"
+        },
+        {
+          "ID": "CTCCGO003",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Hạn chế nguy cơ cháy lan và tạo điều kiện thuận lợi để lực lượng chữa cháy triển khai các hoạt động chiến đấu"
+        },
+        {
+          "ID": "CTCCOT004",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Tổ chức thoát khói trên thành, nóc xe, các ô cửa sổ và dùng lăng B đa tác dụng phun mưa làm mát cửa chính, cửa sổ"
+        },
+        {
+          "ID": "CTCCOT005",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Sử dụng lăng B, lăng hương sen phun nước làm mát bảo vệ khoang hàng, phương tiện lân cận và di chuyển xe ra xa bến"
+        },
+        {
+          "ID": "CTCCKB006",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Phải làm mát liên tục từ khi mới đến đám cháy, trong khi phun bọt và sau khi tắt lửa cho tới khi các bể nguội hẳn"
+        },
+        {
+          "ID": "CTCCNCT007",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Thường xuyên theo dõi, giám sát, triển khai lăng phun nước khống chế cháy, hạ thấp nhiệt độ, thoát khói, chống sụp đổ"
+        },
+        {
+          "ID": "CTCCNCT008",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Tập trung hướng tấn công chính vào tầng bị cháy trên cùng rồi lần lượt loại trừ đám cháy xuống các tầng dưới đó"
+        },
+        {
+          "ID": "CNCHBT009",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Huy động tối đa nguồn lực tiếp cận đưa người đang trong tình trạng nguy hiểm trước, hướng dẫn người tỉnh táo, biết bơi"
+        },
+        {
+          "ID": "CNCHDN010",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Động viên tinh thần, ổn định vị trí nạn nhân, bảo đảm an toàn và khi đưa ra nơi an toàn phải sơ cấp cứu ban đầu ngay"
+        },
+        {
+          "ID": "CTCCCR011",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Đào rãnh ngăn cách lớp than bùn sâu hơn lớp than bùn sát tầng đất mặt, không làm sụt lở rãnh và có thể bơm ngập nước"
+        },
+        {
+          "ID": "CTCCNLK012",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Sử dụng cửa sổ, ban công hoặc qua mái, ban công nhà lân cận kết hợp phương tiện chuyên dùng phá dỡ lồng sắt để cứu"
+        },
+        {
+          "ID": "CTCCNLK013",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Ưu tiên việc loại trừ hoặc ngăn cháy lan, bảo vệ những phần lân cận đang bị đe dọa rồi mới dập tắt đám cháy"
+        },
+        {
+          "ID": "CNCHTC014",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Triển khai đệm hơi kín đáo dưới vị trí nạn nhân có thể nhảy và khéo léo thiết lập lưới, dây ở tầng cao hơn một tầng"
+        },
+        {
+          "ID": "CNCHDS015",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Hướng dẫn tự leo có bảo hiểm nếu tỉnh và đủ sức khỏe, dìu lên thang nếu leo được, hoặc cõng qua thang nếu bất tỉnh"
+        },
+        {
+          "ID": "CNCHDS016",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Áp dụng khi hiện trường có điểm neo cố định thuận lợi và phải chọn vị trí cấu kiện chắc chắn, chịu lực tốt làm điểm neo"
+        },
+        {
+          "ID": "CNCHSD017",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Đặt garo trên phần thân thể sát trên chỗ bị chèn ép trước khi nâng cấu kiện để đề phòng hội chứng vùi lấp"
+        },
+        {
+          "ID": "CNCHSD018",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Cố định cổ, cột sống, di chuyển thận trọng theo phương dọc bằng cáng cứng hoặc cáng chuyên dụng để hạn chế tác động"
+        },
+        {
+          "ID": "CTCCTG019",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Di chuyển những tài sản lân cận đám cháy, tài sản có giá trị cao đến vị trí an toàn và không cản trở chữa cháy, CNCH"
+        },
+        {
+          "ID": "CTCCTG020",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Quyết định cho phá dỡ tường ngăn, công trình lân cận tạo khoảng cách ngăn cháy kết hợp bố trí lăng phun làm mát cấu kiện"
+        }
+      ],
+      "dapAnTuLuan": [
+        {
+          "ID": "TL001",
+          "cauHoi": "Đồng chí hãy trình bày công tác tổ chức cứu người, cứu tài sản và các biện pháp ngăn chặn cháy lan, làm mát cấu kiện khi chữa cháy tại cơ sở tôn giáo?",
+          "tuKhoa": [
+            "ưu tiên hàng đầu",
+            "song song với chữa cháy",
+            "cứu người trực tiếp",
+            "cứu người gián tiếp",
+            "dìu vác cõng khiêng",
+            "trấn an tinh thần",
+            "mặt nạ lọc độc",
+            "khối nhà bị cháy",
+            "rà soát tất cả các tầng",
+            "di dời tài sản",
+            "tài sản có giá trị cao",
+            "vị trí tập kết an toàn",
+            "tạo khoảng cách ngăn cháy",
+            "phá dỡ tường ngăn",
+            "làm mát cấu kiện",
+            "chống biến dạng sụp đổ"
+          ]
+        },
+        {
+          "ID": "TL002",
+          "cauHoi": "Đồng chí hãy nêu nội dung trinh sát đám cháy và các phương pháp, biện pháp dập tắt đám cháy tại cửa hàng kinh doanh xăng, dầu?",
+          "tuKhoa": [
+            "số lượng và loại xăng dầu",
+            "tình trạng bể chứa",
+            "vị trí và dạng vật liệu cháy",
+            "hệ thống chữa cháy cố định",
+            "hướng chảy loang",
+            "khả năng sôi trào",
+            "nguy cơ gây nổ",
+            "lượng chất tạo bọt",
+            "cát đất be bờ",
+            "phương pháp làm lạnh",
+            "phương pháp cách ly",
+            "lăng phun bọt LPB-600",
+            "sơ tán bình khí hóa lỏng",
+            "phun nước tia phân tán",
+            "đóng van khóa",
+            "di chuyển xe xitec"
+          ]
+        }
+      ]
+    },
+    {
+      "maDe": "DE08",
+      "tenDe": "Đáp án Bộ đề kiểm tra số 08 - Chiến thuật Chữa cháy và Cứu nạn, cứu hộ",
+      "dapAnTracNghiem": [
+        {
+          "ID": "CTCCXD001",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Sử dụng lăng phun bọt cầm tay để dập tắt đám cháy và nhanh chóng đóng các van khóa dẫn xăng, dầu lên cột bơm"
+        },
+        {
+          "ID": "CTCCGO002",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Là nơi tập trung phần lớn lực lượng, phương tiện để khống chế đám cháy và thường là hướng tấn công chính"
+        },
+        {
+          "ID": "CTCCGO003",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Áp dụng cho khu vực lò sấy gỗ, nơi có chứa các hóa chất gia công chế biến gỗ hoặc tại các đống gỗ không lớn"
+        },
+        {
+          "ID": "CTCCOT004",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Sử dụng dụng cụ phá dỡ mở nóc xe để thoát khói trong khoang xe và phun nước từ trên nóc vào khoang xe bị cháy"
+        },
+        {
+          "ID": "CTCCOT005",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Phải tập trung dập tắt đám cháy xăng dầu chảy loang xung quanh trước rồi mới dập tắt đám cháy ở miệng xi téc"
+        },
+        {
+          "ID": "CTCCKB006",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Chỉ áp dụng đối với bể chứa dầu có nhiệt độ bốc cháy cao như dầu hỏa, ma dút bằng cách bơm khí nén hoặc nước vào gần đáy bể"
+        },
+        {
+          "ID": "CTCCNCT007",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Tập trung vào tầng bị cháy trên cùng, khi khống chế được đám cháy ở tầng trên cùng thì lần lượt xuống các tầng dưới"
+        },
+        {
+          "ID": "CTCCNCT008",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Áp dụng phương pháp cách ly bằng nước hoặc bọt hòa không khí với biện pháp chữa cháy theo diện tích đối với tầng hầm"
+        },
+        {
+          "ID": "CNCHBT009",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Triển khai đội hình lặn cứu nạn, cứu hộ mang các thiết bị phá dỡ để phá dỡ cấu kiện giải thoát cho người bị nạn"
+        },
+        {
+          "ID": "CNCHDN010",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Phát huy cao nhất tính năng của phương tiện, đảm bảo an toàn tuyệt đối và cơ động không cản trở phương tiện khác"
+        },
+        {
+          "ID": "CTCCCR011",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Băng khống chế lửa có xu hướng cong về hai phía của ngọn lửa và phải được thi công xong trước khi lửa tiến đến"
+        },
+        {
+          "ID": "CTCCCR012",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Máy kéo bánh bơm dùng ở những nơi có địa hình bằng phẳng, còn máy kéo bánh xích dùng ở những nơi có địa hình dốc"
+        },
+        {
+          "ID": "CTCCNLK013",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Tiếp cận qua cửa chính theo cầu thang bộ, lên cao qua thang chữa cháy hoặc tiếp cận qua mái, ban công nhà lân cận"
+        },
+        {
+          "ID": "CTCCNLK014",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Ưu tiên việc loại trừ hoặc ngăn cháy lan, bảo vệ những phần lân cận đang bị đe dọa rồi mới tiếp tục dập tắt đám cháy"
+        },
+        {
+          "ID": "CNCHTC015",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Sử dụng biện pháp nói chuyện, thuyết phục, trao đổi để nắm bắt động cơ, ổn định tâm lý và kéo dài thời gian chuẩn bị"
+        },
+        {
+          "ID": "CNCHDS016",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Áp dụng trong trường hợp người bị nạn bị bất tỉnh hoặc còn tỉnh nhưng không có khả năng tự đi lại, leo thang được"
+        },
+        {
+          "ID": "CNCHDS017",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Hiện trường có các điểm neo cố định, cấu kiện chắc chắn có khả năng chịu lực tốt thuận lợi cho việc thiết lập cầu dây"
+        },
+        {
+          "ID": "CNCHSD018",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Sử dụng tấm vải, chăn đắp lên phần bị thương không cho nạn nhân nhìn thấy và giữ ấm cơ thể khi thời tiết lạnh"
+        },
+        {
+          "ID": "CNCHSD019",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Sử dụng thiết bị phá dỡ chuyên dụng như máy cắt bê tông, thiết bị đục phá để chia nhỏ cấu kiện rồi dùng sức người loại bỏ"
+        },
+        {
+          "ID": "CTCCTG020",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Sử dụng lăng đa tác dụng phun ở chế độ bao trùm (phun mưa) để chống tụ khói và giảm nhiệt độ xung quanh khi tiến vào"
+        }
+      ],
+      "dapAnTuLuan": [
+        {
+          "ID": "TL001",
+          "cauHoi": "Đồng chí hãy trình bày cách phân chia khu vực chiến đấu và các cách bố trí lực lượng, phương tiện khi tổ chức dập tắt đám cháy tại kho, bãi chứa gỗ lộ thiên?",
+          "tuKhoa": [
+            "khu vực chiến đấu thứ nhất",
+            "hướng tấn công chính",
+            "khống chế đám cháy",
+            "khu vực chiến đấu thứ hai",
+            "bảo vệ các đống gỗ",
+            "cuối hướng gió",
+            "khu vực chiến đấu thứ ba",
+            "đám cháy mới phát sinh",
+            "bức xạ nhiệt",
+            "tàn lửa bay đến",
+            "lực lượng chi viện",
+            "bố trí theo mặt lửa",
+            "bố trí theo chu vi",
+            "bố trí theo diện tích",
+            "tia nước đặc",
+            "lăng công suất lớn"
+          ]
+        },
+        {
+          "ID": "TL002",
+          "cauHoi": "Đồng chí hãy trình bày các phương pháp gián tiếp và trực tiếp khi tổ chức cứu nạn, cứu hộ người có ý định tự tử tại các công trình, nhà cao tầng?",
+          "tuKhoa": [
+            "phương pháp gián tiếp",
+            "động viên",
+            "thương thuyết",
+            "thuyết phục nạn nhân",
+            "đệm hơi CNCH",
+            "triển khai kín đáo",
+            "lưới cứu hộ",
+            "thả dây xuống",
+            "cao hơn một tầng",
+            "phương pháp trực tiếp",
+            "giải cứu chớp nhoáng",
+            "đánh lạc hướng",
+            "mất tập trung",
+            "giải cứu cưỡng bức",
+            "công cụ cưỡng chế",
+            "vật sắc nhọn"
+          ]
+        }
+      ]
+    },
+    {
+      "maDe": "DE09",
+      "tenDe": "Đáp án Bộ đề kiểm tra số 09 - Chiến thuật Chữa cháy và Cứu nạn, cứu hộ",
+      "dapAnTracNghiem": [
+        {
+          "ID": "CTCCXD001",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Tập trung lực lượng, phương tiện dập tắt đám cháy trên nắp xitéc và tiếp tục làm mát đến khi xitéc nguội hoàn toàn"
+        },
+        {
+          "ID": "CTCCGO002",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Phun nước làm mát kết hợp dùng cào mở nắp khoang để dập lửa, còn với băng tải phải phun nước cả mặt trên và từ dưới lên"
+        },
+        {
+          "ID": "CTCCOT003",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Đặt các ống thoát nước sát mặt sàn trên thân đê bao để lợi dụng sự chênh lệch tỷ trọng giữ lại xăng dầu và bọt"
+        },
+        {
+          "ID": "CTCCOT004",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Dùng các bình bột chữa cháy để dập tắt hoàn toàn các đốm lửa nhỏ, tránh phun tia nước áp lực cao làm phá hủy lớp bọt"
+        },
+        {
+          "ID": "CTCCKB005",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Tập trung chữa cháy xung quanh và làm lạnh bể cháy, bể kế cận; chỉ khi đủ lực lượng và chất tạo bọt mới phun bọt tấn công"
+        },
+        {
+          "ID": "CTCCKB006",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Chỉ áp dụng chữa các bể chứa dầu nặng bằng cách phun những dòng tia hạt nước trùm toàn bộ bề mặt cháy của chất lỏng"
+        },
+        {
+          "ID": "CTCCNCT007",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Chỉ phát huy hiệu quả khi mở cửa hút khói ở nhiều nhất là hai tầng, nghiêm cấm mở đồng thời trên ba tầng trở lên"
+        },
+        {
+          "ID": "CTCCNCT008",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Phun chất chữa cháy bột, bọt để dập tắt đám cháy xăng, dầu chảy loang trên sàn trước, sau đó mới loại trừ lửa trên xe"
+        },
+        {
+          "ID": "CNCHDN009",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Do đặt van nạp khí nén quá gần ống thoát khí thải động cơ hoặc do dầu bôi trơn trong máy nén khí quá nóng bùng cháy"
+        },
+        {
+          "ID": "CTCCCR010",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Độ sâu của rãnh phải vượt quá lớp than bùn sát tới tầng đất mặt, không làm sụt lở rãnh và có thể bơm nước ngập rãnh"
+        },
+        {
+          "ID": "CTCCCR011",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Dựa vào địa hình tự nhiên hoặc băng trắng, phát dọn cây cỏ đẩy về hướng đám cháy rồi đốt thành vệt dài cháy ngược về đám cháy"
+        },
+        {
+          "ID": "CTCCNLK012",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Phải đổ nước vào két nước xe chữa cháy qua lưới bảo vệ trên miệng két đề phòng đất, đá, rác làm hư hỏng máy bơm"
+        },
+        {
+          "ID": "CTCCNLK013",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Lắp đường vòi vào các họng nước của trụ nước chữa cháy và dùng máy bơm hút trực tiếp từ họng nước của trụ nước lên"
+        },
+        {
+          "ID": "CTCCNLK014",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Kết hợp dùng lăng hương sen phun nước để làm lắng khói, tạo điều kiện cho chiến sĩ chữa cháy dễ dàng quan sát đám cháy"
+        },
+        {
+          "ID": "CNCHTC015",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Đưa xe thang lên độ cao cao nhất có thể, sau đó chiến sĩ mang thang móc di chuyển tiếp từ đỉnh xe thang lên các tầng cao hơn"
+        },
+        {
+          "ID": "CNCHDS016",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Kiểm tra nồng độ oxy, khí độc và tiến hành thông gió cấp khí sạch, dùng máy hút khí độc hoặc thả bình khí xuống làm giảm khí độc"
+        },
+        {
+          "ID": "CNCHSD017",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Bố trí đi ngược chiều gió theo tuyến hành lang con thoi hoặc xoáy trôn ốc, cho nghỉ định kỳ và tuyệt đối không làm việc nơi có khói, khí độc"
+        },
+        {
+          "ID": "CNCHSD018",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Phải tiến hành đặt garo trên phần thân thể sát trên chỗ bị chèn ép trước khi nâng cấu kiện để đề phòng hội chứng vùi lấp"
+        },
+        {
+          "ID": "CNCHSD019",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Cố định cổ, cột sống cho nạn nhân, di chuyển thận trọng theo phương dọc trên cáng cứng hoặc cáng chuyên dụng để hạn chế tác động"
+        },
+        {
+          "ID": "CTCCTG020",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Cho chuyển từ lăng công suất lớn sang sử dụng các loại lăng có công suất nhỏ để tiếp tục dập tàn và loại trừ hoàn toàn sự cháy"
+        }
+      ],
+      "dapAnTuLuan": [
+        {
+          "ID": "TL001",
+          "cauHoi": "Đồng chí hãy trình bày các phương pháp làm lạnh và phương pháp cách ly bằng bọt hòa không khí để dập tắt đám cháy bể chứa xăng dầu?",
+          "tuKhoa": [
+            "làm mát liên tục",
+            "nguội hẳn",
+            "xáo trộn lớp xăng dầu",
+            "nhiệt độ bốc cháy cao",
+            "dầu hỏa, ma dút",
+            "bơm khí nén hoặc nước",
+            "dòng đối lưu",
+            "làm lạnh bằng phun mưa",
+            "dầu nặng",
+            "trùm toàn bộ bề mặt",
+            "bọt độ nở trung bình",
+            "phun vào thành bên trong",
+            "không phun thẳng sục vào",
+            "bọt độ nở thấp",
+            "từ dưới đáy bể",
+            "nổi lên bao phủ"
+          ]
+        },
+        {
+          "ID": "TL002",
+          "cauHoi": "Đồng chí hãy trình bày biện pháp cứu nạn nhân bị chôn vùi dưới lớp cấu kiện nhẹ và nạn nhân bị cấu kiện nặng đè lên phần thân thể tại hiện trường sập đổ công trình?",
+          "tuKhoa": [
+            "chó nghiệp vụ",
+            "ngược chiều gió",
+            "chống sập đổ thứ cấp",
+            "đào bới bằng tay",
+            "làm lộ phần đầu",
+            "đổi chiều đào bới",
+            "lấy hết đất cát",
+            "hô hấp nhân tạo",
+            "không được lôi kéo",
+            "gia cố kê chèn",
+            "đặt garo",
+            "sát chỗ bị chèn ép",
+            "hội chứng vùi lấp",
+            "gối hơi, kìm banh thủy lực",
+            "nâng từ từ",
+            "cố định cổ, cột sống",
+            "cáng cứng",
+            "di chuyển theo phương dọc"
+          ]
+        }
+      ]
+    },
+    {
+      "maDe": "DE10",
+      "tenDe": "Đáp án Bộ đề kiểm tra số 10 - Chiến thuật Chữa cháy và Cứu nạn, cứu hộ",
+      "dapAnTracNghiem": [
+        {
+          "ID": "CTCCXD001",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Chú ý đề phòng sụp đổ cấu kiện xây dựng do nổ xitéc, bình chứa khí hóa lỏng và trang bị quần áo cách nhiệt, chống cháy"
+        },
+        {
+          "ID": "CTCCGO002",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Phân công một tổ chiến đấu thuộc đơn vị quản lý địa bàn ở lại đề phòng cháy bùng phát lại, các đơn vị ở xa chi viện thu hồi trước"
+        },
+        {
+          "ID": "CTCCGO003",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Bố trí người quan sát, bảo vệ ở phía dưới và hô to để mọi người biết tránh xa khu vực nguy hiểm trước khi thả xuống"
+        },
+        {
+          "ID": "CTCCOT004",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Đặt đường vòi chính dọc theo đường, nếu buộc phải cắt ngang qua đường thì phải có giải pháp chèn để tránh xe đè lên làm vỡ vòi"
+        },
+        {
+          "ID": "CTCCOT005",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Luôn triển khai sẵn một lăng phun bọt độ nở trung bình để kịp thời dập tắt và ngăn chặn hiện tượng xăng dầu cháy trở lại"
+        },
+        {
+          "ID": "CTCCKB006",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Xe thang phải đỗ ở nơi có nền bê tông ngoài lòng đê bao và lăng phun bọt phải được ga rô chắc chắn trên đầu thang"
+        },
+        {
+          "ID": "CTCCKB007",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Nhanh chóng thu hồi phương tiện và rút toàn bộ lực lượng ra vị trí an toàn vì đó là dấu hiệu dầu sắp sôi trào và bắn tung ra ngoài"
+        },
+        {
+          "ID": "CTCCNCT008",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Đặt hai ba chạc gồm một chiếc ở dưới mặt đất cạnh nhà và một chiếc trên chiếu nghỉ tầng thấp hơn tầng bị cháy có đầu nối tự do xả nước"
+        },
+        {
+          "ID": "CTCCNCT009",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Bố trí một tổ chữa cháy ở lại tiếp tục phun nước làm mát và ngăn chặn khả năng đám cháy bùng phát trở lại"
+        },
+        {
+          "ID": "CNCHBT010",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Phải quy định tín hiệu dây giữa lực lượng ở trên bờ, trên phương tiện với lực lượng đang làm việc ở dưới mặt nước"
+        },
+        {
+          "ID": "CNCHDN011",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Ưu tiên cứu người bị nguy hiểm trước, đồng thời hướng dẫn những người còn tỉnh táo và biết bơi tự bơi vào bờ an toàn"
+        },
+        {
+          "ID": "CTCCCR012",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Phải tiến hành lập biên bản xác nhận sự việc để làm cơ sở giải quyết các chế độ, chính sách theo quy định"
+        },
+        {
+          "ID": "CTCCNLK013",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Nhất thiết phải triển khai tối thiểu hai mũi lăng, trong đó có một mũi lăng chính và một mũi lăng làm nhiệm vụ bảo vệ"
+        },
+        {
+          "ID": "CTCCNLK014",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Không được đi lại vội vàng mà phải hết sức thận trọng, luôn cúi thấp người hoặc bò để hạn chế khói và tránh sụp đổ trần, mái"
+        },
+        {
+          "ID": "CNCHTC015",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Tuyệt đối không được hoạt động độc lập khi tìm kiếm cứu nạn; khi lên tầng mái phải chú ý nguy cơ nổ hệ thống khí gas và sụp đổ cấu kiện"
+        },
+        {
+          "ID": "CNCHDS016",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Động viên, trấn an tinh thần của người bị nạn để họ bình tĩnh nghe theo và làm theo những chỉ dẫn của lực lượng CNCH"
+        },
+        {
+          "ID": "CNCHSD017",
+          "dapan": 1,
+          "kyHieu": "A",
+          "noiDungDapAn": "A. Tiến hành gia cố chống sập đổ, đồng thời bố trí lực lượng CNCH ở mức thấp nhất có thể nhưng vẫn bảo đảm hiệu quả công tác"
+        },
+        {
+          "ID": "CNCHSD018",
+          "dapan": 3,
+          "kyHieu": "C",
+          "noiDungDapAn": "C. Phần chân, tay có garo phải được để lộ, không ủ ấm ngay cả khi trời lạnh và phải nới garo định kỳ để tránh hoại tử chi"
+        },
+        {
+          "ID": "CTCCTG019",
+          "dapan": 4,
+          "kyHieu": "D",
+          "noiDungDapAn": "D. Phải báo cho bộ phận tham mưu và thường xuyên cập nhật thông tin để ghi chép lại thời điểm vào đám cháy và lượng dưỡng khí trong bình"
+        },
+        {
+          "ID": "CTCCTG020",
+          "dapan": 2,
+          "kyHieu": "B",
+          "noiDungDapAn": "B. Chú ý tác phong, cử chỉ, hành động phù hợp, chuẩn mực trước tín đồ và nhân dân, tránh bị đối tượng xấu lợi dụng, kích động"
+        }
+      ],
+      "dapAnTuLuan": [
+        {
+          "ID": "TL001",
+          "cauHoi": "Đồng chí hãy trình bày công tác kiểm soát an toàn và những điểm cần lưu ý khi tổ chức chữa cháy nhà cao tầng, siêu cao tầng?",
+          "tuKhoa": [
+            "đường cầu thang bộ",
+            "chống khói, khí độc",
+            "không bị nghiêng, đổ",
+            "lăng công suất nhỏ",
+            "phun mưa bảo vệ",
+            "nổ hệ thống khí gas",
+            "sụp đổ cấu kiện",
+            "lợi dụng cánh cửa",
+            "dây có độ bền cao",
+            "thay ca kíp",
+            "mảnh kính vỡ",
+            "đặt 2 ba chạc",
+            "cuộn vòi dự phòng",
+            "kéo vòi bằng dây",
+            "vuông góc tường nhà",
+            "thang máy chữa cháy",
+            "bơm truyền tiếp nước"
+          ]
+        },
+        {
+          "ID": "TL002",
+          "cauHoi": "Đồng chí hãy trình bày cách tổ chức chữa cháy nhà liên kế trong ngõ hẹp, trong điều kiện thiếu nước và các biện pháp kiểm soát an toàn cho cán bộ chiến sĩ?",
+          "tuKhoa": [
+            "xe trạm bơm",
+            "đỗ ở mặt đường chính",
+            "về một phía ngõ",
+            "nhân dân tiếp nước",
+            "lưới bảo vệ miệng két",
+            "xe xi téc chở nước",
+            "phun nước liên tục",
+            "lăng đa tác dụng",
+            "hút trực tiếp từ trụ nước",
+            "cúi thấp người",
+            "tối thiểu 02 mũi lăng",
+            "mũi lăng bảo vệ",
+            "đứng nép về một bên",
+            "lợi dụng cánh cửa",
+            "mặt nạ phòng độc cách ly",
+            "canh gác khu vực phá dỡ"
+          ]
+        }
+      ]
+    }
+  ]
+}

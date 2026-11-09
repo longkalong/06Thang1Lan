@@ -1,0 +1,15 @@
+{
+  "name": "KiemTraCcCnch",
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/web/(.*)", "destination": "/web/$1" },
+    { "source": "/", "destination": "/web/index.html" },
+    { "source": "/trang-in", "destination": "/web/trang_in_ket_qua.html" },
+    { "source": "/phieu-in", "destination": "/web/phieu_in.html" },
+    { "source": "/trang_in_ket_qua.html", "destination": "/web/trang_in_ket_qua.html" },
+    { "source": "/phieu_in.html", "destination": "/web/phieu_in.html" },
+    { "source": "/style.css", "destination": "/web/style.css" },
+    { "source": "/app.js", "destination": "/web/app.js" },
+    { "source": "/data/(.*)", "destination": "/web/data/$1" }
+  ]
+}
