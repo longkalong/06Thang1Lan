@@ -368,12 +368,9 @@
         <!-- Render động bằng JS -->
       </div>
 
-      <!-- Action buttons (Thí sinh không cần in) -->
-      <div class="result-actions">
-        <button type="button" id="btn-send-sheets" class="btn btn-success" style="flex: 1;">
-          <span>📊</span> Đồng Bộ Lại Lên Google Sheet
-        </button>
-        <button type="button" id="btn-restart" class="btn btn-primary" style="flex: 1;">
+      <!-- Action buttons: Thí sinh chỉ cần nút Làm lại bài thi vì kết quả đã tự động nộp thành công trước khi hiển thị màn hình này -->
+      <div class="result-actions" style="justify-content: center; display: flex; margin-top: 24px;">
+        <button type="button" id="btn-restart" class="btn btn-primary" style="min-width: 280px; padding: 14px 28px; font-weight: 800; font-size: 1rem; border-radius: 8px;">
           <span>🔄</span> Làm Lại Bài Thi / Bốc Đề Khác
         </button>
       </div>
@@ -444,8 +441,43 @@
     </div>
   </div>
 
+  <!-- ==================== MODAL TIẾN TRÌNH NỘP BÀI LÊN GOOGLE SHEET ==================== -->
+  <div id="modal-submitting" class="modal-overlay">
+    <div class="modal-dialog submit-dialog">
+      
+      <!-- TRẠNG THÁI 1: ĐANG NỘP BÀI -->
+      <div id="submitting-state-loading">
+        <div class="submit-spinner"></div>
+        <h3 id="submitting-title" style="font-size: 1.25rem; color: var(--navy); font-weight: 800; margin: 14px 0 8px;">
+          ĐANG NỘP BÀI THI LÊN HỆ THỐNG...
+        </h3>
+        <p id="submitting-desc" style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 14px;">
+          Hệ thống đang đồng bộ bài làm và điểm số của đồng chí vào Google Sheet.<br>
+          <strong>Vui lòng đợi giây lát, hệ thống sẽ mở kết quả ngay sau khi nộp thành công!</strong>
+        </p>
+        <div id="submitting-timer-box" style="font-size: 0.88rem; font-weight: 700; color: #2563eb; background: #eff6ff; padding: 6px 14px; border-radius: 20px; display: inline-block;">
+          ⏱️ Đang kết nối máy chủ: <span id="submit-seconds-elapsed">0</span> giây
+        </div>
+      </div>
 
+      <!-- TRẠNG THÁI 2: MẠNG CHẬM / QUÁ LÂU -> CHO BẤM NỘP LẠI -->
+      <div id="submitting-state-retry" style="display: none;">
+        <div style="font-size: 3.2rem; margin-bottom: 10px;">⚠️</div>
+        <h3 style="font-size: 1.22rem; color: #b91c1c; font-weight: 800; margin-bottom: 8px;">
+          KẾT NỐI MẠNG CHẬM HOẶC CÓ SỰ CỐ
+        </h3>
+        <p id="submitting-error-msg" style="font-size: 0.9rem; color: var(--text-main); line-height: 1.55; margin-bottom: 20px; background: #fff5f5; border: 1px solid #fed7d7; border-radius: 6px; padding: 10px;">
+          Thời gian nộp bài quá lâu do kết nối mạng yếu. Toàn bộ câu trả lời và bài làm của đồng chí vẫn được bảo toàn nguyên vẹn.
+        </p>
+        <div style="display: flex; gap: 10px; justify-content: center;">
+          <button type="button" id="btn-retry-submit" class="btn btn-primary" style="padding: 12px 24px; font-weight: 800; font-size: 0.95rem; border-radius: 8px;">
+            <span>🔄</span> Bấm Để Thử Nộp Lại
+          </button>
+        </div>
+      </div>
 
+    </div>
+  </div>
 
   <!-- ==================== NẠP SCRIPT ==================== -->
   <!-- 1. Bộ câu hỏi an toàn (HOÀN TOÀN KHÔNG CHỨA ĐÁP ÁN TRƯỚC KHI NỘP) -->

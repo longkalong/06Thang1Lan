@@ -112,15 +112,18 @@
     if (paletteBackdrop) paletteBackdrop.addEventListener('click', closePaletteDrawer);
 
 
-    // Các nút trên màn hình kết quả
+    // Nút làm lại bài thi trên màn hình kết quả
     const btnRestart = document.getElementById('btn-restart');
     if (btnRestart) btnRestart.addEventListener('click', () => location.reload());
 
-    const btnPrint = document.getElementById('btn-print-result');
-    if (btnPrint) btnPrint.addEventListener('click', handlePrintResult);
-
-    const btnSendSheets = document.getElementById('btn-send-sheets');
-    if (btnSendSheets) btnSendSheets.addEventListener('click', () => sendToGoogleSheets(true));
+    // Nút Thử nộp lại khi đường truyền mạng chậm hoặc có sự cố
+    const btnRetrySubmit = document.getElementById('btn-retry-submit');
+    if (btnRetrySubmit) {
+      btnRetrySubmit.addEventListener('click', () => {
+        openSubmittingModal();
+        sendToGoogleSheetsAndFinish();
+      });
+    }
   }
 
   // ============================================================================
@@ -650,15 +653,43 @@
     document.getElementById('modal-submit-confirm').classList.remove('active');
   }
 
+  let submitProgressInterval = null;
+  let submitTimeoutId = null;
+
+  function openSubmittingModal() {
+    const modal = document.getElementById('modal-submitting');
+    if (!modal) return;
+    const loadingBlock = document.getElementById('submitting-state-loading');
+    const retryBlock = document.getElementById('submitting-state-retry');
+    if (loadingBlock) loadingBlock.style.display = 'block';
+    if (retryBlock) retryBlock.style.display = 'none';
+
+    const title = document.getElementById('submitting-title');
+    const desc = document.getElementById('submitting-desc');
+    if (title) title.textContent = 'ĐANG NỘP BÀI THI LÊN HỆ THỐNG...';
+    if (desc) desc.innerHTML = 'Hệ thống đang đồng bộ bài làm và điểm số của đồng chí vào Google Sheet.<br><strong>Vui lòng đợi giây lát, hệ thống sẽ mở kết quả ngay sau khi nộp thành công!</strong>';
+
+    const secEl = document.getElementById('submit-seconds-elapsed');
+    if (secEl) secEl.textContent = '0';
+
+    modal.classList.add('active');
+  }
+
+  function closeSubmittingModal() {
+    const modal = document.getElementById('modal-submitting');
+    if (modal) modal.classList.remove('active');
+    if (submitProgressInterval) clearInterval(submitProgressInterval);
+    if (submitTimeoutId) clearTimeout(submitTimeoutId);
+  }
+
   function executeSubmitExam() {
     closeSubmitConfirmModal();
     clearInterval(state.timer.intervalId);
     state.isSubmitted = true;
     state.timer.submitTime = new Date();
 
-    // Hiển thị trạng thái đang chấm
-    const modalMsg = document.getElementById('modal-submit-msg');
-    modalMsg.innerHTML = 'Đang xử lý chấm điểm và tải dữ liệu đáp án...';
+    // DỪNG LẠI: Mở modal tiến trình nộp bài
+    openSubmittingModal();
 
     // BẢO MẬT ĐÁP ÁN: CHỈ TẢI ĐÁP ÁN SAU KHI THÍ SINH ĐÃ BẤM NỘP BÀI
     loadAnswersAndGrade();
@@ -767,11 +798,8 @@
     // Lưu phiên thi vào localStorage để hỗ trợ in phiếu A4
     saveToLocalStorage();
 
-    // Render giao diện kết quả
-    renderResultScreen();
-
-    // TỰ ĐỘNG GỬI KẾT QUẢ VỀ GOOGLE SHEET NGAY TỨC THÌ
-    sendToGoogleSheets(false);
+    // BẮT BUỘC: DỪNG LẠI ĐẾN KHI NỘP ĐƯỢC TRÊN GOOGLE SHEET THÀNH CÔNG MỚI RA KẾT QUẢ
+    sendToGoogleSheetsAndFinish();
   }
 
   function renderResultScreen() {
@@ -791,6 +819,16 @@
       <strong>Bộ đề thi:</strong> ${state.currentExam.maDe} - ${state.currentExam.tenDe}<br>
       <strong>Thời gian làm bài:</strong> ${formatExamDuration()}
     `;
+
+    // Cập nhật trạng thái xác nhận đã nộp thành công vào Google Sheet
+    const statusElem = document.getElementById('sheets-sync-status');
+    if (statusElem) {
+      statusElem.innerHTML = `
+        <div class="sync-success-badge">
+          <span>✅</span> ĐÃ NỘP BÀI VÀ LƯU THÀNH CÔNG VÀO HỆ THỐNG GOOGLE SHEET (SHEET ĐẦU TIÊN)
+        </div>
+      `;
+    }
 
     // 3. Thống kê Đúng - Sai - Chưa chọn
     document.getElementById('stat-correct-count').textContent = res.correctCount;
@@ -957,15 +995,21 @@
   }
 
   // ============================================================================
-  // 10. GỬI DỮ LIỆU ĐỒNG BỘ VỀ GOOGLE SHEETS
+  // 10. GỬI DỮ LIỆU ĐỒNG BỘ VỀ GOOGLE SHEETS & MỞ KẾT QUẢ KHI THÀNH CÔNG
+  // - Dừng lại ở màn hình nộp đến khi Google Sheet xác nhận lưu bài thành công
+  // - Nếu mạng chậm quá 10 giây hoặc có lỗi: Chuyển sang nút Bấm Để Thử Nộp Lại
   // ============================================================================
-  function sendToGoogleSheets(isManualClick = false) {
+  function sendToGoogleSheetsAndFinish() {
     const webhookUrl = GOOGLE_SHEETS_WEBHOOK_URL;
-    const statusElem = document.getElementById('sheets-sync-status');
+    let secondsElapsed = 0;
+    const secEl = document.getElementById('submit-seconds-elapsed');
 
-    if (statusElem) {
-      statusElem.innerHTML = `<span style="color: #2563eb;">🔄 Đang tự động lưu bài thi vào Google Sheet...</span>`;
-    }
+    // Chạy đồng hồ đếm giây nộp bài
+    if (submitProgressInterval) clearInterval(submitProgressInterval);
+    submitProgressInterval = setInterval(() => {
+      secondsElapsed++;
+      if (secEl) secEl.textContent = secondsElapsed;
+    }, 1000);
 
     const payload = {
       timestamp: new Date().toLocaleString('vi-VN'),
@@ -982,6 +1026,17 @@
       essay2: state.userAnswers.essay[state.currentExam.tuLuan[1]?.ID] || ''
     };
 
+    let isHandled = false;
+
+    // Timeout: Nếu quá 10 giây chưa phản hồi -> Cho phép thí sinh bấm nộp lại
+    if (submitTimeoutId) clearTimeout(submitTimeoutId);
+    submitTimeoutId = setTimeout(() => {
+      if (isHandled) return;
+      isHandled = true;
+      if (submitProgressInterval) clearInterval(submitProgressInterval);
+      showSubmittingRetryUI('Thời gian gửi bài quá 10 giây do kết nối mạng yếu hoặc chập chờn. Toàn bộ bài làm của đồng chí vẫn được bảo toàn.');
+    }, 10000);
+
     // Gửi bằng fetch với mode no-cors
     fetch(webhookUrl, {
       method: 'POST',
@@ -992,22 +1047,41 @@
       body: JSON.stringify(payload)
     })
     .then(() => {
-      if (statusElem) {
-        statusElem.innerHTML = `<span style="color: #16a34a; font-weight: 700;">✅ ĐÃ LƯU BÀI THI THÀNH CÔNG VÀO HỆ THỐNG GOOGLE SHEET!</span>`;
-      }
-      if (isManualClick) {
-        alert('✅ Đã đồng bộ kết quả bài thi lên Google Sheet thành công!');
-      }
+      if (isHandled) return;
+      isHandled = true;
+      if (submitProgressInterval) clearInterval(submitProgressInterval);
+      if (submitTimeoutId) clearTimeout(submitTimeoutId);
+
+      // Cập nhật thông báo nộp bài thành công trên modal
+      const title = document.getElementById('submitting-title');
+      const desc = document.getElementById('submitting-desc');
+      if (title) title.innerHTML = '<span style="color: #16a34a;">✅ ĐÃ LƯU BÀI THI THÀNH CÔNG!</span>';
+      if (desc) desc.textContent = 'Dữ liệu đã được ghi nhận vào Google Sheet. Đang hiển thị bảng điểm và đáp án...';
+
+      // Chờ 500ms cho mượt mà rồi mới chuyển sang màn hình kết quả
+      setTimeout(() => {
+        closeSubmittingModal();
+        renderResultScreen();
+      }, 500);
     })
     .catch(err => {
+      if (isHandled) return;
+      isHandled = true;
+      if (submitProgressInterval) clearInterval(submitProgressInterval);
+      if (submitTimeoutId) clearTimeout(submitTimeoutId);
       console.error('Lỗi gửi Google Sheets:', err);
-      if (statusElem) {
-        statusElem.innerHTML = `<span style="color: #dc2626;">❌ Có lỗi kết nối máy chủ Google Sheet. Vui lòng thử bấm đồng bộ lại!</span>`;
-      }
-      if (isManualClick) {
-        alert('Có lỗi mạng khi kết nối máy chủ Google Sheet. Vui lòng bấm thử lại!');
-      }
+      showSubmittingRetryUI('Có lỗi kết nối mạng đến máy chủ Google Sheet (' + (err.message || 'Mất kết nối') + '). Bài làm vẫn an toàn, vui lòng kiểm tra mạng và bấm nộp lại.');
     });
+  }
+
+  function showSubmittingRetryUI(errorMessage) {
+    const loadingBlock = document.getElementById('submitting-state-loading');
+    const retryBlock = document.getElementById('submitting-state-retry');
+    if (loadingBlock) loadingBlock.style.display = 'none';
+    if (retryBlock) retryBlock.style.display = 'block';
+
+    const errEl = document.getElementById('submitting-error-msg');
+    if (errEl) errEl.textContent = errorMessage;
   }
 
 })();
