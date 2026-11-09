@@ -117,100 +117,39 @@ body {
 }
 
 /* Live Timer in Header */
+/* Live Timer in Header (Đồng hồ đếm ngược chạy theo thanh Header cố định) */
 .exam-timer-badge {
   display: none; /* Hiện khi đang làm bài */
-  background: rgba(0, 0, 0, 0.35);
-  padding: 6px 12px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border: 1.5px solid #f59e0b;
   border-radius: 20px;
+  padding: 5px 12px;
   align-items: center;
   gap: 6px;
-  font-weight: 700;
-  font-size: 1.05rem;
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: #fbbf24;
   font-variant-numeric: tabular-nums;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
 .exam-timer-badge.warning {
-  background: #d97706;
-  color: #fff;
+  border-color: #f97316;
+  background: linear-gradient(135deg, #431407 0%, #7c2d12 100%);
+  color: #fed7aa;
   animation: pulse 1s infinite;
 }
 
 .exam-timer-badge.danger {
-  background: #ef4444;
-  color: #fff;
+  border-color: #ef4444;
+  background: linear-gradient(135deg, #450a0a 0%, #991b1b 100%);
+  color: #fecaca;
   animation: pulse 0.5s infinite;
 }
 
-/* ==========================================================================
-   BỘ ĐẾM GIÂY CHẠY THEO THÍ SINH (FLOATING STICKY TIMER)
-   ========================================================================== */
-.floating-live-timer {
-  position: fixed;
-  top: 14px;
-  right: 20px;
-  z-index: 9999;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-  color: #ffffff;
-  border: 2px solid #f59e0b;
-  border-radius: 40px;
-  padding: 6px 16px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4), 0 0 12px rgba(245, 158, 11, 0.3);
-  backdrop-filter: blur(10px);
-  user-select: none;
-  pointer-events: none;
-  transition: all 0.25s ease;
-}
-
-.floating-timer-icon {
-  font-size: 1.35rem;
-  animation: tickIcon 1s infinite alternate ease-in-out;
-}
-
-.floating-timer-info {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.15;
-}
-
-.floating-timer-label {
-  font-size: 0.65rem;
-  font-weight: 800;
-  color: #94a3b8;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-}
-
-.floating-timer-digits {
-  font-size: 1.35rem;
-  font-weight: 900;
-  color: #fbbf24;
-  letter-spacing: 1.5px;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace;
-  font-variant-numeric: tabular-nums;
-}
-
-.floating-live-timer.warning {
-  border-color: #f97316;
-  background: linear-gradient(135deg, #431407 0%, #7c2d12 100%);
-  box-shadow: 0 0 16px rgba(249, 115, 22, 0.5);
-}
-.floating-live-timer.warning .floating-timer-digits {
-  color: #fdba74;
-}
-
-.floating-live-timer.danger {
-  border-color: #ef4444;
-  background: linear-gradient(135deg, #450a0a 0%, #991b1b 100%);
-  animation: timerAlert 0.8s infinite alternate ease-in-out;
-}
-.floating-live-timer.danger .floating-timer-digits {
-  color: #fecaca;
-}
-
+/* Bộ đếm giây chạy theo thí sinh trên mobile (Thanh điều hướng dưới chân trang) */
 .bottom-timer-pill {
   background: rgba(15, 23, 42, 0.85);
   border: 1.5px solid #f59e0b;
@@ -226,32 +165,36 @@ body {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
-@keyframes tickIcon {
-  from { transform: rotate(-8deg); }
-  to { transform: rotate(8deg); }
-}
-
-@keyframes timerAlert {
-  from { transform: scale(1); box-shadow: 0 0 10px rgba(239, 68, 68, 0.4); }
-  to { transform: scale(1.05); box-shadow: 0 0 22px rgba(239, 68, 68, 0.9); }
-}
-
-@media (max-width: 768px) {
-  .floating-live-timer {
-    top: 8px;
-    right: 10px;
-    padding: 4px 12px;
-    gap: 7px;
+@media (max-width: 600px) {
+  .app-header {
+    padding: 8px 12px;
   }
-  .floating-timer-icon {
-    font-size: 1.15rem;
+  .brand-badge {
+    gap: 8px;
+    flex: 1;
+    min-width: 0;
   }
-  .floating-timer-label {
-    font-size: 0.58rem;
+  .emblem-icon {
+    width: 28px;
+    height: 28px;
+    font-size: 15px;
   }
-  .floating-timer-digits {
-    font-size: 1.1rem;
-    letter-spacing: 0.8px;
+  .brand-text {
+    min-width: 0;
+    overflow: hidden;
+  }
+  .brand-text h1 {
+    font-size: 0.74rem;
+    line-height: 1.2;
+    white-space: normal;
+  }
+  .brand-text p {
+    display: none;
+  }
+  .exam-timer-badge {
+    padding: 3px 8px;
+    font-size: 0.82rem;
+    gap: 4px;
   }
 }
 
@@ -1186,8 +1129,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 300;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 1000;
   display: none;
   align-items: center;
   justify-content: center;

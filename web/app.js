@@ -196,16 +196,17 @@
     Object.values(screens).forEach(el => el.classList.remove('active'));
     screens[screenName].classList.add('active');
 
-    const floatingTimer = document.getElementById('floating-live-timer');
+    // Luôn đóng bảng câu hỏi drawer khi chuyển màn hình
+    closePaletteDrawer();
 
     if (screenName === 'exam') {
       timerElements.headerBadge.style.display = 'flex';
       bottomBar.style.display = 'block';
-      if (floatingTimer) floatingTimer.style.display = 'flex';
+      if (paletteDrawer) paletteDrawer.style.display = '';
     } else {
       timerElements.headerBadge.style.display = 'none';
       bottomBar.style.display = 'none';
-      if (floatingTimer) floatingTimer.style.display = 'none';
+      if (paletteDrawer) paletteDrawer.style.display = 'none';
     }
   }
 
@@ -221,25 +222,15 @@
       state.timer.remainingSeconds--;
       updateTimerDisplay();
 
-      const floatingTimer = document.getElementById('floating-live-timer');
-
       // Cảnh báo khi còn dưới 5 phút
       if (state.timer.remainingSeconds <= 300 && state.timer.remainingSeconds > 60) {
         timerElements.headerBadge.classList.add('warning');
         timerElements.headerBadge.classList.remove('danger');
-        if (floatingTimer) {
-          floatingTimer.classList.add('warning');
-          floatingTimer.classList.remove('danger');
-        }
       } 
       // Cảnh báo khẩn cấp khi còn dưới 1 phút
       else if (state.timer.remainingSeconds <= 60 && state.timer.remainingSeconds > 0) {
         timerElements.headerBadge.classList.add('danger');
         timerElements.headerBadge.classList.remove('warning');
-        if (floatingTimer) {
-          floatingTimer.classList.add('danger');
-          floatingTimer.classList.remove('warning');
-        }
       } 
       // Hết giờ làm bài -> Tự động nộp bài
       else if (state.timer.remainingSeconds <= 0) {
@@ -255,7 +246,7 @@
     const secs = state.timer.remainingSeconds % 60;
     const timeStr = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
     
-    // 1. Cập nhật đồng hồ trên thanh Header
+    // 1. Cập nhật đồng hồ trên thanh Header (Cố định ở đầu trang)
     if (timerElements.headerText) {
       timerElements.headerText.textContent = timeStr;
     }
@@ -265,13 +256,7 @@
       timerElements.desktopText.textContent = timeStr;
     }
 
-    // 3. Cập nhật BỘ ĐẾM GIÂY NỔI CHẠY THEO THÍ SINH (Yêu cầu 3)
-    const floatingTimerText = document.getElementById('floating-timer-text');
-    if (floatingTimerText) {
-      floatingTimerText.textContent = timeStr;
-    }
-
-    // 4. Cập nhật đồng hồ ở thanh điều hướng chân trang mobile
+    // 3. Cập nhật đồng hồ ở thanh điều hướng chân trang mobile (Chạy theo thí sinh)
     const mobileBottomTimerText = document.getElementById('mobile-bottom-timer-text');
     if (mobileBottomTimerText) {
       mobileBottomTimerText.textContent = timeStr;
@@ -687,6 +672,11 @@
     clearInterval(state.timer.intervalId);
     state.isSubmitted = true;
     state.timer.submitTime = new Date();
+
+    // Ẩn các đồng hồ đếm ngược phòng thi và thanh điều hướng khi nộp bài
+    if (timerElements.headerBadge) timerElements.headerBadge.style.display = 'none';
+    if (bottomBar) bottomBar.style.display = 'none';
+    closePaletteDrawer();
 
     // DỪNG LẠI: Mở modal tiến trình nộp bài
     openSubmittingModal();
