@@ -583,22 +583,45 @@
           const cols = line.split('\t');
           if (cols.length >= 2) {
             // Kiểm tra xem dòng này có phải là tiêu đề không
-            if (cols[0].includes('thời gian') || cols[1].includes('Họ và tên')) return;
+            const firstCol = cols[0].toLowerCase();
+            const secondCol = (cols[1] || '').toLowerCase();
+            if (firstCol.includes('thời gian') || secondCol.includes('họ và tên')) return;
 
-            parsed.push({
+            let cand = {
               id: parsed.length + 1,
               timestamp: cols[0] ? cols[0].trim() : '',
               fullName: cols[1] ? cols[1].trim() : '',
               unit: cols[2] ? cols[2].trim() : '',
               rank: cols[3] ? cols[3].trim() : '',
               examCode: cols[4] ? cols[4].trim() : '',
-              examName: cols[5] ? cols[5].trim() : '',
-              mcqScoreText: cols[6] ? cols[6].trim() : '',
-              mcqScoreTenScale: cols[7] ? cols[7].trim() : '',
-              duration: cols[8] ? cols[8].trim() : '',
-              essay1: cols[9] ? cols[9].trim() : '',
-              essay2: cols[11] ? cols[11].trim() : ''
-            });
+              examName: cols[5] ? cols[5].trim() : ''
+            };
+
+            if (cols.length >= 25) {
+              // Cấu trúc mới có 20 cột TN1..TN20
+              cand.duration = cols[6] ? cols[6].trim() : '';
+              cand.mcqScoreText = cols[7] ? cols[7].trim() : '';
+              cand.mcqScoreTenScale = cols[8] ? cols[8].trim() : '0';
+              cand.tnAnswers = [];
+              for (let c = 9; c <= 28; c++) {
+                cand.tnAnswers.push(cols[c] ? cols[c].trim() : '');
+              }
+              cand.tl1Question = cols[29] ? cols[29].trim() : '';
+              cand.essay1 = cols[30] ? cols[30].trim() : '';
+              cand.tl1KeyPoints = cols[31] ? cols[31].trim() : '';
+              cand.tl2Question = cols[33] ? cols[33].trim() : '';
+              cand.essay2 = cols[34] ? cols[34].trim() : '';
+              cand.tl2KeyPoints = cols[35] ? cols[35].trim() : '';
+            } else {
+              // Cấu trúc cũ (16 cột)
+              cand.mcqScoreText = cols[6] ? cols[6].trim() : '';
+              cand.mcqScoreTenScale = cols[7] ? cols[7].trim() : '0';
+              cand.duration = cols[8] ? cols[8].trim() : '';
+              cand.essay1 = cols[9] ? cols[9].trim() : '';
+              cand.essay2 = cols[11] ? cols[11].trim() : '';
+            }
+
+            parsed.push(cand);
           }
         });
 
@@ -629,10 +652,15 @@
               mcqScoreText: `${data.correctCount || 0}/20`,
               mcqScoreTenScale: data.scoreConverted || '0',
               duration: data.duration || '30 phút',
+              tnAnswers: data.tnAnswers || [],
+              tl1Question: data.tl1Question || (data.tuLuanQuestions?.[0]?.cauHoi || ''),
               essay1: (data.userAnswers && data.userAnswers.essay && data.tuLuanQuestions && data.tuLuanQuestions[0]) 
                 ? (data.userAnswers.essay[data.tuLuanQuestions[0].ID] || '') : '',
+              tl1KeyPoints: data.tl1KeyPoints || '',
+              tl2Question: data.tl2Question || (data.tuLuanQuestions?.[1]?.cauHoi || ''),
               essay2: (data.userAnswers && data.userAnswers.essay && data.tuLuanQuestions && data.tuLuanQuestions[1]) 
-                ? (data.userAnswers.essay[data.tuLuanQuestions[1].ID] || '') : ''
+                ? (data.userAnswers.essay[data.tuLuanQuestions[1].ID] || '') : '',
+              tl2KeyPoints: data.tl2KeyPoints || ''
             };
 
             // Nếu danh sách chưa có ai thì thêm vào
@@ -790,15 +818,34 @@
               </tbody>
             </table>
 
-            <div style="font-weight: bold; margin: 14px 0 6px; text-transform: uppercase;">
+            ${c.tnAnswers && c.tnAnswers.length > 0 ? `
+              <div style="font-weight: bold; margin: 8px 0 4px; font-size: 10pt; text-transform: uppercase;">
+                Chi tiết kết quả 20 câu trắc nghiệm (Đ/án đúng | Thí sinh chọn):
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(10, 1fr); gap: 4px; font-size: 9pt; text-align: center; margin-bottom: 10px;">
+                ${c.tnAnswers.map((item, idx) => {
+                  const parts = item.split('|');
+                  const isRight = parts.length === 2 && parts[0] === parts[1] && parts[0] !== '-';
+                  return `<div style="border: 1px solid #cbd5e1; padding: 2px; border-radius: 3px; background: ${isRight ? '#f0fdf4' : '#fef2f2'};">
+                    <span style="font-size: 7.5pt; color: #64748b;">TN${idx+1}</span><br>
+                    <strong>${escapeHtml(item)}</strong>
+                  </div>`;
+                }).join('')}
+              </div>
+            ` : ''}
+
+            <div style="font-weight: bold; margin: 10px 0 6px; text-transform: uppercase;">
               II. NỘI DUNG BÀI LÀM TỰ LUẬN & ĐÁNH GIÁ CỦA GIÁM KHẢO
             </div>
 
             <div class="essay-block">
-              <strong>1. Bài làm Tự luận Câu 1:</strong>
-              <div style="margin-top: 4px; font-style: italic; white-space: pre-wrap;">
+              <strong>1. Tự luận Câu 1:</strong>
+              ${c.tl1Question ? `<div style="font-weight: bold; margin: 4px 0; color: #1e293b;">Đề bài: ${escapeHtml(c.tl1Question)}</div>` : ''}
+              <div style="margin-top: 4px; font-style: italic; white-space: pre-wrap; background: #fff; padding: 6px; border: 1px dashed #cbd5e1; border-radius: 4px;">
+                <strong>Bài làm của thí sinh:</strong><br>
                 ${c.essay1 ? escapeHtml(c.essay1) : '(Thí sinh không làm câu tự luận này)'}
               </div>
+              ${c.tl1KeyPoints ? `<div style="margin-top: 6px; font-size: 9.5pt; color: #334155; background: #f8fafc; border: 1px solid #e2e8f0; padding: 6px; border-radius: 4px; white-space: pre-wrap;"><strong>Đáp án chuẩn đối chiếu (gạch đầu dòng):</strong>\n${escapeHtml(c.tl1KeyPoints)}</div>` : ''}
               <div style="margin-top: 8px; border-top: 1px dashed #999; padding-top: 4px; display: flex; justify-content: space-between;">
                 <span>Điểm Giám khảo chấm Câu 1: ............ / 2.0 điểm</span>
                 <span>Chữ ký Giám khảo: ..............................</span>
@@ -806,10 +853,13 @@
             </div>
 
             <div class="essay-block">
-              <strong>2. Bài làm Tự luận Câu 2:</strong>
-              <div style="margin-top: 4px; font-style: italic; white-space: pre-wrap;">
+              <strong>2. Tự luận Câu 2:</strong>
+              ${c.tl2Question ? `<div style="font-weight: bold; margin: 4px 0; color: #1e293b;">Đề bài: ${escapeHtml(c.tl2Question)}</div>` : ''}
+              <div style="margin-top: 4px; font-style: italic; white-space: pre-wrap; background: #fff; padding: 6px; border: 1px dashed #cbd5e1; border-radius: 4px;">
+                <strong>Bài làm của thí sinh:</strong><br>
                 ${c.essay2 ? escapeHtml(c.essay2) : '(Thí sinh không làm câu tự luận này)'}
               </div>
+              ${c.tl2KeyPoints ? `<div style="margin-top: 6px; font-size: 9.5pt; color: #334155; background: #f8fafc; border: 1px solid #e2e8f0; padding: 6px; border-radius: 4px; white-space: pre-wrap;"><strong>Đáp án chuẩn đối chiếu (gạch đầu dòng):</strong>\n${escapeHtml(c.tl2KeyPoints)}</div>` : ''}
               <div style="margin-top: 8px; border-top: 1px dashed #999; padding-top: 4px; display: flex; justify-content: space-between;">
                 <span>Điểm Giám khảo chấm Câu 2: ............ / 2.0 điểm</span>
                 <span>Chữ ký Giám khảo: ..............................</span>

@@ -958,10 +958,41 @@
     return div.innerHTML;
   }
 
+  // Helper chuyển đổi số lựa chọn (1..4) sang chữ cái (A..D)
+  function mapChoiceToLetter(choice) {
+    if (choice === 1) return 'A';
+    if (choice === 2) return 'B';
+    if (choice === 3) return 'C';
+    if (choice === 4) return 'D';
+    return '-';
+  }
+
   // ============================================================================
   // 9. LƯU LOCALSTORAGE & IN PHIẾU KẾT QUẢ THI (A4)
   // ============================================================================
   function saveToLocalStorage() {
+    const tnArray = [];
+    const reviews = state.gradedResult?.reviews || [];
+    for (let i = 0; i < 20; i++) {
+      const rev = reviews[i];
+      if (rev) {
+        const correctLetter = rev.correctItem?.kyHieu || mapChoiceToLetter(rev.correctChoice);
+        const userLetter = mapChoiceToLetter(rev.userChoice);
+        tnArray.push(`${correctLetter}|${userLetter}`);
+      } else {
+        tnArray.push('-|-');
+      }
+    }
+
+    const tl1KeyItem = state.gradedResult?.answerData?.dapAnTuLuan?.[0];
+    const tl1KeyPoints = (tl1KeyItem && Array.isArray(tl1KeyItem.tuKhoa))
+      ? tl1KeyItem.tuKhoa.map(item => `- ${item}`).join('\n')
+      : '';
+    const tl2KeyItem = state.gradedResult?.answerData?.dapAnTuLuan?.[1];
+    const tl2KeyPoints = (tl2KeyItem && Array.isArray(tl2KeyItem.tuKhoa))
+      ? tl2KeyItem.tuKhoa.map(item => `- ${item}`).join('\n')
+      : '';
+
     const resultPayload = {
       candidate: state.candidate,
       examName: state.currentExam.tenDe,
@@ -973,7 +1004,12 @@
       totalMcq: 20,
       scoreConverted: state.gradedResult.scoreConverted,
       userAnswers: state.userAnswers,
-      tuLuanQuestions: state.currentExam.tuLuan
+      tuLuanQuestions: state.currentExam.tuLuan,
+      tnAnswers: tnArray,
+      tl1Question: state.currentExam.tuLuan[0]?.cauHoi || '',
+      tl1KeyPoints: tl1KeyPoints,
+      tl2Question: state.currentExam.tuLuan[1]?.cauHoi || '',
+      tl2KeyPoints: tl2KeyPoints
     };
 
     localStorage.setItem('PCCC_LAST_EXAM_RESULT', JSON.stringify(resultPayload));
@@ -1001,6 +1037,35 @@
       if (secEl) secEl.textContent = secondsElapsed;
     }, 1000);
 
+    // 1. Chuẩn bị 20 câu trắc nghiệm TN1..TN20 dạng A|B (Đáp án đúng | Đáp án thí sinh)
+    const tnArray = [];
+    const reviews = state.gradedResult?.reviews || [];
+    for (let i = 0; i < 20; i++) {
+      const rev = reviews[i];
+      if (rev) {
+        const correctLetter = rev.correctItem?.kyHieu || mapChoiceToLetter(rev.correctChoice);
+        const userLetter = mapChoiceToLetter(rev.userChoice);
+        tnArray.push(`${correctLetter}|${userLetter}`);
+      } else {
+        tnArray.push('-|-');
+      }
+    }
+
+    // 2. Chuẩn bị câu hỏi và đáp án tự luận gạch đầu dòng
+    const tl1Q = state.currentExam?.tuLuan?.[0]?.cauHoi || '';
+    const tl1Ans = state.userAnswers?.essay?.[state.currentExam?.tuLuan?.[0]?.ID] || '';
+    const tl1KeyItem = state.gradedResult?.answerData?.dapAnTuLuan?.[0];
+    const tl1KeyPoints = (tl1KeyItem && Array.isArray(tl1KeyItem.tuKhoa))
+      ? tl1KeyItem.tuKhoa.map(item => `- ${item}`).join('\n')
+      : '';
+
+    const tl2Q = state.currentExam?.tuLuan?.[1]?.cauHoi || '';
+    const tl2Ans = state.userAnswers?.essay?.[state.currentExam?.tuLuan?.[1]?.ID] || '';
+    const tl2KeyItem = state.gradedResult?.answerData?.dapAnTuLuan?.[1];
+    const tl2KeyPoints = (tl2KeyItem && Array.isArray(tl2KeyItem.tuKhoa))
+      ? tl2KeyItem.tuKhoa.map(item => `- ${item}`).join('\n')
+      : '';
+
     const payload = {
       timestamp: new Date().toLocaleString('vi-VN'),
       fullName: state.candidate.fullName,
@@ -1008,12 +1073,23 @@
       rank: state.candidate.rank,
       examCode: state.currentExam.maDe,
       examName: state.currentExam.tenDe,
+      duration: formatExamDuration(),
       mcqScoreText: `${state.gradedResult.correctCount}/20`,
       mcqScoreNumber: state.gradedResult.correctCount,
       mcqScoreTenScale: state.gradedResult.scoreConverted,
-      duration: formatExamDuration(),
-      essay1: state.userAnswers.essay[state.currentExam.tuLuan[0]?.ID] || '',
-      essay2: state.userAnswers.essay[state.currentExam.tuLuan[1]?.ID] || ''
+      // 20 câu trắc nghiệm TN1 -> TN20 (A|B)
+      tnAnswers: tnArray,
+      // Tự luận 1
+      tl1Question: tl1Q,
+      tl1UserAnswer: tl1Ans,
+      tl1KeyPoints: tl1KeyPoints,
+      // Tự luận 2
+      tl2Question: tl2Q,
+      tl2UserAnswer: tl2Ans,
+      tl2KeyPoints: tl2KeyPoints,
+      // Tương thích các script cũ
+      essay1: tl1Ans,
+      essay2: tl2Ans
     };
 
     let isHandled = false;
