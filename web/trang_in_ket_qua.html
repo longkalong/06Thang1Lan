@@ -91,7 +91,7 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 10px 18px;
+      padding: 9px 16px;
       font-size: 0.92rem;
       font-weight: 600;
       border-radius: 6px;
@@ -158,12 +158,12 @@
       border: 1px solid var(--border);
       border-radius: 6px;
       font-size: 0.9rem;
-      width: 280px;
+      width: 260px;
     }
 
     .data-table-wrapper {
       overflow-x: auto;
-      max-height: 480px;
+      max-height: 520px;
       border: 1px solid var(--border);
       border-radius: 6px;
     }
@@ -206,12 +206,175 @@
     .score-fail { background: #fee2e2; color: #991b1b; }
 
     /* ==========================================================================
-       VÙNG XUẤT IN CHUẨN A4 CAND (ẨN TRÊN MÀN HÌNH QUẢN TRỊ, HIỆN KHI IN)
+       ĐỊNH DẠNG TÀI LIỆU VĂN BẢN CHUẨN A4 CAND (HIỂN THỊ CẢ XEM TRƯỚC VÀ KHI IN)
        ========================================================================== */
+    .a4-ticket {
+      width: 100%;
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 20px 25px;
+      background: #fff;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 12pt;
+      line-height: 1.35;
+      color: #000;
+    }
+
+    .header-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 14px;
+      table-layout: fixed;
+    }
+
+    .header-table td {
+      border: none !important;
+      padding: 0;
+      vertical-align: top;
+      text-align: center;
+    }
+
+    .header-line {
+      width: 110px;
+      height: 1px;
+      background: #000;
+      margin: 4px auto 0;
+    }
+
+    .doc-main-title {
+      text-align: center;
+      font-size: 14.5pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 12px 0 3px;
+    }
+
+    .doc-sub-title {
+      text-align: center;
+      font-size: 11pt;
+      font-style: italic;
+      margin-bottom: 12px;
+    }
+
+    .meta-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 10px;
+    }
+
+    .meta-table td {
+      border: none !important;
+      padding: 3px 4px;
+      font-size: 11.5pt;
+      vertical-align: middle;
+    }
+
+    .dotted-line {
+      border-bottom: 1px dotted #555 !important;
+    }
+
+    .print-score-box {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 8px 0 12px;
+      text-align: center;
+      table-layout: fixed;
+    }
+
+    .print-score-box th, .print-score-box td {
+      border: 1px solid #000 !important;
+      padding: 5px 6px;
+      font-size: 11pt;
+      vertical-align: middle;
+    }
+
+    .print-score-box th {
+      background: #f1f5f9 !important;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+      font-weight: bold;
+    }
+
+    .essay-block {
+      margin: 8px 0;
+      padding: 7px 9px;
+      border: 1px solid #555;
+      border-radius: 3px;
+      font-size: 10.5pt;
+      line-height: 1.35;
+      background: #fff;
+    }
+
+    .signatures-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      table-layout: fixed;
+      page-break-inside: avoid;
+    }
+
+    .signatures-table td {
+      border: none !important;
+      width: 50%;
+      text-align: center;
+      vertical-align: top;
+      padding: 0;
+      font-size: 11.5pt;
+    }
+
+    /* VÙNG IN */
     #print-output-zone {
       display: none;
     }
 
+    /* MODAL XEM TRƯỚC (PREVIEW) */
+    .preview-modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(15, 23, 42, 0.75);
+      z-index: 1000;
+      overflow-y: auto;
+      padding: 30px 15px;
+      backdrop-filter: blur(2px);
+    }
+
+    .preview-modal-overlay.active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .preview-toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 1010;
+      background: #1e293b;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 850px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .preview-paper {
+      background: #fff;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.35);
+      border-radius: 4px;
+      width: 100%;
+      max-width: 850px;
+      margin-bottom: 30px;
+    }
+
+    /* QUY TẮC DÀNH CHO MÁY IN (@MEDIA PRINT) */
     @media print {
       body {
         background: #fff !important;
@@ -223,6 +386,7 @@
       .admin-header,
       .data-source-card,
       .candidate-list-card,
+      .preview-modal-overlay,
       .no-print {
         display: none !important;
       }
@@ -231,132 +395,19 @@
         display: block !important;
       }
 
+      .a4-ticket {
+        padding: 0 !important;
+        max-width: 100% !important;
+      }
+
       .page-break {
         page-break-after: always;
         break-after: page;
       }
 
-      /* ĐỊNH DẠNG TRANG IN A4 DỌC */
       @page {
         size: A4 portrait;
-        margin: 15mm 15mm 15mm 15mm;
-      }
-
-      .a4-ticket {
-        width: 100%;
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 5px 0;
-        font-family: "Times New Roman", Times, serif;
-        font-size: 12.5pt;
-        line-height: 1.35;
-      }
-
-      .header-grid {
-        display: table;
-        width: 100%;
-        margin-bottom: 15px;
-      }
-
-      .header-cell-left {
-        display: table-cell;
-        width: 45%;
-        text-align: center;
-        vertical-align: top;
-        font-size: 11pt;
-      }
-
-      .header-cell-right {
-        display: table-cell;
-        width: 55%;
-        text-align: center;
-        vertical-align: top;
-      }
-
-      .header-title-bold {
-        font-weight: bold;
-        text-transform: uppercase;
-      }
-
-      .header-line {
-        width: 110px;
-        height: 1px;
-        background: #000;
-        margin: 4px auto 0;
-      }
-
-      .doc-main-title {
-        text-align: center;
-        font-size: 14.5pt;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin: 14px 0 4px;
-      }
-
-      .doc-sub-title {
-        text-align: center;
-        font-size: 11pt;
-        font-style: italic;
-        margin-bottom: 14px;
-      }
-
-      .meta-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-bottom: 12px;
-      }
-
-      .meta-table td {
-        padding: 3px 5px;
-        font-size: 12pt;
-      }
-
-      .dotted-line {
-        border-bottom: 1px dotted #444;
-      }
-
-      /* BẢNG ĐIỂM */
-      .print-score-box {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 12px 0 16px;
-        text-align: center;
-      }
-
-      .print-score-box th, .print-score-box td {
-        border: 1px solid #000;
-        padding: 6px;
-        font-size: 11.5pt;
-      }
-
-      .print-score-box th {
-        background: #f0f0f0 !important;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-        font-weight: bold;
-      }
-
-      .essay-block {
-        margin: 10px 0;
-        padding: 8px 10px;
-        border: 1px solid #444;
-        border-radius: 4px;
-        font-size: 11pt;
-        line-height: 1.4;
-      }
-
-      .signatures-table {
-        width: 100%;
-        margin-top: 25px;
-        border-collapse: collapse;
-        page-break-inside: avoid;
-      }
-
-      .signatures-table td {
-        width: 50%;
-        text-align: center;
-        vertical-align: top;
-        font-size: 12pt;
+        margin: 12mm 15mm 12mm 15mm;
       }
     }
   </style>
@@ -367,7 +418,7 @@
   <header class="admin-header">
     <div class="admin-title">
       <h1>🚒 IN KẾT QUẢ - KIỂM TRA NGHIỆP VỤ CHỮA CHÁY, CỨU NẠN, CỨU HỘ</h1>
-      <p>Công cụ dành riêng cho Ban Giám khảo - Đồng bộ dữ liệu từ Google Sheet để in ấn chuẩn A4 CAND</p>
+      <p>CÔNG AN THÀNH PHỐ QUẢNG NINH — PHÒNG CẢNH SÁT PCCC VÀ CNCH</p>
     </div>
     <div>
       <a href="index.html" class="btn btn-secondary">
@@ -402,7 +453,7 @@
     <!-- Hộp dán nhanh nếu muốn copy bảng tính Google Sheet trực tiếp -->
     <div id="paste-box-container" class="paste-box-container">
       <p style="font-size: 0.85rem; color: #64748b; margin-bottom: 8px;">
-        💡 <strong>Cách làm:</strong> Mở trang tính Google Sheet của đồng chí -> Quét chọn các dòng thí sinh (hoặc bôi đen toàn bộ dữ liệu) -> Bấm <strong>Ctrl + C</strong> -> Bấm vào ô dưới và bấm <strong>Ctrl + V</strong> -> Bấm nút "Phân Tích & Nạp Dữ Liệu":
+        💡 <strong>Cách làm:</strong> Mở trang tính Google Sheet của đồng chí -> Bôi đen các dòng thí sinh -> Bấm <strong>Ctrl + C</strong> -> Bấm vào ô dưới và bấm <strong>Ctrl + V</strong> -> Bấm nút "Phân Tích & Nạp Dữ Liệu":
       </p>
       <textarea id="inp-paste-data" class="textarea-paste" placeholder="Dán các cột dữ liệu từ Google Sheet vào đây..."></textarea>
       <button type="button" id="btn-parse-paste" class="btn btn-primary">
@@ -422,12 +473,16 @@
       <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
         <input type="text" id="inp-search" class="search-input" placeholder="🔍 Tìm kiếm thí sinh / đơn vị...">
         
+        <button type="button" id="btn-preview-selected" class="btn btn-secondary">
+          <span>👁️</span> Xem Trước Phiếu In
+        </button>
+
         <button type="button" id="btn-print-selected" class="btn btn-print">
-          <span>🖨️</span> IN PHIẾU CÁ NHÂN (A4 DỌC)
+          <span>🖨️</span> IN PHIẾU CÁ NHÂN (A4)
         </button>
 
         <button type="button" id="btn-print-summary" class="btn btn-primary">
-          <span>📊</span> IN BẢNG TỔNG HỢP ĐIỂM (A4)
+          <span>📊</span> IN BẢNG TỔNG HỢP (A4)
         </button>
       </div>
     </div>
@@ -461,6 +516,27 @@
   </section>
 
 
+  <!-- ==================== MODAL XEM TRƯỚC PHIẾU IN ==================== -->
+  <div id="preview-modal" class="preview-modal-overlay">
+    <div class="preview-toolbar">
+      <div style="font-weight: 700; font-size: 1.05rem;">
+        <span>📄</span> XEM TRƯỚC PHIẾU KẾT QUẢ IN CHUẨN A4
+      </div>
+      <div style="display: flex; gap: 10px;">
+        <button type="button" class="btn btn-print" id="btn-modal-print" style="padding: 6px 14px; font-size: 0.88rem;">
+          🖨️ In Phiếu Này
+        </button>
+        <button type="button" class="btn btn-secondary" id="btn-modal-close" style="padding: 6px 14px; font-size: 0.88rem;">
+          ✕ Đóng Lại
+        </button>
+      </div>
+    </div>
+    <div class="preview-paper" id="preview-paper-content">
+      <!-- Nội dung phiếu A4 sẽ hiển thị ở đây -->
+    </div>
+  </div>
+
+
   <!-- ==================== VÙNG SINH NỘI DUNG IN CHUẨN A4 ==================== -->
   <div id="print-output-zone">
     <!-- Được sinh động bằng JavaScript khi bấm In -->
@@ -479,50 +555,62 @@
 
       // Khởi tạo sự kiện
       window.addEventListener('DOMContentLoaded', () => {
-        // Tự động tải từ Google Sheet hoặc localStorage khi mở trang
         initData();
         bindEvents();
       });
 
       function bindEvents() {
-        // Nút tải tự động từ Sheet
         document.getElementById('btn-fetch-sheets').addEventListener('click', fetchDataFromGoogleSheets);
 
-        // Nút bật hộp dán
         document.getElementById('btn-toggle-paste').addEventListener('click', () => {
           document.getElementById('paste-box-container').classList.toggle('active');
         });
 
-        // Nút phân tích dữ liệu dán
         document.getElementById('btn-parse-paste').addEventListener('click', handleParsePastedData);
-
-        // Nút nạp từ localStorage máy
         document.getElementById('btn-load-local').addEventListener('click', loadFromLocalStorage);
 
-        // Chọn tất cả checkbox
         document.getElementById('check-all').addEventListener('change', (e) => {
           const checked = e.target.checked;
           document.querySelectorAll('.row-checkbox').forEach(cb => cb.checked = checked);
         });
 
-        // Tìm kiếm
         document.getElementById('inp-search').addEventListener('input', (e) => {
           const query = e.target.value.toLowerCase().trim();
           filterTable(query);
         });
 
-        // In phiếu cá nhân
+        document.getElementById('btn-preview-selected').addEventListener('click', handlePreviewSelectedTicket);
         document.getElementById('btn-print-selected').addEventListener('click', handlePrintSelectedTickets);
-
-        // In bảng tổng hợp
         document.getElementById('btn-print-summary').addEventListener('click', handlePrintSummaryTable);
+
+        // Modal close
+        document.getElementById('btn-modal-close').addEventListener('click', closePreviewModal);
+        document.getElementById('btn-modal-print').addEventListener('click', () => {
+          closePreviewModal();
+          handlePrintSelectedTickets();
+        });
       }
 
       function initData() {
-        // Ưu tiên nạp dữ liệu từ localStorage trước nếu có
         loadFromLocalStorage(false);
-        // Tự động kéo dữ liệu từ Google Sheets
         fetchDataFromGoogleSheets();
+      }
+
+      // Xử lý chuẩn hóa điểm số hiển thị
+      function cleanScore(val, fallbackScoreText) {
+        if (!val) return '0.0';
+        const str = String(val).trim();
+        // Nếu lỡ bị Google Sheet chuyển thành chuỗi Date
+        if (str.includes('GMT') || str.includes('2026') || isNaN(parseFloat(str))) {
+          if (fallbackScoreText && fallbackScoreText.includes('/')) {
+            const parts = fallbackScoreText.split('/');
+            const num = parseFloat(parts[0]);
+            if (!isNaN(num)) return (num * 0.5).toFixed(1);
+          }
+          return '0.0';
+        }
+        const num = parseFloat(str);
+        return isNaN(num) ? '0.0' : num.toFixed(1);
       }
 
       // 1. TẢI DỮ LIỆU TỰ ĐỘNG TỪ GOOGLE SHEET QUA WEBHOOK GET
@@ -536,9 +624,7 @@
             let resData = null;
             try {
               resData = JSON.parse(rawText);
-            } catch(e) {
-              // Phản hồi dạng text thông thường từ Apps Script
-            }
+            } catch(e) {}
 
             if (resData && resData.status === 'success' && Array.isArray(resData.data)) {
               candidateList = resData.data.map((item, idx) => ({
@@ -549,11 +635,21 @@
                 rank: item.rank || 'Cán bộ',
                 examCode: item.examCode || 'DE01',
                 examName: item.examName || 'Đề kiểm tra',
-                mcqScoreText: item.mcqScoreText || '0/20',
-                mcqScoreTenScale: item.mcqScoreTenScale || '0',
                 duration: item.duration || '30 phút',
+                mcqScoreText: item.mcqScoreText || '0/20',
+                mcqScoreTenScale: cleanScore(item.mcqScoreTenScale, item.mcqScoreText),
+                tnAnswers: item.tnAnswers || [],
+                tl1Question: item.tl1Question || '',
                 essay1: item.essay1 || '',
-                essay2: item.essay2 || ''
+                tl1KeyPoints: item.tl1KeyPoints || '',
+                essayScore1: item.essayScore1 || '',
+                tl2Question: item.tl2Question || '',
+                essay2: item.essay2 || '',
+                tl2KeyPoints: item.tl2KeyPoints || '',
+                essayScore2: item.essayScore2 || '',
+                totalScore: item.totalScore || '',
+                grade: item.grade || '',
+                remarks: item.remarks || ''
               }));
 
               renderTable();
@@ -567,7 +663,49 @@
           });
       }
 
-      // 2. DÁN NHANH DỮ LIỆU TỪ BẢNG GOOGLE SHEET (COPY & PASTE TAB-SEPARATED)
+      // Hàm phân tích TSV chuẩn RFC 4180 (xử lý an toàn xuống dòng trong ô tự luận)
+      function parseTSV(text) {
+        const rows = [];
+        let currentRow = [];
+        let currentCell = '';
+        let insideQuotes = false;
+
+        for (let i = 0; i < text.length; i++) {
+          const char = text[i];
+          const nextChar = text[i + 1];
+
+          if (char === '"') {
+            if (insideQuotes && nextChar === '"') {
+              currentCell += '"';
+              i++;
+            } else {
+              insideQuotes = !insideQuotes;
+            }
+          } else if (char === '\t' && !insideQuotes) {
+            currentRow.push(currentCell.trim());
+            currentCell = '';
+          } else if ((char === '\r' || char === '\n') && !insideQuotes) {
+            if (char === '\r' && nextChar === '\n') i++;
+            currentRow.push(currentCell.trim());
+            if (currentRow.some(c => c.length > 0)) {
+              rows.push(currentRow);
+            }
+            currentRow = [];
+            currentCell = '';
+          } else {
+            currentCell += char;
+          }
+        }
+        if (currentCell.length > 0 || currentRow.length > 0) {
+          currentRow.push(currentCell.trim());
+          if (currentRow.some(c => c.length > 0)) {
+            rows.push(currentRow);
+          }
+        }
+        return rows;
+      }
+
+      // 2. DÁN NHANH DỮ LIỆU TỪ BẢNG GOOGLE SHEET
       function handleParsePastedData() {
         const raw = document.getElementById('inp-paste-data').value.trim();
         if (!raw) {
@@ -575,15 +713,12 @@
           return;
         }
 
-        const lines = raw.split(/\r?\n/);
+        const rows = parseTSV(raw);
         const parsed = [];
 
-        lines.forEach((line, idx) => {
-          // Tách theo phím Tab (chuẩn khi copy từ Google Sheets / Excel)
-          const cols = line.split('\t');
+        rows.forEach(cols => {
           if (cols.length >= 2) {
-            // Kiểm tra xem dòng này có phải là tiêu đề không
-            const firstCol = cols[0].toLowerCase();
+            const firstCol = (cols[0] || '').toLowerCase();
             const secondCol = (cols[1] || '').toLowerCase();
             if (firstCol.includes('thời gian') || secondCol.includes('họ và tên')) return;
 
@@ -601,7 +736,7 @@
               // Cấu trúc mới có 20 cột TN1..TN20
               cand.duration = cols[6] ? cols[6].trim() : '';
               cand.mcqScoreText = cols[7] ? cols[7].trim() : '';
-              cand.mcqScoreTenScale = cols[8] ? cols[8].trim() : '0';
+              cand.mcqScoreTenScale = cleanScore(cols[8], cand.mcqScoreText);
               cand.tnAnswers = [];
               for (let c = 9; c <= 28; c++) {
                 cand.tnAnswers.push(cols[c] ? cols[c].trim() : '');
@@ -615,7 +750,7 @@
             } else {
               // Cấu trúc cũ (16 cột)
               cand.mcqScoreText = cols[6] ? cols[6].trim() : '';
-              cand.mcqScoreTenScale = cols[7] ? cols[7].trim() : '0';
+              cand.mcqScoreTenScale = cleanScore(cols[7], cand.mcqScoreText);
               cand.duration = cols[8] ? cols[8].trim() : '';
               cand.essay1 = cols[9] ? cols[9].trim() : '';
               cand.essay2 = cols[11] ? cols[11].trim() : '';
@@ -650,7 +785,7 @@
               examCode: data.examCode || 'DE01',
               examName: data.examName || 'Đề kiểm tra',
               mcqScoreText: `${data.correctCount || 0}/20`,
-              mcqScoreTenScale: data.scoreConverted || '0',
+              mcqScoreTenScale: data.scoreConverted || '0.0',
               duration: data.duration || '30 phút',
               tnAnswers: data.tnAnswers || [],
               tl1Question: data.tl1Question || (data.tuLuanQuestions?.[0]?.cauHoi || ''),
@@ -663,7 +798,6 @@
               tl2KeyPoints: data.tl2KeyPoints || ''
             };
 
-            // Nếu danh sách chưa có ai thì thêm vào
             if (candidateList.length === 0) {
               candidateList.push(cand);
               renderTable();
@@ -711,9 +845,14 @@
                 ${c.essay1 || c.essay2 ? '✍️ Đã có bài làm' : '<em style="color:#94a3b8;">Không làm</em>'}
               </td>
               <td>
-                <button type="button" class="btn btn-secondary" style="padding: 4px 10px; font-size: 0.8rem;" onclick="window.printSingleCandidate(${c.id})">
-                  🖨️ In Phiếu
-                </button>
+                <div style="display: flex; gap: 6px;">
+                  <button type="button" class="btn btn-secondary" style="padding: 4px 8px; font-size: 0.8rem;" onclick="window.previewSingleCandidate(${c.id})">
+                    👁️ Xem
+                  </button>
+                  <button type="button" class="btn btn-print" style="padding: 4px 10px; font-size: 0.8rem;" onclick="window.printSingleCandidate(${c.id})">
+                    🖨️ In
+                  </button>
+                </div>
               </td>
             </tr>
           `;
@@ -730,12 +869,39 @@
       // ============================================================================
       // 4. CHỨC NĂNG IN PHIẾU CÁ NHÂN A4 CHUẨN CAND
       // ============================================================================
+      window.previewSingleCandidate = function(candId) {
+        const cand = candidateList.find(c => c.id === candId);
+        if (!cand) return;
+        showPreviewModal([cand]);
+      };
+
       window.printSingleCandidate = function(candId) {
         const cand = candidateList.find(c => c.id === candId);
         if (!cand) return;
         renderPrintTickets([cand]);
         window.print();
       };
+
+      function handlePreviewSelectedTicket() {
+        const selectedIds = Array.from(document.querySelectorAll('.row-checkbox:checked')).map(cb => parseInt(cb.value, 10));
+        if (selectedIds.length === 0) {
+          alert('Đồng chí vui lòng tích chọn ít nhất 1 thí sinh để xem trước!');
+          return;
+        }
+        const selectedCandidates = candidateList.filter(c => selectedIds.includes(c.id));
+        showPreviewModal(selectedCandidates);
+      }
+
+      function showPreviewModal(candidates) {
+        const modal = document.getElementById('preview-modal');
+        const paper = document.getElementById('preview-paper-content');
+        paper.innerHTML = generateTicketsHtml(candidates);
+        modal.classList.add('active');
+      }
+
+      function closePreviewModal() {
+        document.getElementById('preview-modal').classList.remove('active');
+      }
 
       function handlePrintSelectedTickets() {
         const selectedIds = Array.from(document.querySelectorAll('.row-checkbox:checked')).map(cb => parseInt(cb.value, 10));
@@ -751,150 +917,154 @@
 
       function renderPrintTickets(candidates) {
         const zone = document.getElementById('print-output-zone');
-        zone.innerHTML = '';
+        zone.innerHTML = generateTicketsHtml(candidates);
+      }
 
-        candidates.forEach((c, index) => {
-          const ticket = document.createElement('div');
-          ticket.className = 'a4-ticket' + (index < candidates.length - 1 ? ' page-break' : '');
+      function generateTicketsHtml(candidates) {
+        return candidates.map((c, index) => {
+          const pageBreakClass = (index < candidates.length - 1) ? ' page-break' : '';
+          const scoreNum = parseFloat(c.mcqScoreTenScale) || 0;
+          const passPercent = Math.round(scoreNum * 10);
 
-          ticket.innerHTML = `
-            <div class="header-grid">
-              <div class="header-cell-left">
-                <div>CÔNG AN TỈNH, THÀNH PHỐ</div>
-                <div class="header-title-bold">${escapeHtml(c.unit.toUpperCase())}</div>
-                <div class="header-line"></div>
-              </div>
-              <div class="header-cell-right">
-                <div class="header-title-bold">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</div>
-                <div style="font-size: 11pt; font-weight: bold;">Độc lập - Tự do - Hạnh phúc</div>
-                <div class="header-line"></div>
-              </div>
-            </div>
-
-            <div class="doc-main-title">PHIẾU KẾT QUẢ KIỂM TRA ĐÁNH GIÁ</div>
-            <div class="doc-sub-title">Chuyên đề: Nghiệp vụ Chiến thuật Chữa cháy và Cứu nạn, cứu hộ</div>
-
-            <table class="meta-table">
-              <tr>
-                <td style="width: 15%; font-weight: bold;">Họ và tên:</td>
-                <td style="width: 45%; font-weight: bold; font-size: 13pt;" class="dotted-line">${escapeHtml(c.fullName.toUpperCase())}</td>
-                <td style="width: 15%; font-weight: bold;">Cấp bậc/CV:</td>
-                <td style="width: 25%; font-weight: bold;" class="dotted-line">${escapeHtml(c.rank)}</td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold;">Đơn vị:</td>
-                <td class="dotted-line">${escapeHtml(c.unit)}</td>
-                <td style="font-weight: bold;">Mã đề thi:</td>
-                <td class="dotted-line"><strong>${escapeHtml(c.examCode)}</strong></td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold;">Ngày thi:</td>
-                <td class="dotted-line">${escapeHtml(c.timestamp)}</td>
-                <td style="font-weight: bold;">Thời gian làm:</td>
-                <td class="dotted-line">${escapeHtml(c.duration)}</td>
-              </tr>
-            </table>
-
-            <div style="font-weight: bold; margin: 12px 0 6px; text-transform: uppercase;">
-              I. KẾT QUẢ KIỂM TRA TRẮC NGHIỆM (20 CÂU)
-            </div>
-            
-            <table class="print-score-box">
-              <thead>
+          return `
+            <div class="a4-ticket${pageBreakClass}">
+              <table class="header-table">
                 <tr>
-                  <th>Tổng số câu</th>
-                  <th>Số câu trả lời đúng</th>
-                  <th>Điểm trắc nghiệm quy đổi</th>
-                  <th>Tỷ lệ đạt</th>
+                  <td style="width: 44%;">
+                    <div style="font-size: 10.5pt; font-weight: 500;">CÔNG AN THÀNH PHỐ QUẢNG NINH</div>
+                    <div style="font-size: 11pt; font-weight: bold; text-transform: uppercase;">PHÒNG CẢNH SÁT PCCC VÀ CNCH</div>
+                    <div class="header-line"></div>
+                  </td>
+                  <td style="width: 56%;">
+                    <div style="font-size: 11.5pt; font-weight: bold; text-transform: uppercase;">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</div>
+                    <div style="font-size: 11pt; font-weight: bold;">Độc lập - Tự do - Hạnh phúc</div>
+                    <div class="header-line" style="width: 125px;"></div>
+                  </td>
                 </tr>
-              </thead>
-              <tbody>
+              </table>
+
+              <div class="doc-main-title">PHIẾU KẾT QUẢ KIỂM TRA ĐÁNH GIÁ</div>
+              <div class="doc-sub-title">Chuyên đề: Nghiệp vụ Chiến thuật Chữa cháy và Cứu nạn, cứu hộ</div>
+
+              <table class="meta-table">
                 <tr>
-                  <td>20 câu</td>
-                  <td><strong style="font-size: 13pt;">${escapeHtml(c.mcqScoreText)}</strong></td>
-                  <td><strong style="font-size: 14pt; color: #b91c1c;">${escapeHtml(c.mcqScoreTenScale)} / 10</strong></td>
-                  <td>${Math.round((parseFloat(c.mcqScoreTenScale) || 0) * 10)}%</td>
+                  <td style="width: 15%; font-weight: bold;">Họ và tên:</td>
+                  <td style="width: 45%; font-weight: bold; font-size: 12.5pt;" class="dotted-line">${escapeHtml(c.fullName.toUpperCase())}</td>
+                  <td style="width: 15%; font-weight: bold;">Cấp bậc/CV:</td>
+                  <td style="width: 25%; font-weight: bold;" class="dotted-line">${escapeHtml(c.rank)}</td>
                 </tr>
-              </tbody>
-            </table>
+                <tr>
+                  <td style="font-weight: bold;">Đơn vị:</td>
+                  <td class="dotted-line">${escapeHtml(c.unit)}</td>
+                  <td style="font-weight: bold;">Mã đề thi:</td>
+                  <td class="dotted-line"><strong>${escapeHtml(c.examCode)}</strong></td>
+                </tr>
+                <tr>
+                  <td style="font-weight: bold;">Ngày thi:</td>
+                  <td class="dotted-line">${escapeHtml(c.timestamp)}</td>
+                  <td style="font-weight: bold;">Thời gian làm:</td>
+                  <td class="dotted-line">${escapeHtml(c.duration)}</td>
+                </tr>
+              </table>
 
-            ${c.tnAnswers && c.tnAnswers.length > 0 ? `
-              <div style="font-weight: bold; margin: 8px 0 4px; font-size: 10pt; text-transform: uppercase;">
-                Chi tiết kết quả 20 câu trắc nghiệm (Đ/án đúng | Thí sinh chọn):
+              <div style="font-weight: bold; margin: 10px 0 5px; text-transform: uppercase; font-size: 11pt;">
+                I. KẾT QUẢ KIỂM TRA TRẮC NGHIỆM (20 CÂU)
               </div>
-              <div style="display: grid; grid-template-columns: repeat(10, 1fr); gap: 4px; font-size: 9pt; text-align: center; margin-bottom: 10px;">
-                ${c.tnAnswers.map((item, idx) => {
-                  const parts = item.split('|');
-                  const isRight = parts.length === 2 && parts[0] === parts[1] && parts[0] !== '-';
-                  return `<div style="border: 1px solid #cbd5e1; padding: 2px; border-radius: 3px; background: ${isRight ? '#f0fdf4' : '#fef2f2'};">
-                    <span style="font-size: 7.5pt; color: #64748b;">TN${idx+1}</span><br>
-                    <strong>${escapeHtml(item)}</strong>
-                  </div>`;
-                }).join('')}
-              </div>
-            ` : ''}
+              
+              <table class="print-score-box">
+                <thead>
+                  <tr>
+                    <th>Tổng số câu</th>
+                    <th>Số câu trả lời đúng</th>
+                    <th>Điểm trắc nghiệm quy đổi</th>
+                    <th>Tỷ lệ đạt</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>20 câu</td>
+                    <td><strong style="font-size: 12.5pt;">${escapeHtml(c.mcqScoreText)}</strong></td>
+                    <td><strong style="font-size: 13.5pt; color: #b91c1c;">${escapeHtml(c.mcqScoreTenScale)} / 10</strong></td>
+                    <td><strong>${passPercent}%</strong></td>
+                  </tr>
+                </tbody>
+              </table>
 
-            <div style="font-weight: bold; margin: 10px 0 6px; text-transform: uppercase;">
-              II. NỘI DUNG BÀI LÀM TỰ LUẬN & ĐÁNH GIÁ CỦA GIÁM KHẢO
+              ${c.tnAnswers && c.tnAnswers.length > 0 ? `
+                <div style="font-weight: bold; margin: 6px 0 4px; font-size: 9.5pt; text-transform: uppercase;">
+                  Chi tiết kết quả 20 câu trắc nghiệm (Đ/án đúng | Thí sinh chọn):
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(10, 1fr); gap: 3px; font-size: 8.5pt; text-align: center; margin-bottom: 8px;">
+                  ${c.tnAnswers.map((item, idx) => {
+                    const parts = (item || '').split('|');
+                    const isRight = parts.length === 2 && parts[0] === parts[1] && parts[0] !== '-';
+                    const isBlank = parts.length === 2 && parts[1] === '-';
+                    const bg = isRight ? '#f0fdf4' : (isBlank ? '#fffbeb' : '#fef2f2');
+                    const borderColor = isRight ? '#86efac' : (isBlank ? '#fde047' : '#fca5a5');
+                    return `<div style="border: 1px solid ${borderColor}; padding: 2px 1px; border-radius: 3px; background: ${bg}; -webkit-print-color-adjust: exact; print-color-adjust: exact;">
+                      <span style="font-size: 7pt; color: #64748b;">TN${idx+1}</span><br>
+                      <strong>${escapeHtml(item)}</strong>
+                    </div>`;
+                  }).join('')}
+                </div>
+              ` : ''}
+
+              <div style="font-weight: bold; margin: 8px 0 5px; text-transform: uppercase; font-size: 11pt;">
+                II. NỘI DUNG BÀI LÀM TỰ LUẬN & ĐÁNH GIÁ CỦA CÁN BỘ CHẤM THI
+              </div>
+
+              <div class="essay-block">
+                <strong>1. Tự luận Câu 1:</strong>
+                ${c.tl1Question ? `<div style="font-weight: bold; margin: 3px 0; color: #1e293b;">Đề bài: ${escapeHtml(c.tl1Question)}</div>` : ''}
+                <div style="margin-top: 3px; font-style: italic; white-space: pre-wrap; background: #fff; padding: 5px; border: 1px dashed #cbd5e1; border-radius: 3px;">
+                  <strong>Bài làm của thí sinh:</strong><br>
+                  ${c.essay1 ? escapeHtml(c.essay1) : '(Thí sinh không làm câu tự luận này)'}
+                </div>
+                ${c.tl1KeyPoints ? `<div style="margin-top: 5px; font-size: 9pt; color: #334155; background: #f8fafc; border: 1px solid #e2e8f0; padding: 5px; border-radius: 3px; white-space: pre-wrap; -webkit-print-color-adjust: exact; print-color-adjust: exact;"><strong>Đáp án chuẩn đối chiếu (gạch đầu dòng):</strong>\n${escapeHtml(c.tl1KeyPoints)}</div>` : ''}
+                <div style="margin-top: 6px; border-top: 1px dashed #999; padding-top: 3px; font-size: 10pt; font-weight: bold;">
+                  Điểm chấm Câu 1: ............ / 2.0 điểm
+                </div>
+              </div>
+
+              <div class="essay-block">
+                <strong>2. Tự luận Câu 2:</strong>
+                ${c.tl2Question ? `<div style="font-weight: bold; margin: 3px 0; color: #1e293b;">Đề bài: ${escapeHtml(c.tl2Question)}</div>` : ''}
+                <div style="margin-top: 3px; font-style: italic; white-space: pre-wrap; background: #fff; padding: 5px; border: 1px dashed #cbd5e1; border-radius: 3px;">
+                  <strong>Bài làm của thí sinh:</strong><br>
+                  ${c.essay2 ? escapeHtml(c.essay2) : '(Thí sinh không làm câu tự luận này)'}
+                </div>
+                ${c.tl2KeyPoints ? `<div style="margin-top: 5px; font-size: 9pt; color: #334155; background: #f8fafc; border: 1px solid #e2e8f0; padding: 5px; border-radius: 3px; white-space: pre-wrap; -webkit-print-color-adjust: exact; print-color-adjust: exact;"><strong>Đáp án chuẩn đối chiếu (gạch đầu dòng):</strong>\n${escapeHtml(c.tl2KeyPoints)}</div>` : ''}
+                <div style="margin-top: 6px; border-top: 1px dashed #999; padding-top: 3px; font-size: 10pt; font-weight: bold;">
+                  Điểm chấm Câu 2: ............ / 2.0 điểm
+                </div>
+              </div>
+
+              <table class="meta-table" style="margin-top: 8px;">
+                <tr>
+                  <td style="font-weight: bold; width: 25%;">TỔNG ĐIỂM CHUNG:</td>
+                  <td style="width: 25%; font-weight: bold; font-size: 12pt;" class="dotted-line">................ / 10 điểm</td>
+                  <td style="font-weight: bold; width: 20%;">XẾP LOẠI:</td>
+                  <td style="width: 30%; font-weight: bold;" class="dotted-line">................................</td>
+                </tr>
+              </table>
+
+              <table class="signatures-table" style="margin-top: 15px;">
+                <tr>
+                  <td style="width: 48%;"></td>
+                  <td style="width: 52%; text-align: center;">
+                    <div style="font-style: italic; font-size: 10pt; margin-bottom: 3px;">
+                      Quảng Ninh, ngày ..... tháng ..... năm 2026
+                    </div>
+                    <strong style="font-size: 11.5pt; text-transform: uppercase;">CÁN BỘ CHẤM THI</strong><br>
+                    <em style="font-size: 9.5pt;">(Ký, ghi rõ họ tên)</em>
+                    <div style="height: 65px;"></div>
+                    <strong>..................................................</strong>
+                  </td>
+                </tr>
+              </table>
             </div>
-
-            <div class="essay-block">
-              <strong>1. Tự luận Câu 1:</strong>
-              ${c.tl1Question ? `<div style="font-weight: bold; margin: 4px 0; color: #1e293b;">Đề bài: ${escapeHtml(c.tl1Question)}</div>` : ''}
-              <div style="margin-top: 4px; font-style: italic; white-space: pre-wrap; background: #fff; padding: 6px; border: 1px dashed #cbd5e1; border-radius: 4px;">
-                <strong>Bài làm của thí sinh:</strong><br>
-                ${c.essay1 ? escapeHtml(c.essay1) : '(Thí sinh không làm câu tự luận này)'}
-              </div>
-              ${c.tl1KeyPoints ? `<div style="margin-top: 6px; font-size: 9.5pt; color: #334155; background: #f8fafc; border: 1px solid #e2e8f0; padding: 6px; border-radius: 4px; white-space: pre-wrap;"><strong>Đáp án chuẩn đối chiếu (gạch đầu dòng):</strong>\n${escapeHtml(c.tl1KeyPoints)}</div>` : ''}
-              <div style="margin-top: 8px; border-top: 1px dashed #999; padding-top: 4px; display: flex; justify-content: space-between;">
-                <span>Điểm Giám khảo chấm Câu 1: ............ / 2.0 điểm</span>
-                <span>Chữ ký Giám khảo: ..............................</span>
-              </div>
-            </div>
-
-            <div class="essay-block">
-              <strong>2. Tự luận Câu 2:</strong>
-              ${c.tl2Question ? `<div style="font-weight: bold; margin: 4px 0; color: #1e293b;">Đề bài: ${escapeHtml(c.tl2Question)}</div>` : ''}
-              <div style="margin-top: 4px; font-style: italic; white-space: pre-wrap; background: #fff; padding: 6px; border: 1px dashed #cbd5e1; border-radius: 4px;">
-                <strong>Bài làm của thí sinh:</strong><br>
-                ${c.essay2 ? escapeHtml(c.essay2) : '(Thí sinh không làm câu tự luận này)'}
-              </div>
-              ${c.tl2KeyPoints ? `<div style="margin-top: 6px; font-size: 9.5pt; color: #334155; background: #f8fafc; border: 1px solid #e2e8f0; padding: 6px; border-radius: 4px; white-space: pre-wrap;"><strong>Đáp án chuẩn đối chiếu (gạch đầu dòng):</strong>\n${escapeHtml(c.tl2KeyPoints)}</div>` : ''}
-              <div style="margin-top: 8px; border-top: 1px dashed #999; padding-top: 4px; display: flex; justify-content: space-between;">
-                <span>Điểm Giám khảo chấm Câu 2: ............ / 2.0 điểm</span>
-                <span>Chữ ký Giám khảo: ..............................</span>
-              </div>
-            </div>
-
-            <table class="meta-table" style="margin-top: 10px;">
-              <tr>
-                <td style="font-weight: bold; width: 25%;">TỔNG ĐIỂM CHUNG:</td>
-                <td style="width: 25%; font-weight: bold; font-size: 13pt;" class="dotted-line">................ / 10 điểm</td>
-                <td style="font-weight: bold; width: 20%;">XẾP LOẠI:</td>
-                <td style="width: 30%; font-weight: bold;" class="dotted-line">................................</td>
-              </tr>
-            </table>
-
-            <table class="signatures-table">
-              <tr>
-                <td>
-                  <strong>THÍ SINH DỰ THI</strong><br>
-                  <em>(Ký, ghi rõ họ tên)</em>
-                  <div style="height: 65px;"></div>
-                  <strong>${escapeHtml(c.fullName)}</strong>
-                </td>
-                <td>
-                  <em>Ngày ..... tháng ..... năm 2026</em><br>
-                  <strong>TRƯỞNG BAN CHẤM THI</strong><br>
-                  <em>(Ký, ghi rõ họ tên)</em>
-                  <div style="height: 65px;"></div>
-                </td>
-              </tr>
-            </table>
           `;
-
-          zone.appendChild(ticket);
-        });
+        }).join('');
       }
 
       // ============================================================================
@@ -908,24 +1078,26 @@
 
         const zone = document.getElementById('print-output-zone');
         zone.innerHTML = `
-          <div class="a4-ticket" style="font-size: 11pt;">
-            <div class="header-grid">
-              <div class="header-cell-left">
-                <div>CÔNG AN TỈNH, THÀNH PHỐ</div>
-                <div class="header-title-bold">PHÒNG CẢNH SÁT PCCC & CNCH</div>
-                <div class="header-line"></div>
-              </div>
-              <div class="header-cell-right">
-                <div class="header-title-bold">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</div>
-                <div style="font-size: 11pt; font-weight: bold;">Độc lập - Tự do - Hạnh phúc</div>
-                <div class="header-line"></div>
-              </div>
-            </div>
+          <div class="a4-ticket" style="font-size: 11pt; max-width: 100%;">
+            <table class="header-table">
+              <tr>
+                <td style="width: 44%;">
+                  <div style="font-size: 10.5pt; font-weight: 500;">CÔNG AN THÀNH PHỐ QUẢNG NINH</div>
+                  <div style="font-size: 11pt; font-weight: bold; text-transform: uppercase;">PHÒNG CẢNH SÁT PCCC VÀ CNCH</div>
+                  <div class="header-line"></div>
+                </td>
+                <td style="width: 56%;">
+                  <div style="font-size: 11.5pt; font-weight: bold; text-transform: uppercase;">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</div>
+                  <div style="font-size: 11pt; font-weight: bold;">Độc lập - Tự do - Hạnh phúc</div>
+                  <div class="header-line" style="width: 125px;"></div>
+                </td>
+              </tr>
+            </table>
 
-            <div class="doc-main-title" style="font-size: 14pt; margin: 15px 0 6px;">
+            <div class="doc-main-title" style="font-size: 14pt; margin: 12px 0 4px;">
               BẢNG TỔNG HỢP KẾT QUẢ KIỂM TRA CHIẾN THUẬT PCCC & CNCH
             </div>
-            <div class="doc-sub-title" style="margin-bottom: 16px;">
+            <div class="doc-sub-title" style="margin-bottom: 14px;">
               (Đợt kiểm tra nghiệp vụ định kỳ năm 2026)
             </div>
 
@@ -940,7 +1112,7 @@
                   <th style="width: 75px;">Điểm TN (/20)</th>
                   <th style="width: 75px;">Điểm quy đổi (/10)</th>
                   <th>Xếp loại</th>
-                  <th>Ký nhận</th>
+                  <th>Ghi chú</th>
                 </tr>
               </thead>
               <tbody>
@@ -960,18 +1132,20 @@
               </tbody>
             </table>
 
-            <table class="signatures-table" style="margin-top: 35px;">
+            <div style="text-align: right; font-style: italic; font-size: 10pt; margin-top: 15px; margin-bottom: 2px;">
+              Quảng Ninh, ngày ..... tháng ..... năm 2026
+            </div>
+            <table class="signatures-table" style="margin-top: 2px;">
               <tr>
-                <td>
+                <td style="width: 50%;">
                   <strong>NGƯỜI LẬP BẢNG</strong><br>
-                  <em>(Ký, ghi rõ họ tên)</em>
-                  <div style="height: 70px;"></div>
+                  <em style="font-size: 9.5pt;">(Ký, ghi rõ họ tên)</em>
+                  <div style="height: 55px;"></div>
                 </td>
-                <td>
-                  <em>Ngày ..... tháng ..... năm 2026</em><br>
+                <td style="width: 50%;">
                   <strong>LÃNH ĐẠO PHÒNG PHÊ DUYỆT</strong><br>
-                  <em>(Ký, đóng dấu)</em>
-                  <div style="height: 70px;"></div>
+                  <em style="font-size: 9.5pt;">(Ký, đóng dấu)</em>
+                  <div style="height: 55px;"></div>
                 </td>
               </tr>
             </table>
@@ -990,6 +1164,5 @@
 
     })();
   </script>
-
 </body>
 </html>

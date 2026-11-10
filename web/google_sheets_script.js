@@ -175,7 +175,7 @@ function formatHeader(sheet, numCols) {
 function doGet(e) {
   try {
     var sheet = getTargetSheet();
-    var values = sheet.getDataRange().getValues();
+    var values = sheet.getDataRange().getDisplayValues();
 
     if (!values || values.length <= 1) {
       return ContentService
