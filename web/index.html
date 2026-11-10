@@ -36,26 +36,18 @@
          ========================================================================== -->
     <section id="screen-intro" class="screen active">
       
-      <!-- Thẻ Thông tin kỳ thi & Quy chế (Rõ ràng theo yêu cầu) -->
+      <!-- Thẻ Hướng dẫn làm bài thi cho thí sinh (Đơn giản, trực quan, thân thiện) -->
       <div class="card">
         <h2 class="card-title">
-          <span>📋</span> QUY CHẾ VÀ THÔNG TIN BÀI THI
+          <span>📋</span> HƯỚNG DẪN LÀM BÀI THI
         </h2>
         
         <div class="briefing-box">
           <div class="briefing-item">
-            <span class="briefing-icon">📚</span>
-            <div>
-              <strong>Số lượng đề thi:</strong> 
-              <span>Hệ thống gồm <span class="highlight-tag">10 bộ đề độc lập</span> được chuẩn hóa 100% từ tài liệu chiến thuật PCCC & CNCH của Cục Cảnh sát PCCC & CNCH. Đề thi sẽ được bốc <strong>ngẫu nhiên</strong> khi bấm bắt đầu làm bài.</span>
-            </div>
-          </div>
-
-          <div class="briefing-item">
             <span class="briefing-icon">📝</span>
             <div>
-              <strong>Cấu trúc bài thi (22 câu):</strong>
-              <span>Gồm <span class="highlight-tag">20 câu trắc nghiệm</span> (chấm điểm ngay) và <span class="highlight-tag">02 câu tự luận</span> (chấm theo từ khóa nghiệp vụ). Hiển thị tập trung <strong>từng câu 1</strong>, phân chia rõ thẻ Trắc nghiệm và Tự luận.</span>
+              <strong>Cấu trúc bài thi:</strong>
+              <span>Gồm <span class="highlight-tag">20 câu trắc nghiệm</span> và <span class="highlight-tag">02 câu tự luận</span>.</span>
             </div>
           </div>
 
@@ -63,15 +55,23 @@
             <span class="briefing-icon">⏱️</span>
             <div>
               <strong>Thời gian làm bài:</strong> 
-              <span><span class="highlight-tag">30 phút</span> (đồng hồ đếm ngược tự động bắt đầu khi bấm nút làm bài và tự động nộp bài khi hết giờ).</span>
+              <span><span class="highlight-tag">30 phút</span> (đồng hồ đếm ngược hiển thị ở góc trên màn hình, khi hết giờ hệ thống sẽ tự động nộp bài).</span>
             </div>
           </div>
 
           <div class="briefing-item">
-            <span class="briefing-icon">⚖️</span>
+            <span class="briefing-icon">✍️</span>
             <div>
-              <strong>Quy định chấm điểm & Bảo mật:</strong> 
-              <span>Điểm trắc nghiệm (thang 20/20) và đáp án chi tiết chỉ hiển thị sau khi thí sinh đã hoàn thành nộp bài. Bài làm tự luận sẽ do Ban giám khảo chấm và thông báo kết quả sau.</span>
+              <strong>Cách làm bài:</strong>
+              <span>Chọn phương án đúng cho phần trắc nghiệm và gõ câu trả lời vào ô tự luận. Có thể bấm vào số thứ tự câu hỏi để chuyển nhanh giữa các câu.</span>
+            </div>
+          </div>
+
+          <div class="briefing-item">
+            <span class="briefing-icon">📤</span>
+            <div>
+              <strong>Nộp bài:</strong> 
+              <span>Sau khi hoàn thành, bấm nút <strong>"Nộp bài"</strong> để gửi kết quả bài làm về hệ thống.</span>
             </div>
           </div>
         </div>
@@ -123,14 +123,21 @@
             </select>
           </div>
 
-          <div style="background: #f1f5f9; border-radius: var(--radius-sm); padding: 10px 12px; margin-bottom: 14px; font-size: 0.85rem; color: var(--navy); display: flex; align-items: center; gap: 8px;">
-            <span>🎲</span>
-            <span><strong>Bộ đề thi:</strong> Hệ thống sẽ tự động bốc ngẫu nhiên 1 trong 10 bộ đề thi chuẩn khi bấm nút bên dưới.</span>
+          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: var(--radius-sm); padding: 9px 12px; margin-bottom: 14px; font-size: 0.84rem; color: #475569; display: flex; align-items: center; gap: 8px;">
+            <span>💡</span>
+            <span>Đồng chí vui lòng điền đúng thông tin trước khi bắt đầu làm bài.</span>
           </div>
 
           <button type="button" id="btn-start-exam" class="btn btn-primary" style="margin-top: 6px; width: 100%;">
-            <span>🚀</span> BẮT ĐẦU LÀM BÀI THI (TÍNH GIỜ 30 PHÚT)
+            <span>🚀</span> BẮT ĐẦU LÀM BÀI (30 PHÚT)
           </button>
+
+          <!-- Liên kết dành riêng cho Ban Giám khảo mở Trang In -->
+          <div style="margin-top: 20px; padding-top: 14px; border-top: 1px dashed var(--border-color); text-align: center;">
+            <a href="trang_in_ket_qua.html" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; font-size: 0.88rem; color: #1e293b; text-decoration: none; padding: 8px 14px; background: #f1f5f9; border: 1px solid #cbd5e1; border-radius: 6px; font-weight: 600;">
+              <span>🖨️</span> <span>Dành cho Ban Giám khảo: Mở Trang In Kết Quả & Bảng Điểm</span> <span>↗</span>
+            </a>
+          </div>
         </form>
       </div>
 

@@ -528,11 +528,18 @@
       // 1. TẢI DỮ LIỆU TỰ ĐỘNG TỪ GOOGLE SHEET QUA WEBHOOK GET
       function fetchDataFromGoogleSheets() {
         const indicator = document.getElementById('sync-indicator');
-        indicator.innerHTML = '🔄 Đang kết nối Google Sheet...';
+        indicator.innerHTML = '🔄 Đang kiểm tra dữ liệu kết nối...';
 
         fetch(WEBHOOK_URL)
-          .then(res => res.json())
-          .then(resData => {
+          .then(res => res.text())
+          .then(rawText => {
+            let resData = null;
+            try {
+              resData = JSON.parse(rawText);
+            } catch(e) {
+              // Phản hồi dạng text thông thường từ Apps Script
+            }
+
             if (resData && resData.status === 'success' && Array.isArray(resData.data)) {
               candidateList = resData.data.map((item, idx) => ({
                 id: idx + 1,
@@ -552,12 +559,11 @@
               renderTable();
               indicator.innerHTML = `✅ Đã tải ${candidateList.length} bài thi từ sheet [${resData.sheetName || 'Đầu tiên'}]!`;
             } else {
-              indicator.innerHTML = '⚠️ Chưa có dữ liệu trên Google Sheet.';
+              indicator.innerHTML = '💡 Đồng chí có thể bấm <strong>"📋 Dán Nhanh Từ Bảng Google Sheet"</strong> để nạp ngay!';
             }
           })
-          .catch(err => {
-            console.warn('Lỗi kết nối Webhook:', err);
-            indicator.innerHTML = '⚠️ Không thể gọi API trực tiếp. Đồng chí có thể dùng nút "Dán nhanh từ Google Sheet" ở trên!';
+          .catch(() => {
+            indicator.innerHTML = '💡 Đồng chí có thể bấm <strong>"📋 Dán Nhanh Từ Bảng Google Sheet"</strong> để nạp ngay!';
           });
       }
 
