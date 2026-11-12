@@ -61,6 +61,7 @@
   // 1. KHỞI TẠO HỆ THỐNG & SỰ KIỆN BAN ĐẦU
   // ============================================================================
   window.addEventListener('DOMContentLoaded', () => {
+    if (applyExamLockState()) return;
     initEventHandlers();
   });
 
@@ -126,10 +127,109 @@
     }
   }
 
+  // Cấu hình khóa hệ thống kiểm tra tạm thời (bật true để khóa cổng thi)
+  const IS_EXAM_LOCKED = true;
+  const EXAM_LOCK_MESSAGE = 'Hệ thống kiểm tra đang tạm khóa và sẽ mở lại vào lúc 07:00 ngày 13/11/2026.';
+
+  const ALL_EXAM_CODES = ['DE01', 'DE02', 'DE03', 'DE04', 'DE05', 'DE06', 'DE07', 'DE08', 'DE09', 'DE10'];
+  const EXAM_QUEUE_STORAGE_KEY = 'pccc_exam_queue_v1';
+  const LAST_EXAM_STORAGE_KEY = 'pccc_last_exam_v1';
+
+  // Sinh số nguyên ngẫu nhiên đều trong khoảng [0, maxExclusive) bằng crypto
+  function getRandomInt(maxExclusive) {
+    if (maxExclusive <= 1) return 0;
+    if (window.crypto && typeof window.crypto.getRandomValues === 'function') {
+      const limit = Math.floor(0x100000000 / maxExclusive) * maxExclusive;
+      const buf = new Uint32Array(1);
+      let val;
+      do {
+        window.crypto.getRandomValues(buf);
+        val = buf[0];
+      } while (val >= limit);
+      return val % maxExclusive;
+    }
+    return Math.floor(Math.random() * maxExclusive);
+  }
+
+  function shuffleCodes(items) {
+    const arr = items.slice();
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = getRandomInt(i + 1);
+      const tmp = arr[i];
+      arr[i] = arr[j];
+      arr[j] = tmp;
+    }
+    return arr;
+  }
+
+  // Bốc đề xoay vòng ngẫu nhiên không trùng lặp giữa các lần F5 / vào lại
+  function pickRandomExamCode() {
+    const availableCodes = ALL_EXAM_CODES.filter(
+      code => window.CAU_HOI_BO_DE && window.CAU_HOI_BO_DE[code]
+    );
+    const pool = availableCodes.length > 0 ? availableCodes : ALL_EXAM_CODES;
+
+    try {
+      const lastCode = localStorage.getItem(LAST_EXAM_STORAGE_KEY) || '';
+      let queue = [];
+      const rawQueue = localStorage.getItem(EXAM_QUEUE_STORAGE_KEY);
+      if (rawQueue) {
+        const parsed = JSON.parse(rawQueue);
+        if (Array.isArray(parsed)) {
+          queue = parsed.filter(code => pool.includes(code));
+        }
+      }
+
+      if (queue.length === 0) {
+        queue = shuffleCodes(pool);
+        // Tránh trùng đề cuối của vòng trước khi bắt đầu vòng xáo trộn mới
+        if (queue.length > 1 && queue[0] === lastCode) {
+          const swapIdx = 1 + getRandomInt(queue.length - 1);
+          const tmp = queue[0];
+          queue[0] = queue[swapIdx];
+          queue[swapIdx] = tmp;
+        }
+      }
+
+      const chosenCode = queue.shift();
+      localStorage.setItem(EXAM_QUEUE_STORAGE_KEY, JSON.stringify(queue));
+      localStorage.setItem(LAST_EXAM_STORAGE_KEY, chosenCode);
+      return chosenCode;
+    } catch (e) {
+      const filteredPool = pool.length > 1 && state.candidate.examCode
+        ? pool.filter(code => code !== state.candidate.examCode)
+        : pool;
+      return filteredPool[getRandomInt(filteredPool.length)];
+    }
+  }
+
+  function applyExamLockState() {
+    const lockedScreen = document.getElementById('screen-locked');
+    if (!IS_EXAM_LOCKED) {
+      if (lockedScreen) lockedScreen.classList.remove('active');
+      return false;
+    }
+
+    Object.values(screens).forEach(el => {
+      if (el) el.classList.remove('active');
+    });
+    if (lockedScreen) lockedScreen.classList.add('active');
+    if (timerElements.headerBadge) timerElements.headerBadge.style.display = 'none';
+    if (bottomBar) bottomBar.style.display = 'none';
+    if (paletteDrawer) paletteDrawer.style.display = 'none';
+    return true;
+  }
+
   // ============================================================================
-  // 2. LOGIC BẮT ĐẦU LÀM BÀI THI (TỰ ĐỘNG CHỌN ĐỀ NGẪU NHIÊN)
+  // 2. LOGIC BẮT ĐẦU LÀM BÀI THI (TỰ ĐỘNG CHỌN ĐỀ NGẪU NHIÊN KHÔNG TRÙNG LẶP)
   // ============================================================================
   function handleStartExam() {
+    if (IS_EXAM_LOCKED) {
+      applyExamLockState();
+      alert(EXAM_LOCK_MESSAGE);
+      return;
+    }
+
     const fullName = document.getElementById('inp-fullname').value.trim();
     const unit = document.getElementById('inp-unit').value;
     const rank = document.getElementById('inp-rank').value;
@@ -151,9 +251,8 @@
       return;
     }
 
-    // Yêu cầu: BỎ PHẦN CHỌN ĐỀ, MẶC ĐỊNH BỐC NGẪU NHIÊN 1 TRONG 10 BỘ ĐỀ
-    const allCodes = ['DE01', 'DE02', 'DE03', 'DE04', 'DE05', 'DE06', 'DE07', 'DE08', 'DE09', 'DE10'];
-    const examCode = allCodes[Math.floor(Math.random() * allCodes.length)];
+    // Bốc ngẫu nhiên xoay vòng 1 trong 10 bộ đề (đảm bảo F5 / vào lại luôn ra đề mới)
+    const examCode = pickRandomExamCode();
 
     // Lưu thông tin thí sinh vào trạng thái
     state.candidate = { fullName, unit, rank, examCode };
