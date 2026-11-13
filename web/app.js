@@ -61,8 +61,8 @@
   // 1. KHỞI TẠO HỆ THỐNG & SỰ KIỆN BAN ĐẦU
   // ============================================================================
   window.addEventListener('DOMContentLoaded', () => {
-    if (applyExamLockState()) return;
     initEventHandlers();
+    applyExamLockState();
   });
 
   function initEventHandlers() {
@@ -127,9 +127,14 @@
     }
   }
 
-  // Cấu hình khóa hệ thống kiểm tra tạm thời (bật true để khóa cổng thi)
-  const IS_EXAM_LOCKED = true;
-  const EXAM_LOCK_MESSAGE = 'Hệ thống kiểm tra đang tạm khóa và sẽ mở lại vào lúc 07:00 ngày 13/11/2026.';
+  // Cấu hình thời gian thực tế mở khóa hệ thống kiểm tra: 07:50 ngày 13/11/2026 (+07:00)
+  // Thông báo hiển thị với thí sinh là 08:00 nhưng thực tế mở sớm từ 07:50
+  const UNLOCK_TIMESTAMP = new Date('2026-11-13T07:50:00+07:00').getTime();
+  const EXAM_LOCK_MESSAGE = 'Hệ thống kiểm tra đang tạm khóa và sẽ mở lại vào lúc 08:00 ngày 13/11/2026.';
+
+  function isExamCurrentlyLocked() {
+    return Date.now() < UNLOCK_TIMESTAMP;
+  }
 
   const ALL_EXAM_CODES = ['DE01', 'DE02', 'DE03', 'DE04', 'DE05', 'DE06', 'DE07', 'DE08', 'DE09', 'DE10'];
   const EXAM_QUEUE_STORAGE_KEY = 'pccc_exam_queue_v1';
@@ -205,8 +210,13 @@
 
   function applyExamLockState() {
     const lockedScreen = document.getElementById('screen-locked');
-    if (!IS_EXAM_LOCKED) {
+    const isLocked = isExamCurrentlyLocked();
+
+    if (!isLocked) {
       if (lockedScreen) lockedScreen.classList.remove('active');
+      if (screens.intro && !screens.exam.classList.contains('active') && !screens.result.classList.contains('active')) {
+        screens.intro.classList.add('active');
+      }
       return false;
     }
 
@@ -217,6 +227,14 @@
     if (timerElements.headerBadge) timerElements.headerBadge.style.display = 'none';
     if (bottomBar) bottomBar.style.display = 'none';
     if (paletteDrawer) paletteDrawer.style.display = 'none';
+
+    // Tự động mở khóa ngay trên giao diện nếu thí sinh đang mở sẵn trang web đến 07:50
+    const msUntilUnlock = UNLOCK_TIMESTAMP - Date.now();
+    if (msUntilUnlock > 0 && msUntilUnlock < 86400000) {
+      setTimeout(() => {
+        applyExamLockState();
+      }, msUntilUnlock + 500);
+    }
     return true;
   }
 
@@ -224,7 +242,7 @@
   // 2. LOGIC BẮT ĐẦU LÀM BÀI THI (TỰ ĐỘNG CHỌN ĐỀ NGẪU NHIÊN KHÔNG TRÙNG LẶP)
   // ============================================================================
   function handleStartExam() {
-    if (IS_EXAM_LOCKED) {
+    if (isExamCurrentlyLocked()) {
       applyExamLockState();
       alert(EXAM_LOCK_MESSAGE);
       return;
